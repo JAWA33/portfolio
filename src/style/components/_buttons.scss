@@ -1,0 +1,45 @@
+.callToAction {
+  width: auto;
+  height: auto;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.75rem 2rem;
+  border-radius: 1.5rem;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0.75rem 1.6rem;
+    transition: opacity 0.2s ease-out;
+  }
+
+  &:hover > .callToAction__text {
+    letter-spacing: 1px;
+  }
+}
+
+#blue .callToAction {
+  background: $colorTheme_blue;
+  color: $textColor_dark;
+}
+
+#yellow .callToAction {
+  background: $colorTheme_yellow;
+  color: $textColor_light;
+}
+
+#red .callToAction {
+  background: $colorTheme_red;
+  color: $textColor_dark;
+}
+
+#purple .callToAction {
+  background: $colorTheme_purple;
+  color: $textColor_dark;
+}
+
+#green .callToAction {
+  background: $colorTheme_green;
+  color: $textColor_light;
+}

@@ -1,0 +1,148 @@
+//* LightMode colors :
+$textColor_light: #141414;
+$color_header_bg_1_light: #c7c0c7;
+$color_header_bg_2_light: #fcf9fc;
+
+$color_page_bg_1_light: #b2b2bc;
+$color_page_bg_2_light: #f2f1ff;
+
+//* DarkMode colors :
+$textColor_dark: #fcf9fc;
+$color_header_bg_1_dark: #534e4e;
+$color_header_bg_2_dark: #1a1717;
+
+$color_page_bg_1_dark: rgb(53, 49, 49);
+$color_page_bg_2_dark: #221616;
+
+//* colorTheme :
+$colorTheme_red: #f31533;
+$colorTheme_purple: #8206c0;
+$colorTheme_yellow: #f2b55f;
+$colorTheme_blue: #10ace6;
+$colorTheme_green: #a0e986;
+
+#red .textColor {
+  color: $colorTheme_red;
+}
+#blue .textColor {
+  color: $colorTheme_blue;
+}
+#green .textColor {
+  color: $colorTheme_green;
+}
+#purple .textColor {
+  color: $colorTheme_purple;
+}
+#yellow .textColor {
+  color: $colorTheme_yellow;
+}
+
+#red .bgColor {
+  background: $colorTheme_red;
+}
+#blue .bgColor {
+  background: $colorTheme_blue;
+}
+#green .bgColor {
+  background: $colorTheme_green;
+}
+#purple .bgColor {
+  background: $colorTheme_purple;
+}
+#yellow .bgColor {
+  background: $colorTheme_yellow;
+}
+
+.fillPathColor {
+  cursor: pointer;
+
+  &:hover {
+    & > .fillPathColor {
+      &--red > path {
+        fill: $colorTheme_red;
+      }
+      &--green > path {
+        fill: $colorTheme_green;
+      }
+      &--blue > path {
+        fill: $colorTheme_blue;
+      }
+      &--purple > path {
+        fill: $colorTheme_purple;
+      }
+      &--yellow > path {
+        fill: $colorTheme_yellow;
+      }
+    }
+
+    & > .textColor {
+      &--red {
+        color: $colorTheme_red;
+      }
+      &--green {
+        color: $colorTheme_green;
+      }
+      &--blue {
+        color: $colorTheme_blue;
+      }
+      &--purple {
+        color: $colorTheme_purple;
+      }
+      &--yellow {
+        color: $colorTheme_yellow;
+      }
+    }
+  }
+}
+
+#red .activePage {
+  color: $colorTheme_red;
+  & svg path {
+    fill: $colorTheme_red;
+  }
+}
+#blue .activePage {
+  color: $colorTheme_blue;
+  & svg path {
+    fill: $colorTheme_blue;
+  }
+}
+#green .activePage {
+  color: $colorTheme_green;
+  & svg path {
+    fill: $colorTheme_green;
+  }
+}
+#purple .activePage {
+  color: $colorTheme_purple;
+  & svg path {
+    fill: $colorTheme_purple;
+  }
+}
+#yellow .activePage {
+  color: $colorTheme_yellow;
+
+  & svg path {
+    fill: $colorTheme_yellow;
+  }
+}
+
+#red #activePage {
+  border-bottom: 3px solid $colorTheme_red;
+}
+
+#blue #activePage {
+  border-bottom: 3px solid $colorTheme_blue;
+}
+
+#yellow #activePage {
+  border-bottom: 3px solid $colorTheme_yellow;
+}
+
+#purple #activePage {
+  border-bottom: 3px solid $colorTheme_purple;
+}
+
+#green #activePage {
+  border-bottom: 3px solid $colorTheme_green;
+}

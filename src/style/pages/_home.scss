@@ -1,0 +1,305 @@
+.home {
+  width: auto;
+
+  //max-width: 800px;
+  //height: 50vh;
+
+  &__section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 7vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    &__article {
+      min-height: 45vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      text-align: justify;
+    }
+
+    &__aside {
+      width: auto;
+      min-width: 150px;
+      height: auto;
+      padding: 2rem;
+      position: relative;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.corner {
+  position: absolute;
+  width: 25%;
+  height: 25%;
+
+  &__TopLeft::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 6px;
+    //for color to change :
+  }
+
+  &__TopLeft::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 12vh;
+    //for color to change :
+  }
+
+  &__BottomRight::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10vw;
+    height: 6px;
+    //for color to change :
+  }
+
+  &__BottomRight::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 6px;
+    height: 12vh;
+    //for color to change :
+  }
+
+  &__TopLeft {
+    top: 0;
+    left: 0;
+  }
+  &__BottomRight {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.picture__container {
+  display: block;
+  width: 150px;
+  min-width: 200px;
+  height: 230px;
+  overflow: hidden;
+  //border-radius: 0.4rem;
+
+  & img {
+    object-fit: cover;
+    transform: translateY(-20px);
+  }
+}
+.writingAnimation {
+  display: flex;
+  white-space: nowrap;
+
+  flex-direction: row;
+  align-items: baseline;
+
+  //height: 40px;
+
+  &__text {
+    width: 100%;
+    margin-left: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: cursor 0.3s step-end infinite alternate;
+  }
+}
+
+#light .writingAnimation__text {
+  border-right: 2px solid $textColor_light;
+  padding-right: 0.15rem;
+}
+#dark .writingAnimation__text {
+  border-right: 2px solid $textColor_dark;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+// @keyframes typing {
+//   0%,
+//   100% {
+//     width: 0%;
+//   }
+//   40%,
+//   60% {
+//     width: 100%;
+//   }
+// }
+
+//color Corner :
+
+#green .corner {
+  &__TopLeft::before {
+    background: $colorTheme_green;
+  }
+  &__TopLeft::after {
+    background: $colorTheme_green;
+  }
+  &__BottomRight::before {
+    background: $colorTheme_green;
+  }
+  &__BottomRight::after {
+    background: $colorTheme_green;
+  }
+}
+#yellow .corner {
+  &__TopLeft::before {
+    background: $colorTheme_yellow;
+  }
+  &__TopLeft::after {
+    background: $colorTheme_yellow;
+  }
+  &__BottomRight::before {
+    background: $colorTheme_yellow;
+  }
+  &__BottomRight::after {
+    background: $colorTheme_yellow;
+  }
+}
+#purple .corner {
+  &__TopLeft::before {
+    background: $colorTheme_purple;
+  }
+  &__TopLeft::after {
+    background: $colorTheme_purple;
+  }
+  &__BottomRight::before {
+    background: $colorTheme_purple;
+  }
+  &__BottomRight::after {
+    background: $colorTheme_purple;
+  }
+}
+#blue .corner {
+  &__TopLeft::before {
+    background: $colorTheme_blue;
+  }
+  &__TopLeft::after {
+    background: $colorTheme_blue;
+  }
+  &__BottomRight::before {
+    background: $colorTheme_blue;
+  }
+  &__BottomRight::after {
+    background: $colorTheme_blue;
+  }
+}
+#red .corner {
+  &__TopLeft::before {
+    background: $colorTheme_red;
+  }
+  &__TopLeft::after {
+    background: $colorTheme_red;
+  }
+  &__BottomRight::before {
+    background: $colorTheme_red;
+  }
+  &__BottomRight::after {
+    background: $colorTheme_red;
+  }
+}
+
+//* for tablet :
+@media (min-width: 510px) {
+  .home {
+    margin-left: 20vw;
+    &__section {
+      padding: 5vh 5vw;
+      &__article {
+        min-height: 50vh;
+      }
+    }
+  }
+}
+
+//* for desktop :
+@media (min-width: 1100px) {
+  .home {
+    &__section {
+      flex-direction: row;
+
+      &__article {
+        align-items: flex-start;
+        padding: 0rem 4rem 0rem 2rem;
+        min-height: 60vh;
+      }
+      &__aside {
+        min-width: 300px;
+      }
+    }
+  }
+  .picture__container {
+    display: block;
+
+    min-width: 250px;
+    height: 300px;
+    overflow: hidden;
+    //border-radius: 0.4rem;
+  }
+}
+
+//? .stickyPage ------------------------------//
+//? TO PUT OUT SIDE : settings ?? ------------------------------//
+.stickyPage {
+  width: 100%;
+
+  height: auto;
+  min-height: 100vh;
+  position: sticky;
+  top: 0;
+  left: auto;
+  right: auto;
+  opacity: 1;
+  animation: bgAnimate 0.5s ease-in-out;
+}
+
+@keyframes bgAnimate {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#light .stickyPage {
+  //background: #c6c4c4;
+
+  background: linear-gradient(
+    180deg,
+    $color_page_bg_1_light 0%,
+
+    $color_page_bg_2_light 100%
+  );
+}
+
+#dark .stickyPage {
+  //background: #000;
+  //filter: brightness(70%);
+  background: linear-gradient(
+    180deg,
+    $color_page_bg_1_dark 0%,
+
+    $color_page_bg_2_dark 100%
+  );
+}

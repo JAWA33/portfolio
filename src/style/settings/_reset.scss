@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+// ########### Footer always at the end of the page ####### //
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+// ########### Footer always at the end of the page ####### //
+
+textarea {
+  resize: none;
+}
+
+//smooth-scrolling :
+
+html {
+  scroll-behavior: smooth;
+}
+
+strong {
+  font-weight: 500;
+}

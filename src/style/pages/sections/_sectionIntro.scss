@@ -1,0 +1,48 @@
+.sectionIntro {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  //background: #000;
+  & p:last-child {
+    padding: 1rem 2.5rem 1rem 0rem;
+  }
+}
+
+//* for tablet :
+@media (min-width: 510px) {
+  .sectionIntro p:last-child {
+    padding: 1rem 8vw 1rem 0rem;
+  }
+}
+
+//* Dark/Light Mode
+
+#light .sectionIntro__container h1 {
+  color: $textColor_light;
+}
+
+#dark .sectionIntro__container h1 {
+  color: $textColor_dark;
+}
+
+//* ColorSet
+#green .sectionIntro__container h1:before,
+#green .sectionIntro__container h1:after {
+  background: $colorTheme_green;
+}
+#purple .sectionIntro__container h1:before,
+#purple .sectionIntro__container h1:after {
+  background: $colorTheme_purple;
+}
+#blue .sectionIntro__container h1:before,
+#blue .sectionIntro__container h1:after {
+  background: $colorTheme_blue;
+}
+#yellow .sectionIntro__container h1:before,
+#yellow .sectionIntro__container h1:after {
+  background: $colorTheme_yellow;
+}
+#red .sectionIntro__container h1:before,
+#red .sectionIntro__container h1:after {
+  background: $colorTheme_red;
+}

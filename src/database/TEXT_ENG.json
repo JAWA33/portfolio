@@ -1,0 +1,31 @@
+{
+  "header_menu": {
+    "li_1": "Home",
+    "li_2": "About",
+    "li_3": "Services",
+    "li_4": "Projects",
+    "li_5": "Contact"
+  },
+  "header_img": {
+    "alt_1": "Jawa Design Logo"
+  },
+  "home_page": {
+    "title": "Hello, my name is",
+    "name": "Julien Armand",
+    "intro": "I'm a ",
+    "works": {
+      "_1": "Web Developer",
+      "_2": "Web Designer",
+      "_3": "Freelancer",
+      "_4": "Digital Solution Maker"
+    },
+    "presentation": "Engage your audience with a dedicated front-end developer. I specialize in responsive, intuitive websites that captivate users. Let's take your online presence to the next level. Contact me today!",
+    "call_to_action": "More About Me"
+  },
+  "about_page": {
+    "title": "About Me",
+    "text": "I'm Julien Armand and ",
+    "textColor": "Developer Web",
+    "intro": "ENG Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque."
+  }
+}

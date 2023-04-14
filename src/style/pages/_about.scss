@@ -1,0 +1,10 @@
+.aboutConfig {
+  padding-top: 50px;
+}
+
+//* for tablet :
+@media (min-width: 510px) {
+  .aboutConfig {
+    padding-top: 0px;
+  }
+}

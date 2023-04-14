@@ -1,0 +1,96 @@
+.sectionSkills {
+  width: 100%;
+  //max-width: 1000px;
+  //height: 40vh; //! A changer
+  padding: 1rem;
+  margin: 0 auto;
+
+  border: 2px solid rgb(187, 19, 154);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__firstPart {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(30, 0, 255);
+    &--top {
+      width: 100%;
+      height: 5vh; //! A changer
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      border: 1px solid rgb(59, 233, 20);
+    }
+    &--bottom {
+      width: 100%;
+      height: 5vh; //! A changer
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      border: 1px solid rgb(59, 233, 20);
+    }
+  }
+  &__secondPart {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 13, 0);
+  }
+}
+
+//* for desktop :
+@media (min-width: 1100px) {
+  .sectionSkills {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+//! to delete :
+.component {
+  width: 100%;
+  border: 2px dashed rgb(228, 80, 11);
+}
+
+// //* Dark/Light Mode
+
+// #light .sectionIntro__container h1 {
+//   color: $textColor_light;
+// }
+
+// #dark .sectionIntro__container h1 {
+//   color: $textColor_dark;
+// }
+
+// //* ColorSet
+// #green .sectionIntro__container h1:before,
+// #green .sectionIntro__container h1:after {
+//   background: $colorTheme_green;
+// }
+// #purple .sectionIntro__container h1:before,
+// #purple .sectionIntro__container h1:after {
+//   background: $colorTheme_purple;
+// }
+// #blue .sectionIntro__container h1:before,
+// #blue .sectionIntro__container h1:after {
+//   background: $colorTheme_blue;
+// }
+// #yellow .sectionIntro__container h1:before,
+// #yellow .sectionIntro__container h1:after {
+//   background: $colorTheme_yellow;
+// }
+// #red .sectionIntro__container h1:before,
+// #red .sectionIntro__container h1:after {
+//   background: $colorTheme_red;
+// }

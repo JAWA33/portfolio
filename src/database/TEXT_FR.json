@@ -1,0 +1,31 @@
+{
+  "header_menu": {
+    "li_1": "Accueil",
+    "li_2": "A Propos",
+    "li_3": "Services",
+    "li_4": "Projets",
+    "li_5": "Contact"
+  },
+  "header_img": {
+    "alt_1": "Logo de Jawa Design"
+  },
+  "home_page": {
+    "title": "Bonjour, mon nom est ",
+    "name": "Julien Armand",
+    "intro": "Je suis un ",
+    "works": {
+      "_1": "Développeur Web",
+      "_2": "Créateur Graphique",
+      "_3": "Travailleur Indépendant",
+      "_4": "Créateur de Solutions Digitales"
+    },
+    "presentation": "Engagez votre public avec un développeur front-end dédié. Je me spécialise dans les sites Web réactifs et intuitifs qui captivent les utilisateurs. Faisons passer votre présence en ligne au niveau supérieur. Contactez-moi aujourd'hui!",
+    "call_to_action": "A propos de moi"
+  },
+  "about_page": {
+    "title": "A propos de moi",
+    "text": "Je suis Julien Armand et ",
+    "textColor": "Développeur Web",
+    "intro": "FR Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque."
+  }
+}
