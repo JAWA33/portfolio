@@ -5,9 +5,10 @@ import Me_Img_dark from "../img/Me_dark_2.jpg";
 import Me_Img_light from "../img/Me_light.jpg";
 
 import { UseTypeWriter, useTypewriter } from "react-simple-typewriter";
+import Params from "../components/layouts/Params";
 
 const Home = () => {
-  const { language, theme, colorTheme, textToShow } = useContext(ThemeContext);
+  const { theme, textToShow } = useContext(ThemeContext);
 
   const [changedText] = useTypewriter({
     words: [

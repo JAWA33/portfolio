@@ -1,18 +1,22 @@
 import { Outlet } from "react-router-dom";
 import Header from "./Header.jsx";
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 import { useEffect } from "react";
+import { ThemeContext } from "./PageConfig.jsx";
 
-export const ThemeContext = createContext(null);
+//export const ThemeContext = createContext(null);
 
-function Params({
-  theme,
-  colorTheme,
-  language,
-  toggleColorTheme,
-  toggleLanguage,
-  toggleTheme,
-}) {
+const Params = () => {
+  const {
+    language,
+    theme,
+    colorTheme,
+    textToShow,
+    toggleColorTheme,
+    toggleLanguage,
+    toggleTheme,
+  } = useContext(ThemeContext);
+
   return (
     <div className="params">
       <button onClick={toggleTheme}>
@@ -75,6 +79,6 @@ function Params({
       </button>
     </div>
   );
-}
+};
 
 export default Params;

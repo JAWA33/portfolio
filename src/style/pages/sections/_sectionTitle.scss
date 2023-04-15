@@ -25,12 +25,11 @@
     }
 
     & h1::after {
-      bottom: -2px;
+      bottom: calc(-3px + -1.5vw);
       width: 5vw;
     }
     & h1::before {
-      content: "";
-      bottom: 6px;
+      bottom: calc(5px + -1.5vw);
       width: 8vw;
     }
   }

@@ -1,5 +1,6 @@
 .callToAction {
   width: auto;
+  min-width: 150px;
   height: auto;
   font-size: 14px;
   font-weight: 300;
@@ -16,6 +17,10 @@
 
   &:hover > .callToAction__text {
     letter-spacing: 1px;
+  }
+
+  &__text {
+    font-weight: 500;
   }
 }
 
@@ -43,3 +48,64 @@
   background: $colorTheme_green;
   color: $textColor_light;
 }
+
+.otherAction {
+  width: auto;
+  min-width: 100px;
+  height: auto;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.75rem 2rem;
+  border-radius: 1.5rem;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    //padding: 0.75rem 1.6rem;
+    transition: opacity 0.2s ease-out;
+  }
+}
+
+#light .otherAction {
+  border: 1px solid $textColor_light;
+  color: $textColor_light;
+}
+#dark .otherAction {
+  border: 1px solid $textColor_dark;
+  color: $textColor_dark;
+}
+
+#blue .otherAction:hover {
+  border: 1px solid $colorTheme_blue;
+  color: $colorTheme_blue;
+  background: $textColor_dark;
+}
+
+#yellow .otherAction:hover {
+  border: 1px solid $colorTheme_yellow;
+  color: $colorTheme_yellow;
+  background: $textColor_light;
+}
+
+#red .otherAction:hover {
+  border: 1px solid $colorTheme_red;
+  color: $colorTheme_red;
+  background: $textColor_dark;
+}
+
+#purple .otherAction:hover {
+  border: 1px solid $colorTheme_purple;
+  color: $colorTheme_purple;
+  background: $textColor_dark;
+}
+
+#green .otherAction:hover {
+  border: 1px solid $colorTheme_green;
+  color: $colorTheme_green;
+  background: $textColor_light;
+}
+
+// #light #green .otherAction:hover {
+//   background: $textColor_light;
+// }

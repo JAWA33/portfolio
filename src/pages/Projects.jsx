@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SectionTitle from "../components/blocks/SectionTitle";
 
 const Projects = () => {
   return (
@@ -10,7 +11,7 @@ const Projects = () => {
         animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
       >
-        <p className="textColor">PROJECTS</p>
+        <SectionTitle title="Projets" />
       </motion.div>
     </div>
   );

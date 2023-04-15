@@ -12,35 +12,41 @@
     letter-spacing: 0.5px;
   }
   &__title {
-    font-size: calc(16px + 1vw);
+    font-size: clamp(1.2rem, 16px + 1vw, 2.4rem);
     font-weight: bold;
     letter-spacing: 0.5px;
   }
   &__name {
-    font-size: calc(16px + 1vw);
+    font-size: clamp(1.2rem, 16px + 1vw, 2.4rem);
     font-family: "Damion", cursive;
     letter-spacing: 0.5px;
   }
   &__work {
     display: inline-block;
-    font-size: calc(16px + 1vw);
+    font-size: clamp(1.2rem, 16px + 1vw, 2.4rem);
     font-weight: 700;
     letter-spacing: 0.5px;
   }
   &__basicText {
-    font-size: calc(11px + 0.5vw);
+    font-size: clamp(0.9rem, 11px + 0.3vw, 2rem);
     font-weight: 200;
     letter-spacing: 0.3px;
     line-height: calc(1rem + 0.8vw);
   }
+  &__label {
+    font-size: clamp(0.9rem, 11px + 0.3vw, 2rem);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: calc(1rem + 0.8vw);
+  }
   &__pageTitle {
-    font-size: calc(16px + 1vw);
+    font-size: clamp(1.2rem, 16px + 1vw, 2.4rem);
     font-weight: 500;
     letter-spacing: 2px;
-    //line-height: calc(1rem + 0.8vw);
+    line-height: calc(1rem + 0.8vw);
   }
   &__introTitle {
-    font-size: calc(14px + 0.5vw);
+    font-size: clamp(1rem, 14px + 0.5vw, 2rem);
     font-weight: 700;
     letter-spacing: 1.5px;
   }

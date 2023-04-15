@@ -7,7 +7,7 @@ const SectionIntroduction = ({ text, textColor, intro }) => {
         {text}
         <span className="textColor">{textColor}</span>
       </p>
-      <p className="font__basicText">{intro}</p>
+      <p className="font__basicText font__color">{intro}</p>
     </section>
   );
 };

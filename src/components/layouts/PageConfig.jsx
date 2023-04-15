@@ -12,6 +12,8 @@ import Contact from "../../pages/Contact.jsx";
 import TEXT_FR from "../../database/TEXT_FR.json";
 import TEXT_ENG from "../../database/TEXT_ENG.json";
 
+import { AnimatePresence } from "framer-motion";
+
 export const ThemeContext = createContext(null);
 
 function PageConfig() {
@@ -93,13 +95,15 @@ function PageConfig() {
             toggleLanguage={toggleLanguage}
           />
           <main className="home">
-            <Routes>
-              <Route exact path="" element={<Home />} />
-              <Route exact path="about" element={<About />} />
-              <Route exact path="services" element={<Services />} />
-              <Route exact path="projects" element={<Projects />} />
-              <Route exact path="contact" element={<Contact />} />
-            </Routes>
+            <AnimatePresence>
+              <Routes>
+                <Route exact path="" element={<Home />} />
+                <Route exact path="about" element={<About />} />
+                <Route exact path="services" element={<Services />} />
+                <Route exact path="projects" element={<Projects />} />
+                <Route exact path="contact" element={<Contact />} />
+              </Routes>
+            </AnimatePresence>
             {/* <Outlet language={language} colorTheme={colorTheme} theme={theme} /> */}
           </main>
         </div>

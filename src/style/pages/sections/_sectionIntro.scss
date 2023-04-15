@@ -1,17 +1,18 @@
 .sectionIntro {
   width: 100%;
   height: auto;
+  margin-top: 3rem;
   padding: 1rem;
   //background: #000;
   & p:last-child {
-    padding: 1rem 2.5rem 1rem 0rem;
+    padding: 1rem 0 1rem 0rem;
   }
 }
 
 //* for tablet :
-@media (min-width: 510px) {
+@media (min-width: 600px) {
   .sectionIntro p:last-child {
-    padding: 1rem 8vw 1rem 0rem;
+    padding: 1rem 0 1rem 0rem;
   }
 }
 

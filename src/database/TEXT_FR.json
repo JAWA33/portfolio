@@ -27,5 +27,31 @@
     "text": "Je suis Julien Armand et ",
     "textColor": "Développeur Web",
     "intro": "FR Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque."
+  },
+  "skills": {
+    "info": {
+      "birthday": "28 Août 1980",
+      "city": "La Teste de Buch",
+      "country": "France",
+      "email": "myemail@mysite.com",
+      "phone": "04.56.78.65.58",
+      "ets": "Jawa-design",
+      "buttonA": "Contactez Moi",
+      "buttonB": "Télécharger mon CV"
+    },
+    "label": {
+      "birthday": "Né le : ",
+      "city": "Ville : ",
+      "country": "Pays : ",
+      "email": "E-mail : ",
+      "phone": "Tel. : ",
+      "ets": "Ets : "
+    },
+    "percent": {
+      "html/css": 80,
+      "javascript": 75,
+      "react": 70,
+      "node": 50
+    }
   }
 }

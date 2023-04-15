@@ -1,7 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import SectionTitle from "../components/blocks/SectionTitle";
 
 const Contact = () => {
+  // = {textToShow.contact.title}
   return (
     <div className="wrapper">
       <motion.div
@@ -10,7 +12,7 @@ const Contact = () => {
         animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
       >
-        <p className="textColor">Contact</p>
+        <SectionTitle title="Contact" />
       </motion.div>
     </div>
   );
