@@ -1,0 +1,61 @@
+.gridManager {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 4vw;
+  grid-auto-flow: dense;
+  padding: 3rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardIconText {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  border-radius: 0.75rem;
+
+  & svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+  }
+
+  & h2 {
+    margin-bottom: 1rem;
+  }
+  & p {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+#light .cardIconText {
+  background: rgba($color_page_bg_2_light, 0.2);
+}
+
+#dark .cardIconText {
+  background: $color_page_bg_1_dark;
+}
+
+#green .cardIconText svg {
+  fill: $colorTheme_green;
+}
+#blue .cardIconText svg {
+  fill: $colorTheme_blue;
+}
+#red .cardIconText svg {
+  fill: $colorTheme_red;
+}
+#purple .cardIconText svg {
+  fill: $colorTheme_purple;
+}
+#yellow .cardIconText svg {
+  fill: $colorTheme_yellow;
+}

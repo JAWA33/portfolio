@@ -222,7 +222,7 @@
 //* for tablet :
 @media (min-width: 600px) {
   .home {
-    margin-left: 20vw;
+    margin-left: 15vw;
     &__section {
       padding: 5vh 5vw;
       &__article {
@@ -282,7 +282,7 @@
   }
 }
 
-#light .stickyPage {
+#light .home {
   //background: #c6c4c4;
 
   background: linear-gradient(
@@ -293,7 +293,7 @@
   );
 }
 
-#dark .stickyPage {
+#dark .home {
   //background: #000;
   //filter: brightness(70%);
   background: linear-gradient(

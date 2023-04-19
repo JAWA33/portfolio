@@ -1,0 +1,113 @@
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.animatedBackground {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.animatedBackground span {
+  width: 50vmin;
+  height: 50vmin;
+  border-radius: 50vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 29;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.animatedBackground span:nth-child(0) {
+  top: 4%;
+  left: 49%;
+  animation-duration: 161s;
+  animation-delay: -134s;
+  transform-origin: 23vw 8vh;
+  box-shadow: -100vmin 0 12.63409596169384vmin currentColor;
+}
+.animatedBackground span:nth-child(1) {
+  top: 1%;
+  left: 27%;
+  animation-duration: 155s;
+  animation-delay: -134s;
+  transform-origin: 2vw -22vh;
+  box-shadow: 100vmin 0 13.17459704317131vmin currentColor;
+}
+.animatedBackground span:nth-child(2) {
+  top: 86%;
+  left: 34%;
+  animation-duration: 18s;
+  animation-delay: -208s;
+  transform-origin: 24vw -10vh;
+  box-shadow: -100vmin 0 13.430004879255167vmin currentColor;
+}
+
+.animatedBackground span:nth-child(3) {
+  top: 63%;
+  left: 37%;
+  animation-duration: 150s;
+  animation-delay: -124s;
+  transform-origin: 24vw -3vh;
+  box-shadow: -100vmin 0 13.430004879255167vmin currentColor;
+}
+.animatedBackground span:nth-child(4) {
+  top: 6%;
+  left: 54%;
+  animation-duration: 98s;
+  animation-delay: -108s;
+  transform-origin: 4vw -14vh;
+  box-shadow: -100vmin 0 13.430004879255167vmin currentColor;
+}
+
+.animatedBackground span:nth-child(5) {
+  top: 43%;
+  left: 17%;
+  animation-duration: 130s;
+  animation-delay: -104s;
+  transform-origin: 22vw -2vh;
+  box-shadow: 100vmin 0 13.430004879255167vmin currentColor;
+}
+
+#dark #blue .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_blue, 0.2);
+}
+
+#dark #green .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_green, 0.2);
+}
+
+#dark #yellow .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_yellow, 0.2);
+}
+#dark #purple .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_purple, 0.2);
+}
+#dark #red .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_red, 0.2);
+}
+
+#light #blue .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_blue, 0.05);
+}
+
+#light #green .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_green, 0.05);
+}
+
+#light #yellow .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_yellow, 0.05);
+}
+#light #purple .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_purple, 0.05);
+}
+#light #red .animatedBackground span:nth-child(n) {
+  color: rgba($colorTheme_red, 0.05);
+}

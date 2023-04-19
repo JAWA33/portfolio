@@ -53,5 +53,8 @@
       "react": 70,
       "node": 50
     }
+  },
+  "services_page": {
+    "title": "Services"
   }
 }

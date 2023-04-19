@@ -11,15 +11,21 @@ $textColor_dark: #fcf9fc;
 $color_header_bg_1_dark: #534e4e;
 $color_header_bg_2_dark: #1a1717;
 
-$color_page_bg_1_dark: rgb(53, 49, 49);
+$color_page_bg_1_dark: #353131;
 $color_page_bg_2_dark: #221616;
 
 //* colorTheme :
-$colorTheme_red: #f31533;
-$colorTheme_purple: #8206c0;
-$colorTheme_yellow: #f2b55f;
+//! origin : $colorTheme_red: #f31533;
+$colorTheme_red: #ff4848;
+//! origin : $colorTheme_purple: #8206c0;
+$colorTheme_purple: #b428fa;
+//! origin : $colorTheme_yellow: #f2b55f;
+
+$colorTheme_yellow: #f5e263;
 $colorTheme_blue: #10ace6;
-$colorTheme_green: #a0e986;
+//valide : $colorTheme_blue: #18baf4;
+//! origin : $colorTheme_green: #a0e986;
+$colorTheme_green: #6dff65;
 
 #red .textColor {
   color: $colorTheme_red;

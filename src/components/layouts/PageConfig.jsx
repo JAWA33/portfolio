@@ -95,6 +95,14 @@ function PageConfig() {
             toggleLanguage={toggleLanguage}
           />
           <main className="home">
+            <div class="animatedBackground">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <AnimatePresence>
               <Routes>
                 <Route exact path="" element={<Home />} />
