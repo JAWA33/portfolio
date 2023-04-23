@@ -6,9 +6,16 @@ import Me_Img_light from "../img/Me_light.jpg";
 
 import { UseTypeWriter, useTypewriter } from "react-simple-typewriter";
 import Params from "../components/layouts/Params";
+import Lottie from "lottie-react";
+
+import blueDots from "../img/lottie/blue.json";
+import greenDots from "../img/lottie/green.json";
+import yellowDots from "../img/lottie/yellow.json";
+import redDots from "../img/lottie/red.json";
+import purpleDots from "../img/lottie/purple.json";
 
 const Home = () => {
-  const { theme, textToShow } = useContext(ThemeContext);
+  const { theme, textToShow, colorTheme } = useContext(ThemeContext);
 
   const [changedText] = useTypewriter({
     words: [
@@ -18,7 +25,7 @@ const Home = () => {
       textToShow.home_page.works._4,
     ],
     loop: 0,
-    delaySpeed: 3000,
+    delaySpeed: 5000,
   });
 
   return (
@@ -61,11 +68,11 @@ const Home = () => {
             <div className="corner corner__TopLeft"></div>
             {theme === "light" ? (
               <div className="picture__container">
-                <img src={Me_Img_dark} alt={textToShow.home_page.name} />
+                <img src={Me_Img_light} alt={textToShow.home_page.name} />
               </div>
             ) : (
               <div className="picture__container">
-                <img src={Me_Img_light} alt={textToShow.home_page.name} />
+                <img src={Me_Img_dark} alt={textToShow.home_page.name} />
               </div>
             )}
 

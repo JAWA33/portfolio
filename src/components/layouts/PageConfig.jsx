@@ -1,6 +1,6 @@
-import { Outlet, Route, Routes } from "react-router-dom";
+import { Outlet, Route, Routes, useLocation } from "react-router-dom";
 import Header from "./Header.jsx";
-import { createContext, useState } from "react";
+import { createContext, useState, useRef } from "react";
 import { useEffect } from "react";
 import Params from "../layouts/Params.jsx";
 import Home from "../../pages/Home.jsx";
@@ -13,6 +13,14 @@ import TEXT_FR from "../../database/TEXT_FR.json";
 import TEXT_ENG from "../../database/TEXT_ENG.json";
 
 import { AnimatePresence } from "framer-motion";
+import DotsAnimation from "../blocks/dotsAnimation.jsx";
+
+// import Lottie from "lottie-react";
+// import blueDots from "../../img/lottie/blue.json";
+// import greenDots from "../../img/lottie/green.json";
+// import yellowDots from "../../img/lottie/yellow.json";
+// import redDots from "../../img/lottie/red.json";
+// import purpleDots from "../../img/lottie/purple.json";
 
 export const ThemeContext = createContext(null);
 
@@ -20,12 +28,23 @@ function PageConfig() {
   const savedTheme = localStorage.getItem("theme");
   const savedLanguage = localStorage.getItem("lang");
   const savedColor = localStorage.getItem("color");
+  const text_FR = TEXT_FR;
+  const text_ENG = TEXT_ENG;
 
+  const numberOfPoints = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+  const [textToShow, setTextToShow] = useState(text_FR);
   const [theme, setTheme] = useState(savedTheme || "dark");
   const [language, setLanguage] = useState(savedLanguage || "ENG");
   const [colorTheme, setColorTheme] = useState(savedColor || "green");
 
   const [logoURL, setLogoURL] = useState("");
+
+  const container = useRef(null);
+
+  const location = useLocation();
+  const actualPage = location.pathname;
+  console.log("actualPage", actualPage);
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
@@ -55,11 +74,6 @@ function PageConfig() {
     localStorage.setItem("lang", language);
   }, [language]);
 
-  const text_FR = TEXT_FR;
-  const text_ENG = TEXT_ENG;
-
-  const [textToShow, setTextToShow] = useState(text_FR);
-
   useEffect(() => {
     if (language === "FR") {
       setTextToShow(text_FR);
@@ -67,6 +81,14 @@ function PageConfig() {
       setTextToShow(text_ENG);
     }
   }, [language]);
+
+  const TestDots = () => {
+    <div className="rotateDots__container">
+      {numberOfPoints.map((dot, index) => {
+        return <div key={index} className="dots"></div>;
+      })}
+    </div>;
+  };
 
   return (
     <ThemeContext.Provider
@@ -85,7 +107,8 @@ function PageConfig() {
           {/* 
           //! modifier le passage des variables avec le useContext(ThemeContext (Voir Home)) 
           */}
-          <Header language={language} theme={colorTheme} />
+          <Header />
+
           <Params
             language={language}
             themeColor={colorTheme}
@@ -95,7 +118,7 @@ function PageConfig() {
             toggleLanguage={toggleLanguage}
           />
           <main className="home">
-            <div class="animatedBackground">
+            <div className="animatedBackground">
               <span></span>
               <span></span>
               <span></span>
@@ -103,7 +126,225 @@ function PageConfig() {
               <span></span>
               <span></span>
             </div>
-            <AnimatePresence>
+            {actualPage === "/" ? (
+              <div className="animatedBackground">
+                <div className="blockDots">
+                  <div className="rotateDots">
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+
+                    <div className="rotateDots__container">
+                      {numberOfPoints.map((dot, index) => {
+                        return <div key={index} className="dots"></div>;
+                      })}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
+
+            {/** //!!!  Ajout d'options sur animate presence */}
+            <AnimatePresence onExitComplete={() => null}>
               <Routes>
                 <Route exact path="" element={<Home />} />
                 <Route exact path="about" element={<About />} />

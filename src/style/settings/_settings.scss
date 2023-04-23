@@ -32,3 +32,223 @@
 #purple .essai {
   background: $colorTheme_purple;
 }
+
+.hiddenOutsideBG {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+// .lottie {
+//   position: absolute;
+//   translate: 650px;
+//   rotate: 120deg;
+//   opacity: 0;
+
+//   animation: opacityDots 10s linear infinite alternate;
+// }
+
+// @keyframes opacityDots {
+//   0% {
+//     opacity: 1;
+//   }
+
+//   20% {
+//     opacity: 1;
+//   }
+//   40% {
+//     opacity: 1;
+//   }
+//   60% {
+//     opacity: 1;
+//   }
+//   80% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+
+// @media (max-width: 1100px) {
+//   .lottie {
+//     position: absolute;
+
+//     translate: 250px 150px;
+//     rotate: 120deg;
+//     opacity: 0.5;
+//   }
+// }
+
+// @media (max-width: 900px) {
+//   .lottie {
+//     position: absolute;
+
+//     translate: 0px 140px;
+//     scale: 1;
+//     rotate: 0deg;
+//     opacity: 0.5;
+//   }
+// }
+
+//! __________________________________________________________
+
+//test à déplacer si ok :
+:root {
+  --_sizeDots: 6px;
+  --_circleRadius: 380px;
+  --_delayDots: 0.7s;
+  --_spaceBetween: 8px;
+}
+
+.blockDots {
+  position: relative;
+  width: auto;
+  height: auto;
+  scale: 1 0.6;
+  rotate: 115deg;
+  transform: translateX(0vh) translateY(-60vh);
+}
+
+#light .blockDots {
+  opacity: 0.4;
+}
+#dark .blockDots {
+  opacity: 0.8;
+}
+
+@media (min-width: 600px) {
+  .blockDots {
+    scale: 1 0.7;
+    transform: translateX(-10vh) translateY(-70vh);
+  }
+}
+
+@media (min-width: 1100px) {
+  .blockDots {
+    scale: 1.1;
+    transform: translateX(-20vh) translateY(-60vh);
+  }
+}
+
+.rotateDots {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    padding: 0 var(--_spaceBetween);
+  }
+}
+
+.dots {
+  position: relative;
+  width: var(--_sizeDots);
+  height: var(--_sizeDots);
+
+  border-radius: 50%;
+
+  //!!! TO START :
+  animation: rotateDots 15s infinite ease-in-out;
+
+  //! demande trop de ressources ... Dommage :(
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 10px;
+  //   left: 15px;
+
+  //   width: calc(var(--_sizeDots) / 2);
+  //   height: calc(var(--_sizeDots) / 2);
+
+  //   transform: translateZ(5px);
+  //   background: rgb(252, 144, 144);
+  // }
+  //!
+}
+
+#light {
+  & #green .dots {
+    box-shadow: 0 0 1px 0.1em $colorTheme_green;
+  }
+  & #blue .dots {
+    box-shadow: 0 0 1px 0.1em $colorTheme_blue;
+  }
+  & #yellow .dots {
+    box-shadow: 0 0 1px 0.1em $colorTheme_yellow;
+  }
+  & #red .dots {
+    box-shadow: 0 0 1px 0.1em $colorTheme_red;
+  }
+  & #purple .dots {
+    box-shadow: 0 0 1px 0.1em $colorTheme_purple;
+  }
+}
+
+#dark {
+  & #green .dots {
+    box-shadow: 0 0 4em 0.3em $colorTheme_green;
+  }
+  & #blue .dots {
+    box-shadow: 0 0 4em 0.3em $colorTheme_blue;
+  }
+  & #yellow .dots {
+    box-shadow: 0 0 4em 0.3em $colorTheme_yellow;
+  }
+  & #red .dots {
+    box-shadow: 0 0 4em 0.3em $colorTheme_red;
+  }
+  & #purple .dots {
+    box-shadow: 0 0 4em 0.3em $colorTheme_purple;
+  }
+}
+
+#red .dots {
+  background: $colorTheme_red;
+}
+#yellow .dots {
+  background: $colorTheme_yellow;
+}
+#purple .dots {
+  background: $colorTheme_purple;
+}
+#blue .dots {
+  background: $colorTheme_blue;
+}
+#green .dots {
+  background: $colorTheme_green;
+}
+
+@for $i from 1 through 50 {
+  @for $j from 1 through 50 {
+    .rotateDots__container:nth-child(#{$i}) .dots:nth-child(#{$j}) {
+      animation-delay: calc(
+        (#{$j} * var(--_delayDots)) + (#{$i} * var(--_delayDots) / 2)
+      );
+    }
+  }
+}
+
+@for $k from 1 through 50 {
+  .dots:nth-child(#{$k}) {
+    opacity: calc(7% * #{$k});
+  }
+}
+
+@keyframes rotateDots {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  50% {
+    transform: translateY(var(--_circleRadius)) translateX(50px);
+  }
+
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}

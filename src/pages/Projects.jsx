@@ -3,8 +3,27 @@ import { motion } from "framer-motion";
 import SectionTitle from "../components/blocks/SectionTitle";
 import SectionAccordion from "../components/blocks/SectionAccordion";
 import AccordionBlock from "../components/blocks/AccordionBlock";
+import DotsAnimation from "../components/blocks/dotsAnimation";
 
 const Projects = () => {
+  const numberOfPoints = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+
+  // const AnimationLign = () => {
+  //   numberOfPoints.map((dot) => {
+  //     return <div className="dots"></div>;
+  //   });
+  // };
+
+  const AnimationLign = () => {
+    let i;
+    const dotsToShow = () => {
+      for (i = 1; i <= numberOfPoints.length; i++) {
+        console.log("TEST AnimationLign", i);
+        console.log("TEST numberOfPoints", numberOfPoints.length);
+        return <div className="dots"></div>;
+      }
+    };
+  };
   return (
     <div className="wrapper">
       <motion.div
@@ -15,6 +34,183 @@ const Projects = () => {
       >
         <SectionTitle title="Projets" />
         <SectionAccordion />
+        <div className="blockDots">
+          <div className="rotateDots rotateDots--top">
+            <div className="rotateDots__container">{AnimationLign()}</div>
+
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+          </div>
+          <div className="rotateDots">
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+              <div className="rotateDots__container">{AnimationLign()}</div>
+              <div className="rotateDots__container">{AnimationLign()}</div>
+              <div className="rotateDots__container">{AnimationLign()}</div>
+              <div className="rotateDots__container">{AnimationLign()}</div>
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+            <div className="rotateDots__container">
+              <div className="rotateDots__container">{AnimationLign()}</div>
+            </div>
+          </div>
+        </div>
       </motion.div>
     </div>
   );

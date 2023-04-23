@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import TEXT_ENG from "../../database/TEXT_ENG.json";
 import TEXT_FR from "../../database/TEXT_FR.json";
 import Logo_purple from "../../img/LogoJAWA_purple.png";
@@ -8,34 +8,34 @@ import Logo_blue from "../../img/LogoJAWA_blue.png";
 import Logo_yellow from "../../img/LogoJAWA_yellow.png";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+import { ThemeContext } from "./PageConfig";
 
-const Header = ({ language, theme }) => {
+const Header = () => {
+  const { language, theme, colorTheme, textToShow } = useContext(ThemeContext);
+
   let TEXT_TO_SHOW = language === "FR" ? TEXT_FR : TEXT_ENG;
-
-  const [jawaLogo, setJawaLogo] = useState(Logo_red);
 
   const location = useLocation();
   const actualPage = location.pathname;
 
-  useEffect(() => {
-    console.log("ActualPage", actualPage);
-    if (theme === "red") {
-      setJawaLogo(Logo_red);
-    } else if (theme === "green") {
-      setJawaLogo(Logo_green);
-    } else if (theme === "yellow") {
-      setJawaLogo(Logo_yellow);
-    } else if (theme === "purple") {
-      setJawaLogo(Logo_purple);
-    } else if (theme === "blue") {
-      setJawaLogo(Logo_blue);
-    }
-  }, [theme]);
-
   return (
     <header className="menu">
       <div className="menu__logo">
-        <img src={jawaLogo} alt={TEXT_TO_SHOW.header_img.alt_1} />
+        {colorTheme === "green" ? (
+          <img src={Logo_green} alt={TEXT_TO_SHOW.header_img.alt_1} />
+        ) : null}
+        {colorTheme === "blue" ? (
+          <img src={Logo_blue} alt={TEXT_TO_SHOW.header_img.alt_1} />
+        ) : null}
+        {colorTheme === "yellow" ? (
+          <img src={Logo_yellow} alt={TEXT_TO_SHOW.header_img.alt_1} />
+        ) : null}
+        {colorTheme === "red" ? (
+          <img src={Logo_red} alt={TEXT_TO_SHOW.header_img.alt_1} />
+        ) : null}
+        {colorTheme === "purple" ? (
+          <img src={Logo_purple} alt={TEXT_TO_SHOW.header_img.alt_1} />
+        ) : null}
       </div>
 
       <nav className="menu__navigation">
