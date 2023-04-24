@@ -1,0 +1,110 @@
+.rollingIcon {
+  --_radiusCircle: 128px;
+  --_radiusIcon: 60px;
+
+  position: relative;
+  width: var(--_radiusCircle);
+  width: var(--_radiusCircle);
+  height: var(--_radiusCircle);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover > .rollingIcon__icon {
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+  &:hover > .rollingIcon__text {
+    cursor: pointer;
+    animation-play-state: paused;
+  }
+
+  &__icon {
+    position: absolute;
+    width: var(--_radiusIcon);
+    height: var(--_radiusIcon);
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 1rem;
+
+    animation: rotateIcon 15s linear infinite;
+  }
+
+  &__text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 30s linear infinite;
+
+    &__letter {
+      position: absolute;
+
+      width: 0.5rem;
+      left: 50%;
+      transform-origin: 0 64px;
+    }
+  }
+}
+
+#green .rollingIcon__icon {
+  fill: $colorTheme_green;
+  stroke: $colorTheme_green;
+}
+#blue .rollingIcon__icon {
+  fill: $colorTheme_blue;
+  stroke: $colorTheme_blue;
+}
+#purple .rollingIcon__icon {
+  fill: $colorTheme_purple;
+  stroke: $colorTheme_purple;
+}
+#red .rollingIcon__icon {
+  fill: $colorTheme_red;
+  stroke: $colorTheme_red;
+}
+#yellow .rollingIcon__icon {
+  fill: $colorTheme_yellow;
+  stroke: $colorTheme_yellow;
+}
+
+#green .rollingIcon__text__letter {
+  color: rgba($colorTheme_green, 0.8);
+}
+#blue .rollingIcon__text__letter {
+  color: rgba($colorTheme_blue, 0.8);
+}
+#purple .rollingIcon__text__letter {
+  color: rgba($colorTheme_purple, 0.8);
+}
+#red .rollingIcon__text__letter {
+  color: rgba($colorTheme_red, 0.8);
+}
+#yellow .rollingIcon__text__letter {
+  color: rgba($colorTheme_yellow, 0.8);
+}
+
+@for $k from 1 through 24 {
+  .rollingIcon__text__letter:nth-child(#{$k}) {
+    rotate: calc(#{$k} * (360deg / 24));
+    //margin: 0.5px;
+  }
+}
+
+@keyframes rotateText {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

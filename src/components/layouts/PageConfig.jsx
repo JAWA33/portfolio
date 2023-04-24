@@ -353,6 +353,7 @@ function PageConfig() {
                 <Route exact path="contact" element={<Contact />} />
               </Routes>
             </AnimatePresence>
+
             {/* <Outlet language={language} colorTheme={colorTheme} theme={theme} /> */}
           </main>
         </div>
