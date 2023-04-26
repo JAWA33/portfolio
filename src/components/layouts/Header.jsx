@@ -13,8 +13,6 @@ import { ThemeContext } from "./PageConfig";
 const Header = () => {
   const { language, theme, colorTheme, textToShow } = useContext(ThemeContext);
 
-  let TEXT_TO_SHOW = language === "FR" ? TEXT_FR : TEXT_ENG;
-
   const location = useLocation();
   const actualPage = location.pathname;
 
@@ -22,19 +20,19 @@ const Header = () => {
     <header className="menu">
       <div className="menu__logo">
         {colorTheme === "green" ? (
-          <img src={Logo_green} alt={TEXT_TO_SHOW.header_img.alt_1} />
+          <img src={Logo_green} alt={textToShow.header_img.alt_1} />
         ) : null}
         {colorTheme === "blue" ? (
-          <img src={Logo_blue} alt={TEXT_TO_SHOW.header_img.alt_1} />
+          <img src={Logo_blue} alt={textToShow.header_img.alt_1} />
         ) : null}
         {colorTheme === "yellow" ? (
-          <img src={Logo_yellow} alt={TEXT_TO_SHOW.header_img.alt_1} />
+          <img src={Logo_yellow} alt={textToShow.header_img.alt_1} />
         ) : null}
         {colorTheme === "red" ? (
-          <img src={Logo_red} alt={TEXT_TO_SHOW.header_img.alt_1} />
+          <img src={Logo_red} alt={textToShow.header_img.alt_1} />
         ) : null}
         {colorTheme === "purple" ? (
-          <img src={Logo_purple} alt={TEXT_TO_SHOW.header_img.alt_1} />
+          <img src={Logo_purple} alt={textToShow.header_img.alt_1} />
         ) : null}
       </div>
 
@@ -68,7 +66,7 @@ const Header = () => {
                   theme
                 }
               >
-                {TEXT_TO_SHOW.header_menu.li_1}
+                {textToShow.header_menu.li_1}
               </p>
             </li>
           </Link>
@@ -100,7 +98,7 @@ const Header = () => {
                   theme
                 }
               >
-                {TEXT_TO_SHOW.header_menu.li_2}
+                {textToShow.header_menu.li_2}
               </p>
             </li>{" "}
           </Link>
@@ -133,7 +131,7 @@ const Header = () => {
                   theme
                 }
               >
-                {TEXT_TO_SHOW.header_menu.li_3}
+                {textToShow.header_menu.li_3}
               </p>
             </li>{" "}
           </Link>{" "}
@@ -165,7 +163,7 @@ const Header = () => {
                   theme
                 }
               >
-                {TEXT_TO_SHOW.header_menu.li_4}
+                {textToShow.header_menu.li_4}
               </p>
             </li>{" "}
           </Link>
@@ -197,11 +195,28 @@ const Header = () => {
                   theme
                 }
               >
-                {TEXT_TO_SHOW.header_menu.li_5}
+                {textToShow.header_menu.li_5}
               </p>
             </li>{" "}
           </Link>
         </ul>
+
+        <div className="menu__navigation">
+          <button className="newHeader__btn">
+            <span className="newHeader__btn__span">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 0 24 24"
+                width="24px"
+                fill="#000000"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+              </svg>
+            </span>
+          </button>
+        </div>
       </nav>
     </header>
   );

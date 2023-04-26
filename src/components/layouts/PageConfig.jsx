@@ -14,6 +14,7 @@ import TEXT_ENG from "../../database/TEXT_ENG.json";
 
 import { AnimatePresence } from "framer-motion";
 import DotsAnimation from "../blocks/dotsAnimation.jsx";
+import HeaderMorph from "./HeaderMorph.jsx";
 
 // import Lottie from "lottie-react";
 // import blueDots from "../../img/lottie/blue.json";
@@ -107,7 +108,8 @@ function PageConfig() {
           {/* 
           //! modifier le passage des variables avec le useContext(ThemeContext (Voir Home)) 
           */}
-          <Header />
+          {/* <Header /> */}
+          <HeaderMorph />
 
           <Params
             language={language}

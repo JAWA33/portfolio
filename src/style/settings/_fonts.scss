@@ -6,6 +6,11 @@
 }
 
 .font {
+  &__newHeader {
+    font-size: clamp(0.9rem, 11px + 0.3vw, 2rem);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+  }
   &__menu {
     font-size: 18px;
     font-weight: 400;
