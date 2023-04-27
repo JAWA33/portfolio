@@ -1,0 +1,249 @@
+.boxPosition--open .boxSettings {
+  width: 450px;
+  padding-right: 90px;
+  transition: width 1s ease-in-out;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    &__element {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      //animation: openButton 2.5s forwards alternate;
+
+      &:nth-child(1) {
+        animation: openButton 2.3s forwards alternate;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+        animation: openButton 2s 0.3s forwards alternate;
+      }
+      &:nth-child(3) {
+        opacity: 0;
+        animation: openButton 1.4s 0.6s forwards alternate;
+      }
+
+      &--color {
+        width: 50%;
+      }
+    }
+  }
+  &::before,
+  &::after {
+    content: none;
+  }
+}
+
+.boxSettings {
+  //! reduce to include in design :
+  scale: 0.8;
+  width: 60px;
+  height: 60px;
+
+  position: relative;
+  border-radius: 30px;
+
+  transform: translateX(-50px);
+  transition: width 0.5s ease-in-out;
+
+  &__container {
+    display: none;
+  }
+  &__rotatingText {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background: rgba($textColor_dark, 0.7);
+    border-radius: 50%;
+    filter: blur(0.6px);
+  }
+  &::before {
+    top: 12px;
+    left: 8px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: waterMove 12s 0.5s linear infinite,
+      shineRotate 5s ease-in-out infinite alternate;
+  }
+}
+
+#light .boxSettings {
+  border: 0.5px #d6d3d3 solid;
+  background: linear-gradient(
+    145deg,
+    rgba(200, 194, 194, 0.7),
+    rgba(185, 188, 192, 0.3)
+  );
+  box-shadow: inset 2px 2px 2px #e0dae4, inset 2px 2px 3px #f3eeee;
+}
+
+#dark .boxSettings {
+  border: 0.5px #121111 solid;
+  background: linear-gradient(
+    145deg,
+    rgba(200, 194, 194, 0.1),
+    rgba(185, 188, 192, 0)
+  );
+  box-shadow: inset 2px 2px 2px #d4cfd8, inset 2px 2px 3px #e1dcdc;
+}
+
+.boxPosition--close .boxSettings {
+  animation: waterMove 7s linear infinite;
+}
+.boxPosition--open .boxSettings {
+  animation: waterToFull 3s ease-out forwards,
+    waterFullMove 7s 3s linear infinite alternate;
+}
+
+@keyframes waterMove {
+  0% {
+    border-radius: 52% 48% 51% 49% / 47% 49% 51% 53%;
+  }
+  20% {
+    border-radius: 37% 63% 40% 60% / 66% 28% 72% 34%;
+  }
+  40% {
+    border-radius: 26% 74% 27% 73% / 50% 63% 37% 50%;
+  }
+  60% {
+    border-radius: 71% 29% 45% 55% / 50% 38% 62% 50%;
+  }
+  80% {
+    border-radius: 37% 63% 24% 76% / 69% 38% 62% 31%;
+  }
+  100% {
+    border-radius: 52% 48% 51% 49% / 47% 49% 51% 53%;
+  }
+}
+
+@keyframes waterFullMove {
+  0% {
+    border-radius: inherit;
+    border-radius: 30px 30px 25px 25px;
+  }
+  20% {
+    border-radius: 39% 61% 30% 70% / 66% 28% 72% 34%;
+    border-radius: 25px 25px 30px 30px;
+  }
+  40% {
+    border-radius: 26% 74% 27% 73% / 50% 63% 37% 50%;
+    border-radius: 30px 30px 25px 25px;
+  }
+  60% {
+    border-radius: 71% 29% 45% 55% / 50% 38% 62% 50%;
+    border-radius: 25px 25px 30px 30px;
+  }
+  80% {
+    border-radius: 37% 63% 24% 76% / 69% 38% 62% 31%;
+    border-radius: 30px 30px 25px 25px;
+  }
+  100% {
+    border-radius: 52% 48% 51% 49% / 47% 49% 51% 53%;
+    border-radius: 25px 25px 30px 30px;
+  }
+}
+
+@keyframes waterToFull {
+  0% {
+    border-radius: 37% 63% 24% 76% / 69% 38% 62% 31%;
+  }
+  30% {
+    border-radius: 26% 74% 27% 73% / 50% 63% 37% 50%;
+  }
+  60% {
+    border-radius: 58% 6% 0% 100% / 100% 57% 13% 0%;
+    border-radius: 12px 8px 30px 30px;
+  }
+  80% {
+    border-radius: 22px 18px 30px 30px;
+  }
+
+  100% {
+    border-radius: 0% 100% 0% 100% / 100% 0% 100% 0%;
+    border-radius: 30px;
+  }
+}
+
+@keyframes shineRotate {
+  0% {
+    scale: 0.9;
+    translate: 0 0 0;
+    opacity: 0.4;
+  }
+  20% {
+    scale: 0.7;
+    translate: 0 2px 0;
+    opacity: 0.3;
+  }
+  40% {
+    scale: 0.85;
+    translate: 0 1px 0;
+    opacity: 0.2;
+  }
+  60% {
+    scale: 0.75;
+    translate: 1px 2px 0;
+    opacity: 0.3;
+  }
+  80% {
+    scale: 0.65;
+    translate: 1px 0px 0;
+  }
+  100% {
+    scale: 0.9;
+    translate: 0 0 0;
+    opacity: 0.4;
+  }
+}
+
+@keyframes openButton {
+  0% {
+    opacity: 0;
+    transform: scaleX(0) scaleY(0);
+  }
+  20% {
+    opacity: 0;
+    // transform: scaleX(0) scaleY(0);
+  }
+  25% {
+    opacity: 1;
+    // transform: scaleX(0.5) scaleY(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+// @keyframes closeButton {
+//   0% {
+//     opacity: 1;
+//     transform: scaleX(1) scaleY(1);
+//   }
+//   60% {
+//     opacity: 1;
+//     transform: scaleX(1) scaleY(1);
+//   }
+//   80% {
+//     opacity: 0;
+//     transform: scaleX(0.5) scaleY(0.1);
+//   }
+//   100% {
+//     opacity: 0;
+//     transform: scaleX(0) scaleY(0);
+//   }
+// }

@@ -3,19 +3,27 @@
 }
 .params {
   position: fixed;
-  width: 50%;
-  height: 350px;
-  bottom: 0px;
+  width: auto;
+  height: auto;
+  top: 90px;
   right: 0px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-end;
   background: transparent;
-  border: 1px solid red;
+  //border: 1px solid red;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
-  z-index: 99;
+  z-index: 9;
+  transform-origin: 100px 0px;
+
+  transform: translateY(0px);
+  animation: moveParams 10s ease-in-out infinite alternate;
+
+  &:hover {
+    animation-play-state: paused;
+  }
 }
 
 #red .essai {
@@ -104,6 +112,7 @@
 }
 
 .blockDots {
+  //!!! to start Dot :: delete display: none :
   display: none;
   position: relative;
   width: auto;
@@ -252,5 +261,14 @@
 
   100% {
     transform: translateY(0px) translateX(0px);
+  }
+}
+
+@keyframes moveParams {
+  0% {
+    transform: translateY(0vh);
+  }
+  100% {
+    transform: translateY(10vh);
   }
 }
