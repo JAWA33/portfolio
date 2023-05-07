@@ -18,7 +18,7 @@ const Experience = ({ year, title, text }) => {
           </svg>
           <span className="experience__time--year font__label">{year}</span>
         </div>
-        <h3 className="experience__title font__introTitle font_color">
+        <h3 className="experience__title font__BigText__capital font__BigText__capital--E font_color">
           {title}
         </h3>
         <p className="experience__text font__basicText font__color">{text}</p>

@@ -1,13 +1,10 @@
 .home {
   width: auto;
   overflow: hidden;
-  //max-width: 800px;
-  //height: 50vh;
 
   &__section {
     width: 100%;
-    height: 100svh;
-    padding: 50px 7vw;
+    padding: 0px 4vw;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -22,17 +19,27 @@
       justify-content: space-evenly;
       align-items: center;
       text-align: justify;
+      margin-top: 2rem;
+
+      & button {
+        margin: 5rem auto 2rem auto;
+      }
     }
 
     &__aside {
       width: auto;
       min-width: 150px;
       height: auto;
-      padding: 15rem 2rem 2rem 2rem;
+      padding: 0rem 2rem 2rem 2rem;
       position: relative;
-      //margin-top: 2rem;
+      margin: 5rem 0 0 0;
+      scale: 0.9;
     }
   }
+}
+
+.article {
+  margin-top: 2.5rem;
 }
 
 .corner {
@@ -104,7 +111,6 @@
 
 .picture__container {
   position: relative;
-  display: block;
   width: 150px;
   min-width: 200px;
   height: 230px;
@@ -113,8 +119,12 @@
 
   & img {
     object-fit: cover;
-    transform: translateY(-20px);
+    transform: translateY(-35px);
   }
+}
+
+#light .picture__container img {
+  transform: translateY(-20px);
 }
 
 #green .picture__container {
@@ -139,29 +149,29 @@
 
   flex-direction: row;
   align-items: baseline;
-
+  margin-top: 3rem;
   //height: 40px;
 
   &__text {
     width: 100%;
+
     margin-left: 0.5rem;
     white-space: nowrap;
     overflow: hidden;
-    animation: cursor 0.3s step-end infinite alternate;
-  }
-}
 
-#light .writingAnimation__text {
-  border-right: 2px solid $textColor_light;
-  padding-right: 0.15rem;
-}
-#dark .writingAnimation__text {
-  border-right: 2px solid $textColor_dark;
+    // animation: cursor 0.3s step-end infinite alternate;
+  }
 }
 
 @keyframes cursor {
   50% {
     border-color: transparent;
+  }
+}
+
+@media (max-width: 400px) {
+  .home__section__aside {
+    scale: 0.7;
   }
 }
 
@@ -183,14 +193,23 @@
   .home {
     &__section {
       flex-direction: row;
-
+      align-items: flex-start;
+      margin-top: 3rem;
       &__article {
         align-items: flex-start;
-        padding: 0rem 4rem 0rem 2rem;
+        padding: 0rem 8rem 0rem 2rem;
         min-height: 60vh;
+
+        & button {
+          margin: 3rem auto 2rem auto;
+        }
       }
       &__aside {
         min-width: 300px;
+        scale: 1;
+        //padding: 0rem 2rem 2rem 2rem;
+        margin-right: -4vw;
+        margin-top: 4rem;
       }
     }
   }

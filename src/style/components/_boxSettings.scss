@@ -1,7 +1,8 @@
 .boxPosition--open .boxSettings {
   width: 450px;
   padding-right: 90px;
-  transition: width 1s ease-in-out;
+  //transform: translateX(150px);
+  transition: width 1.3s linear;
 
   &__container {
     width: 100%;
@@ -19,15 +20,15 @@
       //animation: openButton 2.5s forwards alternate;
 
       &:nth-child(1) {
-        animation: openButton 2.3s forwards alternate;
+        animation: openButton 1.8s -0.2s forwards alternate;
       }
       &:nth-child(2) {
         opacity: 0;
-        animation: openButton 2s 0.3s forwards alternate;
+        animation: openButton 1.8s 1s forwards alternate;
       }
       &:nth-child(3) {
         opacity: 0;
-        animation: openButton 1.4s 0.6s forwards alternate;
+        animation: openButton 1.8s 1s forwards alternate;
       }
 
       &--color {
@@ -46,20 +47,22 @@
   scale: 0.8;
   width: 60px;
   height: 60px;
-
+  //margin-right: 1rem;
   position: relative;
   border-radius: 30px;
 
-  transform: translateX(-50px);
+  //transform: translateX(30px);
   transition: width 0.5s ease-in-out;
 
   &__container {
+    //border: 2px solid green;
     display: none;
   }
   &__rotatingText {
     position: absolute;
     top: -35px;
     right: -35px;
+    //border: 2px solid rgb(6, 0, 128);
   }
   &::before,
   &::after {
@@ -105,8 +108,8 @@
   animation: waterMove 7s linear infinite;
 }
 .boxPosition--open .boxSettings {
-  animation: waterToFull 3s ease-out forwards,
-    waterFullMove 7s 3s linear infinite alternate;
+  animation: waterToFull 1s ease-out forwards;
+  //waterFullMove 20s 1s linear infinite alternate;
 }
 
 @keyframes waterMove {
@@ -160,14 +163,15 @@
 @keyframes waterToFull {
   0% {
     border-radius: 37% 63% 24% 76% / 69% 38% 62% 31%;
+    //border-radius: 30px;
   }
   30% {
     border-radius: 26% 74% 27% 73% / 50% 63% 37% 50%;
   }
-  60% {
-    border-radius: 58% 6% 0% 100% / 100% 57% 13% 0%;
-    border-radius: 12px 8px 30px 30px;
-  }
+  // 60% {
+  //   border-radius: 58% 6% 0% 100% / 100% 57% 13% 0%;
+  //   border-radius: 12px 8px 30px 30px;
+  // }
   80% {
     border-radius: 22px 18px 30px 30px;
   }
@@ -180,32 +184,32 @@
 
 @keyframes shineRotate {
   0% {
-    scale: 0.9;
     translate: 0 0 0;
+    scale: 0.9;
     opacity: 0.4;
   }
   20% {
-    scale: 0.7;
     translate: 0 2px 0;
+    scale: 0.7;
     opacity: 0.3;
   }
   40% {
-    scale: 0.85;
     translate: 0 1px 0;
+    scale: 0.85;
     opacity: 0.2;
   }
   60% {
-    scale: 0.75;
     translate: 1px 2px 0;
+    scale: 0.75;
     opacity: 0.3;
   }
   80% {
-    scale: 0.65;
     translate: 1px 0px 0;
+    scale: 0.65;
   }
   100% {
-    scale: 0.9;
     translate: 0 0 0;
+    scale: 0.9;
     opacity: 0.4;
   }
 }
@@ -215,11 +219,11 @@
     opacity: 0;
     transform: scaleX(0) scaleY(0);
   }
-  20% {
+  30% {
     opacity: 0;
     // transform: scaleX(0) scaleY(0);
   }
-  25% {
+  40% {
     opacity: 1;
     // transform: scaleX(0.5) scaleY(0.1);
   }
@@ -229,21 +233,20 @@
   }
 }
 
-// @keyframes closeButton {
-//   0% {
-//     opacity: 1;
-//     transform: scaleX(1) scaleY(1);
-//   }
-//   60% {
-//     opacity: 1;
-//     transform: scaleX(1) scaleY(1);
-//   }
-//   80% {
-//     opacity: 0;
-//     transform: scaleX(0.5) scaleY(0.1);
-//   }
-//   100% {
-//     opacity: 0;
-//     transform: scaleX(0) scaleY(0);
-//   }
-// }
+//* for tablet :
+@media (max-width: 600px) {
+  .boxSettings {
+    scale: 0.8;
+  }
+  .boxPosition--open .boxSettings {
+    transform: translateX(30px);
+  }
+}
+@media (max-width: 400px) {
+  .boxSettings {
+    scale: 0.5;
+  }
+  .boxPosition--open .boxSettings {
+    transform: translateX(30px);
+  }
+}

@@ -128,7 +128,8 @@ function PageConfig() {
               <span></span>
               <span></span>
             </div>
-            {actualPage === "/" ? (
+            {/* //! change to : actualPage === "/" */}
+            {false ? (
               <div className="animatedBackground">
                 <div className="blockDots">
                   <div className="rotateDots">
@@ -344,6 +345,17 @@ function PageConfig() {
             ) : (
               ""
             )}
+            {actualPage === "/contact" ? (
+              <ul className="cubeBackground">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            ) : (
+              ""
+            )}
 
             {/** //!!!  Ajout d'options sur animate presence */}
             <AnimatePresence onExitComplete={() => null}>
@@ -355,8 +367,6 @@ function PageConfig() {
                 <Route exact path="contact" element={<Contact />} />
               </Routes>
             </AnimatePresence>
-
-            {/* <Outlet language={language} colorTheme={colorTheme} theme={theme} /> */}
           </main>
         </div>
       </div>

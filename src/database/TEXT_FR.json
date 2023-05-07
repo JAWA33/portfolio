@@ -10,23 +10,25 @@
     "alt_1": "Logo de Jawa Design"
   },
   "home_page": {
-    "title": "Bonjour, mon nom est ",
-    "name": "Julien Armand",
-    "intro": "Je suis un ",
+    "title": "Bienvenue sur ",
+    "name": "Jawa Design !",
+    "intro": "Je suis ",
     "works": {
-      "_1": "Développeur Web",
-      "_2": "Créateur Graphique",
-      "_3": "Travailleur Indépendant",
-      "_4": "Créateur de Solutions Digitales"
+      "_1": "Julien Armand",
+      "_2": "Développeur web",
+      "_3": "Créateur graphique",
+      "_4": "À votre écoute"
     },
-    "presentation": "Engagez votre public avec un développeur front-end dédié. Je me spécialise dans les sites Web réactifs et intuitifs qui captivent les utilisateurs. Faisons passer votre présence en ligne au niveau supérieur. Contactez-moi aujourd'hui!",
+    "myName": "Julien Armand",
+    "presentation": "Je suis un développeur web passionné par la création de sites web élégants et efficaces. J'utilise mes compétences en design pour concevoir des interfaces utilisateur conviviales et attrayantes qui améliorent l'expérience de l'utilisateur.  Pour répondre aux besoins spécifiques de mes clients, je développe des solutions web personnalisées . Découvrez mes projets les plus récents et les témoignages de clients satisfaits. Contactez-moi pour en savoir plus sur mes services de développement web et de design. Merci de votre visite !",
     "call_to_action": "A propos de moi"
   },
   "about_page": {
     "title": "A propos de moi",
     "text": "Je suis Julien Armand et ",
     "textColor": "Développeur Web",
-    "intro": "FR Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque."
+    "intro": "Je suis un développeur web passionné qui a acquis une solide expérience en matière de conception et de développement de sites web. J'ai travaillé sur divers projets, allant de sites web d'entreprise à des projets personnels plus créatifs, me permettant de développer des compétences solides en matière de langages de programmation tels que HTML, CSS, JavaScript et de maîtriser quelques frameworks comme React Js et NodeJs.",
+    "introBis": "Je suis également à l'aise avec les outils de conception tels que Photoshop, Illustrator et Figma, ce qui me permet de créer des interfaces utilisateur modernes, élégantes et conviviales. Si vous cherchez un développeur web passionné et talentueux pour votre prochain projet, je suis la personne qu'il vous faut."
   },
   "skills": {
     "info": {
@@ -54,7 +56,233 @@
       "node": 50
     }
   },
+  "bubbleSkills": {
+    "figma": {
+      "title": "Figma",
+      "text": "Figma permet une collaboration en temps réel, facilite la création de maquettes interactives et offre des fonctionnalités de conception avancées pour créer des designs de haute qualité."
+    },
+    "html": {
+      "title": "HTML 5",
+      "text": "Une bonne maîtrise de la structure sémantique en HTML peut aider les moteurs de recherche à mieux comprendre le contenu d'un site web, améliorant ainsi son référencement naturel (SEO) et son accessibilité pour les utilisateurs."
+    },
+    "css": {
+      "title": "CSS 3",
+      "text": "Offre des possibilités quasi infinies pour créer des designs originaux et esthétiquement plaisants, ainsi que des expériences utilisateur uniques et engageantes grâce à ses fonctionnalités de personnalisation avancées."
+    },
+    "javascript": {
+      "title": "Javascript",
+      "text": "Ajoute du dynamisme et de l'interactivité, améliorant ainsi l'expérience utilisateur et l'engagement du site web"
+    },
+    "react": {
+      "title": "React JS",
+      "text": "Crée des interfaces utilisateur interactives, réactives et faciles à maintenir."
+    },
+    "node": {
+      "title": "Node JS",
+      "text": "Crée des applications côté serveur performantes et évolutives grâce à une grande flexibilité et une vaste gamme de bibliothèques et de modules."
+    },
+    "redux": {
+      "title": "Redux",
+      "text": "Crée des applications web React plus efficace et plus productive en automatisant certaines tâches courantes "
+    },
+    "sass": {
+      "title": "Sass",
+      "text": "Génére des feuilles de style CSS optimisées et compatibles avec les différents navigateurs web, ce qui peut améliorer les performances du site web."
+    },
+    "mongo": {
+      "title": "Mongo DB",
+      "text": "Offre une grande évolutivité et des performances supérieures pour le stockage de données dans les applications web, grâce à sa structure NoSQL."
+    },
+    "mysql": {
+      "title": "MySQL",
+      "text": "Offre une grande stabilité, des performances élevées et une grande sécurité pour le stockage de données dans les applications web."
+    }
+  },
+  "stackBg": {
+    "Alt": "Une main, sous l'eau, tendue vers le soleil",
+    "intro_A": "Jouez avec ",
+    "text_A": "Des Bulles",
+    "intro_B": "Découvrez mes ",
+    "text_B": " Compétences"
+  },
+  "about_callToAction": {
+    "intro": "Déjà convaincu ?",
+    "text": " Ne perdez plus de temps",
+    "buttonA": "Contactez Moi",
+    "buttonB": "Télécharger mon CV"
+  },
+  "about_experience": {
+    "titles": {
+      "education": {
+        "intro": "Code ",
+        "text": " Apprentissage"
+      },
+      "experience": {
+        "intro": "Code ",
+        "text": " Expériences"
+      },
+      "design": {
+        "intro": "Design ",
+        "text": " Expériences"
+      },
+      "before": {
+        "intro": "Avant de ",
+        "text": " Coder"
+      }
+    },
+    "education": {
+      "A": {
+        "year": "2021-2022",
+        "title": "Formation professionnalisante",
+        "text": "Afin de réaliser mon projet, j'ai suivi une formation intensive de six mois chez OpenClassrooms pour renforcer mes compétences de base nécessaires à la programmation. Cette formation m'a permis d'orienter ma carrière en tant que développeur web et de travailler sur des projets passionnants, y compris la création de mon propre site web."
+      },
+      "B": {
+        "year": "2010-2021",
+        "title": "Formation en autodidacte",
+        "text": "J'ai commencé à écrire des programmes simples en VBA pour un projet professionnel, puis, de passion, j'ai suivi des cours en ligne pour approfondir mes connaissances en programmation, notamment dans les languages du web. Avec le temps, j'ai développé mes compétences et ma passion pour le code m'a finalement conduit ici."
+      }
+    },
+    "experience": {
+      "A": {
+        "year": "2023",
+        "title": "Site de Jawa-design.com",
+        "text": "Ce site internet est très personnel pour moi car j'ai essayé d'apporter ma personnalité et mon histoire dans chaque élément de sa conception. Même s'il ne le paraît pas forcément, chaque choix de design et chaque ligne de code ont été influencés par mes expériences et mes préférences personnelles. J'ai voulu que ce site soit une représentation fidèle de qui je suis en tant que développeur web et artiste. J'espère que vous apprécierez de naviguer sur ce site autant que j'ai apprécié de le créer."
+      },
+      "B": {
+        "year": "2022-2023",
+        "title": "Application Web : Spyde.fr",
+        "text": "J'ai développé une application web complète, pour mon client Spyde, avec un accès sécurisé et automatique, des profils utilisateurs pour gérer les clients et les employés, un blog éditable et personnalisable, un système de localisation des clients et des collectes à venir, la création simplifiée de feuilles de route, l'enregistrement des poids collectés et des informations du client à chaque étape du recyclage, ainsi qu'un tableau de bord des principaux indicateurs. Le projet a nécessité l'acquisition de compétences variées, telle que la gestion des cartes MapBox ou l'approfondissement de mes connaissances en Node Js."
+      },
+      "C": {
+        "year": "2022",
+        "title": "Création de Jawa Design",
+        "text": "Ce projet marque un tournant important dans ma carrière professionnelle, que j'ai amorcé il y a quelques années déjà, puisque je me lance en tant que développeur indépendant. Je suis fier d'avoir transformé ma passion pour le développement web en une activité professionnelle. Je suis conscient que le défi est de taille, mais mon expérience passée en tant que développeur autodidacte, mais aussi mes diverses collaborations et expériences professionnelles, m'ont permis d'acquérir de solides compétences que cela soit en programmation, ou en gestion de projet. Je suis enthousiaste à l'idée de poursuivre cette aventure entrepreneuriale et de mettre mes compétences à votre service."
+      },
+      "D": {
+        "year": "2016",
+        "title": "Les Ecuries du Landran",
+        "text": "J'ai eu l'opportunité de créer le premier site en ligne d'une écurie appartenant à des amis. Bien que ce ne soit pas un projet majeur, cela m'a permis de mettre en pratique ma passion et mes compétences de développement web tout en ayant un réel impact pour mes amis. Cette expérience m'a également permis de gagner en confiance et de continuer à développer mes compétences dans ce domaine."
+      }
+    },
+    "design": {
+      "A": {
+        "year": "2022",
+        "title": "Branding et Design : Spyde.fr",
+        "text": "Mon premier projet professionnel, en tant que freelance, a été pour la start-up Spyde, spécialisée dans le recyclage des déchets. J'ai réalisé le branding et le web design de leur web application, ce qui était un projet d'envergure, exigeant une grande variété de compétences, puisque j'ai également été chargé de développer la web application Spyde.fr . Cette expérience a été très enrichissante pour moi et m'a permis de développer mes compétences en design et en développement web."
+      },
+      "B": {
+        "year": "2010-2012",
+        "title": "Girondins Poker ",
+        "text": "J'ai été responsable de la partie communication visuelle pour le club associatif des Girondins Poker, pour lequel j'ai créé plusieurs affiches pour des tournois, dessiné les jetons du club et réalisé d'autres créations graphiques, telles que des vidéos ou des montages photo. Cette expérience m'a permis d'élargir mes compétences en design et de développer une vision plus créative de mes projets."
+      },
+      "C": {
+        "year": "Depuis toujours",
+        "title": "Créations personnelles",
+        "text": "Depuis mon enfance, j'ai toujours eu un crayon à la main pour dessiner et j'ai réalisé de nombreux projets artistiques personnels, tels que des dessins, des photographies, des vidéos, des montages, etc. Cette passion pour l'art m'a permis d'élargir ma vision créative et de développer des compétences en design qui m'ont été très utiles dans mon travail en tant que développeur web."
+      }
+    },
+    "before": {
+      "A": {
+        "year": "2021",
+        "title": "Vers le code",
+        "text": "Après avoir été contraint de quitter la Thaïlande en raison de la pandémie, j'ai dû me réinventer en rentrant en France. J'ai alors pris le temps de réfléchir à mes compétences et à mes passions pour envisager une nouvelle orientation professionnelle. Le développement web s'est alors imposé comme une évidence pour moi. Après une courte réflexion, je me lance dans cette nouvelle aventure."
+      },
+      "B": {
+        "year": "2019-2020",
+        "title": "Instructeur de plongée",
+        "text": "Après avoir travaillé pendant plusieurs années, j'ai réalisé que je n'étais pas complètement satisfait de ma vie professionnelle et que j'avais besoin de changer d'orientation. J'ai alors décidé de suivre ma passion pour les voyages et de partir explorer le monde. Pour financer mes voyages, j'ai décidé de me tourner vers la plongée sous-marine, une autre passion que je nourrissais depuis longtemps. Je suis donc parti en Thaïlande pour passer mes niveaux de plongée et obtenir le diplôme d'instructeur de plongée. Cependant, la pandémie de COVID-19 a bouleversé mes plans et m'a contraint à interrompre cette nouvelle vie pour retourner en France et me réorienter professionnellement."
+      },
+      "C": {
+        "year": "2012-2019",
+        "title": "Chef de projet",
+        "text": "J'ai acquis une expérience significative en tant que chef de projet dans une entreprise internationale de bioraffinerie spécialisée dans la production de cellulose de spécialités, Rayonier AM. Cette expérience m'a permis d'en apprendre davantage sur la gestion de projet, la gestion d'équipe ainsi que d'autres compétences utiles pour mon métier actuel de développeur."
+      },
+      "D": {
+        "year": "2000-2012",
+        "title": "Divers expériences",
+        "text": "Au début de ma carrière, j'ai occupé différents postes dans le secteur de l'industrie. J'ai débuté en travaillant en atelier pour ensuite devenir dessinateur industriel au sein de plusieurs entreprises spécialisées dans ce domaine. Cette expérience m'a permis d'acquérir de nombreuses compétences en dessin et de me perfectionner dans ce domaine."
+      },
+      "E": {
+        "year": "1998-2000",
+        "title": "Formation Bac+2",
+        "text": "Mon parcours initial a été marqué par l'obtention d'un BTS en chaudronnerie. Bien que ce ne soit pas en lien direct avec le développement web, cette formation m'a permis de développer des compétences en dessin technique. J'ai rapidement été séduit par l'aspect conception et réalisation de projets, que je retrouve aujourd'hui avec le code."
+      }
+    }
+  },
   "services_page": {
-    "title": "Services"
+    "title": "Services",
+    "grid": {
+      "elementA": {
+        "title": "Blog",
+        "text": "Des blogs personnalisés et éditables, créés spécialement pour répondre à vos besoins."
+      },
+      "elementB": {
+        "title": "Application Web",
+        "text": "Des applications personnalisées selon vos besoins, pas selon un modèle prédéfini."
+      },
+      "elementC": {
+        "title": "Site vitrine",
+        "text": "Valorisez vos produits ou services grâce à une présentation en ligne professionnelle et impactante."
+      },
+      "elementD": {
+        "title": "Travailleur indépendant",
+        "text": "Besoin d'un renfort pour votre équipe ? Je propose mes services en tant que freelance en télétravail."
+      },
+      "elementE": {
+        "title": "Création originale",
+        "text": "Une idée atypique ou innovante ? Discutons-en !"
+      },
+      "elementF": {
+        "title": "Branding",
+        "text": "Conception de l'univers graphique de votre entreprise"
+      },
+      "elementG": {
+        "title": "Portfolio",
+        "text": "Exposez votre art en ligne avec style et originalité."
+      }
+    }
+  },
+  "contact_page": {
+    "titleA": {
+      "title": "Avez-vous des questions ?",
+      "subtitle": "Je suis à votre disposition"
+    },
+    "titleB": {
+      "title": "Ecrivez moi directement ici",
+      "subtitle": "Je suis très réactif à vos messages"
+    },
+    "card": {
+      "A": {
+        "title": "Linked In",
+        "text": "MonCompteLinkedIn",
+        "link": "www.google.fr"
+      },
+      "B": {
+        "title": "E-mail",
+        "text": "julien_armand@jawa-design.com",
+        "link": "www.google.fr"
+      },
+      "C": {
+        "title": "Directement",
+        "text": "En cliquant ici",
+        "link": "www.google.fr"
+      }
+    },
+    "form": {
+      "labelA": "Nom",
+      "labelB": "Prénom",
+      "labelC": "Entreprise",
+      "labelD": "E-mail",
+      "labelE": "Sujet",
+      "labelF": "Message",
+      "button": "Envoyez",
+      "questions": {
+        "default": "De quoi souhaitez vous discuter ?",
+        "option1": "Je souhaiterais des informations complémentaires",
+        "option2": "J'ai besoin d'un développeur pour une mission",
+        "option3": "J'ai besoin d'un site web",
+        "option4": "Autre sujet"
+      }
+    }
   }
 }

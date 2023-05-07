@@ -1,11 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import TEXT_ENG from "../../database/TEXT_ENG.json";
 import TEXT_FR from "../../database/TEXT_FR.json";
-import Logo_purple from "../../img/LogoJAWA_purple.png";
-import Logo_red from "../../img/LogoJAWA_red.png";
-import Logo_green from "../../img/LogoJAWA_green.png";
-import Logo_blue from "../../img/LogoJAWA_blue.png";
-import Logo_yellow from "../../img/LogoJAWA_yellow.png";
+
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { ThemeContext } from "./PageConfig";

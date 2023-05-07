@@ -1,11 +1,26 @@
 .aboutConfig {
-  padding: 50px 2vw;
+  padding: 80px 4vw 50px 4vw;
+  &--single {
+    height: auto;
+    max-height: 130vh;
+  }
 }
 
 //* for tablet :
 @media (min-width: 600px) {
   .aboutConfig {
-    padding-top: 0px 4vw;
+    padding: 60px 6vw 50px 6vw;
+    &--single {
+      height: auto;
+      max-height: 180vh;
+    }
+  }
+}
+
+//* for tablet :
+@media (min-width: 1100px) {
+  .aboutConfig {
+    padding: 50px 10vw 50px 10vw;
   }
 }
 

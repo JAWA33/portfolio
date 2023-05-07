@@ -4,12 +4,6 @@ import { ThemeContext } from "../../components/layouts/PageConfig";
 
 const RollingIcon = ({ rollingText, children }) => {
   const { theme, textToShow, colorTheme } = useContext(ThemeContext);
-  //const parameter = document.getElementById("parameter").innerText;
-
-  //const rollingText = "Paramètres-Settings-";
-
-  // style={transform:rotate(
-  //  )}
 
   return (
     <div className="rollingIcon">

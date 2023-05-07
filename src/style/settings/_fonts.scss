@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+//@import url("https://fonts.googleapis.com/css2?family=Damion&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap");
 
 * {
   font-family: "Outfit", sans-serif;
@@ -7,7 +8,7 @@
 
 .font {
   &__newHeader {
-    font-size: clamp(0.9rem, 11px + 0.3vw, 2rem);
+    font-size: clamp(0.75rem, 12px + 0.3vw, 1.5rem);
     font-weight: 400;
     letter-spacing: 0.5px;
   }
@@ -22,8 +23,8 @@
     letter-spacing: 0.5px;
   }
   &__name {
-    font-size: clamp(1.2rem, 16px + 1vw, 2.4rem);
-    font-family: "Damion", cursive;
+    font-size: clamp(1.8rem, 26px + 1vw, 2.6rem);
+    font-family: "Aguafina Script", cursive;
     letter-spacing: 0.5px;
   }
   &__work {
@@ -36,7 +37,7 @@
     font-size: clamp(0.9rem, 11px + 0.3vw, 2rem);
     font-weight: 300;
     letter-spacing: 0.3px;
-    line-height: calc(1rem + 0.8vw);
+    line-height: calc(1.4rem + 0.8vw);
   }
   &__label {
     font-size: clamp(0.9rem, 11px + 0.3vw, 2rem);
@@ -56,9 +57,10 @@
     line-height: calc(1rem + 0.8vw);
   }
   &__introTitle {
-    font-size: clamp(1rem, 14px + 0.5vw, 2rem);
+    font-size: clamp(1.3rem, 0.5rem + 2vw, 1.8rem);
     font-weight: 700;
     letter-spacing: 1.5px;
+    line-height: 2.5rem;
   }
   &__accordion {
     font-size: clamp(0.8rem, 11px + 1.5vw, 1.4rem);
@@ -74,6 +76,90 @@
     letter-spacing: 0.5px;
     line-height: calc(14px + 1.2vw);
   }
+  &__card {
+    &--title {
+      font-size: 1.4rem;
+    }
+    &--text {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      text-align: start;
+      text-indent: 1.5rem;
+    }
+  }
+  &__BigText {
+    &__capital {
+      color: white;
+      text-shadow: 1px 2px 0px black;
+
+      &--A {
+        font-size: clamp(3rem, 2.5rem + 1vw, 4.8rem);
+        letter-spacing: -3px;
+      }
+      &--B {
+        font-size: clamp(1.5rem, 1.2rem + 1vw, 2.5rem);
+        letter-spacing: 0px;
+      }
+      &--C {
+        font-size: clamp(2.1rem, 1.1rem + 1vw, 2.3rem);
+        letter-spacing: -1px;
+        line-height: 5rem;
+      }
+      &--D {
+        font-size: clamp(1.8rem, 1.5rem + 1vw, 2.1rem);
+        letter-spacing: 0.5px;
+      }
+      &--E {
+        font-size: clamp(1.3rem, 1rem + 1vw, 1.8rem);
+        letter-spacing: 0.5px;
+      }
+    }
+    &__writing {
+      //font-size: clamp(1.8rem, 26px + 1vw, 2.6rem);
+      font-family: "Aguafina Script", cursive;
+      letter-spacing: 3px;
+
+      text-shadow: 0.5px 1px 0px black, -0.5px -1px 0px white;
+      &--A {
+        font-size: clamp(1.8rem, 1.6rem + 1vw, 2.5rem);
+      }
+      &--B {
+        font-size: clamp(2rem, 1.8rem + 1vw, 3.5rem);
+        padding-left: 0.5rem;
+      }
+      &--C {
+        font-size: clamp(3rem, 2rem + 1vw, 3.3rem);
+      }
+      &--D {
+        font-size: clamp(2.5rem, 1.8rem + 1vw, 2.8rem);
+      }
+      &--E {
+        font-size: clamp(1.8rem, 1.4rem + 1vw, 2.2rem);
+      }
+    }
+  }
+  &__servicesCards {
+    font-size: clamp(0.85rem, 0.4rem + 1vw, 1rem);
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+  }
+}
+
+#blue .font__BigText__writing {
+  color: $colorTheme_blue;
+}
+#yellow .font__BigText__writing {
+  color: $colorTheme_yellow;
+}
+#green .font__BigText__writing {
+  color: $colorTheme_green;
+}
+#red .font__BigText__writing {
+  color: $colorTheme_red;
+}
+#purple .font__BigText__writing {
+  color: $colorTheme_purple;
 }
 
 @media (min-width: 600px) {

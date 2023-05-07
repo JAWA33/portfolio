@@ -1,11 +1,740 @@
 .sectionIntro {
   width: 100%;
-  height: auto;
-  margin-top: 3rem;
+  min-height: 60vh;
+  margin: 4rem 0;
   padding: 1rem;
   //background: #000;
-  & p:last-child {
-    padding: 1rem 0 1rem 0rem;
+  & h2 {
+    margin-bottom: 2rem;
+  }
+
+  & p {
+    padding: 1rem 0;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+  }
+
+  &__next {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+  }
+}
+
+.arrow {
+  --_arrowSize: 40px;
+  --_arrowGap: 16px;
+  --_arrowStroke: 3px;
+  --_arrowAngle: 142deg;
+  --_deltaDecale: -9.2px;
+  position: absolute;
+  bottom: 0;
+  width: var(--_arrowSize);
+  height: var(--_arrowSize);
+  //border: 1px solid rgb(19, 99, 236);
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10%;
+
+    width: var(--_arrowStroke);
+    height: var(--_arrowSize);
+    border-radius: 50%;
+    //border-radius: calc(var(--_arrowStroke) / 2);
+
+    background: rgba($colorTheme_blue, 0.6);
+    box-shadow: 0 0 0 $colorTheme_blue;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: calc(var(--_deltaDecale));
+
+    transform: translateX(
+        calc(
+          ((var(--_arrowSize) - ((var(--_arrowGap) + var(--_arrowStroke))) / 2)) /
+            2
+        )
+      )
+      rotateZ(var(--_arrowAngle));
+  }
+  &::after {
+    content: "";
+    position: absolute;
+
+    right: calc(var(--_deltaDecale));
+
+    transform: translateX(
+        calc(
+          (var(--_arrowSize) - ((var(--_arrowGap) + var(--_arrowStroke)) / 2)) /
+            -2
+        )
+      )
+      rotateZ(calc(360deg - var(--_arrowAngle)));
+  }
+}
+
+//? Color Animation  :::
+#light {
+  & #blue {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrowLight_blue 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverseLight_blue 2s ease-in-out infinite backwards;
+      }
+    }
+  }
+  & #red {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrowLight_red 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverseLight_red 2s ease-in-out infinite backwards;
+      }
+    }
+  }
+  & #green {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrowLight_green 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverseLight_green 2s ease-in-out infinite
+          backwards;
+      }
+    }
+  }
+  & #purple {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrowLight_purple 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverseLight_purple 2s ease-in-out infinite
+          backwards;
+      }
+    }
+  }
+  & #yellow {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrowLight_yellow 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverseLight_yellow 2s ease-in-out infinite
+          backwards;
+      }
+    }
+  }
+}
+#dark {
+  & #blue {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrow_blue 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverse_blue 2s ease-in-out infinite backwards;
+      }
+    }
+  }
+  & #yellow {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrow_yellow 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverse_yellow 2s ease-in-out infinite backwards;
+      }
+    }
+  }
+  & #green {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrow_green 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverse_green 2s ease-in-out infinite backwards;
+      }
+    }
+  }
+  & #red {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrow_red 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverse_red 2s ease-in-out infinite backwards;
+      }
+    }
+  }
+  & #purple {
+    & .arrow {
+      &:nth-child(1) {
+        transform: translateY(var(--_arrowGap));
+        &::before,
+        &::after {
+          animation-delay: 0.9s;
+        }
+      }
+      &:nth-child(2) {
+        transform: translateY(0px);
+        &::before,
+        &::after {
+          animation-delay: 0.6s;
+        }
+      }
+      &:nth-child(3) {
+        transform: translateY(calc(-1 * var(--_arrowGap)));
+        &::before,
+        &::after {
+          animation-delay: 0.3s;
+        }
+      }
+      &::before {
+        animation: shinyArrow_purple 2s ease-in-out infinite backwards;
+      }
+      &::after {
+        animation: shinyArrowInverse_purple 2s ease-in-out infinite backwards;
+      }
+    }
+  }
+}
+
+// #dark {
+//   & .arrow:nth-child(1) {
+//     transform: translateY(var(--_arrowGap));
+
+//     &::before,
+//     &::after {
+//       animation-delay: 0.9s;
+//     }
+//   }
+//   & .arrow:nth-child(2) {
+//     transform: translateY(0px);
+//     &::before,
+//     &::after {
+//       animation-delay: 0.6s;
+//     }
+//   }
+//   & .arrow:nth-child(3) {
+//     transform: translateY(calc(-1 * var(--_arrowGap)));
+//     &::before,
+//     &::after {
+//       animation-delay: 0.3s;
+//     }
+//   }
+// }
+
+//For Color Mode : blue ://
+
+@keyframes shinyArrow_blue {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_blue, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_blue, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_blue, 0.01);
+  }
+}
+@keyframes shinyArrowInverse_blue {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_blue, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_blue, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_blue, 0.01);
+  }
+}
+@keyframes shinyArrowLight_blue {
+  0% {
+    background: rgba($colorTheme_blue, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_blue, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_blue, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+@keyframes shinyArrowInverseLight_blue {
+  0% {
+    background: rgba($colorTheme_blue, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_blue, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_blue, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+
+//For Color Mode : purple ://
+@keyframes shinyArrow_purple {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_purple, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_purple, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_purple, 0.01);
+  }
+}
+@keyframes shinyArrowInverse_purple {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_purple, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_purple, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_purple, 0.01);
+  }
+}
+@keyframes shinyArrowLight_purple {
+  0% {
+    background: rgba($colorTheme_purple, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_purple, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_purple, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+@keyframes shinyArrowInverseLight_purple {
+  0% {
+    background: rgba($colorTheme_purple, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_purple, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_purple, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+
+//For Color Mode : red ://
+@keyframes shinyArrow_red {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_red, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_red, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_red, 0.01);
+  }
+}
+@keyframes shinyArrowInverse_red {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_red, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_red, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_red, 0.01);
+  }
+}
+@keyframes shinyArrowLight_red {
+  0% {
+    background: rgba($colorTheme_red, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_red, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_red, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+@keyframes shinyArrowInverseLight_red {
+  0% {
+    background: rgba($colorTheme_red, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_red, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_red, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+
+//For Color Mode : green ://
+@keyframes shinyArrow_green {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_green, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_green, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_green, 0.01);
+  }
+}
+@keyframes shinyArrowInverse_green {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_green, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_green, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_green, 0.01);
+  }
+}
+@keyframes shinyArrowLight_green {
+  0% {
+    background: rgba($colorTheme_green, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_green, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_green, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+@keyframes shinyArrowInverseLight_green {
+  0% {
+    background: rgba($colorTheme_green, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_green, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_green, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+
+//For Color Mode : yellow ://
+@keyframes shinyArrow_yellow {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_yellow, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_yellow, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: -4px 0 10px rgba($colorTheme_yellow, 0.01);
+  }
+}
+@keyframes shinyArrowInverse_yellow {
+  0% {
+    background: rgba($color_page_bg_2_dark, 0.6);
+    box-shadow: 0px 0 0 rgba($colorTheme_yellow, 0.9);
+  }
+  60% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_yellow, 0.01);
+  }
+  100% {
+    background: rgba($color_page_bg_2_dark, 1);
+    box-shadow: 4px 0 10px rgba($colorTheme_yellow, 0.01);
+  }
+}
+@keyframes shinyArrowLight_yellow {
+  0% {
+    background: rgba($colorTheme_yellow, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_yellow, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_yellow, 1);
+    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+}
+@keyframes shinyArrowInverseLight_yellow {
+  0% {
+    background: rgba($colorTheme_yellow, 0.6);
+    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+  }
+  60% {
+    background: rgba($colorTheme_yellow, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+  }
+  100% {
+    background: rgba($colorTheme_yellow, 1);
+    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
 

@@ -1,20 +1,26 @@
-import React from "react";
+import React, { useContext } from "react";
 import TitleAndSubTitle from "../elements/TitleAndSubTitle";
 
 import ContactBlocks from "./ContactBlocks";
 
 //! To change by other icon :
 import icon__phone from "../../icons/contact.svg";
+import { ThemeContext } from "../layouts/PageConfig";
 
 const SectionContact = () => {
+  const { textToShow } = useContext(ThemeContext);
+
   return (
     <div className="sectContact">
       <TitleAndSubTitle
-        title="Have you any questions ?"
-        subtitle="I'm at your service"
+        title={textToShow.contact_page.titleA.title}
+        subtitle={textToShow.contact_page.titleA.subtitle}
       />
       <div className="sectContact__container">
-        <ContactBlocks title="By Linked In" text="+33.6.62.14.75.04">
+        <ContactBlocks
+          title={textToShow.contact_page.card.A.title}
+          text={textToShow.contact_page.card.A.text}
+        >
           {/* //! PUT SVG ICON HERE */}
           <svg
             className="colorIcon"
@@ -30,7 +36,10 @@ const SectionContact = () => {
             <path d="M18.5,14A4.5,4.5,0,1,0,23,18.5,4.5,4.5,0,0,0,18.5,14Zm0,7A2.5,2.5,0,1,1,21,18.5,2.5,2.5,0,0,1,18.5,21Z" />
           </svg>
         </ContactBlocks>
-        <ContactBlocks title="E-mail" text="julien_armand@jawa-design.com">
+        <ContactBlocks
+          title={textToShow.contact_page.card.B.title}
+          text={textToShow.contact_page.card.B.text}
+        >
           {" "}
           <svg
             className="colorIcon"
@@ -63,7 +72,10 @@ const SectionContact = () => {
             </g>
           </svg>
         </ContactBlocks>
-        <ContactBlocks title="This Website" text="jawa-design.com">
+        <ContactBlocks
+          title={textToShow.contact_page.card.C.title}
+          text={textToShow.contact_page.card.C.text}
+        >
           <svg
             className="colorIcon"
             width="60px"

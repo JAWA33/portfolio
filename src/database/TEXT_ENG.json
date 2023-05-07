@@ -10,15 +10,16 @@
     "alt_1": "Jawa Design Logo"
   },
   "home_page": {
-    "title": "Hello, my name is",
-    "name": "Julien Armand",
-    "intro": "I'm a ",
+    "title": "Welcome to ",
+    "name": "Jawa Design !",
+    "intro": "I'm ",
     "works": {
       "_1": "Web Developer",
       "_2": "Web Designer",
       "_3": "Freelancer",
       "_4": "Digital Solution Maker"
     },
+    "myName": "Julien Armand",
     "presentation": "Engage your audience with a dedicated front-end developer. I specialize in responsive, intuitive websites that captivate users. Let's take your online presence to the next level. Contact me today!",
     "call_to_action": "More About Me"
   },
@@ -26,7 +27,8 @@
     "title": "About Me",
     "text": "I'm Julien Armand and ",
     "textColor": "Developer Web",
-    "intro": "ENG Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque."
+    "intro": "ENG Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque.",
+    "introBis": "ENG Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque."
   },
   "skills": {
     "info": {
@@ -54,7 +56,234 @@
       "node": 50
     }
   },
+  "bubbleSkills": {
+    "figma": {
+      "title": "Figma",
+      "text": "ENGLISH VERSION : Figma permet une collaboration en temps réel, facilite la création de maquettes interactives et offre des fonctionnalités de conception avancées pour créer des designs de haute qualité."
+    },
+    "html": {
+      "title": "HTML 5",
+      "text": "ENGLISH VERSION : Une bonne maîtrise de la structure sémantique en HTML peut aider les moteurs de recherche à mieux comprendre le contenu d'un site web, améliorant ainsi son référencement naturel (SEO) et son accessibilité pour les utilisateurs."
+    },
+    "css": {
+      "title": "CSS 3",
+      "text": "ENGLISH VERSION : Offre des possibilités quasi infinies pour créer des designs originaux et esthétiquement plaisants, ainsi que des expériences utilisateur uniques et engageantes grâce à ses fonctionnalités de personnalisation avancées."
+    },
+    "javascript": {
+      "title": "Javascript",
+      "text": "ENGLISH VERSION : Ajoute du dynamisme et de l'interactivité, améliorant ainsi l'expérience utilisateur et l'engagement du site web"
+    },
+    "react": {
+      "title": "React JS",
+      "text": "ENGLISH VERSION : Crée des interfaces utilisateur interactives, réactives et faciles à maintenir."
+    },
+    "node": {
+      "title": "Node JS",
+      "text": "ENGLISH VERSION : Crée des applications côté serveur performantes et évolutives grâce à une grande flexibilité et une vaste gamme de bibliothèques et de modules."
+    },
+    "redux": {
+      "title": "Redux",
+      "text": "ENGLISH VERSION : Crée des applications web React plus efficace et plus productive en automatisant certaines tâches courantes "
+    },
+    "sass": {
+      "title": "Sass",
+      "text": "ENGLISH VERSION : Génére des feuilles de style CSS optimisées et compatibles avec les différents navigateurs web, ce qui peut améliorer les performances du site web."
+    },
+    "mongo": {
+      "title": "Mongo DB",
+      "text": "ENGLISH VERSION : Offre une grande évolutivité et des performances supérieures pour le stockage de données dans les applications web, grâce à sa structure NoSQL."
+    },
+    "mysql": {
+      "title": "MySQL",
+      "text": "ENGLISH VERSION : Offre une grande stabilité, des performances élevées et une grande sécurité pour le stockage de données dans les applications web."
+    }
+  },
+  "stackBg": {
+    "Alt": "A hand, underwater, in direction of the sun",
+    "intro_A": "Let's play with ",
+    "text_A": "Bubbles",
+    "intro_B": "Discover My ",
+    "text_B": " Skills"
+  },
+  "about_callToAction": {
+    "intro": "Ready to go ?",
+    "text": " Let's not wait any longer",
+    "buttonA": "Contact Me",
+    "buttonB": "Download My CV"
+  },
+  "about_experience": {
+    "titles": {
+      "education": {
+        "intro": "DEV ",
+        "text": " Education"
+      },
+      "experience": {
+        "intro": "DEV ",
+        "text": " Experiences"
+      },
+
+      "before": {
+        "intro": "Before ",
+        "text": " Coding"
+      },
+      "design": {
+        "intro": "Design ",
+        "text": " Experiences"
+      }
+    },
+    "education": {
+      "A": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      },
+      "B": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      }
+    },
+    "experience": {
+      "A": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      },
+      "B": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      },
+      "C": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      },
+      "D": {
+        "year": "2016",
+        "title": "Les Ecuries du Landran",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+      }
+    },
+    "design": {
+      "A": {
+        "year": "2023",
+        "title": "Site de Jawa-design.com",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+      },
+      "B": {
+        "year": "2022-2023",
+        "title": "Spyde.fr",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+      },
+      "C": {
+        "year": "2022",
+        "title": "Création de Jawa Design",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+      }
+    },
+    "before": {
+      "A": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      },
+      "B": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      },
+      "C": {
+        "year": "1990-1980",
+        "title": "1990-1980",
+        "text": "1990-1980"
+      },
+      "D": {
+        "year": "2000-2012",
+        "title": "Divers expériences",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+      },
+      "E": {
+        "year": "1998-2000",
+        "title": "Formation Bac+2",
+        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+      }
+    }
+  },
   "services_page": {
-    "title": "Services"
+    "title": "Services",
+    "grid": {
+      "elementA": {
+        "title": "Blog",
+        "text": "ENG Réalisation de blogs sur mesure et éditable"
+      },
+      "elementB": {
+        "title": "Blog",
+        "text": "ENG Réalisation de blogs sur mesure et éditable"
+      },
+      "elementC": {
+        "title": "Blog",
+        "text": "ENG Réalisation de blogs sur mesure et éditable"
+      },
+      "elementD": {
+        "title": "Blog",
+        "text": "ENG Réalisation de blogs sur mesure et éditable"
+      },
+      "elementE": {
+        "title": "Blog",
+        "text": "ENG Réalisation de blogs sur mesure et éditable"
+      },
+      "elementF": {
+        "title": "Blog",
+        "text": "ENG Réalisation de blogs sur mesure et éditable"
+      },
+      "elementG": {
+        "title": "Blog",
+        "text": "ENG Réalisation de blogs sur mesure et éditable"
+      }
+    }
+  },
+  "contact_page": {
+    "titleA": {
+      "title": "Have you any questions ?",
+      "subtitle": "I'm at your service"
+    },
+    "titleB": {
+      "title": "Write me directly here",
+      "subtitle": "I'm very responsive to your messages"
+    },
+    "card": {
+      "A": {
+        "title": "Linked In",
+        "text": "MonCompteLinkedIn",
+        "link": "www.google.fr"
+      },
+      "B": {
+        "title": "E-mail",
+        "text": "julien_armand@jawa-design.com",
+        "link": "www.google.fr"
+      },
+      "C": {
+        "title": "Directement",
+        "text": "Click here",
+        "link": "www.google.fr"
+      }
+    },
+    "form": {
+      "labelA": "Lastname",
+      "labelB": "Firstname",
+      "labelC": "Company",
+      "labelD": "E-mail",
+      "labelE": "Object",
+      "labelF": "Message",
+      "button": "Send message",
+      "questions": {
+        "default": "What do you want to discuss?",
+        "option1": "I would like additional information",
+        "option2": "I need a developer for a mission",
+        "option3": "I need a website",
+        "option4": "Other object"
+      }
+    }
   }
 }

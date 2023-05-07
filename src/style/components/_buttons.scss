@@ -150,6 +150,7 @@
     top: 5.5px;
     left: 9.5px;
     right: 0;
+    rotate: 90deg;
   }
 
   &__icon svg path {
@@ -216,6 +217,7 @@
     height: 92px;
     border-radius: 50px;
     opacity: 0;
+    rotate: 90deg;
     //transition: opacity 0.3s ease-in-out;
 
     &--active {
@@ -226,7 +228,7 @@
     &--fr {
       animation: changePosition 0.5s ease-in-out forwards;
       background: linear-gradient(
-        90deg,
+        0deg,
         #012169 0%,
         #012169 26%,
         #e2dedf 27%,
@@ -384,6 +386,7 @@
       transition: scale 0.5s ease-in-out, opacity 0.5s ease-in-out;
       scale: 1;
       color: $color_page_bg_1_light;
+      rotate: 90deg;
       & svg {
         fill: $color_page_bg_1_light;
       }
@@ -393,6 +396,7 @@
       scale: 0;
       transition: scale 0.5s ease-in-out, opacity 0.5s ease-in-out;
       color: $color_page_bg_2_light;
+      rotate: 90deg;
       & svg {
         fill: $color_page_bg_2_light;
       }
@@ -478,7 +482,7 @@
 
 @keyframes changePosition {
   0% {
-    rotate: 0deg;
+    rotate: 90deg;
     translate: 0px;
     scale: 0.38;
   }
@@ -487,7 +491,7 @@
   }
 
   100% {
-    rotate: 360deg;
+    rotate: 450deg;
     translate: 76px;
     scale: 0.38;
   }
@@ -495,7 +499,7 @@
 
 @keyframes inversePosition {
   0% {
-    rotate: 360deg;
+    rotate: 450deg;
     translate: 76px;
     scale: 0.38;
   }
@@ -504,7 +508,7 @@
   }
 
   100% {
-    rotate: 0deg;
+    rotate: 90deg;
     translate: 0px;
     scale: 0.38;
   }

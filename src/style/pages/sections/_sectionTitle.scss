@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  //margin-top: 1rem;
 
   &__container {
     position: relative;
@@ -65,4 +66,10 @@
 #red .sectionTitle__container h1:before,
 #red .sectionTitle__container h1:after {
   background: $colorTheme_red;
+}
+
+@media (max-width: 600px) {
+  .sectionTitle {
+    margin-top: 1rem;
+  }
 }

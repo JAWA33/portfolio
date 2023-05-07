@@ -1,6 +1,6 @@
 .sectExp {
   width: 100%;
-  padding: 1rem 6vw 1rem 1rem;
+  padding: 1rem 6vw 3rem 1rem;
   //border: 1px solid blue;
   //margin-right: 3vw;
 
@@ -9,10 +9,12 @@
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    //grid-template-rows: repeat(auto-fill, auto);
+    //grid-template-rows: repeat(auto-fill, 150px);
     justify-content: center;
     align-items: flex-start;
-    grid-gap: 2rem;
+    grid-gap: 3rem 3rem;
+    margin-top: 3rem;
+
     //border: 1px solid rgb(237, 41, 74);
 
     &__element {
@@ -31,15 +33,17 @@
 
 .expBlock {
   width: 100%;
+  margin-top: 3rem;
 
   &__title {
-    padding-bottom: calc(1rem + 0.2vw);
+    padding-bottom: calc(1.5rem + 0.2vw);
   }
 
   &__grid {
     position: relative;
     border-radius: 0.75rem;
-    padding: 1rem 1rem 1rem 3rem;
+    padding: 2rem 1rem 1rem 3rem;
+    margin-top: 1rem;
 
     &::after {
       content: "";
@@ -141,6 +145,7 @@
   .sectExp__grid__element {
     grid-column: span 1;
     &--larger {
+      margin-top: -3rem;
       grid-column: span 2;
     }
   }

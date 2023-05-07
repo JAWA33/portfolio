@@ -27,7 +27,7 @@ const Projects = () => {
   return (
     <div className="wrapper">
       <motion.div
-        className="stickyPage aboutConfig"
+        className="stickyPage aboutConfig aboutConfig--single"
         initial={{ width: 0 }}
         animate={{ width: "100%" }}
         exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
@@ -211,6 +211,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
+        <div className="home__section__article">TEST</div>
       </motion.div>
     </div>
   );

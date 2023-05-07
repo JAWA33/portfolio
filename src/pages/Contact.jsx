@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SectionTitle from "../components/blocks/SectionTitle";
 import SectionContact from "../components/blocks/SectionContact";
 import SectionForm from "../components/blocks/SectionForm";
+import InterSection from "../components/elements/InterSection";
 
 const Contact = () => {
   // = {textToShow.contact.title}
@@ -16,6 +17,7 @@ const Contact = () => {
       >
         <SectionTitle title="Contact" />
         <SectionContact />
+        <InterSection />
         <SectionForm />
       </motion.div>
     </div>
