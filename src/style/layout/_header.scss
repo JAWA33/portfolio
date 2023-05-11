@@ -287,6 +287,50 @@
   }
 }
 
+#light {
+  #green {
+    & .activePage p {
+      color: $colorTheme_green-light !important;
+    }
+    & .activePage svg path {
+      fill: $colorTheme_green-light !important;
+    }
+  }
+  #red {
+    & .activePage p {
+      color: $colorTheme_red-light !important;
+    }
+    & .activePage svg path {
+      fill: $colorTheme_red-light !important;
+    }
+  }
+  #blue {
+    & .activePage p {
+      color: $colorTheme_blue-light !important;
+    }
+    & .activePage svg path {
+      fill: $colorTheme_blue-light !important;
+    }
+  }
+  #yellow {
+    & .activePage p {
+      color: $colorTheme_yellow-light !important;
+    }
+    & .activePage svg path {
+      fill: $colorTheme_yellow-light !important;
+    }
+  }
+  #purple {
+    & .activePage p {
+      color: $colorTheme_purple-light !important;
+    }
+    & .activePage svg path {
+      fill: $colorTheme_purple-light !important;
+    }
+  }
+}
+
+//! darkMode :
 #green {
   & .activePage p {
     color: $colorTheme_green !important;

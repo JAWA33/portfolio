@@ -78,6 +78,24 @@
   filter: brightness(0.8);
 }
 
+#light {
+  & #blue .sectionStack__bg {
+    background: rgba($colorTheme_blue-light, 0.05);
+  }
+  & #purple .sectionStack__bg {
+    background: rgba($colorTheme_purple-light, 0.05);
+  }
+  & #red .sectionStack__bg {
+    background: rgba($colorTheme_red-light, 0.05);
+  }
+  & #green .sectionStack__bg {
+    background: rgba($colorTheme_green-light, 0.05);
+  }
+  & #yellow .sectionStack__bg {
+    background: rgba($colorTheme_yellow-light, 0.05);
+  }
+}
+//Darkmode :
 #blue .sectionStack__bg {
   background: rgba($colorTheme_blue, 0.05);
 }

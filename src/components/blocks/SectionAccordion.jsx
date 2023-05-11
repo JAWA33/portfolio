@@ -93,45 +93,50 @@ const SectionAccordion = ({ children }) => {
         <div className="accordionWrapper">
           <div className="accordion">
             <AccordionBlock
-              title="Spyde"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore incidunt sit voluptatem iure enim adipisci pariatur, velit, odit illum quis! Quaerat cumque illo voluptatibus est, consequuntur explicabo rerum consequatur!"
-              buttonTitle="Découvrir le projet"
+              title={textToShow.projects.A.title}
+              text={textToShow.projects.A.text}
+              buttonTitle={textToShow.projects.A.button}
+              link={textToShow.projects.A.link}
               backCard={pict__1}
               panel="1"
               selectedBlock={selectedBlock}
               toggleSelectedBlock={toggleSelectedBlock}
             />
             <AccordionBlock
-              title="Jawa Design"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore incidunt sit voluptatem iure enim adipisci pariatur, velit, odit illum quis! Quaerat cumque illo voluptatibus est, consequuntur explicabo rerum consequatur!"
-              buttonTitle="Découvrir le projet"
+              title={textToShow.projects.B.title}
+              text={textToShow.projects.B.text}
+              buttonTitle={textToShow.projects.B.button}
+              link={textToShow.projects.B.link}
               backCard={pict__2}
               panel="2"
               selectedBlock={selectedBlock}
               toggleSelectedBlock={toggleSelectedBlock}
             />
             <AccordionBlock
-              title="Fake Diver`s"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore incidunt sit voluptatem iure enim adipisci pariatur, velit, odit illum quis! Quaerat cumque illo voluptatibus est, consequuntur explicabo rerum consequatur!"
-              buttonTitle="Découvrir le projet"
+              title={textToShow.projects.C.title}
+              text={textToShow.projects.C.text}
+              buttonTitle={textToShow.projects.C.button}
+              link={textToShow.projects.C.link}
               backCard={pict__3}
               panel="3"
               selectedBlock={selectedBlock}
               toggleSelectedBlock={toggleSelectedBlock}
             />
             <AccordionBlock
-              title="Jawa"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore incidunt sit voluptatem iure enim adipisci pariatur, velit, odit illum quis! Quaerat cumque illo voluptatibus est, consequuntur explicabo rerum consequatur!"
-              buttonTitle="Découvrir le projet"
+              title={textToShow.projects.D.title}
+              text={textToShow.projects.D.text}
+              buttonTitle={textToShow.projects.D.button}
+              link={textToShow.projects.D.link}
               backCard={pict__4}
               panel="4"
               selectedBlock={selectedBlock}
               toggleSelectedBlock={toggleSelectedBlock}
             />
             <AccordionBlock
-              title="Jawa"
-              text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, tempore incidunt sit voluptatem iure enim adipisci pariatur, velit, odit illum quis! Quaerat cumque illo voluptatibus est, consequuntur explicabo rerum consequatur!"
-              buttonTitle="Découvrir le projet"
+              title={textToShow.projects.E.title}
+              text={textToShow.projects.E.text}
+              buttonTitle={textToShow.projects.E.button}
+              link={textToShow.projects.E.link}
               backCard={pict__5}
               panel="5"
               selectedBlock={selectedBlock}

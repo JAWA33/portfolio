@@ -14,18 +14,101 @@ $color_header_bg_2_dark: #1a1717;
 $color_page_bg_1_dark: #353131;
 $color_page_bg_2_dark: #221616;
 
-//* colorTheme :
-//! origin : $colorTheme_red: #f31533;
-$colorTheme_red: #ff4848;
-//! origin : $colorTheme_purple: #8206c0;
-$colorTheme_purple: #b428fa;
-//! origin : $colorTheme_yellow: #f2b55f;
+//? TESTING CHANGE COLOR COMPARING DARK OR LIGHT MODE :
 
-$colorTheme_yellow: #f5e263;
+//* colorTheme : DARK
+
+$colorTheme_red: #ff4848;
+$colorTheme_purple: #b428fa;
+$colorTheme_yellow: #fff944;
 $colorTheme_blue: #10ace6;
-//valide : $colorTheme_blue: #18baf4;
-//! origin : $colorTheme_green: #a0e986;
-$colorTheme_green: #6dff65;
+$colorTheme_green: #58eb50;
+
+//* colorTheme : Light
+
+$colorTheme_red-light: #b41717;
+$colorTheme_purple-light: #8213ba;
+$colorTheme_yellow-light: #f7df1e;
+$colorTheme_blue-light: #1c99c6;
+$colorTheme_green-light: #329f42;
+
+#light {
+  & #red {
+    & .textColor {
+      color: $colorTheme_red-light;
+      text-shadow: 1px 1px 0px $textColor_dark;
+    }
+    & .bgColor {
+      background: $colorTheme_red-light;
+    }
+    .activePage {
+      color: $colorTheme_red-light;
+      & svg path {
+        fill: $colorTheme_red-light;
+      }
+    }
+  }
+  & #blue {
+    & .textColor {
+      color: $colorTheme_blue-light;
+      text-shadow: 1px 1px 0px $textColor_dark;
+    }
+    & .bgColor {
+      background: $colorTheme_blue-light;
+    }
+    .activePage {
+      color: $colorTheme_blue-light;
+      & svg path {
+        fill: $colorTheme_blue-light;
+      }
+    }
+  }
+  & #green {
+    & .textColor {
+      color: $colorTheme_green-light;
+      text-shadow: 1px 1px 0px $textColor_dark;
+    }
+    & .bgColor {
+      background: $colorTheme_green-light;
+    }
+    .activePage {
+      color: $colorTheme_green-light;
+      & svg path {
+        fill: $colorTheme_green-light;
+      }
+    }
+  }
+  & #purple {
+    & .textColor {
+      color: $colorTheme_purple-light;
+      text-shadow: 1px 1px 0px $textColor_dark;
+    }
+    & .bgColor {
+      background: $colorTheme_purple-light;
+    }
+    .activePage {
+      color: $colorTheme_purple-light;
+      & svg path {
+        fill: $colorTheme_purple-light;
+      }
+    }
+  }
+  & #yellow {
+    & .textColor {
+      color: $colorTheme_yellow-light;
+      text-shadow: 1px 1px 0px $textColor_light;
+    }
+    & .bgColor {
+      background: $colorTheme_yellow-light;
+    }
+    .activePage {
+      color: $colorTheme_yellow-light;
+      & svg path {
+        fill: $colorTheme_yellow-light;
+      }
+    }
+  }
+}
 
 #red .textColor {
   color: $colorTheme_red;
@@ -101,6 +184,48 @@ $colorTheme_green: #6dff65;
   }
 }
 
+#light .fillPathColor {
+  cursor: pointer;
+
+  &:hover {
+    & > .fillPathColor {
+      &--red > path {
+        fill: $colorTheme_red-light;
+      }
+      &--green > path {
+        fill: $colorTheme_green-light;
+      }
+      &--blue > path {
+        fill: $colorTheme_blue-light;
+      }
+      &--purple > path {
+        fill: $colorTheme_purple-light;
+      }
+      &--yellow > path {
+        fill: $colorTheme_yellow-light;
+      }
+    }
+
+    & > .textColor {
+      &--red {
+        color: $colorTheme_red-light;
+      }
+      &--green {
+        color: $colorTheme_green-light;
+      }
+      &--blue {
+        color: $colorTheme_blue-light;
+      }
+      &--purple {
+        color: $colorTheme_purple-light;
+      }
+      &--yellow {
+        color: $colorTheme_yellow-light;
+      }
+    }
+  }
+}
+
 #red .activePage {
   color: $colorTheme_red;
   & svg path {
@@ -132,23 +257,3 @@ $colorTheme_green: #6dff65;
     fill: $colorTheme_yellow;
   }
 }
-
-// #red #activePage {
-//   border-bottom: 3px solid $colorTheme_red;
-// }
-
-// #blue #activePage {
-//   border-bottom: 3px solid $colorTheme_blue;
-// }
-
-// #yellow #activePage {
-//   border-bottom: 3px solid $colorTheme_yellow;
-// }
-
-// #purple #activePage {
-//   border-bottom: 3px solid $colorTheme_purple;
-// }
-
-// #green #activePage {
-//   border-bottom: 3px solid $colorTheme_green;
-// }

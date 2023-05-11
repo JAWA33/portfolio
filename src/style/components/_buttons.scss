@@ -24,6 +24,33 @@
   }
 }
 
+#light {
+  & #blue .callToAction {
+    background: $colorTheme_blue-light;
+    color: $textColor_dark;
+  }
+
+  & #yellow .callToAction {
+    background: $colorTheme_yellow-light;
+    color: $textColor_light;
+  }
+
+  & #red .callToAction {
+    background: $colorTheme_red-light;
+    color: $textColor_dark;
+  }
+
+  & #purple .callToAction {
+    background: $colorTheme_purple-light;
+    color: $textColor_dark;
+  }
+
+  & #green .callToAction {
+    background: $colorTheme_green-light;
+    color: $textColor_dark;
+  }
+}
+
 #blue .callToAction {
   background: $colorTheme_blue;
   color: $textColor_dark;
@@ -74,6 +101,38 @@
 #dark .otherAction {
   border: 1px solid $textColor_dark;
   color: $textColor_dark;
+}
+
+#light {
+  & #blue .otherAction:hover {
+    border: 1px solid $colorTheme_blue-light;
+    color: $colorTheme_blue-light;
+    background: $textColor_dark;
+  }
+
+  & #yellow .otherAction:hover {
+    border: 1px solid $colorTheme_yellow-light;
+    color: $colorTheme_yellow-light;
+    background: $textColor_light;
+  }
+
+  & #red .otherAction:hover {
+    border: 1px solid $colorTheme_red-light;
+    color: $colorTheme_red-light;
+    background: $textColor_dark;
+  }
+
+  & #purple .otherAction:hover {
+    border: 1px solid $colorTheme_purple-light;
+    color: $colorTheme_purple-light;
+    background: $textColor_dark;
+  }
+
+  & #green .otherAction:hover {
+    border: 1px solid $colorTheme_green-light;
+    color: $colorTheme_green-light;
+    background: $textColor_dark;
+  }
 }
 
 #blue .otherAction:hover {
@@ -399,6 +458,84 @@
       rotate: 90deg;
       & svg {
         fill: $color_page_bg_2_light;
+      }
+    }
+  }
+}
+
+#light {
+  & #green .btnToggle__icon {
+    &--light {
+      border: 5px solid $colorTheme_green-light;
+      background: $colorTheme_green-light;
+      & svg {
+        fill: $color_page_bg_1_dark;
+      }
+    }
+    &--dark {
+      border: 5px solid $colorTheme_green-light;
+      & svg {
+        fill: $colorTheme_green-light;
+      }
+    }
+  }
+  & #blue .btnToggle__icon {
+    &--light {
+      border: 5px solid $colorTheme_blue-light;
+      background: $colorTheme_blue-light;
+      & svg {
+        fill: $color_page_bg_1_dark;
+      }
+    }
+    &--dark {
+      border: 5px solid $colorTheme_blue-light;
+      & svg {
+        fill: $colorTheme_blue-light;
+      }
+    }
+  }
+  & #yellow .btnToggle__icon {
+    &--light {
+      border: 5px solid $colorTheme_yellow-light;
+      background: $colorTheme_yellow-light;
+      & svg {
+        fill: $color_page_bg_1_dark;
+      }
+    }
+    &--dark {
+      border: 5px solid $colorTheme_yellow-light;
+      & svg {
+        fill: $colorTheme_yellow-light;
+      }
+    }
+  }
+  & #red .btnToggle__icon {
+    &--light {
+      border: 5px solid $colorTheme_red-light;
+      background: $colorTheme_red-light;
+      & svg {
+        fill: $color_page_bg_1_dark;
+      }
+    }
+    &--dark {
+      border: 5px solid $colorTheme_red-light;
+      & svg {
+        fill: $colorTheme_red-light;
+      }
+    }
+  }
+  & #purple .btnToggle__icon {
+    &--light {
+      border: 5px solid $colorTheme_purple-light;
+      background: $colorTheme_purple-light;
+      & svg {
+        fill: $color_page_bg_1_dark;
+      }
+    }
+    &--dark {
+      border: 5px solid $colorTheme_purple-light;
+      & svg {
+        fill: $colorTheme_purple-light;
       }
     }
   }

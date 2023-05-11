@@ -20,15 +20,15 @@
       "_4": "À votre écoute"
     },
     "myName": "Julien Armand",
-    "presentation": "Je suis un développeur web passionné par la création de sites web élégants et efficaces. J'utilise mes compétences en design pour concevoir des interfaces utilisateur conviviales et attrayantes qui améliorent l'expérience de l'utilisateur.  Pour répondre aux besoins spécifiques de mes clients, je développe des solutions web personnalisées . Découvrez mes projets les plus récents et les témoignages de clients satisfaits. Contactez-moi pour en savoir plus sur mes services de développement web et de design. Merci de votre visite !",
+    "presentation": "Je suis un développeur web passionné par la création de sites web élégants et efficaces. J'utilise mes compétences en design pour concevoir des interfaces utilisateur conviviales et attrayantes qui améliorent l'expérience de l'utilisateur.  Pour répondre aux besoins spécifiques de mes clients, je développe des solutions web personnalisées . Découvrez mes projets les plus récents. Contactez-moi pour en savoir plus sur mes services de développement web et de design. Merci de votre visite !",
     "call_to_action": "A propos de moi"
   },
   "about_page": {
     "title": "A propos de moi",
     "text": "Je suis Julien Armand et ",
     "textColor": "Développeur Web",
-    "intro": "Je suis un développeur web passionné qui a acquis une solide expérience en matière de conception et de développement de sites web. J'ai travaillé sur divers projets, allant de sites web d'entreprise à des projets personnels plus créatifs, me permettant de développer des compétences solides en matière de langages de programmation tels que HTML, CSS, JavaScript et de maîtriser quelques frameworks comme React Js et NodeJs.",
-    "introBis": "Je suis également à l'aise avec les outils de conception tels que Photoshop, Illustrator et Figma, ce qui me permet de créer des interfaces utilisateur modernes, élégantes et conviviales. Si vous cherchez un développeur web passionné et talentueux pour votre prochain projet, je suis la personne qu'il vous faut."
+    "intro": "Je suis un développeur web passionné qui a acquis une solide expérience en matière de conception et de développement de sites web. J'ai travaillé sur divers projets, allant de sites web d'entreprise à des projets personnels plus créatifs, me permettant de développer des compétences solides en matière de langages de programmation tels que HTML, CSS, JavaScript, me permettant de coder en ReactJs, NodeJs et beaucoup d'autres ...",
+    "introBis": "Je suis également à l'aise avec les outils de conception tel que Figma, ce qui me permet de créer des interfaces utilisateur modernes, élégantes et conviviales. Si vous cherchez un développeur web passionné et talentueux pour votre prochain projet, je suis la personne qu'il vous faut."
   },
   "skills": {
     "info": {
@@ -100,8 +100,8 @@
   },
   "stackBg": {
     "Alt": "Une main, sous l'eau, tendue vers le soleil",
-    "intro_A": "Jouez avec ",
-    "text_A": "Des Bulles",
+    "intro_A": "Fun with ",
+    "text_A": "Bubbles",
     "intro_B": "Découvrez mes ",
     "text_B": " Compétences"
   },
@@ -172,7 +172,7 @@
       },
       "B": {
         "year": "2010-2012",
-        "title": "Girondins Poker ",
+        "title": "Girondins Poker",
         "text": "J'ai été responsable de la partie communication visuelle pour le club associatif des Girondins Poker, pour lequel j'ai créé plusieurs affiches pour des tournois, dessiné les jetons du club et réalisé d'autres créations graphiques, telles que des vidéos ou des montages photo. Cette expérience m'a permis d'élargir mes compétences en design et de développer une vision plus créative de mes projets."
       },
       "C": {
@@ -199,12 +199,12 @@
       },
       "D": {
         "year": "2000-2012",
-        "title": "Divers expériences",
+        "title": "Diverses expériences",
         "text": "Au début de ma carrière, j'ai occupé différents postes dans le secteur de l'industrie. J'ai débuté en travaillant en atelier pour ensuite devenir dessinateur industriel au sein de plusieurs entreprises spécialisées dans ce domaine. Cette expérience m'a permis d'acquérir de nombreuses compétences en dessin et de me perfectionner dans ce domaine."
       },
       "E": {
         "year": "1998-2000",
-        "title": "Formation Bac+2",
+        "title": "Formation BTS",
         "text": "Mon parcours initial a été marqué par l'obtention d'un BTS en chaudronnerie. Bien que ce ne soit pas en lien direct avec le développement web, cette formation m'a permis de développer des compétences en dessin technique. J'ai rapidement été séduit par l'aspect conception et réalisation de projets, que je retrouve aujourd'hui avec le code."
       }
     }
@@ -284,5 +284,166 @@
         "option4": "Autre sujet"
       }
     }
+  },
+  "services_detail": {
+    "cardA": {
+      "title": "Création Blog",
+
+      "detail": {
+        "A": {
+          "title": "Personnalisable",
+          "text": "Je suis spécialisé dans la création de blogs sur mesure qui permettent à mes clients d'avoir un site unique et personnalisé à leur image. Chaque blog est conçu en tenant compte des besoins et des préférences spécifiques de mes clients, garantissant ainsi une présence en ligne distinctive et mémorable."
+        },
+        "B": {
+          "title": "Editable",
+          "text": "En plus de la personnalisation, mes blogs offrent une interface simple et fonctionnelle pour que mes clients puissent facilement éditer leur site. Ils disposent d'un tableau de bord convivial qui leur permet de mettre à jour leur contenu, d'ajouter de nouvelles pages, de gérer les commentaires et bien plus encore. Grâce à cette flexibilité, mes clients ont le contrôle total sur la gestion et l'évolution de leur blog, sans avoir besoin de compétences techniques avancées."
+        },
+        "C": {
+          "title": "Optimisé SEO",
+          "text": "L'optimisation pour les moteurs de recherche (SEO) est une priorité dans la création de mes blogs. J'utilise Next.js, une technologie performante, pour optimiser le référencement naturel de chaque site. Cela permet à mes clients de bénéficier d'une visibilité accrue dans les résultats de recherche et d'attirer un trafic qualifié. Grâce à une structure de site optimisée, des balises méta bien pensées et une attention particulière aux mots clés, mes blogs sont conçus pour obtenir un meilleur classement dans les moteurs de recherche et maximiser leur potentiel en ligne. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes services de création de blogs sur mesure, d'édition conviviale et d'optimisation SEO."
+        }
+      }
+    },
+    "cardB": {
+      "title": "Application Web",
+
+      "detail": {
+        "A": {
+          "title": "Dynamisme",
+          "text": "Mes compétences en développement web avec React.js me permettent de créer des applications sur mesure pour mes clients, offrant ainsi une expérience dynamique et réactive. Grâce à la puissance de React.js et un code addapté, mes applications sont capables de s'adapter à tous les types d'appareils, qu'il s'agisse d'un smartphone, d'une tablette ou d'un grand écran d'ordinateur. Quelle que soit la taille de l'écran, mes applications conservent leur fonctionnalité et leur esthétique, offrant une expérience utilisateur fluide et agréable."
+        },
+        "B": {
+          "title": "Gestion de données",
+          "text": "Lors de la conception de mes applications, je prends en compte les besoins spécifiques de mes clients en matière de gestion des données. Je peux mettre en place des bases de données SQL (mySQL) ou NoSQL (MongoDB) en fonction des exigences du projet et de la flexibilité souhaitée par le client. Les bases de données SQL offrent une structure solide et une gestion rigoureuse des données, tandis que les bases de données NoSQL offrent une flexibilité accrue pour les projets nécessitant une évolutivité rapide et des schémas de données moins structurés. Je travaille en étroite collaboration avec mes clients pour définir les besoins en matière de stockage et de gestion des données, afin de garantir une application performante et évolutive."
+        },
+        "C": {
+          "title": "Serveur",
+          "text": "Pour compléter mes applications web, je crée également des serveurs API REST avec Node.js, permettant une communication fluide entre l'interface utilisateur et la base de données. Grâce à Node.js, je peux développer des serveurs rapides et évolutifs, capables de gérer efficacement les requêtes et les réponses. Les API REST offrent une architecture flexible et modulaire, permettant d'ajouter de nouvelles fonctionnalités et de connecter des services tiers si nécessaire. Je veille à ce que mes serveurs API soient sécurisés et bien documentés, facilitant ainsi l'intégration avec d'autres systèmes et services. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes services de développement d'applications web sur mesure avec React.js, la gestion des bases de données et la création de serveurs API REST avec Node.js. Je serais ravi de discuter de vos besoins spécifiques et de vous montrer comment mon expertise peut vous aider à réaliser des applications performantes et fonctionnelles."
+        }
+      }
+    },
+    "cardC": {
+      "title": "Site Vitrine",
+
+      "detail": {
+        "A": {
+          "title": "Design",
+          "text": "Mon objectif est de créer des sites vitrine qui reflètent parfaitement l'identité et les valeurs de mes clients. Je travaille en étroite collaboration avec eux pour comprendre leurs besoins et leurs attentes en matière de design. Je peux créer des sites personnalisés en suivant leurs propres designs ou concevoir des designs originaux qui mettent en valeur leur entreprise. Grâce à ma maîtrise de HTML, CSS et Javascript, je suis en mesure de créer des interfaces esthétiques et intuitives qui captent l'attention des visiteurs et les incitent à explorer davantage."
+        },
+        "B": {
+          "title": "Dynamisme",
+          "text": "Mes sites vitrine sont conçus pour offrir une expérience utilisateur fluide et adaptée sur tous les appareils. Grâce à l'utilisation de  que Javascript, j'apporte du dynamisme à la page, permettant d'ajouter des animations, des transitions fluides et des interactions engageantes. Cela garantit que vos visiteurs bénéficieront d'une expérience cohérente et agréable, quel que soit le dispositif utilisé pour accéder au site."
+        },
+        "C": {
+          "title": "Optimisé SEO",
+          "text": "L'optimisation pour les moteurs de recherche est un aspect essentiel de mes sites vitrine. Je porte une attention particulière à la structure HTML de chaque page, en utilisant des balises sémantiques et des métadonnées appropriées pour faciliter l'indexation par les moteurs de recherche. De plus, j'optimise les performances du site en veillant à ce que les temps de chargement soient réduits et en optimisant les images et les ressources pour une meilleure expérience utilisateur. Enfin, je mets en place des bonnes pratiques en matière de référencement, telles que la création de balises de titre pertinentes, de descriptions méta attrayantes et l'optimisation des mots-clés pertinents. Cela contribue à améliorer la visibilité de votre site sur les moteurs de recherche et à générer un trafic organique plus important."
+        }
+      }
+    },
+    "cardD": {
+      "title": "Travailleur Indépendant",
+
+      "detail": {
+        "A": {
+          "title": "Adaptabilité",
+          "text": "En tant que travailleur indépendant en développement web, je m'adapte pleinement aux besoins de mes clients. Que ce soit pour une collaboration de courte durée ou un renfort ponctuel, je suis flexible et prêt à répondre à leurs exigences spécifiques. Mon objectif est de fournir un service personnalisé qui correspond parfaitement à leurs attentes."
+        },
+        "B": {
+          "title": "A la journée",
+          "text": "Vous avez besoin d'un développeur web pour une journée ou quelques jours seulement ? Je propose des services à la journée, ce qui vous permet de bénéficier de mes compétences et de mon expertise pour des périodes précises. Cette approche offre une grande souplesse dans la planification de vos projets et vous permet de maximiser l'efficacité de votre équipe. De plus, avec un tarif journalier compétitif, vous avez un contrôle total sur votre budget."
+        },
+        "C": {
+          "title": "Au Forfait",
+          "text": "Vous préférez une approche basée sur un forfait tout compris ? Je propose également des services au forfait, idéaux pour des tâches bien définies et ciblées. Avec cette option, vous bénéficiez d'une tarification claire et transparente, sans surprises ni coûts cachés. De plus, vous avez l'avantage de connaître à l'avance les délais de livraison et le budget nécessaire pour votre projet. Cette méthode simplifie la gestion et facilite la prise de décision, en vous permettant de vous concentrer sur d'autres aspects de votre activité. Quelle que soit votre préférence, je suis là pour vous accompagner et vous fournir un service de qualité, adapté à vos besoins spécifiques."
+        }
+      }
+    },
+    "cardE": {
+      "title": "Création Originale",
+
+      "detail": {
+        "A": {
+          "title": "Inspiration",
+          "text": "Vous avez une idée ? Un site atypique ou innovant ? Je suis là pour étudier avec vous toutes vos questions. Je comprends que vous puissiez avoir des interrogations sur la faisabilité, les défis techniques ou même la viabilité de votre projet. Ensemble, nous explorerons ces aspects et trouverons des solutions adaptées à vos besoins spécifiques."
+        },
+        "B": {
+          "title": "Accompagnement",
+          "text": "Mon rôle en tant que développeur web passionné est de vous aider à approfondir votre idée et à la développer. Je suis là pour vous accompagner tout au long du processus, en vous apportant mon expertise technique et mes compétences en matière de conception web. Je m'engage à trouver des solutions créatives et innovantes pour concrétiser votre vision, en tenant compte de vos objectifs, de vos contraintes et de votre budget."
+        },
+        "C": {
+          "title": "Echange",
+          "text": "N'hésitez pas à venir discuter avec moi de vos idées. Je suis ouvert et enthousiaste à l'idée de collaborer avec des esprits créatifs et ambitieux. Ensemble, nous pourrons explorer les possibilités et définir une stratégie pour réaliser votre projet de manière efficace et réussie. Je suis là pour vous guider, vous conseiller et vous soutenir tout au long du processus de développement web. Alors, lancez-vous et contactez-moi dès aujourd'hui pour que nous puissions donner vie à votre idée atypique ou innovante."
+        }
+      }
+    },
+    "cardF": {
+      "title": "Branding",
+
+      "detail": {
+        "A": {
+          "title": "Identité Graphique",
+          "text": "Vous connaissez bien l'importance de l'image que l'on renvoie sur le monde de nos jours. Mon objectif est d'aider mes clients à façonner une image de marque unique et mémorable. En travaillant étroitement avec eux, je m'immerge dans leur univers pour comprendre leur activité, leurs valeurs et leur public cible. À partir de ces informations, je crée des logos percutants qui reflètent l'essence même de leur entreprise. En parallèle, je développe une charte graphique complète qui définit les règles d'utilisation des éléments visuels. J'aide ainsi mes clients à se démarquer de la concurrence en créant une identité visuelle distinctive et en accord avec leur vision."
+        },
+        "B": {
+          "title": "Web design",
+          "text": "En plus de la création d'identité graphique, je propose également mes services pour la réalisation de designs web en adéquation avec cette identité. Je veille à ce que le design du site web soit en harmonie avec la nouvelle identité graphique de l'entreprise, créant ainsi une expérience utilisateur cohérente et impactante. Que ce soit pour la mise en page, le choix des couleurs, des typographies et des éléments visuels, je suis attentif aux moindres détails pour offrir un design web attrayant et professionnel."
+        },
+        "C": {
+          "title": "Personnalisation",
+          "text": "En complément, je propose la personnalisation de différents documents d'entreprises pour aligner l'identité visuelle en ligne avec l'identité visuelle réelle. Cela inclut la création de cartes de visite professionnelles, d'en-têtes de documents, de goodies et d'autres supports de communication nécessaires. Chaque document est pensé de manière à renforcer la cohérence visuelle de l'entreprise et à transmettre son message de manière impactante. Je suis là pour vous accompagner dans la personnalisation de ces différents éléments pour une identité visuelle globale et cohérente."
+        }
+      }
+    },
+    "cardG": {
+      "title": "Portfolio",
+
+      "detail": {
+        "A": {
+          "title": "Besoin de visibilité ?",
+          "text": "La visibilité est essentielle de nos jours pour réussir dans le domaine artistique. C'est pourquoi je me spécialise dans la création de portfolios personnalisés pour les artistes, les mannequins, les chanteurs, les musiciens, les cuisiniers, les graphistes et bien d'autres encore. Mes clients ont besoin d'un support visuel qui met en valeur leurs talents et leur travail, et je suis là pour les aider à se démarquer dans un monde numérique en constante évolution."
+        },
+        "B": {
+          "title": "Renforcez votre image",
+          "text": "En collaborant étroitement avec mes clients, je crée des portfolios sur mesure qui reflètent leur univers et leur style. Je m'immerge dans leur histoire, leurs aspirations et leurs réalisations pour concevoir un portfolio qui capture l'essence même de leur talent. Je veille à ce que chaque élément du portfolio, qu'il s'agisse de la mise en page, des images, des textes ou des vidéos, soit soigneusement choisi pour renforcer l'image de mes clients et attirer l'attention des visiteurs."
+        },
+        "C": {
+          "title": "En toute confiance",
+          "text": "Lorsque vous travaillez avec moi, vous pouvez avoir confiance en mon approche centrée sur le client. Je prends le temps d'écouter attentivement vos besoins et vos aspirations, afin de créer un portfolio qui vous représente de manière authentique. Je m'engage à fournir un service personnalisé et de haute qualité, en mettant l'accent sur la satisfaction de mes clients. Vous pouvez compter sur ma créativité, mon professionnalisme et ma passion pour l'art pour vous aider à développer votre image et à vous démarquer dans l'industrie créative. Faites-moi confiance pour créer un portfolio qui vous aidera à atteindre vos objectifs et à captiver votre public."
+        }
+      }
+    }
+  },
+  "projects": {
+    "A": {
+      "title": "SPYDE",
+      "text": "Spyde est une entreprise spécialisée dans la collecte et le recyclage des déchets des entreprises et des collectivités. J'ai réalisé l'intégralité du projet, de la création du logo à la mise en ligne de leur application web. Ensemble, nous avons développé un système efficace pour optimiser la gestion des déchets et promouvoir la durabilité.",
+      "button": "Découvrir le projet",
+      "link": "/"
+    },
+    "B": {
+      "title": "JAWA DESIGN",
+      "text": "Ce site internet représente ma marque personnelle, JAWA Design. J'ai conçu le site de manière à ce qu'il reflète ma personnalité et j'ai intégré des détails sur ma vie et mes références. Saurez-vous les trouver ? Il met en valeur mes compétences et présente l'approche unique que j'apporte à la conception web.",
+      "button": "Découvrir le projet",
+      "link": "/"
+    },
+    "C": {
+      "title": "LIVRE D'OR",
+      "text": "J'ai développé une application web spécifique pour le mariage de mon frère. Cette application fonctionne comme un livre d'or numérique, offrant la possibilité aux invités de partager leurs vœux et leurs photos prises lors de la cérémonie. Ce qui rend cette application unique, c'est qu'elle permet aux invités de participer sans se couper de la soirée et aux mariés de garder un bon souvenir !",
+      "button": "Découvrir le projet",
+      "link": "/"
+    },
+    "D": {
+      "title": "FORMATION",
+      "text": "Voici quelques projets que j'ai réalisés pendant ma formation. Bien qu'ils aient été réalisés pendant ma formation, ces projets témoignent de mon engagement à respecter strictement les consignes et les attentes en termes de design de chaque client. Chaque projet met en avant les compétences et les techniques que j'ai acquises au cours de ma formation.",
+      "button": "Découvrir le projet",
+      "link": "/"
+    },
+    "E": {
+      "title": "GIRONDINS",
+      "text": "J'ai été membre actif et responsable de la communication visuelle de Girondins Poker, une association de poker dans la région girondine. J'ai réalisé, entre autres, des logos, des jetons, des affiches pour les tournois, des flyers, etc. Mon travail a contribué à renforcer l'image de l'association et à attirer des participants à leurs événements.",
+      "button": "Découvrir le projet",
+      "link": "/"
+    },
+    "endMessage": "En plus de ces projets, je suis en train de préparer de nouveaux qui seront bientôt disponibles ici. Certains de ces projets seront axés sur l'intelligence artificielle, exploitant ses capacités pour créer des solutions innovantes. D'autres projets seront davantage orientés vers le design, notamment des sites intégrant de la 3D."
   }
 }

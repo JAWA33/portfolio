@@ -47,6 +47,30 @@
 }
 
 //* ColorSet
+#light {
+  & #green .sectionTitle__container h1:before,
+  & #green .sectionTitle__container h1:after {
+    background: $colorTheme_green-light;
+  }
+  & #purple .sectionTitle__container h1:before,
+  & #purple .sectionTitle__container h1:after {
+    background: $colorTheme_purple-light;
+  }
+  & #blue .sectionTitle__container h1:before,
+  & #blue .sectionTitle__container h1:after {
+    background: $colorTheme_blue-light;
+  }
+  & #yellow .sectionTitle__container h1:before,
+  & #yellow .sectionTitle__container h1:after {
+    background: $colorTheme_yellow-light;
+  }
+  & #red .sectionTitle__container h1:before,
+  & #red .sectionTitle__container h1:after {
+    background: $colorTheme_red-light;
+  }
+}
+
+//DarkMode :
 #green .sectionTitle__container h1:before,
 #green .sectionTitle__container h1:after {
   background: $colorTheme_green;

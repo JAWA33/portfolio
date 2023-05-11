@@ -14,21 +14,21 @@
     "name": "Jawa Design !",
     "intro": "I'm ",
     "works": {
-      "_1": "Web Developer",
+      "_1": "Julien Armand",
       "_2": "Web Designer",
       "_3": "Freelancer",
       "_4": "Digital Solution Maker"
     },
     "myName": "Julien Armand",
-    "presentation": "Engage your audience with a dedicated front-end developer. I specialize in responsive, intuitive websites that captivate users. Let's take your online presence to the next level. Contact me today!",
+    "presentation": "I am a web developer passionate about creating elegant and efficient websites. I utilize my design skills to craft user-friendly and visually appealing interfaces that enhance the user experience. To meet the specific needs of my clients, I develop custom web solutions. Explore my latest projects. Get in touch with me to learn more about my web development and design services. Thank you for visiting!",
     "call_to_action": "More About Me"
   },
   "about_page": {
     "title": "About Me",
     "text": "I'm Julien Armand and ",
     "textColor": "Developer Web",
-    "intro": "ENG Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque.",
-    "introBis": "ENG Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam similique sed ea natus saepe cupiditate labore ducimus debitis deserunt amet architecto, velit earum commodi porro itaque delectus illum ex neque."
+    "intro": "I am a passionate web developer who has acquired a solid experience in designing and developing websites. I have worked on various projects, ranging from corporate websites to more creative personal projects, allowing me to develop strong skills in programming languages ​​such as HTML, CSS, JavaScript, allowing me to code in ReactJs, NodeJs and many more...",
+    "introBis": "I am also comfortable with design tools such as Figma, which allows me to create modern, elegant and user-friendly user interfaces. If you are looking for a passionate and talented web developer for your next project, I am the person for you."
   },
   "skills": {
     "info": {
@@ -59,48 +59,48 @@
   "bubbleSkills": {
     "figma": {
       "title": "Figma",
-      "text": "ENGLISH VERSION : Figma permet une collaboration en temps réel, facilite la création de maquettes interactives et offre des fonctionnalités de conception avancées pour créer des designs de haute qualité."
+      "text": "Figma enables real-time collaboration, makes it easy to create interactive mockups, and offers advanced design features to create high-quality designs."
     },
     "html": {
       "title": "HTML 5",
-      "text": "ENGLISH VERSION : Une bonne maîtrise de la structure sémantique en HTML peut aider les moteurs de recherche à mieux comprendre le contenu d'un site web, améliorant ainsi son référencement naturel (SEO) et son accessibilité pour les utilisateurs."
+      "text": "A good command of the semantic structure in HTML can help search engines to better understand the content of a website, thus improving its natural referencing (SEO) and its accessibility for users."
     },
     "css": {
       "title": "CSS 3",
-      "text": "ENGLISH VERSION : Offre des possibilités quasi infinies pour créer des designs originaux et esthétiquement plaisants, ainsi que des expériences utilisateur uniques et engageantes grâce à ses fonctionnalités de personnalisation avancées."
+      "text": "Offers near-endless possibilities to create original and aesthetically pleasing designs, as well as unique and engaging user experiences through its advanced customization features."
     },
     "javascript": {
       "title": "Javascript",
-      "text": "ENGLISH VERSION : Ajoute du dynamisme et de l'interactivité, améliorant ainsi l'expérience utilisateur et l'engagement du site web"
+      "text": "Adds dynamism and interactivity, improving user experience and website engagement"
     },
     "react": {
       "title": "React JS",
-      "text": "ENGLISH VERSION : Crée des interfaces utilisateur interactives, réactives et faciles à maintenir."
+      "text": "Creates user interfaces that are interactive, responsive and easy to maintain."
     },
     "node": {
       "title": "Node JS",
-      "text": "ENGLISH VERSION : Crée des applications côté serveur performantes et évolutives grâce à une grande flexibilité et une vaste gamme de bibliothèques et de modules."
+      "text": "Create high-performance, scalable server-side applications with great flexibility and a wide range of libraries and modules."
     },
     "redux": {
       "title": "Redux",
-      "text": "ENGLISH VERSION : Crée des applications web React plus efficace et plus productive en automatisant certaines tâches courantes "
+      "text": "Create more efficient and productive React web applications by automating some common tasks"
     },
     "sass": {
       "title": "Sass",
-      "text": "ENGLISH VERSION : Génére des feuilles de style CSS optimisées et compatibles avec les différents navigateurs web, ce qui peut améliorer les performances du site web."
+      "text": "Generates optimized and cross-browser compatible CSS style sheets, which can improve website performance."
     },
     "mongo": {
       "title": "Mongo DB",
-      "text": "ENGLISH VERSION : Offre une grande évolutivité et des performances supérieures pour le stockage de données dans les applications web, grâce à sa structure NoSQL."
+      "text": "Provides great scalability and superior performance for data storage in web applications, thanks to its NoSQL framework."
     },
     "mysql": {
       "title": "MySQL",
-      "text": "ENGLISH VERSION : Offre une grande stabilité, des performances élevées et une grande sécurité pour le stockage de données dans les applications web."
+      "text": "Offre une grande stabilité, des performances élevées et une grande sécurité pour le stockage de données dans les applications web."
     }
   },
   "stackBg": {
     "Alt": "A hand, underwater, in direction of the sun",
-    "intro_A": "Let's play with ",
+    "intro_A": "Fun with ",
     "text_A": "Bubbles",
     "intro_B": "Discover My ",
     "text_B": " Skills"
@@ -114,11 +114,11 @@
   "about_experience": {
     "titles": {
       "education": {
-        "intro": "DEV ",
+        "intro": "Coding ",
         "text": " Education"
       },
       "experience": {
-        "intro": "DEV ",
+        "intro": "Coding ",
         "text": " Experiences"
       },
 
@@ -133,80 +133,80 @@
     },
     "education": {
       "A": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2021-2022",
+        "title": "Professional training",
+        "text": "In order to realize my project, I followed an intensive six-month training at OpenClassrooms to strengthen my basic skills necessary for programming. This training allowed me to focus my career as a web developer and work on exciting projects, including the creation of my own website."
       },
       "B": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2010-2021",
+        "title": "Self-taught training",
+        "text": "I started writing simple programs in VBA for a professional project, then, out of passion, I took online courses to deepen my knowledge of programming, especially in web languages. Over time I developed my skills and my passion for coding eventually led me here."
       }
     },
     "experience": {
       "A": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2023",
+        "title": "Jawa-design Website",
+        "text": "This website is very personal to me as I have tried to bring my personality and story into every element of its design. Even if it doesn't necessarily seem like it, every design choice and every line of code has been influenced by my personal experiences and preferences. I wanted this site to be a true representation of who I am as a web developer and artist. I hope you enjoy browsing this site as much as I enjoyed creating it."
       },
       "B": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2022-2023",
+        "title": "Web Application : Spyde.fr",
+        "text": "I developed a complete web application, for my client Spyde, with secure and automatic access, user profiles to manage clients and employees, an editable and customizable blog, a client location system and upcoming collections, the simplified creation of roadmaps, recording of collected weights and customer information at each stage of recycling, as well as a dashboard of the main indicators. The project required the acquisition of various skills, such as the management of MapBox maps or the deepening of my knowledge in Node Js."
       },
       "C": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2022",
+        "title": "Creation Jawa Design",
+        "text": "This project marks an important turning point in my professional career, which I started a few years ago, since I started as an independent developer. I am proud to have transformed my passion for web development into a professional activity. I am aware that the challenge is daunting, but my past experience as a self-taught developer, but also my various collaborations and professional experiences, have allowed me to acquire solid skills, whether in programming or in project management. . I am enthusiastic about the idea of ​​continuing this entrepreneurial adventure and putting my skills at your service."
       },
       "D": {
         "year": "2016",
         "title": "Les Ecuries du Landran",
-        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+        "text": "I had the opportunity to create the first online site of a stable owned by friends. Although not a major project, it allowed me to practice my passion and web development skills while having a real impact for my friends. This experience also allowed me to gain confidence and continue to develop my skills in this area."
       }
     },
     "design": {
       "A": {
-        "year": "2023",
-        "title": "Site de Jawa-design.com",
-        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+        "year": "2022",
+        "title": "Branding and Design : Spyde.fr",
+        "text": "My first professional project, as a freelancer, was for the start-up Spyde, which specializes in waste recycling. I carried out the branding and the web design of their web application, which was a major project, requiring a wide variety of skills, since I was also responsible for developing the Spyde.fr web application. This experience was very enriching for me and allowed me to develop my skills in web design and development."
       },
       "B": {
-        "year": "2022-2023",
-        "title": "Spyde.fr",
-        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+        "year": "2010-2012",
+        "title": "Girondins Poker",
+        "text": "I was responsible for the visual communication part for the Girondins Poker association club, for which I created several posters for tournaments, designed the club's chips and produced other graphic creations, such as videos or montages photo. This experience allowed me to broaden my design skills and develop a more creative vision of my projects."
       },
       "C": {
-        "year": "2022",
-        "title": "Création de Jawa Design",
-        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+        "year": "Always",
+        "title": "Personal creations",
+        "text": "Since my childhood, I have always had a pencil in my hand to draw and I have done many personal artistic projects, such as drawings, photographs, videos, montages, etc. This passion for art has allowed me to broaden my creative vision and develop design skills that have been very useful to me in my work as a web developer."
       }
     },
     "before": {
       "A": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2021",
+        "title": "To the code",
+        "text": "After being forced to leave Thailand due to the pandemic, I had to reinvent myself by returning to France. I then took the time to reflect on my skills and my passions to consider a new career direction. Web development then became obvious to me. After a short reflection, I embark on this new adventure."
       },
       "B": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2019-2020",
+        "title": "Dive Instructor",
+        "text": "Après avoir travaillé pendant plusieurs années, j'ai réalisé que je n'étais pas complètement satisfait de ma vie professionnelle et que j'avais besoin de changer d'orientation. J'ai alors décidé de suivre ma passion pour les voyages et de partir explorer le monde. Pour financer mes voyages, j'ai décidé de me tourner vers la plongée sous-marine, une autre passion que je nourrissais depuis longtemps. Je suis donc parti en Thaïlande pour passer mes niveaux de plongée et obtenir le diplôme d'instructeur de plongée. Cependant, la pandémie de COVID-19 a bouleversé mes plans et m'a contraint à interrompre cette nouvelle vie pour retourner en France et me réorienter professionnellement."
       },
       "C": {
-        "year": "1990-1980",
-        "title": "1990-1980",
-        "text": "1990-1980"
+        "year": "2012-2019",
+        "title": "Project Manager",
+        "text": "I acquired significant experience as a project manager in an international biorefinery company specialized in the production of specialty cellulose, Rayonier AM. This experience allowed me to learn more about project management, team management and other useful skills for my current job as a developer."
       },
       "D": {
         "year": "2000-2012",
-        "title": "Divers expériences",
-        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+        "title": "Various experiences",
+        "text": "At the start of my career, I held various positions in the industrial sector. I started working in the workshop and then became an industrial designer in several companies specializing in this field. This experience allowed me to acquire many drawing skills and to improve myself in this field."
       },
       "E": {
         "year": "1998-2000",
-        "title": "Formation Bac+2",
-        "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor ducimus debitis similique consequatur ab dignissimos hic totam alias molestiae. Deleniti quas porro sequi tenetur harum doloremque assumenda, numquam quibusdam cupiditate."
+        "title": "Associate degree Training",
+        "text": "My initial career was marked by obtaining a Associate degree in boilermaking. Although it is not directly related to web development, this training allowed me to develop skills in technical drawing. I was quickly seduced by the aspect of design and realization of projects, which I find today with the code."
       }
     }
   },
@@ -215,31 +215,32 @@
     "grid": {
       "elementA": {
         "title": "Blog",
-        "text": "ENG Réalisation de blogs sur mesure et éditable"
+        "text": "Personalized and editable blogs, created especially to meet your needs."
       },
+
       "elementB": {
-        "title": "Blog",
-        "text": "ENG Réalisation de blogs sur mesure et éditable"
+        "title": "Web application",
+        "text": "Applications customized to your needs, not according to a predefined model."
       },
       "elementC": {
-        "title": "Blog",
-        "text": "ENG Réalisation de blogs sur mesure et éditable"
+        "title": "Showcase site",
+        "text": "Promote your products or services with a professional and impactful online presentation."
       },
       "elementD": {
-        "title": "Blog",
-        "text": "ENG Réalisation de blogs sur mesure et éditable"
+        "title": "Freelance worker",
+        "text": "Need reinforcement for your team? I offer my services as a telecommuting freelancer."
       },
       "elementE": {
-        "title": "Blog",
-        "text": "ENG Réalisation de blogs sur mesure et éditable"
+        "title": "Original creation",
+        "text": "An atypical or innovative idea? Let's discuss it!"
       },
       "elementF": {
-        "title": "Blog",
-        "text": "ENG Réalisation de blogs sur mesure et éditable"
+        "title": "Branding",
+        "text": "Design of the graphic universe of your company."
       },
       "elementG": {
-        "title": "Blog",
-        "text": "ENG Réalisation de blogs sur mesure et éditable"
+        "title": "Portfolio",
+        "text": "Exhibit your art online with style and originality."
       }
     }
   },
@@ -285,5 +286,166 @@
         "option4": "Other object"
       }
     }
+  },
+  "services_detail": {
+    "cardA": {
+      "title": "Personalized Blog",
+
+      "detail": {
+        "A": {
+          "title": "Customizable",
+          "text": "I specialize in the creation of tailor-made blogs that allow my clients to have a unique and personalized site in their image. Each blog is designed with the specific needs and preferences of my clients in mind, ensuring a distinctive and memorable online presence."
+        },
+        "B": {
+          "title": "Editable",
+          "text": "Along with customization, my blogs provide a simple and functional interface for my clients to easily edit their site. They have a user-friendly dashboard that allows them to update their content, add new pages, manage comments and much more. Thanks to this flexibility, my clients have full control over the management and evolution of their blog, without the need for advanced technical skills."
+        },
+        "C": {
+          "title": "SEO optimized",
+          "text": "Search engine optimization (SEO) is a priority in the creation of my blogs. I use Next.js, a powerful technology, to optimize the natural referencing of each site. This allows my clients to benefit from increased visibility in search results and attract qualified traffic. With an optimized site structure, well-thought-out meta tags, and careful attention to keywords, my blogs are designed to achieve higher search engine rankings and maximize their online potential. Feel free to contact me if you want to learn more about my bespoke blogging, user-friendly editing, and SEO optimization services."
+        }
+      }
+    },
+    "cardB": {
+      "title": "Web application",
+
+      "detail": {
+        "A": {
+          "title": "Dynamism",
+          "text": "My skills in web development with React.js allow me to create tailor-made applications for my clients, thus offering a dynamic and responsive experience. Thanks to the power of React.js and an adapted code, my applications are able to adapt to all types of devices, whether it is a smartphone, a tablet or a large screen of computer. Regardless of the screen size, my apps retain their functionality and aesthetics, providing a smooth and enjoyable user experience."
+        },
+        "B": {
+          "title": "Data management",
+          "text": "When designing my applications, I take into account the specific data management needs of my clients. I can set up SQL (mySQL) or NoSQL (MongoDB) databases depending on the project requirements and the flexibility desired by the client. SQL databases offer solid structure and tight data management, while NoSQL databases offer increased flexibility for projects requiring rapid scalability and less structured data schemas. I work closely with my clients to define storage and data management needs to ensure a high performance and scalable application."
+        },
+        "C": {
+          "title": "Server",
+          "text": "To complement my web applications, I also create REST API servers with Node.js, allowing smooth communication between the UI and the database. Thanks to Node.js, I can develop fast and scalable servers that can handle requests and responses efficiently. REST APIs offer a flexible and modular architecture, allowing to add new functionalities and to connect third-party services if necessary. I ensure that my API servers are secure and well documented, making it easy to integrate with other systems and services. Do not hesitate to contact me if you want to know more about my custom web application development services with React.js, database management and creation of REST API servers with Node.js. I would be happy to discuss your specific needs and show you how my expertise can help you achieve high-performance and functional applications."
+        }
+      }
+    },
+    "cardC": {
+      "title": "Showcase site",
+
+      "detail": {
+        "A": {
+          "title": "Design",
+          "text": "My goal is to create showcase sites that perfectly reflect the identity and values ​​of my clients. I work closely with them to understand their design needs and expectations. I can create custom sites following their own designs or design original designs that showcase their business. Thanks to my mastery of HTML, CSS and Javascript, I am able to create aesthetic and intuitive interfaces that capture the attention of visitors and encourage them to explore further."
+        },
+        "B": {
+          "title": "Dynamism",
+          "text": "My showcase sites are designed to offer a fluid and adapted user experience on all devices. Thanks to the use of Javascript, I bring dynamism to the page, allowing to add animations, fluid transitions and engaging interactions. This ensures that your visitors will have a consistent and enjoyable experience, regardless of the device used to access the site."
+        },
+        "C": {
+          "title": "SEO optimized",
+          "text": "Search engine optimization is an essential aspect of my showcase sites. I pay particular attention to the HTML structure of each page, using semantic tags and appropriate metadata to facilitate indexing by search engines. Additionally, I optimize site performance by ensuring that load times are reduced and optimizing images and assets for a better user experience. Finally, I implement SEO best practices such as creating relevant title tags, engaging meta descriptions, and optimizing for relevant keywords. This helps improve your site's visibility on search engines and drive more organic traffic."
+        }
+      }
+    },
+    "cardD": {
+      "title": "Working Freelance",
+
+      "detail": {
+        "A": {
+          "title": "Adaptability",
+          "text": "As a freelancer in web development, I fully adapt to the needs of my clients. Whether it is for a short-term collaboration or a one-time reinforcement, I am flexible and ready to meet their specific requirements. My goal is to provide a personalized service that perfectly matches their expectations."
+        },
+        "B": {
+          "title": "By the day",
+          "text": "Do you need a web developer for a day or just a few days? I offer daily services, which allows you to benefit from my skills and expertise for specific periods. This approach offers great flexibility in planning your projects and allows you to maximize the efficiency of your team. Plus, with a competitive daily rate, you have full control over your budget."
+        },
+        "C": {
+          "title": "Package",
+          "text": "Prefer an all-inclusive package approach? I also offer fixed-price services, ideal for well-defined and targeted tasks. With this option, you benefit from clear and transparent pricing, with no surprises or hidden costs. In addition, you have the advantage of knowing in advance the delivery times and the budget necessary for your project. This method simplifies management and facilitates decision-making, allowing you to focus on other aspects of your business. Whatever your preference, I am here to accompany you and provide you with a quality service, adapted to your specific needs."
+        }
+      }
+    },
+    "cardE": {
+      "title": "Original creation",
+
+      "detail": {
+        "A": {
+          "title": "Inspiration",
+          "text": "You have an idea ? An atypical or innovative site? I am here to study with you all your questions. I understand that you may have questions about the feasibility, technical challenges or even the viability of your project. Together, we will explore these aspects and find solutions adapted to your specific needs."
+        },
+        "B": {
+          "title": "Accompaniement",
+          "text": "My role as a passionate web developer is to help you deepen your idea and develop it. I am here to accompany you throughout the process, bringing you my technical expertise and my skills in web design. I am committed to finding creative and innovative solutions to realize your vision, taking into account your objectives, your constraints and your budget."
+        },
+        "C": {
+          "title": "Exchange",
+          "text": "Do not hesitate to come and discuss your ideas with me. I am open and enthusiastic about collaborating with creative and ambitious minds. Together, we can explore the possibilities and define a strategy to carry out your project efficiently and successfully. I am here to guide, advise and support you throughout the web development process. So go ahead and contact me today so we can bring your atypical or innovative idea to life."
+        }
+      }
+    },
+    "cardF": {
+      "title": "Branding",
+
+      "detail": {
+        "A": {
+          "title": "Graphic identity",
+          "text": "You are well aware of the importance of the image that we send back to the world today. My goal is to help my clients shape a unique and memorable brand image. By working closely with them, I immerse myself in their universe to understand their activity, their values ​​and their target audience. From this information, I create impactful logos that reflect the very essence of their business. In parallel, I develop a complete graphic charter which defines the rules of use of the visual elements. I help my clients stand out from the competition by creating a distinctive visual identity in line with their vision."
+        },
+        "B": {
+          "title": "Web design",
+          "text": "In addition to the creation of graphic identity, I also offer my services for the realization of web designs in line with this identity. I ensure that the design of the website is in harmony with the new graphic identity of the company, thus creating a coherent and impactful user experience. Whether it's for the layout, the choice of colors, typography and visual elements, I pay attention to the smallest details to offer an attractive and professional web design."
+        },
+        "C": {
+          "title": "Personalization",
+          "text": "In addition, I offer the customization of different corporate documents to align the online visual identity with the real visual identity. This includes creating professional business cards, document letterheads, goodies, and other necessary communication materials. Each document is thought out in such a way as to reinforce the visual coherence of the company and to transmit its message in an impactful way. I am here to support you in the customization of these different elements for a global and coherent visual identity."
+        }
+      }
+    },
+    "cardG": {
+      "title": "Portfolio",
+
+      "detail": {
+        "A": {
+          "title": "Need visibility ?",
+          "text": "Visibility is essential these days to succeed in the artistic field. That's why I specialize in creating custom portfolios for artists, models, singers, musicians, cooks, graphic designers and more. My clients need visual support that showcases their talents and work, and I'm here to help them stand out in an ever-changing digital world."
+        },
+        "B": {
+          "title": "Strengthen your image",
+          "text": "By collaborating closely with my clients, I create tailor-made portfolios that reflect their universe and their style. I immerse myself in their history, their aspirations and their achievements to design a portfolio that captures the very essence of their talent. I ensure that each element of the portfolio, be it layout, images, texts or videos, is carefully chosen to enhance the image of my clients and attract the attention of visitors."
+        },
+        "C": {
+          "title": "In complete confidence",
+          "text": "When you work with me, you can trust my client-centric approach. I take the time to listen carefully to your needs and aspirations, in order to create a portfolio that authentically represents you. I am committed to providing a personalized and high quality service, with an emphasis on the satisfaction of my customers. You can count on my creativity, my professionalism and my passion for art to help you develop your image and stand out in the creative industry. Trust me to create a portfolio that will help you achieve your goals and captivate your audience."
+        }
+      }
+    }
+  },
+  "projects": {
+    "A": {
+      "title": "SPYDE",
+      "text": "Spyde is a company specializing in the collection and recycling of waste from businesses and communities. I carried out the entire project, from creating the logo to putting their web application online. Together we have developed an effective system to optimize waste management and promote sustainability.",
+      "button": "Discover the project",
+      "link": "/"
+    },
+    "B": {
+      "title": "JAWA DESIGN",
+      "text": "This website represents my personal brand, JAWA Design. I designed the site to reflect my personality and incorporated details of my life and references. Can you find them? It showcases my skills and showcases the unique approach I bring to web design.",
+      "button": "Discover the project",
+      "link": "/"
+    },
+    "C": {
+      "title": "GOLDEN BOOK",
+      "text": "I developed a specific web application for my brother's wedding. This application functions as a digital guestbook, offering the possibility to the guests to share their wishes and their photos taken during the ceremony. What makes this application unique is that it allows guests to participate without cutting themselves off from the evening and the bride and groom to keep a good memory!",
+      "button": "Discover the project",
+      "link": "/"
+    },
+    "D": {
+      "title": "TRAINING",
+      "text": "Here are some projects I did during my training. Although they were made during my training, these projects testify to my commitment to strictly respect the instructions and expectations in terms of design of each client. Each project highlights the skills and techniques that I have acquired during my training.",
+      "button": "Discover the project",
+      "link": "/"
+    },
+    "E": {
+      "title": "GIRONDINS",
+      "text": "I was an active member and responsible for the visual communication of Girondins Poker, a poker association in the Gironde region. I realized, among other things, logos, tokens, posters for tournaments, flyers, etc. My work has contributed to strengthening the association's image and attracting participants to their events.",
+      "button": "Discover the project",
+      "link": "/"
+    },
+    "endMessage": "In addition to these projects, I am preparing new ones which will soon be available here. Some of these projects will focus on artificial intelligence, harnessing its capabilities to create innovative solutions. Other projects will be more oriented towards design, in particular sites integrating 3D."
   }
 }

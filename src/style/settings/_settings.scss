@@ -5,7 +5,7 @@
   position: fixed;
   width: auto;
   height: auto;
-  top: 90px;
+  top: 60px;
   right: 50px;
   display: flex;
   flex-direction: column;
@@ -25,6 +25,10 @@
   &:hover {
     animation-play-state: paused;
   }
+}
+.ghostDiv {
+  width: 100%;
+  height: 100%;
 }
 
 #red .essai {
@@ -50,6 +54,9 @@
   overflow: hidden;
 }
 
+#lottie {
+  max-height: 350px;
+}
 // .lottie {
 //   position: absolute;
 //   translate: 650px;
@@ -185,19 +192,19 @@
 
 #light {
   & #green .dots {
-    box-shadow: 0 0 1px 0.1em $colorTheme_green;
+    box-shadow: 0 0 1px 0.1em $colorTheme_green-light;
   }
   & #blue .dots {
-    box-shadow: 0 0 1px 0.1em $colorTheme_blue;
+    box-shadow: 0 0 1px 0.1em $colorTheme_blue-light;
   }
   & #yellow .dots {
-    box-shadow: 0 0 1px 0.1em $colorTheme_yellow;
+    box-shadow: 0 0 1px 0.1em $colorTheme_yellow-light;
   }
   & #red .dots {
-    box-shadow: 0 0 1px 0.1em $colorTheme_red;
+    box-shadow: 0 0 1px 0.1em $colorTheme_red-light;
   }
   & #purple .dots {
-    box-shadow: 0 0 1px 0.1em $colorTheme_purple;
+    box-shadow: 0 0 1px 0.1em $colorTheme_purple-light;
   }
 }
 
@@ -219,6 +226,25 @@
   }
 }
 
+#light {
+  & #red .dots {
+    background: $colorTheme_red-light;
+  }
+  & #yellow .dots {
+    background: $colorTheme_yellow-light;
+  }
+  & #purple .dots {
+    background: $colorTheme_purple-light;
+  }
+  & #blue .dots {
+    background: $colorTheme_blue-light;
+  }
+  & #green .dots {
+    background: $colorTheme_green-light;
+  }
+}
+
+//darkMode :
 #red .dots {
   background: $colorTheme_red;
 }

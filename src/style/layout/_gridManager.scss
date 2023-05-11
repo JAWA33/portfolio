@@ -1,17 +1,22 @@
 .gridManager {
   position: relative;
   max-width: 100%;
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  grid-template-rows: minmax(150px, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
   gap: 5px;
   grid-auto-flow: dense;
-  margin: 5rem 0 2rem 0;
+  margin: 2rem 0;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   overflow: hidden;
+}
+
+#boxSelected .gridManager__box__card--cardC {
+  transform: none;
 }
 
 .gridManager__box {
@@ -50,20 +55,15 @@
     & .gridManager__box__card--cardB {
       transform: perspective(1200px) rotateX(0deg);
     }
-  }
-
-  &__card--cardA:hover {
-    transition-delay: 0s;
-  }
-
-  &__card--cardB:not(:hover) {
-    transition-delay: 0s;
-  }
-  &__card--cardB:hover {
-    cursor: pointer;
+    //! rotate position  : unlock :
+    & .gridManager__box__card--cardC {
+      transform: perspective(1200px) rotateX(0deg);
+    }
+    //! rotate position  : unlock :
   }
 
   &__card {
+    --_animeDuration: 0.35s;
     width: 100%;
     height: 100%;
     display: flex;
@@ -76,24 +76,180 @@
 
     &--cardA {
       transform: rotateX(0deg);
-      transition: 0.3s ease-in-out;
-      transition-delay: 0.3s;
+      transition: var(--_animeDuration) ease-in-out;
+      //transition-delay: 0s;
+      //transition-delay: var(--_animeDuration);
     }
     &--cardB {
       position: absolute;
       transform: rotateX(-90deg);
-      transition: 0.3s ease-in-out;
-      transition-delay: 0.3s;
+      transition: var(--_animeDuration) ease-in-out;
+      //transition-delay: 0s;
       //z-index: 2;
+      cursor: pointer;
+    }
+    &--cardC {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      min-height: 50vh;
+      //! start position to change
+      //transform: rotateX(0deg);
+      transform: rotateX(90deg);
+      //! start position to change
+      transition: var(--_animeDuration) ease-in-out;
+
+      //COLOR THEME : default Dark
+      background: $color_page_bg_2_dark;
+      border: 2px solid $colorTheme_red;
+
+      border-radius: 1rem;
+
+      cursor: pointer;
+      overflow: scroll;
+    }
+  }
+  //transition time inversion
+  &:hover > .gridManager__box__card--cardA {
+    transition-delay: 0s;
+  }
+  &:hover > .gridManager__box__card--cardB {
+    transition-delay: var(--_animeDuration);
+  }
+
+  &:not(:hover) > .gridManager__box__card--cardA {
+    transition-delay: var(--_animeDuration);
+  }
+  &:not(:hover) > .gridManager__box__card--cardB {
+    transition-delay: 0s;
+  }
+}
+
+.detailCard {
+  position: relative;
+  width: 100%;
+  //! height: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &__header {
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__container {
+      width: 100%;
+      height: 50px;
+
+      border-radius: 0.5rem 0.5rem 0 0;
+      padding: 0rem 1rem;
+      z-index: 3;
+    }
+  }
+  &__grid {
+    position: fixed;
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: repeat(4, minmax(1fr, auto));
+    grid-template-rows: repeat(4, auto);
+    //grid-auto-flow: dense;
+    grid-gap: 0.2rem;
+
+    z-index: -1;
+    padding: 50px 2rem 2rem 2rem;
+
+    &__element {
+      // COLOR THEME default :  darkTheme
+      height: auto;
+      color: $textColor_dark;
+      padding: 1rem;
+      text-align: left;
+
+      & h3 {
+        margin-bottom: 1.5rem;
+      }
+
+      &:nth-child(1) {
+        grid-column: span 3;
+        grid-row: span 1;
+        padding-top: 4rem;
+      }
+      &:nth-child(2) {
+        grid-column: span 2;
+        grid-row: span 1;
+        & svg {
+          padding: 1rem;
+        }
+      }
+      &:nth-child(3) {
+        grid-column: span 5;
+        grid-row: span 3;
+      }
+      &:nth-child(4) {
+        grid-column: span 5;
+        grid-row: span 2;
+      }
     }
   }
 }
 
-.box {
+.detail {
   width: 100%;
+  height: 50px;
+  z-index: 99;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  & svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+  }
+
+  &__title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(-0.2rem);
+
+    & h2 {
+      padding-top: 0.3rem;
+    }
+  }
+  &__close {
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 800;
+  }
+}
+
+#boxSelected {
+  grid-column: span 6;
+  grid-row: span 3;
 }
 
 .box {
+  width: 100%;
   &__content {
     width: 100%;
     height: 100%;
@@ -117,8 +273,233 @@
   }
 }
 
-#light .gridManager__box__card--cardA {
-  background: rgba($color_page_bg_2_light, 0.2);
+#light {
+  & .gridManager__box__card--cardA {
+    background: rgba($color_page_bg_2_light, 0.2);
+  }
+  & .gridManager__box__card--cardC {
+    background: $color_page_bg_1_light;
+  }
+  & .detailCard__grid__element {
+    color: $textColor_light;
+  }
+}
+
+//! light
+#red {
+  & .gridManager__box__card--cardC {
+    border: 2px solid $colorTheme_red;
+  }
+  & .detailCard__header__container {
+    background: $colorTheme_red;
+  }
+  & .detail {
+    color: $textColor_dark;
+
+    & svg path {
+      fill: $textColor_dark;
+    }
+  }
+}
+#blue {
+  & .gridManager__box__card--cardC {
+    border: 2px solid $colorTheme_blue;
+  }
+  & .detailCard__header__container {
+    background: $colorTheme_blue;
+  }
+  & .detail {
+    color: $textColor_dark;
+
+    & svg path {
+      fill: $textColor_dark;
+    }
+  }
+}
+#purple {
+  & .gridManager__box__card--cardC {
+    border: 2px solid $colorTheme_purple;
+  }
+  & .detailCard__header__container {
+    background: $colorTheme_purple;
+  }
+  & .detail {
+    color: $textColor_dark;
+
+    & svg path {
+      fill: $textColor_dark;
+    }
+  }
+}
+#green {
+  & .gridManager__box__card--cardC {
+    border: 2px solid $colorTheme_green;
+  }
+  & .detailCard__header__container {
+    background: $colorTheme_green;
+  }
+  & .detail {
+    color: $textColor_light;
+
+    & svg path {
+      fill: $textColor_light;
+    }
+  }
+}
+#yellow {
+  & .gridManager__box__card--cardC {
+    border: 2px solid $colorTheme_yellow;
+  }
+  & .detailCard__header__container {
+    background: $colorTheme_yellow;
+  }
+  & .detail {
+    color: $textColor_light;
+
+    & svg path {
+      fill: $textColor_light;
+    }
+  }
+}
+
+#light {
+  & #red {
+    & .gridManager__box__card--cardC {
+      border: 2px solid $colorTheme_red-light;
+    }
+    & .detailCard__header__container {
+      background: $colorTheme_red-light;
+    }
+    & .detail {
+      color: $textColor_dark;
+
+      & svg path {
+        fill: $textColor_dark;
+      }
+    }
+  }
+  & #blue {
+    & .gridManager__box__card--cardC {
+      border: 2px solid $colorTheme_blue-light;
+    }
+    & .detailCard__header__container {
+      background: $colorTheme_blue-light;
+    }
+    & .detail {
+      color: $textColor_dark;
+
+      & svg path {
+        fill: $textColor_dark;
+      }
+    }
+  }
+  & #purple {
+    & .gridManager__box__card--cardC {
+      border: 2px solid $colorTheme_purple-light;
+    }
+    & .detailCard__header__container {
+      background: $colorTheme_purple-light;
+    }
+    & .detail {
+      color: $textColor_dark;
+
+      & svg path {
+        fill: $textColor_dark;
+      }
+    }
+  }
+  & #green {
+    & .gridManager__box__card--cardC {
+      border: 2px solid $colorTheme_green-light;
+    }
+    & .detailCard__header__container {
+      background: $colorTheme_green-light;
+    }
+    & .detail {
+      color: $textColor_dark;
+
+      & svg path {
+        fill: $textColor_dark;
+      }
+    }
+  }
+  & #yellow {
+    & .gridManager__box__card--cardC {
+      border: 2px solid $colorTheme_yellow-light;
+    }
+    & .detailCard__header__container {
+      background: $colorTheme_yellow-light;
+    }
+    & .detail {
+      color: $textColor_light;
+
+      & svg path {
+        fill: $textColor_light;
+      }
+    }
+  }
+
+  & #yellow .box__content p,
+  & #green .box__content p {
+    color: $textColor_light;
+  }
+  & #blue .box__content p,
+  & #purple .box__content p,
+  & #red .box__content p {
+    color: $textColor_dark;
+  }
+  & #yellow .gridManager__box__card--cardB {
+    background: linear-gradient(
+      110deg,
+      $colorTheme_yellow 0%,
+      rgb(227, 187, 11) 100%
+    );
+
+    //background: $colorTheme_yellow;
+  }
+  & #blue .gridManager__box__card--cardB {
+    background: linear-gradient(
+      110deg,
+      $colorTheme_blue-light 0%,
+      rgb(11, 124, 230) 100%
+    );
+  }
+  & #red .gridManager__box__card--cardB {
+    background: linear-gradient(
+      110deg,
+      $colorTheme_red-light 0%,
+      rgb(210, 11, 11) 100%
+    );
+  }
+  & #green .gridManager__box__card--cardB {
+    background: linear-gradient(
+      110deg,
+      $colorTheme_green-light 0%,
+      rgb(55, 218, 10) 100%
+    );
+  }
+  & #purple .gridManager__box__card--cardB {
+    background: linear-gradient(
+      110deg,
+      $colorTheme_purple-light 0%,
+      rgb(151, 10, 212) 100%
+    );
+  }
+  & #green .gridManager__box svg {
+    fill: $colorTheme_green-light;
+  }
+  & #blue .gridManager__box svg {
+    fill: $colorTheme_blue-light;
+  }
+  & #red .gridManager__box svg {
+    fill: $colorTheme_red-light;
+  }
+  & #purple .gridManager__box svg {
+    fill: $colorTheme_purple-light;
+  }
+  & #yellow .gridManager__box svg {
+    fill: $colorTheme_yellow-light;
+  }
 }
 #yellow .box__content p,
 #green .box__content p {
@@ -166,10 +547,6 @@
     rgb(151, 10, 212) 100%
   );
 }
-
-#dark .gridManager__box__card--cardA {
-  background: $color_page_bg_1_dark;
-}
 #green .gridManager__box svg {
   fill: $colorTheme_green;
 }
@@ -185,6 +562,11 @@
 #yellow .gridManager__box svg {
   fill: $colorTheme_yellow;
 }
+//! End light
+
+#dark .gridManager__box__card--cardA {
+  background: $color_page_bg_1_dark;
+}
 
 @media (min-width: 1411px) {
   .gridManager__box {
@@ -194,7 +576,7 @@
     }
     &:nth-child(2) {
       grid-column: span 2;
-      grid-row: span 2;
+      grid-row: span 3;
     }
     &:nth-child(3) {
       grid-column: span 2;
@@ -241,6 +623,65 @@
       grid-row: span 1;
     }
   }
+  #boxSelected {
+    grid-column: span 5;
+    grid-row: span 3;
+  }
+  // .detailCard__grid {
+  //   grid-template-columns: repeat(4, 150px);
+  //   grid-template-rows: repeat(4, auto);
+  // }
+}
+@media (max-width: 900px) {
+  .detailCard__grid__element {
+    &:nth-child(1) {
+      grid-column: span 3;
+      grid-row: span 2;
+    }
+
+    &:nth-child(3) {
+      grid-column: span 5;
+      grid-row: span 2;
+    }
+    &:nth-child(4) {
+      grid-column: span 5;
+      grid-row: span 1;
+    }
+  }
+  #boxSelected {
+    grid-column: span 4;
+    grid-row: span 3;
+  }
+}
+@media (max-width: 750px) {
+  .detailCard__grid__element {
+    &:nth-child(1) {
+      grid-column: span 5;
+      grid-row: span 1;
+    }
+    &:nth-child(2) {
+      grid-column: span 3;
+      grid-row: span 1;
+      width: 250px;
+      height: auto;
+      grid-column-start: 3;
+      grid-column-end: 4;
+      // grid-row-start: 2;
+      // grid-row-end: 2;
+    }
+    &:nth-child(3) {
+      grid-column: span 5;
+      grid-row: span 2;
+    }
+    &:nth-child(4) {
+      grid-column: span 5;
+      grid-row: span 1;
+    }
+  }
+  #boxSelected {
+    grid-column: span 3;
+    grid-row: span 3;
+  }
 }
 @media (max-width: 600px) {
   .gridManager {
@@ -249,9 +690,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0rem;
   }
   .gridManager__box {
-    width: 300px;
+    width: 100%;
     grid-column: span 2 !important;
     grid-row: span 1 !important;
 
@@ -261,9 +703,15 @@
       transform: rotateY(0deg);
       border-radius: 0 0 1rem 1rem;
     }
+    &__card--cardC {
+      min-height: 70vh;
+    }
     &__card--cardA {
       transform: none !important;
       border-radius: 1rem 1rem 0 0;
     }
+  }
+  .detailCard__grid {
+    padding: 50px 1rem 1rem 1rem;
   }
 }

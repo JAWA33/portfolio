@@ -63,6 +63,54 @@
   }
 }
 
+#light {
+  #green .corner {
+    &__TopLeft {
+      box-shadow: 0 0 12px 0 $colorTheme_green-light;
+      border: 4px solid $colorTheme_green-light;
+    }
+    &__BottomRight {
+      border: 2.5px solid $colorTheme_green-light;
+    }
+  }
+  #blue .corner {
+    &__TopLeft {
+      box-shadow: 0 0 12px 0 $colorTheme_blue-light;
+      border: 4px solid $colorTheme_blue-light;
+    }
+    &__BottomRight {
+      border: 2.5px solid $colorTheme_blue-light;
+    }
+  }
+  #red .corner {
+    &__TopLeft {
+      box-shadow: 0 0 12px 0 $colorTheme_red-light;
+      border: 4px solid $colorTheme_red-light;
+    }
+    &__BottomRight {
+      border: 2.5px solid $colorTheme_red-light;
+    }
+  }
+  #yellow .corner {
+    &__TopLeft {
+      box-shadow: 0 0 12px 0 $colorTheme_yellow-light;
+      border: 4px solid $colorTheme_yellow-light;
+    }
+    &__BottomRight {
+      border: 2.5px solid $colorTheme_yellow-light;
+    }
+  }
+  #purple .corner {
+    &__TopLeft {
+      box-shadow: 0 0 12px 0 $colorTheme_purple-light;
+      border: 4px solid $colorTheme_purple-light;
+    }
+    &__BottomRight {
+      border: 2.5px solid $colorTheme_purple-light;
+    }
+  }
+}
+
 #green .corner {
   &__TopLeft {
     box-shadow: 0 0 12px 0 $colorTheme_green;
@@ -126,7 +174,24 @@
 #light .picture__container img {
   transform: translateY(-20px);
 }
-
+#light {
+  #green .picture__container {
+    border: 0.5px solid $colorTheme_green-light;
+  }
+  #purple .picture__container {
+    border: 0.5px solid $colorTheme_purple-light;
+  }
+  #yellow .picture__container {
+    border: 0.5px solid $colorTheme_yellow-light;
+  }
+  #blue .picture__container {
+    border: 0.5px solid $colorTheme_blue-light;
+  }
+  #red .picture__container {
+    border: 0.5px solid $colorTheme_red-light;
+  }
+}
+//Dark mode :
 #green .picture__container {
   border: 0.5px solid $colorTheme_green;
 }

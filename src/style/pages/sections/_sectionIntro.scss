@@ -479,29 +479,29 @@
 }
 @keyframes shinyArrowLight_blue {
   0% {
-    background: rgba($colorTheme_blue, 0.6);
+    background: rgba($colorTheme_blue-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_blue, 1);
+    background: rgba($colorTheme_blue-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_blue, 1);
+    background: rgba($colorTheme_blue-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
 @keyframes shinyArrowInverseLight_blue {
   0% {
-    background: rgba($colorTheme_blue, 0.6);
+    background: rgba($colorTheme_blue-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_blue, 1);
+    background: rgba($colorTheme_blue-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_blue, 1);
+    background: rgba($colorTheme_blue-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
@@ -537,29 +537,29 @@
 }
 @keyframes shinyArrowLight_purple {
   0% {
-    background: rgba($colorTheme_purple, 0.6);
+    background: rgba($colorTheme_purple-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_purple, 1);
+    background: rgba($colorTheme_purple-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_purple, 1);
+    background: rgba($colorTheme_purple-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
 @keyframes shinyArrowInverseLight_purple {
   0% {
-    background: rgba($colorTheme_purple, 0.6);
+    background: rgba($colorTheme_purple-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_purple, 1);
+    background: rgba($colorTheme_purple-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_purple, 1);
+    background: rgba($colorTheme_purple-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
@@ -595,29 +595,29 @@
 }
 @keyframes shinyArrowLight_red {
   0% {
-    background: rgba($colorTheme_red, 0.6);
+    background: rgba($colorTheme_red-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_red, 1);
+    background: rgba($colorTheme_red-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_red, 1);
+    background: rgba($colorTheme_red-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
 @keyframes shinyArrowInverseLight_red {
   0% {
-    background: rgba($colorTheme_red, 0.6);
+    background: rgba($colorTheme_red-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_red, 1);
+    background: rgba($colorTheme_red-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_red, 1);
+    background: rgba($colorTheme_red-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
@@ -653,29 +653,29 @@
 }
 @keyframes shinyArrowLight_green {
   0% {
-    background: rgba($colorTheme_green, 0.6);
+    background: rgba($colorTheme_green-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_green, 1);
+    background: rgba($colorTheme_green-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_green, 1);
+    background: rgba($colorTheme_green-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
 @keyframes shinyArrowInverseLight_green {
   0% {
-    background: rgba($colorTheme_green, 0.6);
+    background: rgba($colorTheme_green-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_green, 1);
+    background: rgba($colorTheme_green-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_green, 1);
+    background: rgba($colorTheme_green-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
@@ -711,29 +711,29 @@
 }
 @keyframes shinyArrowLight_yellow {
   0% {
-    background: rgba($colorTheme_yellow, 0.6);
+    background: rgba($colorTheme_yellow-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_yellow, 1);
+    background: rgba($colorTheme_yellow-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_yellow, 1);
+    background: rgba($colorTheme_yellow-light, 1);
     box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
 @keyframes shinyArrowInverseLight_yellow {
   0% {
-    background: rgba($colorTheme_yellow, 0.6);
+    background: rgba($colorTheme_yellow-light, 0.6);
     box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
   }
   60% {
-    background: rgba($colorTheme_yellow, 1);
+    background: rgba($colorTheme_yellow-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
   100% {
-    background: rgba($colorTheme_yellow, 1);
+    background: rgba($colorTheme_yellow-light, 1);
     box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
   }
 }
@@ -756,6 +756,31 @@
 }
 
 //* ColorSet
+
+#light {
+  & #green .sectionIntro__container h1:before,
+  & #green .sectionIntro__container h1:after {
+    background: $colorTheme_green-light;
+  }
+  & #purple .sectionIntro__container h1:before,
+  & #purple .sectionIntro__container h1:after {
+    background: $colorTheme_purple-light;
+  }
+  & #blue .sectionIntro__container h1:before,
+  & #blue .sectionIntro__container h1:after {
+    background: $colorTheme_blue-light;
+  }
+  & #yellow .sectionIntro__container h1:before,
+  & #yellow .sectionIntro__container h1:after {
+    background: $colorTheme_yellow-light;
+  }
+  & #red .sectionIntro__container h1:before,
+  & #red .sectionIntro__container h1:after {
+    background: $colorTheme_red-light;
+  }
+}
+
+//Dark mode :
 #green .sectionIntro__container h1:before,
 #green .sectionIntro__container h1:after {
   background: $colorTheme_green;

@@ -16,13 +16,6 @@ import { AnimatePresence } from "framer-motion";
 import DotsAnimation from "../blocks/dotsAnimation.jsx";
 import HeaderMorph from "./HeaderMorph.jsx";
 
-// import Lottie from "lottie-react";
-// import blueDots from "../../img/lottie/blue.json";
-// import greenDots from "../../img/lottie/green.json";
-// import yellowDots from "../../img/lottie/yellow.json";
-// import redDots from "../../img/lottie/red.json";
-// import purpleDots from "../../img/lottie/purple.json";
-
 export const ThemeContext = createContext(null);
 
 function PageConfig() {
@@ -119,6 +112,7 @@ function PageConfig() {
             toggleColorTheme={toggleColorTheme}
             toggleLanguage={toggleLanguage}
           />
+
           <main className="home">
             <div className="animatedBackground">
               <span></span>

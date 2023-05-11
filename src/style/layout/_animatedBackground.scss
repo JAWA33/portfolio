@@ -95,21 +95,21 @@
 }
 
 #light #blue .animatedBackground span:nth-child(n) {
-  color: rgba($colorTheme_blue, 0.05);
+  color: rgba($colorTheme_blue-light, 0.05);
 }
 
 #light #green .animatedBackground span:nth-child(n) {
-  color: rgba($colorTheme_green, 0.05);
+  color: rgba($colorTheme_green-light, 0.05);
 }
 
 #light #yellow .animatedBackground span:nth-child(n) {
-  color: rgba($colorTheme_yellow, 0.05);
+  color: rgba($colorTheme_yellow-light, 0.05);
 }
 #light #purple .animatedBackground span:nth-child(n) {
-  color: rgba($colorTheme_purple, 0.05);
+  color: rgba($colorTheme_purple-light, 0.05);
 }
 #light #red .animatedBackground span:nth-child(n) {
-  color: rgba($colorTheme_red, 0.05);
+  color: rgba($colorTheme_red-light, 0.05);
 }
 
 ////! CUBE BG ::after

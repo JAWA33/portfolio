@@ -65,6 +65,29 @@
   background: $color_page_bg_1_dark;
 }
 
+#light {
+  & #green .expBlock__grid::after,
+  & #green .experience::after {
+    background: $colorTheme_green-light;
+  }
+  & #blue .expBlock__grid::after,
+  & #blue .experience::after {
+    background: $colorTheme_blue-light;
+  }
+  & #yellow .expBlock__grid::after,
+  & #yellow .experience::after {
+    background: $colorTheme_yellow-light;
+  }
+  & #red .expBlock__grid::after,
+  & #red .experience::after {
+    background: $colorTheme_red-light;
+  }
+  & #purple .expBlock__grid::after,
+  & #purple .experience::after {
+    background: $colorTheme_purple-light;
+  }
+}
+//Dark Mode :
 #green .expBlock__grid::after,
 #green .experience::after {
   background: $colorTheme_green;

@@ -58,6 +58,30 @@
 }
 //Color Theme :
 
+#light {
+  & #green .colorIcon {
+    fill: $colorTheme_green-light;
+    stroke: $colorTheme_green-light;
+  }
+  & #yellow .colorIcon {
+    fill: $colorTheme_yellow-light;
+    stroke: $colorTheme_yellow-light;
+  }
+  & #blue .colorIcon {
+    fill: $colorTheme_blue-light;
+    stroke: $colorTheme_blue-light;
+  }
+  & #purple .colorIcon {
+    fill: $colorTheme_purple-light;
+    stroke: $colorTheme_purple-light;
+  }
+  & #red .colorIcon {
+    fill: $colorTheme_red-light;
+    stroke: $colorTheme_red-light;
+  }
+}
+
+//darkmode :
 #green .colorIcon {
   fill: $colorTheme_green;
   stroke: $colorTheme_green;

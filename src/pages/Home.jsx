@@ -10,12 +10,6 @@ import Params from "../components/layouts/Params";
 // import { UseTypeWriter, useTypewriter } from "react-simple-typewriter";
 //! to register for another time : Writing text :
 
-import blueDots from "../img/lottie/blue.json";
-import greenDots from "../img/lottie/green.json";
-import yellowDots from "../img/lottie/yellow.json";
-import redDots from "../img/lottie/red.json";
-import purpleDots from "../img/lottie/purple.json";
-
 const Home = () => {
   const { theme, textToShow, colorTheme } = useContext(ThemeContext);
 

@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "animate-css-grid": "^1.5.1",
     "framer-motion": "^10.11.2",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",

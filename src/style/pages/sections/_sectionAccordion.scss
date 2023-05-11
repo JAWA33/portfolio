@@ -171,6 +171,101 @@
   }
 }
 
+//Light color
+#light {
+  & #red .accordion__panel:hover {
+    outline: 2px solid $colorTheme_red-light;
+    outline-offset: 3px;
+
+    & .accordion__icon {
+      background: rgba($textColor_dark, 0.9);
+      fill: $colorTheme_red-light;
+      box-shadow: 3px 4px 4px $colorTheme_red-light,
+        -3px -4px 4px $colorTheme_red-light, 3px -4px 4px $textColor_dark,
+        -3px 4px 4px $textColor_dark;
+
+      border: 2px $colorTheme_red-light solid;
+    }
+  }
+
+  & #blue .accordion__panel:hover {
+    outline: 2px solid $colorTheme_blue-light;
+    outline-offset: 3px;
+    & .accordion__icon {
+      background: rgba($textColor_dark, 0.9);
+      fill: $colorTheme_blue-light;
+      box-shadow: 3px 4px 4px $colorTheme_blue-light,
+        -3px -4px 4px $colorTheme_blue-light, 3px -4px 4px $textColor_dark,
+        -3px 4px 4px $textColor_dark;
+
+      border: 2px $colorTheme_blue-light solid;
+    }
+  }
+  & #green .accordion__panel:hover {
+    outline: 2px solid $colorTheme_green-light;
+    outline-offset: 3px;
+    & .accordion__icon {
+      background: rgba($textColor_light, 0.5);
+      fill: $colorTheme_green-light;
+      box-shadow: 3px 4px 4px $colorTheme_green-light,
+        -3px -4px 4px $colorTheme_green-light, 3px -4px 4px $textColor_dark,
+        -3px 4px 4px $textColor_dark;
+
+      border: 2px $colorTheme_green-light solid;
+    }
+  }
+  & #purple .accordion__panel:hover {
+    outline: 2px solid $colorTheme_purple-light;
+    outline-offset: 3px;
+    & .accordion__icon {
+      background: rgba($textColor_dark, 0.9);
+      fill: $colorTheme_purple-light;
+      box-shadow: 3px 4px 4px $colorTheme_purple-light,
+        -3px -4px 4px $colorTheme_purple-light, 3px -4px 4px $textColor_dark,
+        -3px 4px 4px $textColor_dark;
+
+      border: 2px $colorTheme_purple-light solid;
+    }
+  }
+  & #yellow .accordion__panel:hover {
+    outline: 2px solid $colorTheme_yellow-light;
+    outline-offset: 3px;
+    & .accordion__icon {
+      background: rgba($textColor_light, 0.5);
+      fill: $colorTheme_yellow-light;
+      box-shadow: 3px 4px 4px $colorTheme_yellow-light,
+        -3px -4px 4px $colorTheme_yellow-light, 3px -4px 4px $textColor_dark,
+        -3px 4px 4px $textColor_dark;
+
+      border: 2px $colorTheme_yellow-light solid;
+    }
+  }
+
+  //! réglages des effets sur les cartes de l'accordéon
+  & #blue .accordion__panel::after {
+    transform: scaleY(1.5);
+    background: $colorTheme_blue-light;
+  }
+  & #yellow .accordion__panel::after {
+    transform: scaleY(1.5);
+    background: $colorTheme_yellow-light;
+  }
+  & #red .accordion__panel::after {
+    transform: scaleY(1.5);
+    background: $colorTheme_red-light;
+  }
+  & #purple .accordion__panel::after {
+    transform: scaleY(1.5);
+    background: $colorTheme_purple-light;
+  }
+  & #green .accordion__panel::after {
+    transform: scaleY(1.5);
+    background: $colorTheme_green-light;
+  }
+}
+
+//Dark Color
+
 #red .accordion__panel:hover {
   outline: 2px solid $colorTheme_red;
   outline-offset: 3px;

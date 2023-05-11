@@ -89,16 +89,7 @@
   }
 }
 
-#dark .contactBlock__lign {
-  background: $color_page_bg_1_dark;
-  color: $color_page_bg_1_light;
-
-  & input {
-    border-left: 2px solid $color_page_bg_1_light;
-    color: $textColor_dark;
-  }
-}
-
+//lightMode :
 #light .contactBlock__lign {
   background: $color_page_bg_2_light;
   color: $color_page_bg_1_dark;
@@ -109,6 +100,30 @@
   }
 }
 
+#light {
+  & #purple .contactBlock__lign input:focus {
+    outline: none !important;
+    border: 3px solid $colorTheme_purple-light;
+  }
+  & #yellow .contactBlock__lign input:focus {
+    outline: none !important;
+    border: 3px solid $colorTheme_yellow-light;
+  }
+  & #green .contactBlock__lign input:focus {
+    outline: none !important;
+    border: 3px solid $colorTheme_green-light;
+  }
+  & #blue .contactBlock__lign input:focus {
+    outline: none !important;
+    border: 3px solid $colorTheme_blue-light;
+  }
+  & #red .contactBlock__lign input:focus {
+    outline: none !important;
+    border: 3px solid $colorTheme_red-light;
+  }
+}
+
+//darkMode :
 #purple .contactBlock__lign input:focus {
   outline: none !important;
   border: 3px solid $colorTheme_purple;
@@ -128,6 +143,16 @@
 #red .contactBlock__lign input:focus {
   outline: none !important;
   border: 3px solid $colorTheme_red;
+}
+
+#dark .contactBlock__lign {
+  background: $color_page_bg_1_dark;
+  color: $color_page_bg_1_light;
+
+  & input {
+    border-left: 2px solid $color_page_bg_1_light;
+    color: $textColor_dark;
+  }
 }
 
 /* Mise en forme de la balise select*/
@@ -188,6 +213,23 @@ select {
   background: transparent;
 }
 
+#light {
+  & #red .selectTest:hover::after {
+    color: $colorTheme_red-light;
+  }
+  & #purple .selectTest:hover::after {
+    color: $colorTheme_purple-light;
+  }
+  & #yellow .selectTest:hover::after {
+    color: $colorTheme_yellow-light;
+  }
+  & #green .selectTest:hover::after {
+    color: $colorTheme_green-light;
+  }
+  & #blue .selectTest:hover::after {
+    color: $colorTheme_blue-light;
+  }
+}
 #red .selectTest:hover::after {
   color: $colorTheme_red;
 }

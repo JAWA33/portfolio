@@ -78,10 +78,10 @@
   }
   &__card {
     &--title {
-      font-size: 1.4rem;
+      font-size: clamp(1.4rem, 1.2rem + 1vw, 1.8rem);
     }
     &--text {
-      font-size: 1rem;
+      font-size: clamp(0.9rem, 0.4rem + 1vw, 1rem);
       line-height: 1.5rem;
       text-align: start;
       text-indent: 1.5rem;
@@ -143,6 +143,24 @@
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5rem;
+  }
+}
+
+#light {
+  #blue .font__BigText__writing {
+    color: $colorTheme_blue-light;
+  }
+  #yellow .font__BigText__writing {
+    color: $colorTheme_yellow-light;
+  }
+  #green .font__BigText__writing {
+    color: $colorTheme_green-light;
+  }
+  #red .font__BigText__writing {
+    color: $colorTheme_red-light;
+  }
+  #purple .font__BigText__writing {
+    color: $colorTheme_purple-light;
   }
 }
 
