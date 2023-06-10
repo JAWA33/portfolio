@@ -31,6 +31,21 @@
   height: 100%;
 }
 
+// .scrollBySection {
+//   width: 100%;
+//   height: 90vh;
+
+//   overflow-y: scroll;
+//   scroll-snap-type: mandatory;
+//   //scroll-behavior: smooth;
+// }
+
+// section {
+//   width: 100%;
+//   height: 90vh;
+//   scroll-snap-align: start !important;
+// }
+
 #red .essai {
   background: $colorTheme_red;
 }

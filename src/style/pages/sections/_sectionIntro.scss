@@ -1,15 +1,16 @@
 .sectionIntro {
   width: 100%;
-  min-height: 60vh;
-  margin: 4rem 0;
-  padding: 1rem;
-  //background: #000;
+  height: 100%;
+  min-height: 70vh;
+  padding: 1.5rem 1rem;
+  // margin-bottom: 2rem;
+
   & h2 {
     margin-bottom: 2rem;
   }
 
   & p {
-    padding: 1rem 0;
+    padding: 1rem 0rem;
     text-align: justify;
     text-justify: distribute-all-lines;
   }
@@ -22,8 +23,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 3rem;
+    // padding: 3rem;
   }
+}
+
+.arrowMargin {
+  position: relative;
+  margin: 4rem 0 4rem 0;
 }
 
 .arrow {
@@ -33,7 +39,7 @@
   --_arrowAngle: 142deg;
   --_deltaDecale: -9.2px;
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: var(--_arrowSize);
   height: var(--_arrowSize);
   //border: 1px solid rgb(19, 99, 236);
@@ -49,8 +55,8 @@
     border-radius: 50%;
     //border-radius: calc(var(--_arrowStroke) / 2);
 
-    background: rgba($colorTheme_blue, 0.6);
-    box-shadow: 0 0 0 $colorTheme_blue;
+    // background: red;
+    // box-shadow: 0 0 0 $colorTheme_blue;
   }
   &::before {
     content: "";
@@ -451,290 +457,293 @@
 
 @keyframes shinyArrow_blue {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_blue, 0.9);
+    background: rgba($colorTheme_blue, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_blue, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_blue, 0.01);
+    background: rgba($colorTheme_blue, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_blue, 0.04);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_blue, 0.01);
+    background: rgba($colorTheme_blue, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_blue, 0.04);
   }
 }
 @keyframes shinyArrowInverse_blue {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_blue, 0.9);
+    background: rgba($colorTheme_blue, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_blue, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_blue, 0.01);
+    background: rgba($colorTheme_blue, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_blue, 0.4);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_blue, 0.01);
+    background: rgba($colorTheme_blue, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_blue, 0.4);
   }
 }
 @keyframes shinyArrowLight_blue {
   0% {
-    background: rgba($colorTheme_blue-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_blue-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_blue-light, 1);
   }
   60% {
-    background: rgba($colorTheme_blue-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_blue-light, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_blue-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_blue-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_blue-light, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_blue-light, 0.4);
   }
 }
 @keyframes shinyArrowInverseLight_blue {
   0% {
-    background: rgba($colorTheme_blue-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_blue-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_blue-light, 1);
   }
   60% {
-    background: rgba($colorTheme_blue-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_blue-light, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_blue-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_blue-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_blue-light, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_blue-light, 0.4);
   }
 }
 
 //For Color Mode : purple ://
+
 @keyframes shinyArrow_purple {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_purple, 0.9);
+    background: rgba($colorTheme_purple, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_purple, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_purple, 0.01);
+    background: rgba($colorTheme_purple, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_purple, 0.04);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_purple, 0.01);
+    background: rgba($colorTheme_purple, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_purple, 0.04);
   }
 }
 @keyframes shinyArrowInverse_purple {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_purple, 0.9);
+    background: rgba($colorTheme_purple, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_purple, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_purple, 0.01);
+    background: rgba($colorTheme_purple, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_purple, 0.4);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_purple, 0.01);
+    background: rgba($colorTheme_purple, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_purple, 0.4);
   }
 }
 @keyframes shinyArrowLight_purple {
   0% {
-    background: rgba($colorTheme_purple-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_purple-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_purple-light, 1);
   }
   60% {
-    background: rgba($colorTheme_purple-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_purple-light, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_purple-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_purple-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_purple-light, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_purple-light, 0.4);
   }
 }
 @keyframes shinyArrowInverseLight_purple {
   0% {
-    background: rgba($colorTheme_purple-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_purple-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_purple-light, 1);
   }
   60% {
-    background: rgba($colorTheme_purple-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_purple-light, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_purple-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_purple-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_purple-light, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_purple-light, 0.4);
   }
 }
 
 //For Color Mode : red ://
+
 @keyframes shinyArrow_red {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_red, 0.9);
+    background: rgba($colorTheme_red, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_red, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_red, 0.01);
+    background: rgba($colorTheme_red, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_red, 0.04);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_red, 0.01);
+    background: rgba($colorTheme_red, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_red, 0.04);
   }
 }
 @keyframes shinyArrowInverse_red {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_red, 0.9);
+    background: rgba($colorTheme_red, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_red, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_red, 0.01);
+    background: rgba($colorTheme_red, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_red, 0.4);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_red, 0.01);
+    background: rgba($colorTheme_red, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_red, 0.4);
   }
 }
 @keyframes shinyArrowLight_red {
   0% {
-    background: rgba($colorTheme_red-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_red-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_red-light, 1);
   }
   60% {
-    background: rgba($colorTheme_red-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_red-light, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_red-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_red-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_red-light, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_red-light, 0.4);
   }
 }
 @keyframes shinyArrowInverseLight_red {
   0% {
-    background: rgba($colorTheme_red-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_red-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_red-light, 1);
   }
   60% {
-    background: rgba($colorTheme_red-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_red-light, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_red-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_red-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_red-light, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_red-light, 0.4);
   }
 }
 
 //For Color Mode : green ://
 @keyframes shinyArrow_green {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_green, 0.9);
+    background: rgba($colorTheme_green, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_green, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_green, 0.01);
+    background: rgba($colorTheme_green, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_green, 0.04);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_green, 0.01);
+    background: rgba($colorTheme_green, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_green, 0.04);
   }
 }
 @keyframes shinyArrowInverse_green {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_green, 0.9);
+    background: rgba($colorTheme_green, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_green, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_green, 0.01);
+    background: rgba($colorTheme_green, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_green, 0.4);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_green, 0.01);
+    background: rgba($colorTheme_green, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_green, 0.4);
   }
 }
 @keyframes shinyArrowLight_green {
   0% {
-    background: rgba($colorTheme_green-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_green-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_green-light, 1);
   }
   60% {
-    background: rgba($colorTheme_green-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_green-light, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_green-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_green-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_green-light, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_green-light, 0.4);
   }
 }
 @keyframes shinyArrowInverseLight_green {
   0% {
-    background: rgba($colorTheme_green-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_green-light, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_green-light, 1);
   }
   60% {
-    background: rgba($colorTheme_green-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_green-light, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_green-light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_green-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_green-light, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_green-light, 0.4);
   }
 }
 
 //For Color Mode : yellow ://
+
 @keyframes shinyArrow_yellow {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_yellow, 0.9);
+    background: rgba($colorTheme_yellow, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_yellow, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_yellow, 0.01);
+    background: rgba($colorTheme_yellow, 0.7);
+    box-shadow: -4px 0 10px rgba($colorTheme_yellow, 0.04);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: -4px 0 10px rgba($colorTheme_yellow, 0.01);
+    background: rgba($colorTheme_yellow, 0.1);
+    box-shadow: -4px 0 10px rgba($colorTheme_yellow, 0.04);
   }
 }
 @keyframes shinyArrowInverse_yellow {
   0% {
-    background: rgba($color_page_bg_2_dark, 0.6);
-    box-shadow: 0px 0 0 rgba($colorTheme_yellow, 0.9);
+    background: rgba($colorTheme_yellow, 0.1);
+    box-shadow: 0px 0 0 rgba($colorTheme_yellow, 1);
   }
   60% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_yellow, 0.01);
+    background: rgba($colorTheme_yellow, 0.7);
+    box-shadow: 4px 0 10px rgba($colorTheme_yellow, 0.4);
   }
   100% {
-    background: rgba($color_page_bg_2_dark, 1);
-    box-shadow: 4px 0 10px rgba($colorTheme_yellow, 0.01);
+    background: rgba($colorTheme_yellow, 0.1);
+    box-shadow: 4px 0 10px rgba($colorTheme_yellow, 0.4);
   }
 }
 @keyframes shinyArrowLight_yellow {
   0% {
-    background: rgba($colorTheme_yellow-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_yellow-light, 0.1);
+    box-shadow: 0px 0 0 rgba($textColor_light, 0.6);
   }
   60% {
-    background: rgba($colorTheme_yellow-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_yellow-light, 0.7);
+    box-shadow: -4px 0 10px rgba($textColor_light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_yellow-light, 1);
-    box-shadow: -4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_yellow-light, 0.1);
+    box-shadow: -4px 0 10px rgba($textColor_light, 0.1);
   }
 }
 @keyframes shinyArrowInverseLight_yellow {
   0% {
-    background: rgba($colorTheme_yellow-light, 0.6);
-    box-shadow: 0px 0 0 rgba($color_page_bg_2_dark, 0.9);
+    background: rgba($colorTheme_yellow-light, 0.1);
+    box-shadow: 0px 0 0 rgba($textColor_light, 0.6);
   }
   60% {
-    background: rgba($colorTheme_yellow-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_yellow-light, 0.7);
+    box-shadow: 4px 0 10px rgba($textColor_light, 0.4);
   }
   100% {
-    background: rgba($colorTheme_yellow-light, 1);
-    box-shadow: 4px 0 10px rgba($color_page_bg_2_dark, 0.01);
+    background: rgba($colorTheme_yellow-light, 0.1);
+    box-shadow: 4px 0 10px rgba($textColor_light, 0.1);
   }
 }
 
@@ -742,6 +751,9 @@
 @media (min-width: 600px) {
   .sectionIntro p:last-child {
     padding: 1rem 0 1rem 0rem;
+  }
+  .arrowMargin {
+    margin: 1rem 0;
   }
 }
 

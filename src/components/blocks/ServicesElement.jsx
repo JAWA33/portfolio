@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { cubicBezier, motion } from "framer-motion";
 import { ThemeContext } from "../../components/layouts/PageConfig";
 
 const ServicesElement = ({
@@ -27,7 +27,7 @@ const ServicesElement = ({
     } else {
       changeIndexToShow(index);
     }
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 110, behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -40,10 +40,17 @@ const ServicesElement = ({
   };
 
   return (
-    <div
+    <motion.div
       id={selectedBox === index ? "boxSelected" : ""}
       className={"gridManager__box " + activate}
       onMouseLeave={reduceBox}
+      initial={{ opacity: 0, scale: 0, rotate: 360 }}
+      animate={{ opacity: 1, scale: 1, rotate: 0 }}
+      transition={{
+        duration: index / 4,
+        delay: index / 10,
+        type: "spring",
+      }}
     >
       <div className="gridManager__box__card gridManager__box__card--cardA">
         <div className="box font__color">
@@ -64,7 +71,7 @@ const ServicesElement = ({
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

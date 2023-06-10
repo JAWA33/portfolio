@@ -23,7 +23,7 @@
     letter-spacing: 0.5px;
   }
   &__name {
-    font-size: clamp(1.8rem, 26px + 1vw, 2.6rem);
+    font-size: clamp(2rem, 1.6rem + 2vw, 4rem);
     font-family: "Aguafina Script", cursive;
     letter-spacing: 0.5px;
   }
@@ -34,7 +34,7 @@
     letter-spacing: 0.5px;
   }
   &__basicText {
-    font-size: clamp(0.9rem, 11px + 0.3vw, 2rem);
+    font-size: clamp(1rem, 11px + 0.3vw, 2rem);
     font-weight: 300;
     letter-spacing: 0.3px;
     line-height: calc(1.4rem + 0.8vw);
@@ -57,11 +57,18 @@
     line-height: calc(1rem + 0.8vw);
   }
   &__introTitle {
-    font-size: clamp(1.3rem, 0.5rem + 2vw, 1.8rem);
+    font-size: clamp(2rem, 1.5rem + 1.5vw, 3rem);
     font-weight: 700;
     letter-spacing: 1.5px;
     line-height: 2.5rem;
   }
+  &__introSubTitle {
+    font-size: clamp(1.3rem, 0.5rem + 2vw, 2rem);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 2.5rem;
+  }
+
   &__accordion {
     font-size: clamp(0.8rem, 11px + 1.5vw, 1.4rem);
     text-transform: uppercase;
@@ -143,6 +150,22 @@
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5rem;
+  }
+}
+
+.subSection {
+  &__title {
+    font-size: clamp(1.8rem, 1.1rem + 2vw, 3rem);
+
+    //font-size: 3rem;
+  }
+  &__top {
+    font-size: clamp(1.3rem, 1rem + 2vw, 2.5rem);
+    // font-size: 2.5rem;
+  }
+  &__bottom {
+    font-size: clamp(1rem, 0.8rem + 1.5vw, 2rem);
+    //font-size: 2rem;
   }
 }
 

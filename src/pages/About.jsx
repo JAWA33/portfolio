@@ -15,12 +15,7 @@ const About = () => {
 
   return (
     <div className="wrapper">
-      <motion.div
-        className="stickyPage aboutConfig"
-        initial={{ width: 0 }}
-        animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: "3s" } }}
-      >
+      <div className="stickyPage aboutConfig">
         <SectionTitle title={textToShow.about_page.title} />
         <SectionIntroduction
           text={textToShow.about_page.text}
@@ -338,7 +333,7 @@ const About = () => {
         </SectionStack>
         <InterSection />
         <SectionExperience />
-      </motion.div>
+      </div>
     </div>
   );
 };

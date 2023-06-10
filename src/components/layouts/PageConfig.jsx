@@ -76,6 +76,10 @@ function PageConfig() {
     }
   }, [language]);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const TestDots = () => {
     <div className="rotateDots__container">
       {numberOfPoints.map((dot, index) => {

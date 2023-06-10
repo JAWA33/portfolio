@@ -33,24 +33,22 @@ const SectionStack = ({ children }) => {
         <img src={playBubble} alt={textToShow.stackBg.Alt} />
       </div>
       <div className="sectionStack__textContainerA">
-        <BlockBigText
+        {/* <BlockBigText
           model="A"
           intro={textToShow.stackBg.intro_A}
           text={textToShow.stackBg.text_A}
           reverse={false}
-        />
-      </div>
-
-      <div className="sectionStack__centralContainer">
-        {!refresh && children}
-      </div>
-      <div className="sectionStack__textContainer">
+        /> */}
         <BlockBigText
           model="B"
           intro={textToShow.stackBg.intro_B}
           text={textToShow.stackBg.text_B}
           reverse={true}
         />
+      </div>
+
+      <div className="sectionStack__centralContainer">
+        {!refresh && children}
       </div>
     </section>
   );

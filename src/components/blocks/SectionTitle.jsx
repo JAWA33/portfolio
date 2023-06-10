@@ -1,11 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const SectionTitle = ({ title }) => {
   return (
     <section className="sectionTitle">
-      <div className="sectionTitle__container">
+      <motion.div
+        className="sectionTitle__container"
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, ease: "easeOut", delay: 0.25 }}
+      >
         <h1 className="font__pageTitle">{title}</h1>
-      </div>
+      </motion.div>
     </section>
   );
 };
