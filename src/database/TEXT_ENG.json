@@ -21,7 +21,30 @@
     },
     "myName": "Julien Armand",
     "presentation": "I'm a web developer passionate about creating elegant and efficient websites. I use my design skills to craft user-friendly and visually appealing interfaces that enhance the user experience.",
-    "call_to_action": "More About Me"
+    "call_to_action": {
+      "A": "More About Me",
+      "B": "My Services",
+      "C": "See My Projects",
+      "D": "Contact Me"
+    },
+    "other_action": {
+      "A": "Download Resume",
+      "B": "Continue",
+      "C": "Continue",
+      "D": "^ Back To Top ^"
+    },
+    "subtitles": {
+      "A": "TEST A",
+      "B": "TEST B",
+      "C": "TEST C",
+      "D": "TEST D"
+    },
+    "texts": {
+      "A": "A : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.",
+      "B": "B : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.",
+      "C": "C : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.",
+      "D": "D : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus."
+    }
   },
   "about_page": {
     "title": "About Me",

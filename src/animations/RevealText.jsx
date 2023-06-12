@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import goOutAnimation from "../helpers/goOutAnimation";
 
-const RevealText = ({ children }) => {
+const RevealText = ({ children, out }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   //once : true => pas laisser l'affichage permanent après l'animation.
@@ -36,6 +37,7 @@ const RevealText = ({ children }) => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.5 }}
+        //exit={goOutAnimation(1, 1)}
       >
         {children}
       </motion.div>

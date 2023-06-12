@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import TitleAndSubTitle from "../elements/TitleAndSubTitle";
 import { ThemeContext } from "../layouts/PageConfig";
 
+import { motion } from "framer-motion";
+
 const SectionForm = () => {
   const { textToShow } = useContext(ThemeContext);
   return (
@@ -10,7 +12,12 @@ const SectionForm = () => {
         title={textToShow.contact_page.titleB.title}
         subtitle={textToShow.contact_page.titleB.subtitle}
       />
-      <form className="contactForm">
+      <motion.form
+        className="contactForm"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 1 }}
+      >
         <ul className="contactForm__container">
           <div className="contactBlock contactBlock--top">
             <li className="contactBlock__lign">
@@ -81,7 +88,7 @@ const SectionForm = () => {
             {textToShow.contact_page.form.button}
           </span>
         </button>
-      </form>
+      </motion.form>
     </div>
   );
 };

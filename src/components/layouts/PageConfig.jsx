@@ -15,6 +15,7 @@ import TEXT_ENG from "../../database/TEXT_ENG.json";
 import { AnimatePresence } from "framer-motion";
 import DotsAnimation from "../blocks/dotsAnimation.jsx";
 import HeaderMorph from "./HeaderMorph.jsx";
+import SocialButtons from "./SocialButtons.jsx";
 
 export const ThemeContext = createContext(null);
 
@@ -38,7 +39,6 @@ function PageConfig() {
 
   const location = useLocation();
   const actualPage = location.pathname;
-  console.log("actualPage", actualPage);
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
@@ -116,6 +116,8 @@ function PageConfig() {
             toggleColorTheme={toggleColorTheme}
             toggleLanguage={toggleLanguage}
           />
+
+          <SocialButtons />
 
           <main className="home">
             <div className="animatedBackground">
@@ -343,7 +345,8 @@ function PageConfig() {
             ) : (
               ""
             )}
-            {actualPage === "/contact" ? (
+            {/* //! change to : actualPage === "/contact" */}
+            {true ? (
               <ul className="cubeBackground">
                 <li></li>
                 <li></li>
@@ -356,8 +359,8 @@ function PageConfig() {
             )}
 
             {/** //!!!  Ajout d'options sur animate presence */}
-            <AnimatePresence onExitComplete={() => null}>
-              <Routes>
+            <AnimatePresence>
+              <Routes location={location} key={location.pathname}>
                 <Route exact path="" element={<Home />} />
                 <Route exact path="about" element={<About />} />
                 <Route exact path="services" element={<Services />} />

@@ -9,6 +9,7 @@
   "header_img": {
     "alt_1": "Logo de Jawa Design"
   },
+  "intersection": "En savoir plus",
   "home_page": {
     "title": "Bienvenue sur ",
     "name": "Jawa Design !",
@@ -21,7 +22,30 @@
     },
     "myName": "Julien Armand",
     "presentation": "Je suis un développeur web passionné par la création de sites web élégants et efficaces. J'utilise mes compétences en design pour concevoir des interfaces utilisateur conviviales et attrayantes qui captent l'attention de l'utilisateur.",
-    "call_to_action": "A propos de moi"
+    "call_to_action": {
+      "A": "A propos de moi",
+      "B": "Mes Services",
+      "C": "Mes Projets",
+      "D": "Contactez moi"
+    },
+    "other_action": {
+      "A": "Téléchargez mon CV",
+      "B": "Contactez moi ",
+      "C": "Contactez moi",
+      "D": "Retour"
+    },
+    "subtitles": {
+      "A": "Besoin de renfort dans vos équipes ?",
+      "B": "Envie d'un site web percutant ?",
+      "C": "Curieux de découvrir mes projets innovants ?",
+      "D": "Prêt à passer à l'action ?"
+    },
+    "texts": {
+      "A": "Ne cherchez plus, je suis là pour vous aider. Avec mon expertise et mon engagement, je suis prêt à collaborer avec vous pour répondre à vos besoins spécifiques. Que ce soit pour un projet à court terme ou une collaboration à long terme, je suis en mesure de fournir des solutions adaptées. Découvrez mon parcours et comment ma passion pour le code s'est développée au fil du temps. Vous comprendrez ainsi pourquoi je suis aujourd'hui pleinement engagé dans la création de solutions numériques innovantes.",
+      "B": "Je vous propose des solutions sur mesure pour réaliser un site percutant et professionnel. Grâce à mon expertise en développement web, je peux concevoir une interface utilisateur attrayante, optimisée pour une expérience utilisateur exceptionnelle. De la conception au déploiement, je m'engage à vous fournir un site web à la hauteur de vos attentes. Découvrez mes services et laissez-moi vous accompagner dans la création d'un site web qui captivera votre audience.",
+      "C": "Explorez une sélection de réalisations qui témoignent de ma créativité et de ma passion pour le développement web. Chaque projet est conçu avec soin, alliant esthétisme et fonctionnalités avancées pour offrir des expériences en ligne uniques. Que ce soit des sites vitrines, des applications interactives ou des projets expérimentaux, vous trouverez une diversité d'inspiration et d'idées novatrices. Plongez dans cet univers captivant et découvrez comment je peux concrétiser vos propres idées audacieuses.",
+      "D": "Que vous ayez des questions, des idées ou que vous souhaitiez simplement discuter de votre projet, je suis là pour vous aider. Ensemble, nous pouvons transformer vos idées en réalité. Je suis impatient de travailler avec vous et de créer quelque chose d'exceptionnel. Ne tardez pas, contactez-moi dès maintenant et entamons cette aventure passionnante ensemble."
+    }
   },
   "about_page": {
     "title": "A propos de moi",

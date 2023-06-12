@@ -13,6 +13,9 @@ import {
   useTransform,
 } from "framer-motion";
 import RevealText from "../animations/RevealText";
+import { Link } from "react-router-dom";
+import myCV from "../download/myCV.pdf";
+import goOutAnimation from "../helpers/goOutAnimation";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -82,18 +85,22 @@ const Home = () => {
   });
 
   useEffect(() => {
-    console.log(buttonAnim_left_A, buttonAnim_right_A);
-  }, [buttonAnim_left_A]);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="wrapper">
-      <div className="stickyPage aboutConfig scrollBySection">
+      <motion.div
+        className="stickyPage aboutConfig scrollBySection"
+        exit={goOutAnimation(0.5, 0)}
+      >
         <section className="home__section">
           <article className="home__section__article">
             <motion.h1
               className="font__introTitle font__color"
               initial={{ x: "50vw" }}
               animate={{ x: 0 }}
+              //exit={goOutAnimation(2, 0)}
             >
               {textToShow.home_page.title.split("").map((letter, index) => {
                 return (
@@ -116,6 +123,7 @@ const Home = () => {
                 initial={{ opacity: 0, x: 100, scale: 0.8 }}
                 animate={{ opacity: 1, x: 20, scale: 1.2 }}
                 transition={{ duration: 0.4, delay: 0.9 }}
+                //exit={}
               >
                 <strong className="font__name  textColor ">
                   {textToShow.home_page.name}{" "}
@@ -130,6 +138,7 @@ const Home = () => {
                 duration: 0.8,
                 delay: 0.5,
               }}
+              //exit={goOutAnimation(1, 1)}
             >
               <h2 className="font__introSubTitle font__color">
                 {textToShow.home_page.intro + " "}
@@ -189,7 +198,7 @@ const Home = () => {
               }}
             >
               <span className="subSection__top font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.A}
               </span>
             </motion.div>
             <div className="subSection">
@@ -200,7 +209,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 5, type: "spring" }}
               >
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.A}
               </motion.h2>
             </div>
             <motion.div
@@ -212,19 +221,13 @@ const Home = () => {
               }}
             >
               <span className="subSection__bottom font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.A}
               </span>
             </motion.div>
 
             <RevealText>
               <p className="article__sub font__basicText font__color">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                sapien massa, dignissim at gravida eu, bibendum eget augue.
-                Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.
-                Aenean tempus eleifend varius. Maecenas auctor quam in lectus
-                faucibus placerat. Suspendisse quis pulvinar enim. Praesent
-                aliquet, ante eget eleifend tempor, turpis diam imperdiet nunc,
-                eget vestibulum libero magna at arcu. Sed vitae molestie erat.
+                {textToShow.home_page.texts.A}
               </p>
             </RevealText>
 
@@ -235,18 +238,25 @@ const Home = () => {
                   translateX: buttonAnim_left_A,
                 }}
               >
-                <span className="callToAction__text">
-                  {textToShow.home_page.call_to_action}
-                </span>
+                <Link to="/about">
+                  <span className="callToAction__text">
+                    {textToShow.home_page.call_to_action.A}
+                  </span>
+                </Link>
               </motion.button>
-
               <motion.button
                 className="otherAction"
                 style={{
                   translateX: buttonAnim_right_A,
                 }}
               >
-                <span className="callToAction__text">Télécharger mon CV</span>
+                <a
+                  className="callToAction__text"
+                  href={myCV}
+                  download="JulienARMAND_Resume_CV_2023.pdf"
+                >
+                  {textToShow.home_page.other_action.A}
+                </a>
               </motion.button>
             </div>
           </article>
@@ -263,7 +273,7 @@ const Home = () => {
               }}
             >
               <span className="subSection__top font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.B}
               </span>
             </motion.div>
             <div className="subSection">
@@ -274,10 +284,9 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 5, type: "spring" }}
               >
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.B}
               </motion.h2>
             </div>
-
             <motion.div
               className="subSection"
               style={{
@@ -287,19 +296,13 @@ const Home = () => {
               }}
             >
               <span className="subSection__bottom font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.B}
               </span>
             </motion.div>
 
             <RevealText>
               <p className="article__sub font__basicText font__color">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                sapien massa, dignissim at gravida eu, bibendum eget augue.
-                Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.
-                Aenean tempus eleifend varius. Maecenas auctor quam in lectus
-                faucibus placerat. Suspendisse quis pulvinar enim. Praesent
-                aliquet, ante eget eleifend tempor, turpis diam imperdiet nunc,
-                eget vestibulum libero magna at arcu. Sed vitae molestie erat.
+                {textToShow.home_page.texts.B}
               </p>
             </RevealText>
 
@@ -310,9 +313,11 @@ const Home = () => {
                   translateX: buttonAnim_left_B,
                 }}
               >
-                <span className="callToAction__text">
-                  {textToShow.home_page.call_to_action}
-                </span>
+                <Link to="/services">
+                  <span className="callToAction__text">
+                    {textToShow.home_page.call_to_action.B}
+                  </span>
+                </Link>
               </motion.button>
 
               <motion.button
@@ -321,7 +326,11 @@ const Home = () => {
                   translateX: buttonAnim_right_B,
                 }}
               >
-                <span className="callToAction__text">Télécharger mon CV</span>
+                <Link to="/contact">
+                  <span className="callToAction__text">
+                    {textToShow.home_page.other_action.B}
+                  </span>
+                </Link>
               </motion.button>
             </div>
           </article>
@@ -338,7 +347,7 @@ const Home = () => {
               }}
             >
               <span className="subSection__top font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.C}
               </span>
             </motion.div>
             <div className="subSection">
@@ -349,7 +358,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 5, type: "spring" }}
               >
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.C}{" "}
               </motion.h2>
             </div>
 
@@ -362,19 +371,13 @@ const Home = () => {
               }}
             >
               <span className="subSection__bottom font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.C}
               </span>
             </motion.div>
 
             <RevealText>
               <p className="article__sub font__basicText font__color">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                sapien massa, dignissim at gravida eu, bibendum eget augue.
-                Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.
-                Aenean tempus eleifend varius. Maecenas auctor quam in lectus
-                faucibus placerat. Suspendisse quis pulvinar enim. Praesent
-                aliquet, ante eget eleifend tempor, turpis diam imperdiet nunc,
-                eget vestibulum libero magna at arcu. Sed vitae molestie erat.
+                {textToShow.home_page.texts.C}
               </p>
             </RevealText>
 
@@ -385,9 +388,11 @@ const Home = () => {
                   translateX: buttonAnim_left_C,
                 }}
               >
-                <span className="callToAction__text">
-                  {textToShow.home_page.call_to_action}
-                </span>
+                <Link to="/projects">
+                  <span className="callToAction__text">
+                    {textToShow.home_page.call_to_action.C}
+                  </span>
+                </Link>
               </motion.button>
 
               <motion.button
@@ -396,7 +401,11 @@ const Home = () => {
                   translateX: buttonAnim_right_C,
                 }}
               >
-                <span className="callToAction__text">Télécharger mon CV</span>
+                <Link to="/contact">
+                  <span className="callToAction__text">
+                    {textToShow.home_page.other_action.C}
+                  </span>
+                </Link>
               </motion.button>
             </div>
           </article>
@@ -413,7 +422,7 @@ const Home = () => {
               }}
             >
               <span className="subSection__top font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.D}
               </span>
             </motion.div>
             <div className="subSection">
@@ -424,7 +433,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 5, type: "spring" }}
               >
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.D}
               </motion.h2>
             </div>
 
@@ -437,19 +446,13 @@ const Home = () => {
               }}
             >
               <span className="subSection__bottom font__introTitle font__color">
-                Besoin de renfort dans vos équipes ?
+                {textToShow.home_page.subtitles.D}
               </span>
             </motion.div>
 
             <RevealText>
               <p className="article__sub font__basicText font__color">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-                sapien massa, dignissim at gravida eu, bibendum eget augue.
-                Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.
-                Aenean tempus eleifend varius. Maecenas auctor quam in lectus
-                faucibus placerat. Suspendisse quis pulvinar enim. Praesent
-                aliquet, ante eget eleifend tempor, turpis diam imperdiet nunc,
-                eget vestibulum libero magna at arcu. Sed vitae molestie erat.
+                {textToShow.home_page.texts.D}
               </p>
             </RevealText>
 
@@ -460,9 +463,11 @@ const Home = () => {
                   translateX: buttonAnim_left_D,
                 }}
               >
-                <span className="callToAction__text">
-                  {textToShow.home_page.call_to_action}
-                </span>
+                <Link to="/contact">
+                  <span className="callToAction__text">
+                    {textToShow.home_page.call_to_action.D}
+                  </span>
+                </Link>
               </motion.button>
 
               <motion.button
@@ -471,12 +476,18 @@ const Home = () => {
                   translateX: buttonAnim_right_D,
                 }}
               >
-                <span className="callToAction__text">Télécharger mon CV</span>
+                <div
+                  onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
+                >
+                  <span className="callToAction__text">
+                    {textToShow.home_page.other_action.D}
+                  </span>
+                </div>
               </motion.button>
             </div>
           </article>
         </section>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -154,6 +154,43 @@
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: cube 24s ease-in forwards infinite;
 }
+
+#dark #blue .cubeBackground li {
+  border-color: rgba($colorTheme_blue, 0.3);
+}
+
+#dark #green .cubeBackground li {
+  border-color: rgba($colorTheme_green, 0.3);
+}
+
+#dark #yellow .cubeBackground li {
+  border-color: rgba($colorTheme_yellow, 0.3);
+}
+#dark #purple .cubeBackground li {
+  border-color: rgba($colorTheme_purple, 0.3);
+}
+#dark #red .cubeBackground li {
+  border-color: rgba($colorTheme_red, 0.3);
+}
+
+#light #blue .cubeBackground li {
+  border-color: rgba($colorTheme_blue-light, 0.35);
+}
+
+#light #green .cubeBackground li {
+  border-color: rgba($colorTheme_green-light, 0.35);
+}
+
+#light #yellow .cubeBackground li {
+  border-color: rgba($colorTheme_yellow-light, 0.5);
+}
+#light #purple .cubeBackground li {
+  border-color: rgba($colorTheme_purple-light, 0.35);
+}
+#light #red .cubeBackground li {
+  border-color: rgba($colorTheme_red-light, 0.35);
+}
+
 .cubeBackground li:nth-child(0) {
   animation-delay: 0s;
   left: 98vw;
@@ -164,33 +201,33 @@
   animation-delay: 1s;
   left: 7vw;
   top: 19vh;
-  border-color: rgba($colorTheme_blue, 0.9);
+  //border-color: rgba($colorTheme_blue, 0.9);
 }
 
 .cubeBackground li:nth-child(2) {
   animation-delay: 3s;
   left: 39vw;
   top: 41vh;
-  border-color: rgba($colorTheme_green, 0.9);
+  //border-color: rgba($colorTheme_green, 0.9);
 }
 
 .cubeBackground li:nth-child(3) {
   animation-delay: 5s;
   left: 62vw;
   top: 88vh;
-  border-color: rgba($colorTheme_yellow, 0.9);
+  //border-color: rgba($colorTheme_yellow, 0.9);
 }
 
 .cubeBackground li:nth-child(4) {
   animation-delay: 7s;
   left: 81vw;
   top: 55vh;
-  border-color: rgba($colorTheme_purple, 0.9);
+  //border-color: rgba($colorTheme_purple, 0.9);
 }
 
 .cubeBackground li:nth-child(5) {
   animation-delay: 10s;
   left: 26vw;
   top: 21vh;
-  border-color: rgba($colorTheme_red, 0.9);
+  //border-color: rgba($colorTheme_red, 0.9);
 }

@@ -12,6 +12,7 @@ import creativeLottie from "../img/lottie/Creative.json";
 import freelanceLottie from "../img/lottie/FreelanceLottie.json";
 import portfolioLottie from "../img/lottie/PortfolioLottie.json";
 import vitrineLottie from "../img/lottie/Vitrine_bis.json";
+import goOutAnimation from "../helpers/goOutAnimation";
 
 const Services = () => {
   const { textToShow } = useContext(ThemeContext);
@@ -25,8 +26,8 @@ const Services = () => {
   };
 
   useEffect(() => {
-    console.log("USEEFFECT : indexToShowFirst", indexToShowFirst);
-  }, [indexToShowFirst]);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <div className="wrapper">
@@ -34,7 +35,7 @@ const Services = () => {
         className="stickyPage aboutConfig"
         initial={{ width: 0 }}
         animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 3000 } }}
+        exit={goOutAnimation(0.5, 0)}
       >
         <SectionTitle title={textToShow.services_page.title} />
 
@@ -233,7 +234,7 @@ const Services = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 491.52 491.52"
-                xml:space="preserve"
+                xmlSpace="preserve"
               >
                 <g>
                   <g>
@@ -601,7 +602,7 @@ const Services = () => {
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 491.52 491.52"
-                xml:space="preserve"
+                xmlSpace="preserve"
               >
                 <g>
                   <g>

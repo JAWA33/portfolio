@@ -1,12 +1,24 @@
+import { motion } from "framer-motion";
+
 const TitleAndSubTitle = ({ title, subtitle }) => {
   return (
     <div className="titleAndSubTitle">
-      <h2 className="font__BigText__capital font__BigText__capital--C textColor">
+      <motion.h2
+        className="font__BigText__capital font__BigText__capital--C textColor"
+        initial={{ x: "-100vw" }}
+        animate={{ x: "0vw" }}
+        transition={{ duration: 1, type: "spring", delay: 0.5 }}
+      >
         {title}
-      </h2>
-      <p className="font__BigText__writing font__BigText__writing--A font__color">
+      </motion.h2>
+      <motion.p
+        className="font__BigText__writing font__BigText__writing--A font__color"
+        initial={{ x: "-100vw" }}
+        animate={{ x: "0vw" }}
+        transition={{ duration: 1, type: "spring", delay: 0.75 }}
+      >
         {subtitle}
-      </p>
+      </motion.p>
     </div>
   );
 };

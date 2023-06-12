@@ -8,14 +8,23 @@ import SectionExperience from "../components/blocks/SectionExperience";
 import SectionStack from "../components/blocks/SectionStack";
 import FlexBubbleContainer from "../components/elements/FlexBubbleContainer";
 import IconToCard from "../components/blocks/IconToCard";
+import goOutAnimation from "../helpers/goOutAnimation";
 
 const About = () => {
   const [toggleOpenCard, setToggleOpenCard] = useState(false);
   const { language, theme, colorTheme, textToShow } = useContext(ThemeContext);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="wrapper">
-      <div className="stickyPage aboutConfig">
+      <motion.div
+        className="stickyPage aboutConfig"
+        i
+        exit={goOutAnimation(0.5, 0)}
+      >
         <SectionTitle title={textToShow.about_page.title} />
         <SectionIntroduction
           text={textToShow.about_page.text}
@@ -333,7 +342,7 @@ const About = () => {
         </SectionStack>
         <InterSection />
         <SectionExperience />
-      </div>
+      </motion.div>
     </div>
   );
 };

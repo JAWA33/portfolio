@@ -4,6 +4,8 @@ import SectionTitle from "../components/blocks/SectionTitle";
 import SectionAccordion from "../components/blocks/SectionAccordion";
 import AccordionBlock from "../components/blocks/AccordionBlock";
 import DotsAnimation from "../components/blocks/dotsAnimation";
+import { useEffect } from "react";
+import goOutAnimation from "../helpers/goOutAnimation";
 
 const Projects = () => {
   const numberOfPoints = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -24,13 +26,18 @@ const Projects = () => {
       }
     };
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="wrapper">
       <motion.div
         className="stickyPage aboutConfig aboutConfig--single"
         initial={{ width: 0 }}
         animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+        exit={goOutAnimation(0.5, 0)}
       >
         <SectionTitle title="Projets" />
         <SectionAccordion />

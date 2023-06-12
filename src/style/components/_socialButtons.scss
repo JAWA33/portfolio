@@ -1,0 +1,142 @@
+.socialNav {
+  width: auto;
+  min-width: 70px;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  z-index: 99;
+}
+
+#light .socialButtons {
+  color: $textColor_light;
+
+  &__element:hover {
+    color: $textColor_dark;
+  }
+}
+#dark .socialButtons {
+  color: $textColor_dark;
+}
+
+.socialButtons {
+  width: auto;
+  height: 100%;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+
+  &__element {
+    height: 55px;
+    position: relative;
+    margin: 0 1rem;
+
+    &:hover {
+      & .socialButtons__element__link {
+        border: 1px solid white;
+      }
+      & .socialButtons__element__link--linked {
+        background: #0a66c2;
+      }
+      & .socialButtons__element__link--git {
+        background: #1b2022;
+      }
+      & .socialButtons__element__link--twit {
+        background: #1b97ea;
+      }
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      line-height: 55px;
+      padding-left: 25%;
+      border-radius: 30px;
+
+      transition: all 0.2s linear;
+
+      &:hover {
+        width: 200px;
+        border-radius: 30px;
+      }
+
+      &:hover .socialText {
+        display: block;
+        padding-left: 40%;
+        opacity: 0;
+        animation: textShow 0.2s ease-in forwards;
+      }
+    }
+  }
+}
+
+@keyframes textShow {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.socialText {
+  display: none;
+}
+
+.socialIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 17px;
+  left: 30px;
+}
+
+@media (max-width: 1100px) {
+  .socialNav {
+    transform: translateX(-1.2rem);
+    scale: 0.9;
+  }
+}
+@media (max-width: 800px) {
+  .socialNav {
+    width: 100vw;
+    height: auto;
+    bottom: 0;
+    transform: translateX(0rem);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+  }
+  .socialButtons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0.5rem;
+
+    &__element {
+      margin: 0;
+      &__link {
+        width: 30px;
+
+        border-radius: 30px;
+      }
+    }
+  }
+  .socialText {
+    display: none;
+  }
+
+  #light .socialButtons {
+    color: $textColor_dark;
+
+    &__element:hover {
+      color: $textColor_dark;
+    }
+  }
+}

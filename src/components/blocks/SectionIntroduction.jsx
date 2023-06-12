@@ -1,5 +1,4 @@
 import React from "react";
-import InterSection from "../elements/InterSection";
 import { motion } from "framer-motion";
 import RevealText from "../../animations/RevealText";
 

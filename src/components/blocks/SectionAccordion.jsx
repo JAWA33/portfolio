@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import AccordionBlock from "./AccordionBlock";
 
 import { ThemeContext } from "../layouts/PageConfig";
+import { motion } from "framer-motion";
 
 import Pict__1__green from "../../img/accordion/green/pict__1.jpg";
 import Pict__2__green from "../../img/accordion/green/pict__2.jpg";
@@ -90,7 +91,7 @@ const SectionAccordion = ({ children }) => {
   return (
     selectedBlock && (
       <section className="sectAccordion">
-        <div className="accordionWrapper">
+        <motion.div className="accordionWrapper" initial={{ opacity: 1 }}>
           <div className="accordion">
             <AccordionBlock
               title={textToShow.projects.A.title}
@@ -143,7 +144,7 @@ const SectionAccordion = ({ children }) => {
               toggleSelectedBlock={toggleSelectedBlock}
             />
           </div>
-        </div>
+        </motion.div>
       </section>
     )
   );

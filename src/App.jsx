@@ -5,9 +5,8 @@ import PageConfig from "./components/layouts/PageConfig.jsx";
 //import {AnimatePresence} from "framer-motion/dist/framer-motion";
 
 const App = () => {
-  const location = useLocation();
   return (
-    <Routes location={location} key={location.pathname}>
+    <Routes>
       <Route path="/*" element={<PageConfig />} />
     </Routes>
   );

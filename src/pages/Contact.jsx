@@ -4,21 +4,25 @@ import SectionTitle from "../components/blocks/SectionTitle";
 import SectionContact from "../components/blocks/SectionContact";
 import SectionForm from "../components/blocks/SectionForm";
 import InterSection from "../components/elements/InterSection";
+import { useEffect } from "react";
+import goOutAnimation from "../helpers/goOutAnimation";
 
 const Contact = () => {
-  // = {textToShow.contact.title}
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   return (
     <div className="wrapper">
       <motion.div
         className="stickyPage aboutConfig"
         initial={{ width: 0 }}
         animate={{ width: "100%" }}
-        exit={{ x: window.innerWidth, transition: { duration: 0.3 } }}
+        exit={goOutAnimation(0.5, 0)}
       >
         <SectionTitle title="Contact" />
-        <SectionContact />
-        <InterSection />
         <SectionForm />
+        {/* <InterSection /> */}
+        {/* <SectionContact /> */}
       </motion.div>
     </div>
   );

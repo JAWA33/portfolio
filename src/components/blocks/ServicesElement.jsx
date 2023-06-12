@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { cubicBezier, motion } from "framer-motion";
 import { ThemeContext } from "../../components/layouts/PageConfig";
+import RevealText from "../../animations/RevealText";
 
 const ServicesElement = ({
   title,
@@ -55,7 +56,8 @@ const ServicesElement = ({
       <div className="gridManager__box__card gridManager__box__card--cardA">
         <div className="box font__color">
           <div className="box__content">
-            {children}
+            <RevealText>{children}</RevealText>
+
             <h2 className="font__infoTitle font__color">{title}</h2>
             {/* <p className="font__basicText font__color">{text}</p> */}
           </div>
@@ -68,6 +70,14 @@ const ServicesElement = ({
         <div className="box font__color">
           <div className="box__content">
             <p className="font__servicesCards font__color">{text}</p>
+
+            <div className="box__content__span">
+              <span className="font__scroll">
+                {language === "ENG"
+                  ? "Click to know more"
+                  : "Cliquez pour en savoir plus"}
+              </span>
+            </div>
           </div>
         </div>
       </div>

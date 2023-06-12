@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 
 import solo__logo from "../../icons/solo__logo.svg";
 
@@ -23,9 +24,17 @@ const AccordionBlock = ({
   }, [selectedBlock]);
 
   return (
-    <div
+    <motion.div
       className="accordion__panel"
       onClick={(e) => toggleSelectedBlock(e, panel)}
+      initial={{ y: "100vh", scale: 0 }}
+      animate={{ y: "0vh", scale: 1 }}
+      transition={{
+        duration: 0.5,
+        delay: panel * 0.1 + 0.5,
+        type: "spring",
+        ease: "easeOut",
+      }}
     >
       <h2 id={panel + "-heading"}>
         <button
@@ -75,7 +84,7 @@ const AccordionBlock = ({
           alt="forêt vue du ciel"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

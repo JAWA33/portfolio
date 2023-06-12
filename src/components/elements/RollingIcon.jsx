@@ -11,7 +11,11 @@ const RollingIcon = ({ rollingText, children }) => {
       <div className="rollingIcon__text">
         <p className="font__basicText">
           {rollingText.split("").map((letter, index) => {
-            return <span className="rollingIcon__text__letter">{letter}</span>;
+            return (
+              <span key={index} className="rollingIcon__text__letter">
+                {letter}
+              </span>
+            );
           })}
         </p>
       </div>
