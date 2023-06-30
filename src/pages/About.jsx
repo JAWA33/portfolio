@@ -9,6 +9,8 @@ import SectionStack from "../components/blocks/SectionStack";
 import FlexBubbleContainer from "../components/elements/FlexBubbleContainer";
 import IconToCard from "../components/blocks/IconToCard";
 import goOutAnimation from "../helpers/goOutAnimation";
+//! Google Analytics :
+import ReactGA from "react-ga4";
 
 const About = () => {
   const [toggleOpenCard, setToggleOpenCard] = useState(false);
@@ -18,20 +20,34 @@ const About = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  //! Google Analytics :
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/about",
+      title: "Page A Propos",
+    });
+  }, []);
+  //! Google Analytics :
+
   return (
     <div className="wrapper">
       <motion.div
         className="stickyPage aboutConfig"
-        i
         exit={goOutAnimation(0.5, 0)}
       >
         <SectionTitle title={textToShow.about_page.title} />
+
         <SectionIntroduction
           text={textToShow.about_page.text}
           textColor={textToShow.about_page.textColor}
           intro={textToShow.about_page.intro}
           introBis={textToShow.about_page.introBis}
         />
+        <div className="replaceIntersection">
+          <InterSection />
+        </div>
+
         <SectionStack>
           <div className="bigBubbleGrid">
             {/* //* First Line */}
@@ -340,7 +356,6 @@ const About = () => {
             {/* </BigBubbleGrid> */}
           </div>
         </SectionStack>
-        <InterSection />
         <SectionExperience />
       </motion.div>
     </div>

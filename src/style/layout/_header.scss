@@ -9,9 +9,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: translateY(-3.8rem);
-  //transform: translateY(0rem);
-  padding: 0 1rem;
+  transform: translateY(-3.7rem);
+
+  padding: 0 0.5rem;
   transition: transform 0.8s ease-in-out;
 
   &::before,
@@ -83,6 +83,7 @@
         align-items: center;
 
         & p {
+          font-size: 1.05rem;
           color: rgba($textColor_dark, 0.2);
           transform: translateY(10px);
           z-index: 299;
@@ -95,6 +96,7 @@
         justify-content: center;
         align-items: center;
         & p {
+          font-size: 1.05rem;
           color: rgba($textColor_dark, 0.2);
           transform: translateY(10px);
           z-index: 299;
@@ -114,6 +116,7 @@
         justify-content: center;
         align-items: center;
         & p {
+          font-size: 1.05rem;
           color: rgba($textColor_dark, 0.2);
         }
 
@@ -148,6 +151,7 @@
 
 @media (min-width: 800px) {
   .newHeader {
+    height: 120px;
     transform: translateY(-4.8rem);
     &::before,
     &::after {
@@ -200,7 +204,7 @@
     }
     &__icon path {
       //fill: white;
-      fill: rgba($textColor_light, 0.4);
+      fill: $textColor_light;
     }
 
     &:after {
@@ -369,5 +373,373 @@
   }
   & .activePage svg path {
     fill: $colorTheme_purple !important;
+  }
+}
+
+.menuText {
+  width: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  align-self: flex-end;
+  &::after {
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+//for darkTheme colors menuText::after
+
+#green .menuText {
+  &::after {
+    background: $colorTheme_green;
+  }
+}
+#blue .menuText {
+  &::after {
+    background: $colorTheme_blue;
+  }
+}
+#yellow .menuText {
+  &::after {
+    background: $colorTheme_yellow;
+  }
+}
+#purple .menuText {
+  &::after {
+    background: $colorTheme_purple;
+  }
+}
+#red .menuText {
+  &::after {
+    background: $colorTheme_red;
+  }
+}
+
+//for lightTheme Colors menuText::after
+#light {
+  & #green .menuText {
+    &::after {
+      background: $colorTheme_green-light;
+    }
+  }
+  & #blue .menuText {
+    &::after {
+      background: $colorTheme_blue-light;
+    }
+  }
+  & #yellow .menuText {
+    &::after {
+      background: $colorTheme_yellow-light;
+    }
+  }
+  & #purple .menuText {
+    &::after {
+      background: $colorTheme_purple-light;
+    }
+  }
+  & #red .menuText {
+    &::after {
+      background: $colorTheme_red-light;
+    }
+  }
+}
+.headerHover {
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  position: fixed;
+  z-index: 99;
+  background: linear-gradient(
+    -90deg,
+    rgba(37, 37, 37, 0) 20%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  transition: all 0.5s 0.5s ease-in-out;
+  &:hover {
+    background: linear-gradient(
+      -90deg,
+      rgba(37, 37, 37, 1) 40%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover .jawaLogo__icon {
+    scale: 0.8;
+    transform: rotateZ(-90deg);
+    transition: all 0.5s 0.2s ease-in-out;
+
+    &--default {
+      opacity: 0;
+      transition: all 0.5s 0.2s ease-in-out;
+    }
+  }
+  &:hover .anime {
+    &--home {
+      opacity: 1;
+      transform: translateX(-16px);
+      transition: all 0.5s 0s ease-in-out;
+    }
+    &--about {
+      opacity: 1;
+      transform: translateX(-16px);
+      transition: all 0.5s 0.1s ease-in-out;
+    }
+    &--services {
+      opacity: 1;
+      transform: translateX(-16px);
+      transition: all 0.5s 0.2s ease-in-out;
+    }
+    &--projects {
+      opacity: 1;
+      transform: translateX(-16px);
+      transition: all 0.5s 0.3s ease-in-out;
+    }
+    &--contact {
+      opacity: 1;
+      transform: translateX(-16px);
+      transition: all 0.5s 0.4s ease-in-out;
+    }
+  }
+  &:hover .jawaLogo__text {
+    &--noHover {
+      opacity: 0;
+      scale: 0;
+      transform: translateY(-32px);
+      transition: all 0.3s 0.2s linear;
+    }
+    &--hover {
+      opacity: 1;
+      scale: 1.1;
+      transform: translateY(-32px) translateX(20px);
+      transition: all 0.3s 0.2s linear;
+    }
+  }
+}
+.jawaLogo {
+  width: 80%;
+}
+
+.jawaLogo__icon {
+  width: auto;
+  height: auto;
+  position: relative;
+  transform: rotateZ(0deg);
+  //fill: $textColor_dark;
+  scale: 0.9;
+  transition: all 0.5s 0.2s ease-in-out;
+
+  &--default {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    fill: $textColor_dark;
+    opacity: 1;
+    transition: all 0.5s 0.2s ease-in-out;
+  }
+  &--green {
+    fill: $colorTheme_green;
+  }
+  &--red {
+    fill: $colorTheme_red;
+  }
+  &--blue {
+    fill: $colorTheme_blue;
+  }
+  &--yellow {
+    fill: $colorTheme_yellow;
+  }
+  &--purple {
+    fill: $colorTheme_purple;
+  }
+}
+
+#light {
+  .jawaLogo__icon {
+    &--default {
+      fill: $textColor_light;
+    }
+    &--green {
+      fill: $colorTheme_green-light;
+    }
+    &--red {
+      fill: $colorTheme_red-light;
+    }
+    &--blue {
+      fill: $colorTheme_blue-light;
+    }
+    &--yellow {
+      fill: $colorTheme_yellow-light;
+    }
+    &--purple {
+      fill: $colorTheme_purple-light;
+    }
+  }
+  .headerHover {
+    background: linear-gradient(
+      -90deg,
+      rgba(255, 255, 255, 0) 20%,
+      rgba(255, 255, 255, 0) 80%
+    );
+    &:hover {
+      background: linear-gradient(
+        -90deg,
+        rgb(255, 255, 255) 40%,
+        rgba(255, 255, 255, 0) 100%
+      );
+    }
+  }
+}
+
+.globalNav__list__lign {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  height: 8vh;
+  &:hover .menuText::after {
+    width: 30px;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover .menuText {
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+}
+
+.anime {
+  &--home {
+    transform: translateX(-130px);
+    transition: all 0.5s 0.4s ease-in-out;
+  }
+  &--about {
+    transform: translateX(-130px);
+    transition: all 0.5s 0.3s ease-in-out;
+  }
+  &--services {
+    transform: translateX(-130px);
+    transition: all 0.5s 0.2s ease-in-out;
+  }
+  &--projects {
+    transform: translateX(-130px);
+    transition: all 0.5s 0.1s ease-in-out;
+  }
+  &--contact {
+    transform: translateX(-130px);
+    transition: all 0.5s 0s ease-in-out;
+  }
+}
+
+.jawaLogo__text {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  transform: translateY(-12px);
+
+  &--noHover {
+    opacity: 1;
+    scale: 1;
+    transition: all 0.5s 0.2s ease-in-out;
+  }
+  &--hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    scale: 0;
+    transition: all 0.5s 0.2s ease-in-out;
+  }
+}
+
+@media (max-width: 800px) {
+  .jawaLogo {
+    max-width: 80px;
+  }
+  .jawaLogo__text {
+    //transform: translateY(0px);
+  }
+}
+
+@media (max-width: 600px) {
+  .headerHover {
+    width: 80px;
+    height: 90px;
+    background: linear-gradient(
+      -145deg,
+      rgba(37, 37, 37, 1) 20%,
+      rgba(0, 0, 0, 0) 80%
+    );
+
+    &:hover {
+      width: 60vw;
+      background: linear-gradient(
+        -145deg,
+        rgba(37, 37, 37, 1) 50%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+  }
+  #light {
+    .headerHover {
+      background: linear-gradient(
+        -145deg,
+        rgba(255, 255, 255, 0.5) 20%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      border-bottom-right-radius: 1rem;
+      &:hover {
+        background: linear-gradient(
+          -145deg,
+          rgb(255, 255, 255) 50%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        border-bottom-right-radius: 0rem;
+      }
+    }
+  }
+  .menuText {
+    align-self: center;
+    scale: 1.8;
+    margin-bottom: 5vh;
+  }
+  // .anime {
+  //   &--home {
+  //     opacity: 0;
+  //     transition: all 0s 0s ease-in-out;
+  //   }
+  //   &--about {
+  //     opacity: 0;
+  //     transition: all 0s 0s ease-in-out;
+  //   }
+  //   &--services {
+  //     opacity: 0;
+  //     transition: all 0s 0s ease-in-out;
+  //   }
+  //   &--projects {
+  //     opacity: 0;
+  //     transition: all 0s 0s ease-in-out;
+  //   }
+  //   &--contact {
+  //     opacity: 0;
+  //     transition: all 0s 0s ease-in-out;
+  //   }
+  // }
+  .globalNav__list__lign {
+    min-height: 80px;
+    height: 12vh;
   }
 }

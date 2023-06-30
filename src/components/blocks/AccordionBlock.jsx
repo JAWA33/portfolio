@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
 import solo__logo from "../../icons/solo__logo.svg";
+import { Link } from "react-router-dom";
 
 const AccordionBlock = ({
   title,
@@ -73,10 +74,11 @@ const AccordionBlock = ({
         role="region"
       >
         <p className="font__strongText">{text}</p>
-
-        <button className="callToAction">
-          <span className="callToAction__text">{buttonTitle}</span>
-        </button>
+        <Link to="/projects/error">
+          <button className="callToAction">
+            <span className="callToAction__text">{buttonTitle}</span>
+          </button>
+        </Link>
 
         <img
           className="accordion__image"

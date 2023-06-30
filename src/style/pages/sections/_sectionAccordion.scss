@@ -1,6 +1,7 @@
 .sectAccordion {
   //background: red;
   color: $textColor_dark;
+  margin-bottom: 3rem;
 }
 
 .accordionWrapper {
@@ -36,7 +37,7 @@
     align-content: flex-start;
     justify-content: flex-start;
 
-    mix-blend-mode: overlay;
+    //mix-blend-mode: overlay;
 
     cursor: pointer;
   }
@@ -114,7 +115,7 @@
     }
 
     &--content {
-      width: 100%;
+      width: 95%;
       height: 100%;
       margin-top: 0rem;
       padding: 1rem 0rem;
@@ -128,11 +129,11 @@
       transform: translateY(2rem);
       opacity: 0;
       transition: transform 500ms 250ms, opacity 500ms 250ms;
-      margin-left: calc(var(--_button-size) + var(--_panel-gap));
-      padding-right: calc(var(--_button-size));
+      padding-left: calc(var(--_button-size) + var(--_panel-gap));
+      padding-right: calc(var(--_button-size) / 2);
     }
     &--content button {
-      margin: 2rem 0rem 1.5rem 0rem;
+      margin: 1.5rem 0rem 1.5rem 0rem;
     }
   }
 
@@ -409,5 +410,9 @@
       transform: rotateZ(-90deg);
       transition: transform 500ms ease-out;
     }
+  }
+
+  .accordion__title {
+    mix-blend-mode: overlay;
   }
 }

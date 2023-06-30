@@ -16,6 +16,10 @@ import { AnimatePresence } from "framer-motion";
 import DotsAnimation from "../blocks/dotsAnimation.jsx";
 import HeaderMorph from "./HeaderMorph.jsx";
 import SocialButtons from "./SocialButtons.jsx";
+import ErrorProjectPage from "../../pages/ErrorProjectPage.jsx";
+import { ToastContainer } from "react-toastify";
+import CookieConsent from "react-cookie-consent";
+import HeaderHover from "./HeaderHover.jsx";
 
 export const ThemeContext = createContext(null);
 
@@ -30,8 +34,23 @@ function PageConfig() {
 
   const [textToShow, setTextToShow] = useState(text_FR);
   const [theme, setTheme] = useState(savedTheme || "dark");
-  const [language, setLanguage] = useState(savedLanguage || "ENG");
-  const [colorTheme, setColorTheme] = useState(savedColor || "green");
+  const [language, setLanguage] = useState(savedLanguage || "FR");
+  const [colorTheme, setColorTheme] = useState(savedColor || "blue");
+  const [showCookie, setShowCookie] = useState(true);
+  const [isPhone, setIsPhone] = useState(true);
+
+  useEffect(() => {
+    let info = localStorage.getItem("jwd_info");
+    setShowCookie(info === "false" ? false : true);
+  }, []);
+
+  useEffect(() => {
+    if (window.innerWidth < 600) {
+      setIsPhone(true);
+    } else {
+      setIsPhone(false);
+    }
+  }, [window.innerWidth]);
 
   const [logoURL, setLogoURL] = useState("");
 
@@ -88,6 +107,13 @@ function PageConfig() {
     </div>;
   };
 
+  const favicon = document.getElementById("favicon");
+
+  useEffect(() => {
+    let faviconLink = "/vite-" + colorTheme + ".svg";
+    favicon.setAttribute("href", faviconLink);
+  }, [colorTheme]);
+
   return (
     <ThemeContext.Provider
       value={{
@@ -102,12 +128,9 @@ function PageConfig() {
     >
       <div className="settings" id={theme}>
         <div className="colorTheme" id={colorTheme}>
-          {/* 
-          //! modifier le passage des variables avec le useContext(ThemeContext (Voir Home)) 
-          */}
           {/* <Header /> */}
-          <HeaderMorph />
-
+          {/* isPhone ? <HeaderMorph /> : */}
+          <HeaderHover />
           <Params
             language={language}
             themeColor={colorTheme}
@@ -116,10 +139,68 @@ function PageConfig() {
             toggleColorTheme={toggleColorTheme}
             toggleLanguage={toggleLanguage}
           />
-
+          {showCookie && (
+            <CookieConsent
+              debug={true}
+              buttonText="Ok, j'accepte"
+              style={{
+                background:
+                  theme === "dark"
+                    ? "rgba(250, 250, 250, 0.9)"
+                    : "rgba(20, 20, 20, 0.9)",
+                padding: "0 1rem",
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "flex-end",
+              }}
+              buttonStyle={{
+                opacity: 1,
+                background: colorTheme,
+                color: colorTheme === "yellow" ? "black" : "white",
+                height: "36px",
+                padding: "0 1rem",
+                borderRadius: "0.45rem",
+                marginLeft: "2rem",
+              }}
+              onAccept={(e) => {
+                localStorage.setItem("jwd_info", e);
+              }}
+              expires={365}
+            >
+              <p className="font__label font__color--opposite">
+                <span
+                  className="font__label font__color--opposite"
+                  style={{
+                    textDecorationLine: "underline",
+                    fontStyle: "italic",
+                    display: "block",
+                  }}
+                >
+                  Information sur les cookies :
+                </span>
+                Ce site utilise des cookies de Google Analytics pour collecter
+                des informations sur l'utilisation du site. Ces cookies sont
+                utilisés uniquement à des fins d'analyse et ne recueillent pas
+                de données personnelles. En continuant à naviguer sur ce site,
+                vous acceptez l'utilisation de ces cookies.
+              </p>
+            </CookieConsent>
+          )}
           <SocialButtons />
-
           <main className="home">
+            <ToastContainer
+              position="top-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme={theme === "dark" ? "light" : "dark"}
+            />
             <div className="animatedBackground">
               <span></span>
               <span></span>
@@ -366,6 +447,11 @@ function PageConfig() {
                 <Route exact path="services" element={<Services />} />
                 <Route exact path="projects" element={<Projects />} />
                 <Route exact path="contact" element={<Contact />} />
+                <Route
+                  exact
+                  path="projects/error"
+                  element={<ErrorProjectPage />}
+                />
               </Routes>
             </AnimatePresence>
           </main>

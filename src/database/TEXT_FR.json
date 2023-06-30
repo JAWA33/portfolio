@@ -9,19 +9,19 @@
   "header_img": {
     "alt_1": "Logo de Jawa Design"
   },
-  "intersection": "En savoir plus",
+  "intersection": "Faites défiler pour continuer",
   "home_page": {
     "title": "Bienvenue sur ",
     "name": "Jawa Design !",
     "intro": "Je suis ",
     "works": {
       "_1": "Julien Armand",
-      "_2": "Développeur web",
-      "_3": "Créateur graphique",
+      "_2": "un Développeur web",
+      "_3": "un Créateur graphique",
       "_4": "à votre écoute"
     },
     "myName": "Julien Armand",
-    "presentation": "Je suis un développeur web passionné par la création de sites web élégants et efficaces. J'utilise mes compétences en design pour concevoir des interfaces utilisateur conviviales et attrayantes qui captent l'attention de l'utilisateur.",
+    "presentation": "Je suis un développeur web passionné par la création de sites web élégants et efficaces. J'utilise mes compétences en design pour concevoir des interfaces conviviales et attrayantes qui captent l'attention de l'utilisateur.",
     "call_to_action": {
       "A": "A propos de moi",
       "B": "Mes Services",
@@ -32,13 +32,13 @@
       "A": "Téléchargez mon CV",
       "B": "Contactez moi ",
       "C": "Contactez moi",
-      "D": "Retour"
+      "D": "Retour au début"
     },
     "subtitles": {
       "A": "Besoin de renfort dans vos équipes ?",
       "B": "Envie d'un site web percutant ?",
       "C": "Curieux de découvrir mes projets innovants ?",
-      "D": "Prêt à passer à l'action ?"
+      "D": "Prêt à passer à l'action ? C'est parti !"
     },
     "texts": {
       "A": "Ne cherchez plus, je suis là pour vous aider. Avec mon expertise et mon engagement, je suis prêt à collaborer avec vous pour répondre à vos besoins spécifiques. Que ce soit pour un projet à court terme ou une collaboration à long terme, je suis en mesure de fournir des solutions adaptées. Découvrez mon parcours et comment ma passion pour le code s'est développée au fil du temps. Vous comprendrez ainsi pourquoi je suis aujourd'hui pleinement engagé dans la création de solutions numériques innovantes.",
@@ -207,14 +207,14 @@
     },
     "before": {
       "A": {
-        "year": "2021",
+        "year": "2020",
         "title": "Vers le code",
-        "text": "Après avoir été contraint de quitter la Thaïlande en raison de la pandémie, j'ai dû me réinventer en rentrant en France. J'ai alors pris le temps de réfléchir à mes compétences et à mes passions pour envisager une nouvelle orientation professionnelle. Le développement web s'est alors imposé comme une évidence pour moi. Après une courte réflexion, je me lance dans cette nouvelle aventure."
+        "text": "En rentrant en France, j'ai alors pris le temps de réfléchir à mes compétences et à mes passions pour envisager une nouvelle orientation professionnelle. Le développement web s'est alors imposé comme une évidence pour moi. Après une courte réflexion, je me lance dans cette nouvelle aventure."
       },
       "B": {
         "year": "2019-2020",
         "title": "Instructeur de plongée",
-        "text": "Après avoir travaillé pendant plusieurs années, j'ai réalisé que je n'étais pas complètement satisfait de ma vie professionnelle et que j'avais besoin de changer d'orientation. J'ai alors décidé de suivre ma passion pour les voyages et de partir explorer le monde. Pour financer mes voyages, j'ai décidé de me tourner vers la plongée sous-marine, une autre passion que je nourrissais depuis longtemps. Je suis donc parti en Thaïlande pour passer mes niveaux de plongée et obtenir le diplôme d'instructeur de plongée. Cependant, la pandémie de COVID-19 a bouleversé mes plans et m'a contraint à interrompre cette nouvelle vie pour retourner en France et me réorienter professionnellement."
+        "text": "Après avoir travaillé pendant plusieurs années, j'ai réalisé que je n'étais pas complètement satisfait de ma vie professionnelle et que j'avais besoin de changer d'orientation. J'ai alors décidé de suivre une autre passion que je nourrissais depuis longtemps, la plongée sous-marine. Je suis donc parti en Thaïlande pour passer mes niveaux de plongée et obtenir le diplôme d'instructeur de plongée début Février 2020 ..."
       },
       "C": {
         "year": "2012-2019",
@@ -293,8 +293,8 @@
       }
     },
     "form": {
-      "labelA": "Nom",
-      "labelB": "Prénom",
+      "labelA": "Prénom",
+      "labelB": "Nom",
       "labelC": "Entreprise",
       "labelD": "E-mail",
       "labelE": "Sujet",
@@ -306,6 +306,51 @@
         "option2": "J'ai besoin d'un développeur pour une mission",
         "option3": "J'ai besoin d'un site web",
         "option4": "Autre sujet"
+      },
+      "alert": {
+        "labelA": {
+          "default": "Uniquement des lettres",
+          "valid": "Saisie conforme",
+          "invalid": "Caractère(s) non autorisé(s)",
+          "outofrange": "Désolé, trop de caractères"
+        },
+        "labelB": {
+          "default": "Uniquement des lettres",
+          "valid": "Saisie conforme",
+          "invalid": "Caractère(s) non autorisé(s)",
+          "outofrange": "Désolé, trop de caractères"
+        },
+        "labelC": {
+          "default": "Inscrivez 'Particulier' si vous l'êtes",
+          "valid": "Saisie conforme",
+          "invalid": "Caractère(s) non autorisé(s)",
+          "outofrange": "Désolé, trop de caractères"
+        },
+        "labelD": {
+          "default": "Saisissez une adresse mail valide",
+          "valid": "E-mail conforme",
+          "invalid": "Email 'incomplet' ou 'non valide'",
+          "outofrange": "Un email ne peut exéder 320 caractères"
+        },
+        "labelE": {
+          "default": "NOT USE",
+          "valid": "NOT USE",
+          "invalid": "NOT USE",
+          "outofrange": "NOT USE"
+        },
+        "labelF": {
+          "default": "Comment puis-je vous aider ?",
+          "valid": "Message conforme",
+          "invalid": "Caractère(s) non autorisé(s)",
+          "outofrange": "Désolé, trop de caractères"
+        }
+      },
+      "fillform": "Merci de compléter ce formulaire",
+      "loading": "Envoi du message en cours",
+      "email": {
+        "success": "Votre message a bien été envoyé, je vous réponds rapidement !",
+        "errorA": "Email non reconnu, vérifiez votre e-mail",
+        "errorB": "Echec lors de l'envoi, recommencez ou contactez-moi via les réseaux sociaux"
       }
     }
   },
@@ -469,5 +514,11 @@
       "link": "/"
     },
     "endMessage": "En plus de ces projets, je suis en train de préparer de nouveaux qui seront bientôt disponibles ici. Certains de ces projets seront axés sur l'intelligence artificielle, exploitant ses capacités pour créer des solutions innovantes. D'autres projets seront davantage orientés vers le design, notamment des sites intégrant de la 3D."
+  },
+  "error_project": {
+    "title": "Désolé, cette page n'est pas encore accessible.",
+    "text": "Cette page n'est pas encore disponible. Si vous souhaitez être alerté de sa parution, merci de m'envoyer un message en cliquant sur le bouton ci-dessous.",
+    "button_A": "Contactez-moi",
+    "button_B": "Retour aux projets"
   }
 }

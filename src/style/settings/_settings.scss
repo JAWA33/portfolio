@@ -5,7 +5,7 @@
   position: fixed;
   width: auto;
   height: auto;
-  top: 60px;
+  top: 0px;
   right: 50px;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,7 @@
   //transform-origin: 100px 0px;
 
   //transform: translateY(0px);
-  animation: moveParams 8s ease-in-out infinite alternate;
+  animation: moveParams 4s ease-in-out infinite alternate;
 
   &:hover {
     animation-play-state: paused;
@@ -71,6 +71,10 @@
 
 #lottie {
   max-height: 350px;
+}
+
+.replaceIntersection {
+  transform: translateY(-100px);
 }
 // .lottie {
 //   position: absolute;
@@ -311,6 +315,6 @@
     transform: translateY(0vh);
   }
   100% {
-    transform: translateY(5vh);
+    transform: translateY(-5vh);
   }
 }

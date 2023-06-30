@@ -69,6 +69,7 @@ const ServicesDetails = ({
             </div>
           </div>
         </div>
+
         <div className="detailCard__grid">
           <div className="detailCard__grid__element">
             <h3 className="font__card--title">{textData.detail.A.title}</h3>

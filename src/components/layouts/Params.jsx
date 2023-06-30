@@ -8,6 +8,7 @@ import BoxSettings from "./BoxSettings.jsx";
 import ButtonChangeColor from "../elements/ButtonChangeColor.jsx";
 import ButtonToggleLanguage from "../elements/ButtonToggleLanguage.jsx";
 import ButtonToggleDarkmode from "../elements/ButtonToggleDarkmode.jsx";
+import { motion } from "framer-motion";
 
 //export const ThemeContext = createContext(null);
 
@@ -24,17 +25,27 @@ const Params = () => {
 
   return (
     <div className="params">
-      <BoxSettings rollingText=" Paramètres - Settings -">
-        <div className="boxSettings__container__element boxSettings__container__element--color">
-          <ButtonChangeColor />
-        </div>
-        <div className="boxSettings__container__element">
-          <ButtonToggleLanguage />
-        </div>
-        <div className="boxSettings__container__element">
-          <ButtonToggleDarkmode />
-        </div>
-      </BoxSettings>
+      <motion.div
+        initial={{ scale: 0.3, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{
+          duration: 1,
+          ease: [0.73, 1.42, 0.97, 1.86],
+          delay: 1.2,
+        }}
+      >
+        <BoxSettings rollingText=" Paramètres - Settings -">
+          <div className="boxSettings__container__element boxSettings__container__element--color">
+            <ButtonChangeColor />
+          </div>
+          <div className="boxSettings__container__element">
+            <ButtonToggleLanguage />
+          </div>
+          <div className="boxSettings__container__element">
+            <ButtonToggleDarkmode />
+          </div>
+        </BoxSettings>
+      </motion.div>
     </div>
   );
 };

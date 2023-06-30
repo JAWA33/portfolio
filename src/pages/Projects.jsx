@@ -6,15 +6,11 @@ import AccordionBlock from "../components/blocks/AccordionBlock";
 import DotsAnimation from "../components/blocks/dotsAnimation";
 import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
+//! Google Analytics :
+import ReactGA from "react-ga4";
 
 const Projects = () => {
   const numberOfPoints = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-
-  // const AnimationLign = () => {
-  //   numberOfPoints.map((dot) => {
-  //     return <div className="dots"></div>;
-  //   });
-  // };
 
   const AnimationLign = () => {
     let i;
@@ -30,6 +26,16 @@ const Projects = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  //! Google Analytics :
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/projects",
+      title: "Page Projets",
+    });
+  }, []);
+  //! Google Analytics :
 
   return (
     <div className="wrapper">

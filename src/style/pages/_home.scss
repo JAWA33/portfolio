@@ -5,7 +5,7 @@
   &__section {
     // border: solid 2px red;
     width: 100%;
-    padding: 0px 4vw;
+    padding: 0px 5vw;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -43,7 +43,7 @@
 }
 
 .article {
-  margin-top: 2.5rem;
+  padding: 1.5rem;
 
   &__sub {
     padding: 4rem 10vw 2rem 10vw;
@@ -65,12 +65,12 @@
 
   &__top {
     width: 100vw;
-    transform: translate(-30%, 10px);
+    //transform: translate(-30%, 10px);
     opacity: 0.2;
   }
   &__bottom {
     width: 100vw;
-    transform: translate(60%, -10px);
+    //transform: translate(60%, -10px);
     opacity: 0.1;
   }
 }
@@ -288,12 +288,12 @@
     }
   }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1125px) {
   .home {
     &__section {
       flex-direction: row;
       align-items: flex-start;
-      margin-top: 3rem;
+      //margin-top: 1rem;
       &__article {
         align-items: flex-start;
         padding: 0rem 8rem 0rem 2rem;
@@ -312,10 +312,13 @@
       }
     }
   }
+  .article {
+    padding: 0rem 0rem 0rem 0rem;
+  }
 }
 
 //* for small_desktop :
-@media (max-width: 1250px) {
+@media (max-width: 1320px) {
   .home {
     &__section {
       padding-left: 0;
@@ -330,6 +333,9 @@
     overflow: hidden;
     //border-radius: 0.4rem;
   }
+  // .article {
+  //   padding: 3rem 2rem 3rem 2rem;
+  // }
 }
 
 //? .stickyPage ------------------------------//

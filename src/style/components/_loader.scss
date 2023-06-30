@@ -1,0 +1,127 @@
+.loaderContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaderS {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 4rem 0;
+
+  &__animated {
+    margin-right: 1rem;
+    width: 50px;
+    stroke-width: 0;
+    height: auto;
+    animation: rotatelogo 1.3s linear infinite;
+  }
+}
+
+#light {
+  #blue .loaderColor {
+    fill: $colorTheme_blue-light;
+    stroke: black;
+    stroke-width: 0.5px;
+  }
+  #yellow .loaderColor {
+    fill: $colorTheme_yellow-light;
+    stroke: black;
+    stroke-width: 0.5px;
+  }
+  #green .loaderColor {
+    fill: $colorTheme_green-light;
+    stroke: black;
+    stroke-width: 0.5px;
+  }
+  #red .loaderColor {
+    fill: $colorTheme_red-light;
+    stroke: black;
+    stroke-width: 0.5px;
+  }
+  #purple .loaderColor {
+    fill: $colorTheme_purple-light;
+    stroke: black;
+    stroke-width: 0.5px;
+  }
+}
+//for dark :
+#blue .loaderColor {
+  fill: $colorTheme_blue;
+  stroke: $colorTheme_blue;
+}
+#yellow .loaderColor {
+  fill: $colorTheme_yellow;
+  stroke: $colorTheme_yellow;
+}
+#green .loaderColor {
+  fill: $colorTheme_green;
+  stroke: $colorTheme_green;
+}
+#red .loaderColor {
+  fill: $colorTheme_red;
+  stroke: $colorTheme_red;
+}
+#purple .loaderColor {
+  fill: $colorTheme_purple;
+  stroke: $colorTheme_purple;
+}
+
+.dotsAnimation {
+  opacity: 0;
+  animation: dotsAnimated 1.3s infinite;
+  &:nth-child(1) {
+    animation-delay: 0s;
+  }
+  &:nth-child(2) {
+    animation-delay: 0.25s;
+  }
+  &:nth-child(3) {
+    animation-delay: 0.5s;
+  }
+}
+@keyframes dotsAnimated {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rotatelogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  27% {
+    transform: rotate(120deg);
+  }
+  54% {
+    transform: rotate(240deg);
+  }
+  81% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

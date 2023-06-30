@@ -9,15 +9,16 @@
   "header_img": {
     "alt_1": "Jawa Design Logo"
   },
+  "intersection": "Scroll to continue",
   "home_page": {
     "title": "Welcome to ",
     "name": "Jawa Design !",
     "intro": "I'm ",
     "works": {
       "_1": "Julien Armand",
-      "_2": "Web Designer",
-      "_3": "Freelancer",
-      "_4": "Digital Solution Maker"
+      "_2": "a Full Stack Developer",
+      "_3": "a Web Designer",
+      "_4": "at your service"
     },
     "myName": "Julien Armand",
     "presentation": "I'm a web developer passionate about creating elegant and efficient websites. I use my design skills to craft user-friendly and visually appealing interfaces that enhance the user experience.",
@@ -28,22 +29,22 @@
       "D": "Contact Me"
     },
     "other_action": {
-      "A": "Download Resume",
-      "B": "Continue",
-      "C": "Continue",
-      "D": "^ Back To Top ^"
+      "A": "Download my resume",
+      "B": "Contact me",
+      "C": "Contact me",
+      "D": "Back To Top"
     },
     "subtitles": {
-      "A": "TEST A",
-      "B": "TEST B",
-      "C": "TEST C",
-      "D": "TEST D"
+      "A": "Need an extra boost for your team?",
+      "B": "Looking for a striking website ?",
+      "C": "Curious to explore my innovative projects ?",
+      "D": "Ready to take action? Let's go !"
     },
     "texts": {
-      "A": "A : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.",
-      "B": "B : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.",
-      "C": "C : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus.",
-      "D": "D : ENG : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien massa, dignissim at gravida eu, bibendum eget augue. Suspendisse eu ex justo. Duis ac auctor nunc, id auctor risus."
+      "A": "Look no further, I'm here to help. With my expertise and my commitment, I am ready to collaborate with you to meet your specific needs. Whether for a short-term project or a long-term collaboration, I am able to provide suitable solutions. Find out about my background and how my passion for coding has grown over time. You will understand why I am now fully committed to the creation of innovative digital solutions.",
+      "B": "I offer solutions to create a powerful and professional site. Thanks to my expertise in web development, I can design an attractive user interface, optimized for an exceptional user experience. From design to deployment, I am committed to providing you with a website that meets your expectations. Discover my services and let me accompany you in the creation of a website that will captivate your audience.",
+      "C": "Explore a selection of achievements that reflect my creativity and my passion for web development. Each project is carefully designed, combining aesthetics and advanced features to provide unique online experiences. Whether it's showcase sites, interactive applications or experimental projects, you will find a diversity of inspiration and innovative ideas. Immerse yourself in this captivating universe and find out how I can bring your own bold ideas to life.",
+      "D": "Whether you have questions, ideas, or just want to discuss your project, I'm here to help. Together we can turn your ideas into reality. I look forward to working with you and creating something exceptional. Don't delay, contact me now and let's start this exciting adventure together."
     }
   },
   "about_page": {
@@ -209,12 +210,13 @@
       "A": {
         "year": "2021",
         "title": "To the code",
-        "text": "After being forced to leave Thailand due to the pandemic, I had to reinvent myself by returning to France. I then took the time to reflect on my skills and my passions to consider a new career direction. Web development then became obvious to me. After a short reflection, I embark on this new adventure."
+        "text": "When I returned to France, I then took the time to reflect on my skills and my passions in order to consider a new career direction. Web development then became obvious to me. After a short reflection, I embark on this new adventure."
       },
       "B": {
         "year": "2019-2020",
         "title": "Dive Instructor",
-        "text": "Après avoir travaillé pendant plusieurs années, j'ai réalisé que je n'étais pas complètement satisfait de ma vie professionnelle et que j'avais besoin de changer d'orientation. J'ai alors décidé de suivre ma passion pour les voyages et de partir explorer le monde. Pour financer mes voyages, j'ai décidé de me tourner vers la plongée sous-marine, une autre passion que je nourrissais depuis longtemps. Je suis donc parti en Thaïlande pour passer mes niveaux de plongée et obtenir le diplôme d'instructeur de plongée. Cependant, la pandémie de COVID-19 a bouleversé mes plans et m'a contraint à interrompre cette nouvelle vie pour retourner en France et me réorienter professionnellement."
+
+        "text": "After working for several years, I realized that I was not completely satisfied with my professional life and needed to change direction. I then decided to follow another passion that I had nurtured for a long time, scuba diving. So I went to Thailand to pass my diving levels and obtain the diving instructor diploma at the beginning of February 2020..."
       },
       "C": {
         "year": "2012-2019",
@@ -294,8 +296,8 @@
       }
     },
     "form": {
-      "labelA": "Lastname",
-      "labelB": "Firstname",
+      "labelA": "Firstname",
+      "labelB": "Lastname",
       "labelC": "Company",
       "labelD": "E-mail",
       "labelE": "Object",
@@ -307,6 +309,51 @@
         "option2": "I need a developer for a mission",
         "option3": "I need a website",
         "option4": "Other object"
+      },
+      "alert": {
+        "labelA": {
+          "default": "Only letters",
+          "valid": "Compliant entry",
+          "invalid": "Character(s) not allowed",
+          "outofrange": "Sorry, too many characters"
+        },
+        "labelB": {
+          "default": "Only letters",
+          "valid": "Compliant entry",
+          "invalid": "Character(s) not allowed",
+          "outofrange": "Sorry, too many characters"
+        },
+        "labelC": {
+          "default": "Enter 'Individual' if you are",
+          "valid": "Compliant entry",
+          "invalid": "Character(s) not allowed",
+          "outofrange": "Sorry, too many characters"
+        },
+        "labelD": {
+          "default": "Enter a valid email address",
+          "valid": "Compliant email",
+          "invalid": "'Incomplete' or 'invalid' email",
+          "outofrange": "An email cannot exceed 320 characters"
+        },
+        "labelE": {
+          "default": "NOT USE",
+          "valid": "NOT USE",
+          "invalid": "NOT USE",
+          "outofrange": "NOT USE"
+        },
+        "labelF": {
+          "default": "How can I help you ?",
+          "valid": "Compliant message",
+          "invalid": "Character(s) not allowed",
+          "outofrange": "Sorry, too many characters"
+        }
+      },
+      "fillform": "Thanks to complete",
+      "loading": "Sending message in progress",
+      "email": {
+        "success": "Your message has been sent, I will answer you quickly!",
+        "errorA": "Email not recognised, check your email",
+        "errorB": "Failed to send, try again or contact me via social media"
       }
     }
   },
@@ -470,5 +517,11 @@
       "link": "/"
     },
     "endMessage": "In addition to these projects, I am preparing new ones which will soon be available here. Some of these projects will focus on artificial intelligence, harnessing its capabilities to create innovative solutions. Other projects will be more oriented towards design, in particular sites integrating 3D."
+  },
+  "error_project": {
+    "title": "This page is under construction",
+    "text": "This page is not yet available. If you wish to be alerted of its publication, please send me a message by clicking on the button below.",
+    "button_A": "Contact Me",
+    "button_B": "Back to projects"
   }
 }

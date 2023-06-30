@@ -46,6 +46,10 @@
 }
 
 #light {
+  & .rollingIcon__text__letter {
+    color: black;
+    // color: rgba($colorTheme_yellow-light, 0.8);
+  }
   & #green .rollingIcon__icon {
     fill: $colorTheme_green-light;
     stroke: $colorTheme_green-light;
@@ -65,22 +69,6 @@
   & #yellow .rollingIcon__icon {
     fill: $colorTheme_yellow-light;
     stroke: $colorTheme_yellow-light;
-  }
-
-  & #green .rollingIcon__text__letter {
-    color: rgba($colorTheme_green-light, 0.8);
-  }
-  & #blue .rollingIcon__text__letter {
-    color: rgba($colorTheme_blue-light, 0.8);
-  }
-  & #purple .rollingIcon__text__letter {
-    color: rgba($colorTheme_purple-light, 0.8);
-  }
-  & #red .rollingIcon__text__letter {
-    color: rgba($colorTheme_red-light, 0.8);
-  }
-  & #yellow .rollingIcon__text__letter {
-    color: rgba($colorTheme_yellow-light, 0.8);
   }
 }
 
@@ -105,20 +93,8 @@
   stroke: $colorTheme_yellow;
 }
 
-#green .rollingIcon__text__letter {
-  color: rgba($colorTheme_green, 0.8);
-}
-#blue .rollingIcon__text__letter {
-  color: rgba($colorTheme_blue, 0.8);
-}
-#purple .rollingIcon__text__letter {
-  color: rgba($colorTheme_purple, 0.8);
-}
-#red .rollingIcon__text__letter {
-  color: rgba($colorTheme_red, 0.8);
-}
-#yellow .rollingIcon__text__letter {
-  color: rgba($colorTheme_yellow, 0.8);
+#dark .rollingIcon__text__letter {
+  color: $textColor_dark;
 }
 
 @for $k from 1 through 24 {

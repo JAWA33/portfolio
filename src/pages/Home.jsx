@@ -14,12 +14,15 @@ import {
 } from "framer-motion";
 import RevealText from "../animations/RevealText";
 import { Link } from "react-router-dom";
-import myCV from "../download/myCV.pdf";
+import myCV_FR from "../download/CV_FR.pdf";
+import myCV_ENG from "../download/CV_ENG.pdf";
 import goOutAnimation from "../helpers/goOutAnimation";
+//! Google Analytics :
+import ReactGA from "react-ga4";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
-  const goRightText = useTransform(scrollYProgress, [0, 1], ["250vw", "100vw"]);
+  const goRightText = useTransform(scrollYProgress, [0, 1], ["30vw", "50vw"]);
   const goLeftText = useTransform(scrollYProgress, [0, 1], ["10vw", "-100vw"]);
   const increaseText = useTransform(scrollYProgress, [0, 1], [1, 4]);
   const decreaseText = useTransform(scrollYProgress, [0, 1], [4, 1]);
@@ -31,32 +34,32 @@ const Home = () => {
 
   const buttonAnim_left_A = useTransform(
     scrollYProgress,
-    [0.1, 0.28],
+    [0.1, 0.24],
     ["-50vw", "0vw"]
   );
   const buttonAnim_right_A = useTransform(
     scrollYProgress,
-    [0.1, 0.28],
+    [0.1, 0.24],
     ["50vw", "0vw"]
   );
   const buttonAnim_left_B = useTransform(
     scrollYProgress,
-    [0.33, 0.5],
+    [0.33, 0.49],
     ["-50vw", "0vw"]
   );
   const buttonAnim_right_B = useTransform(
     scrollYProgress,
-    [0.33, 0.5],
+    [0.33, 0.49],
     ["50vw", "0vw"]
   );
   const buttonAnim_left_C = useTransform(
     scrollYProgress,
-    [0.55, 0.75],
+    [0.55, 0.74],
     ["-50vw", "0vw"]
   );
   const buttonAnim_right_C = useTransform(
     scrollYProgress,
-    [0.55, 0.75],
+    [0.55, 0.74],
     ["50vw", "0vw"]
   );
   const buttonAnim_left_D = useTransform(
@@ -87,6 +90,16 @@ const Home = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  //! Google Analytics :
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/",
+      title: "Page d'acceuil",
+    });
+  }, []);
+  //! Google Analytics :
 
   return (
     <div className="wrapper">
@@ -232,32 +245,36 @@ const Home = () => {
             </RevealText>
 
             <div className="duoBtnContainer ">
-              <motion.button
-                className="callToAction"
-                style={{
-                  translateX: buttonAnim_left_A,
-                }}
-              >
-                <Link to="/about">
+              <Link to="/about">
+                <motion.button
+                  className="callToAction"
+                  style={{
+                    translateX: buttonAnim_left_A,
+                  }}
+                >
                   <span className="callToAction__text">
                     {textToShow.home_page.call_to_action.A}
                   </span>
-                </Link>
-              </motion.button>
-              <motion.button
-                className="otherAction"
-                style={{
-                  translateX: buttonAnim_right_A,
-                }}
+                </motion.button>
+              </Link>
+              <a
+                className="callToAction__text"
+                href={language === "ENG" ? myCV_ENG : myCV_FR}
+                download={
+                  language === "ENG"
+                    ? "JulienARMAND_Resume_CV_2023_ENG.pdf"
+                    : "JulienARMAND_Resume_CV_2023_FR.pdf"
+                }
               >
-                <a
-                  className="callToAction__text"
-                  href={myCV}
-                  download="JulienARMAND_Resume_CV_2023.pdf"
+                <motion.button
+                  className="otherAction"
+                  style={{
+                    translateX: buttonAnim_right_A,
+                  }}
                 >
                   {textToShow.home_page.other_action.A}
-                </a>
-              </motion.button>
+                </motion.button>{" "}
+              </a>
             </div>
           </article>
         </section>
@@ -307,31 +324,30 @@ const Home = () => {
             </RevealText>
 
             <div className="duoBtnContainer ">
-              <motion.button
-                className="callToAction"
-                style={{
-                  translateX: buttonAnim_left_B,
-                }}
-              >
-                <Link to="/services">
+              <Link to="/services">
+                <motion.button
+                  className="callToAction"
+                  style={{
+                    translateX: buttonAnim_left_B,
+                  }}
+                >
                   <span className="callToAction__text">
                     {textToShow.home_page.call_to_action.B}
                   </span>
-                </Link>
-              </motion.button>
-
-              <motion.button
-                className="otherAction"
-                style={{
-                  translateX: buttonAnim_right_B,
-                }}
-              >
-                <Link to="/contact">
+                </motion.button>
+              </Link>
+              <Link to="/contact">
+                <motion.button
+                  className="otherAction"
+                  style={{
+                    translateX: buttonAnim_right_B,
+                  }}
+                >
                   <span className="callToAction__text">
                     {textToShow.home_page.other_action.B}
                   </span>
-                </Link>
-              </motion.button>
+                </motion.button>{" "}
+              </Link>
             </div>
           </article>
         </section>
@@ -382,31 +398,31 @@ const Home = () => {
             </RevealText>
 
             <div className="duoBtnContainer ">
-              <motion.button
-                className="callToAction"
-                style={{
-                  translateX: buttonAnim_left_C,
-                }}
-              >
-                <Link to="/projects">
+              <Link to="/projects">
+                {" "}
+                <motion.button
+                  className="callToAction"
+                  style={{
+                    translateX: buttonAnim_left_C,
+                  }}
+                >
                   <span className="callToAction__text">
                     {textToShow.home_page.call_to_action.C}
                   </span>
-                </Link>
-              </motion.button>
-
-              <motion.button
-                className="otherAction"
-                style={{
-                  translateX: buttonAnim_right_C,
-                }}
-              >
-                <Link to="/contact">
+                </motion.button>{" "}
+              </Link>
+              <Link to="/contact">
+                <motion.button
+                  className="otherAction"
+                  style={{
+                    translateX: buttonAnim_right_C,
+                  }}
+                >
                   <span className="callToAction__text">
                     {textToShow.home_page.other_action.C}
                   </span>
-                </Link>
-              </motion.button>
+                </motion.button>{" "}
+              </Link>
             </div>
           </article>
         </section>
@@ -457,32 +473,28 @@ const Home = () => {
             </RevealText>
 
             <div className="duoBtnContainer ">
-              <motion.button
-                className="callToAction"
-                style={{
-                  translateX: buttonAnim_left_D,
-                }}
-              >
-                <Link to="/contact">
+              <Link to="/contact">
+                <motion.button
+                  className="callToAction"
+                  style={{
+                    translateX: buttonAnim_left_D,
+                  }}
+                >
                   <span className="callToAction__text">
                     {textToShow.home_page.call_to_action.D}
                   </span>
-                </Link>
-              </motion.button>
-
+                </motion.button>{" "}
+              </Link>
               <motion.button
                 className="otherAction"
                 style={{
                   translateX: buttonAnim_right_D,
                 }}
+                onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
               >
-                <div
-                  onClick={() => window.scrollTo({ top: 0, behavior: "auto" })}
-                >
-                  <span className="callToAction__text">
-                    {textToShow.home_page.other_action.D}
-                  </span>
-                </div>
+                <span className="callToAction__text">
+                  {textToShow.home_page.other_action.D}
+                </span>
               </motion.button>
             </div>
           </article>

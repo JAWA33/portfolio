@@ -6,11 +6,23 @@ import SectionForm from "../components/blocks/SectionForm";
 import InterSection from "../components/elements/InterSection";
 import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
+//! Google Analytics :
+import ReactGA from "react-ga4";
 
 const Contact = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  //! Google Analytics :
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/contact",
+      title: "Page Contact",
+    });
+  }, []);
+  //! Google Analytics :
   return (
     <div className="wrapper">
       <motion.div

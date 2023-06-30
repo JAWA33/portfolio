@@ -13,7 +13,7 @@ const SocialButtons = () => {
       <ul className="socialButtons">
         <li className="socialButtons__element">
           <a
-            href="https://www.twitter.com"
+            href="https://twitter.com/Jawa_Design"
             target="_blank"
             className="socialButtons__element__link socialButtons__element__link--twit"
           >
@@ -23,7 +23,7 @@ const SocialButtons = () => {
         </li>
         <li className="socialButtons__element">
           <a
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/julien-armand-342867120/"
             target="_blank"
             className="socialButtons__element__link socialButtons__element__link--linked"
           >
@@ -33,7 +33,7 @@ const SocialButtons = () => {
         </li>
         <li className="socialButtons__element">
           <a
-            href="https://www.github.com"
+            href="https://github.com/JAWA33"
             target="_blank"
             className="socialButtons__element__link socialButtons__element__link--git"
           >

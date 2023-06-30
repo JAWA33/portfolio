@@ -13,6 +13,8 @@ import freelanceLottie from "../img/lottie/FreelanceLottie.json";
 import portfolioLottie from "../img/lottie/PortfolioLottie.json";
 import vitrineLottie from "../img/lottie/Vitrine_bis.json";
 import goOutAnimation from "../helpers/goOutAnimation";
+//! Google Analytics :
+import ReactGA from "react-ga4";
 
 const Services = () => {
   const { textToShow } = useContext(ThemeContext);
@@ -28,6 +30,16 @@ const Services = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
+
+  //! Google Analytics :
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/services",
+      title: "Page Services",
+    });
+  }, []);
+  //! Google Analytics :
 
   return (
     <div className="wrapper">

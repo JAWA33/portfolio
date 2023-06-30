@@ -64,6 +64,13 @@
     font-weight: 700;
     letter-spacing: 1.5px;
     line-height: 2.5rem;
+
+    text-align: center;
+
+    //? A vérifier : pas sur de la prise en compte.
+
+    text-wrap: balance;
+    //? A vérifier : pas sur de la prise en compte.
   }
   &__introSubTitle {
     font-size: clamp(1.3rem, 0.5rem + 2vw, 2rem);
@@ -73,9 +80,9 @@
   }
 
   &__accordion {
-    font-size: clamp(0.8rem, 11px + 1.5vw, 1.4rem);
+    font-size: clamp(0.8rem, 11px + 1vw, 1.2rem);
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.15rem;
     font-weight: 700;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 1), 0 5px 15px rgba(0, 0, 0, 1);
   }
@@ -88,13 +95,17 @@
   }
   &__card {
     &--title {
-      font-size: clamp(1.4rem, 1.2rem + 1vw, 1.8rem);
+      font-family: "Aguafina Script", cursive;
+      font-size: clamp(2rem, 1.4rem + 2vw, 2.8rem);
+      letter-spacing: 4px;
+      font-weight: 400;
     }
     &--text {
-      font-size: clamp(0.9rem, 0.4rem + 1vw, 1rem);
+      font-size: clamp(1rem, 0.7rem + 2vw, 1.2rem);
       line-height: 1.5rem;
-      text-align: start;
-      text-indent: 1.5rem;
+      text-align: justify;
+      text-indent: 3rem;
+      font-weight: 300;
     }
   }
   &__BigText {
@@ -153,6 +164,31 @@
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.5rem;
+  }
+  &__writing {
+    //font-size: clamp(1.8rem, 26px + 1vw, 2.6rem);
+    font-family: "Aguafina Script", cursive;
+    letter-spacing: 2px;
+
+    &--A {
+      font-size: 1.4rem;
+      text-shadow: 0.5px 1px 0px black;
+    }
+    &--B {
+      //font-size: 2rem;
+    }
+  }
+}
+#light {
+  .font__writing--A {
+    text-shadow: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .font__writing--A {
+    font-size: 1.2rem;
+    // text-shadow: none;
   }
 }
 
@@ -221,5 +257,12 @@
   color: $textColor_light;
 }
 #dark .font__color {
+  color: $textColor_dark;
+}
+
+#dark .font__color--opposite {
+  color: $textColor_light;
+}
+#light .font__color--opposite {
   color: $textColor_dark;
 }

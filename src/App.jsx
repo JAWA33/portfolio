@@ -1,8 +1,12 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import PageConfig from "./components/layouts/PageConfig.jsx";
+import { configDotenv } from "dotenv";
 
-//import Header from "./components/layouts/Header.jsx";
-//import {AnimatePresence} from "framer-motion/dist/framer-motion";
+//! Google Analytics :
+import ReactGA from "react-ga4";
+
+ReactGA.initialize(import.meta.env.VITE_GA_ID);
+//! Google Analytics :
 
 const App = () => {
   return (

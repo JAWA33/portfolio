@@ -14,7 +14,7 @@ const HeaderMorph = () => {
 
   return (
     <header>
-      <div className="newHeader">
+      <div className="newHeader container">
         <nav className="newHeader__navigation">
           <ul className="newHeader__navigation__list">
             <Link to="/about">

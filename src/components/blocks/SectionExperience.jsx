@@ -94,29 +94,31 @@ const SectionExperience = () => {
             text={textToShow.about_experience.titles.before.text}
           >
             <Experience
-              year={textToShow.about_experience.before.A.year}
-              title={textToShow.about_experience.before.A.title}
-              text={textToShow.about_experience.before.A.text}
-            />
-            <Experience
-              year={textToShow.about_experience.before.B.year}
-              title={textToShow.about_experience.before.B.title}
-              text={textToShow.about_experience.before.B.text}
-            />
-            <Experience
-              year={textToShow.about_experience.before.C.year}
-              title={textToShow.about_experience.before.C.title}
-              text={textToShow.about_experience.before.C.text}
+              year={textToShow.about_experience.before.E.year}
+              title={textToShow.about_experience.before.E.title}
+              text={textToShow.about_experience.before.E.text}
             />
             <Experience
               year={textToShow.about_experience.before.D.year}
               title={textToShow.about_experience.before.D.title}
               text={textToShow.about_experience.before.D.text}
             />
+
             <Experience
-              year={textToShow.about_experience.before.E.year}
-              title={textToShow.about_experience.before.E.title}
-              text={textToShow.about_experience.before.E.text}
+              year={textToShow.about_experience.before.C.year}
+              title={textToShow.about_experience.before.C.title}
+              text={textToShow.about_experience.before.C.text}
+            />
+            <Experience
+              year={textToShow.about_experience.before.B.year}
+              title={textToShow.about_experience.before.B.title}
+              text={textToShow.about_experience.before.B.text}
+            />
+
+            <Experience
+              year={textToShow.about_experience.before.A.year}
+              title={textToShow.about_experience.before.A.title}
+              text={textToShow.about_experience.before.A.text}
             />
           </ExpBlock>
         </div>
