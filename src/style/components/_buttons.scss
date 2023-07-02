@@ -175,6 +175,19 @@
   margin: 3rem 0 1rem 0;
 }
 
+//* for phone :
+@media (max-width: 600px) {
+  .callToAction,
+  .otherAction {
+    min-width: max-content;
+
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+  }
+}
+
 //* for tablet :
 @media (min-width: 1100px) {
   .duoBtnContainer {

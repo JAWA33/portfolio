@@ -278,18 +278,15 @@
     "card": {
       "A": {
         "title": "Linked In",
-        "text": "MonCompteLinkedIn",
-        "link": "www.google.fr"
+        "text": "Julien Armand"
       },
       "B": {
-        "title": "E-mail",
-        "text": "julien_armand@jawa-design.com",
-        "link": "www.google.fr"
+        "title": "ou",
+        "text": ""
       },
       "C": {
-        "title": "Directement",
-        "text": "En cliquant ici",
-        "link": "www.google.fr"
+        "title": "E-mail",
+        "text": "contact@jawa-design.com"
       }
     },
     "form": {
@@ -491,19 +488,19 @@
     },
     "B": {
       "title": "JAWA DESIGN",
-      "text": "Ce site internet représente ma marque personnelle, JAWA Design. J'ai conçu le site de manière à ce qu'il reflète ma personnalité et j'ai intégré des détails sur ma vie et mes références. Saurez-vous les trouver ? Il met en valeur mes compétences et présente l'approche unique que j'apporte à la conception web.",
+      "text": "Ce site internet représente ma marque personnelle, JAWA Design. J'ai conçu le site de manière à ce qu'il reflète ma personnalité. Il met en valeur mes compétences et présente l'approche unique que j'apporte à la conception web. J'espère que vous l'appréciez en le parcourant, autant que j'ai apprécié le concevoir et le façonner.",
       "button": "Découvrir le projet",
       "link": "/"
     },
     "C": {
       "title": "LIVRE D'OR",
-      "text": "J'ai développé une application web spécifique pour le mariage de mon frère. Cette application fonctionne comme un livre d'or numérique, offrant la possibilité aux invités de partager leurs vœux et leurs photos prises lors de la cérémonie. Ce qui rend cette application unique, c'est qu'elle permet aux invités de participer sans se couper de la soirée et aux mariés de garder un bon souvenir !",
+      "text": "J'ai développé une application web spécifique pour un mariage. Cette application fonctionne comme un livre d'or numérique, offrant la possibilité aux invités de partager leurs vœux et leurs photos prises lors de la cérémonie. Ce qui rend cette application unique, c'est qu'elle permet aux invités de participer sans se couper de la soirée et aux mariés de garder un bon souvenir !",
       "button": "Découvrir le projet",
       "link": "/"
     },
     "D": {
-      "title": "FORMATION",
-      "text": "Voici quelques projets que j'ai réalisés pendant ma formation. Bien qu'ils aient été réalisés pendant ma formation, ces projets témoignent de mon engagement à respecter strictement les consignes et les attentes en termes de design de chaque client. Chaque projet met en avant les compétences et les techniques que j'ai acquises au cours de ma formation.",
+      "title": "FORMATION 0C",
+      "text": "Voici quelques projets que j'ai réalisés pendant ma formation chez OpenClassrooms. Bien qu'ils aient été réalisés pendant ma formation, ces projets témoignent de mon engagement à respecter strictement les consignes et les attentes en termes de design de chaque client. Chaque projet met en avant les compétences et les techniques que j'ai acquises au cours de ma formation.",
       "button": "Découvrir le projet",
       "link": "/"
     },
@@ -520,5 +517,45 @@
     "text": "Cette page n'est pas encore disponible. Si vous souhaitez être alerté de sa parution, merci de m'envoyer un message en cliquant sur le bouton ci-dessous.",
     "button_A": "Contactez-moi",
     "button_B": "Retour aux projets"
+  },
+  "legal": {
+    "titles": {
+      "A": "Edition et Développement du site",
+      "B": "Hébergement",
+      "C": "Conditions d'utilisation",
+      "D": "Services Fournis",
+      "E": "Propriété intellectuelle",
+      "F": "Déclaration à la CNIL",
+      "G": "Litiges",
+      "H": "Données personelles"
+    },
+    "text": {
+      "A1": "Responsable :  Julien ARMAND",
+      "A2": "Adresse :  18, allée de la lisière du golf 33260 La Teste de Buch FRANCE",
+      "A3": "Email de contact :  contact@jawa-design.com",
+      "A4": "Site Web :  www.jawa-design.com",
+      "A5": "Status de l'entreprise :  Auto-entreprise",
+      "A6": "N° de siret : 911 395 028 00010",
+      "B1": "Hébergeur :  S.A.S. LWS (Ligne Web Services)",
+      "B2": "Adresse :  10, Rue Penthievre 75008 Paris FRANCE",
+      "B3": "Site Web :  https://www.lws.fr",
+      "C1": "Ce site web utilise plusieurs langages web (HTML, HTML5, JavaScript, CSS, etc.). Nous vous recommandons d'utiliser des navigateurs modernes pour une expérience utilisateur optimale et un graphisme agréable, tels que Google Chrome, Firefox, Safari, etc.",
+      "C2": "Jawa Design met tout en œuvre pour fournir des informations fiables et maintenir ses sites internet à jour. Toutefois, des erreurs ou des omissions peuvent survenir. Par conséquent, il est important que l'utilisateur vérifie l'exactitude des informations auprès de jawa-design.com et signale toute modification nécessaire à l'adresse contact@jawa-design.com. La société décline toute responsabilité quant à l'utilisation de ces informations et ne pourra être tenue responsable de tout préjudice direct ou indirect qui en résulterait.",
+      "C3": "Cookies :  Le site jawa-design.com peut demander votre acceptation des cookies à des fins statistiques et d'affichage. Un cookie est une information déposée sur votre disque dur par le serveur du site que vous visitez. Il contient différentes données stockées sur votre ordinateur dans un simple fichier texte, auxquelles un serveur peut accéder pour lire et enregistrer des informations. Certaines parties de ce site peuvent ne pas fonctionner correctement sans l'acceptation des cookies.",
+      "C4": "Liens hypertextes :  Le site internet de jawa-design.com peuvent contenir des liens vers d'autres sites ou ressources disponibles sur Internet. Le site www.jawa-design.com n'a aucun moyen de contrôler ces sites liés.",
+      "C5": "Jawa Design ne garantit pas la disponibilité de ces sites et ressources externes, ni n'en est responsable. Elle décline toute responsabilité quant aux dommages, de quelque nature que ce soit, résultant du contenu de ces sites ou sources externes, y compris les informations, produits ou services qu'ils proposent, ou de toute utilisation qui pourrait en être faite. Les risques liés à cette utilisation incombent entièrement à l'utilisateur, qui doit se conformer aux conditions d'utilisation de ces sites. Les utilisateurs, abonnés et visiteurs des sites internet ne sont pas autorisés à établir un lien hypertexte vers ce site sans l'autorisation expresse et préalable du développeur.",
+      "C6": "Si un utilisateur ou visiteur souhaite établir un lien hypertexte vers l'un des sites internet de www.jawa-design.com, il lui appartient d'envoyer un e-mail accessible sur le site pour demander la mise en place d'un tel lien. Jawa Design se réserve le droit d'accepter ou de refuser cette demande de lien hypertexte, sans avoir à justifier sa décision.",
+      "D1": "Toutes les activités de notre société ainsi que les informations associées sont présentées sur notre site web www.jawa-design.com. Chez Jawa Design, nous nous efforçons de fournir des informations aussi précises que possible. Cependant, veuillez noter que les informations sur le site ne sont pas exhaustives et que les photos sont non contractuelles. Elles sont sujettes à des modifications depuis leur publication. De plus, toutes les informations fournies sont indicatives et peuvent changer ou évoluer sans préavis.",
+      "D2": "Limitation contractuelle sur les données :  Nous nous efforçons de rendre les informations sur ce site aussi précises que possible et de le mettre à jour à différentes périodes de l'année. Toutefois, il peut contenir des inexactitudes ou des omissions. Si vous remarquez une lacune, une erreur ou un dysfonctionnement, nous vous invitons à nous le signaler par courriel à l'adresse contact@jawa-design.com, en décrivant le problème de manière détaillée (page concernée, type d'ordinateur et de navigateur utilisé, etc.).",
+      "D3": "Tout contenu téléchargé est à la responsabilité de l'utilisateur et se fait à ses propres risques. Par conséquent, nous déclinons toute responsabilité en cas de dommage à l'ordinateur de l'utilisateur ou de perte de données résultant du téléchargement. De plus, l'utilisateur du site s'engage à accéder à celui-ci en utilisant un matériel récent, exempt de virus et à jour avec les dernières versions des navigateurs. Les liens hypertextes établis vers d'autres ressources présentes sur Internet depuis notre site ne sauraient engager la responsabilité de www.jawa-design.com.",
+      "E1": "L'intégralité du contenu de ce site www.jawa-design.com, y compris, mais sans s'y limiter, les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes, ainsi que leur mise en forme, sont la propriété exclusive de notre société, à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.",
+      "E2": "Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle, de ces différents éléments est strictement interdite sans notre accord exprès par écrit chez Jawa Design. Une telle représentation ou reproduction, par quelque procédé que ce soit, constitue une contrefaçon, sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle. Le non-respect de cette interdiction constitue une violation des droits d'auteur, pouvant entraîner des responsabilités civiles et pénales pour le contrevenant. En outre, les propriétaires des contenus copiés pourraient engager des poursuites judiciaires à votre encontre.",
+      "F1": "En accord avec la loi 78-17 du 6 janvier 1978 (modifiée par la loi 2004-801 du 6 août 2004 relative à la protection des personnes physiques à l'égard des traitements de données à caractère personnel) concernant l'informatique, les fichiers et les libertés, ce site a été dûment déclaré sous le numéro 1656629 auprès de la Commission nationale de l'informatique et des libertés (CNIL) (www.cnil.fr). Nous nous engageons ainsi à respecter les normes et réglementations en vigueur en matière de protection des données personnelles.",
+      "G1": "Les conditions d'utilisation du site www.jawa-design.com sont soumises aux lois françaises. Tout litige ou différend découlant de l'interprétation ou de l'exécution de ces conditions relèvera de la compétence exclusive des tribunaux territorialement compétents du siège social de la société. La langue utilisée pour régler d'éventuels litiges est le français.",
+      "H1": "De manière générale, lors de votre visite sur notre site Internet www.jawa-design.com, vous n'êtes pas obligé de nous communiquer vos données personnelles. Cependant, certaines exceptions s'appliquent. Par exemple, pour certains services que nous proposons sur notre site, tels que le formulaire de contact, vous pouvez être amené à nous fournir des informations telles que votre nom, prénom, adresse électronique et numéro de téléphone.",
+      "H2": "Sachez que vous avez toujours la possibilité de refuser de fournir vos données personnelles. Cependant, cela pourrait limiter votre utilisation de certains services du site, tels que la demande de renseignements sur notre société ou la réception de nos lettres d'information. Vous pouvez néanmoins nous contacter via les réseaux sociaux ou par courrier électronique à l'adresse contact@jawa-design.com.",
+      "H3": "Par ailleurs, lors de votre navigation sur notre site, certaines informations vous concernant peuvent être collectées automatiquement, telles que des données sur l'utilisation du site, les pages visitées, votre adresse IP, le type de navigateur utilisé et les temps d'accès. Ces informations sont utilisées exclusivement à des fins statistiques internes pour améliorer la qualité des services que nous proposons. Les bases de données sont protégées conformément à la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.",
+      "H4": "Nous utilisons également des cookies de performance et de statistiques, tels que ceux fournis par Google Analytics, afin de collecter des informations sur l'utilisation du site (nombre de visites, pages consultées, activité des visiteurs). Ces cookies nous aident à identifier et résoudre les problèmes de fonctionnement du site, ainsi qu'à l'améliorer. Les données collectées sont conservées pendant une durée de 3 mois, sauf si vous souhaitez les supprimer. Dans ce cas, veuillez nous envoyer un e-mail à l'adresse contact@jawa-design.com."
+    }
   }
 }

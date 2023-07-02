@@ -8,7 +8,7 @@ import {
   EMAIL_REGEX,
 } from "../../utils/regex";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import sendMail from "../../utils/sendMail";
 import { useNavigate } from "react-router";
@@ -25,6 +25,8 @@ const SectionForm = () => {
   const focusInput_firstname = useRef(null);
   const infoText_firstname = useRef(null);
   const valid_firstname = useRef(null);
+
+  const isInView = useInView(focusInput_firstname);
 
   //lastname ref :
   const focusInput_lastname = useRef(null);
@@ -291,10 +293,10 @@ const SectionForm = () => {
 
   //Open with focus on the firstname input :
   useEffect(() => {
-    if (focusInput_firstname) {
+    if (isInView) {
       focusInput_firstname.current.focus();
     }
-  }, [focusInput_firstname]);
+  }, [focusInput_firstname, isInView]);
 
   return (
     <div className="sectForm">

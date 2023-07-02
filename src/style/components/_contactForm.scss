@@ -8,14 +8,19 @@
   --_bgColor: #353333;
 }
 
+.sectForm {
+  //margin: 2rem 0;
+}
+
 .contactForm {
   width: 100%;
-  max-width: 1100px;
+  //max-width: 1100px;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 auto;
 
   &__container {
     width: 100%;
@@ -186,8 +191,11 @@
 }
 
 @media (min-width: 800px) {
-  .contactForm__container {
-    flex-direction: row;
+  .contactForm {
+    padding: 0 5vw;
+    &__container {
+      flex-direction: row;
+    }
   }
   .contactBlock {
     &--top {
@@ -199,6 +207,12 @@
   }
   .buttonOnComplete {
     margin: 4rem 0 5rem 0;
+  }
+}
+@media (min-width: 1580px) {
+  .article__sub {
+    padding: 5vh 15vw;
+    //border: 1px solid red;
   }
 }
 

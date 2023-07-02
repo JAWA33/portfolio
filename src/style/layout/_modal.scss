@@ -58,6 +58,17 @@ body.active-modal {
   //transition: opacity(1) 300ms ease-in-out;
 }
 
+@media (max-width: 600px) {
+  .overlay {
+    width: 200vw;
+    height: 200vh;
+    top: -100vh;
+    bottom: 0;
+    left: -100vw;
+    right: 0;
+  }
+}
+
 .modalContent {
   width: 100%;
   height: auto;

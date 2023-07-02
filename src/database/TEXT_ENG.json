@@ -281,18 +281,15 @@
     "card": {
       "A": {
         "title": "Linked In",
-        "text": "MonCompteLinkedIn",
-        "link": "www.google.fr"
+        "text": "Julien Armand"
       },
       "B": {
-        "title": "E-mail",
-        "text": "julien_armand@jawa-design.com",
-        "link": "www.google.fr"
+        "title": "or",
+        "text": ""
       },
       "C": {
-        "title": "Directement",
-        "text": "Click here",
-        "link": "www.google.fr"
+        "title": "E-mail",
+        "text": "contact@jawa-design.com"
       }
     },
     "form": {
@@ -494,19 +491,19 @@
     },
     "B": {
       "title": "JAWA DESIGN",
-      "text": "This website represents my personal brand, JAWA Design. I designed the site to reflect my personality and incorporated details of my life and references. Can you find them? It showcases my skills and showcases the unique approach I bring to web design.",
+      "text": "This website represents my personal brand, JAWA Design. I designed the site to reflect my personality. It showcases my skills and showcases the unique approach I bring to web design. I hope you enjoy it browsing it, as much as I enjoyed designing and shaping it.",
       "button": "Discover the project",
       "link": "/"
     },
     "C": {
       "title": "GOLDEN BOOK",
-      "text": "I developed a specific web application for my brother's wedding. This application functions as a digital guestbook, offering the possibility to the guests to share their wishes and their photos taken during the ceremony. What makes this application unique is that it allows guests to participate without cutting themselves off from the evening and the bride and groom to keep a good memory!",
+      "text": "I developed a specific web application for a wedding. This application functions as a digital guestbook, offering the possibility to the guests to share their wishes and their photos taken during the ceremony. What makes this application unique is that it allows guests to participate without cutting themselves off from the evening and the bride and groom to keep a good memory!",
       "button": "Discover the project",
       "link": "/"
     },
     "D": {
-      "title": "TRAINING",
-      "text": "Here are some projects I did during my training. Although they were made during my training, these projects testify to my commitment to strictly respect the instructions and expectations in terms of design of each client. Each project highlights the skills and techniques that I have acquired during my training.",
+      "title": "TRAINING OC",
+      "text": "Here are some projects I did during my training at OpenClassrooms. Although they were made during my training, these projects testify to my commitment to strictly respect the instructions and expectations in terms of design of each client. Each project highlights the skills and techniques that I have acquired during my training.",
       "button": "Discover the project",
       "link": "/"
     },
@@ -523,5 +520,45 @@
     "text": "This page is not yet available. If you wish to be alerted of its publication, please send me a message by clicking on the button below.",
     "button_A": "Contact Me",
     "button_B": "Back to projects"
+  },
+  "legal": {
+    "titles": {
+      "A": "Editing and Development of the site",
+      "B": "Site Hosting",
+      "C": "Terms of use",
+      "D": "Services Provided",
+      "E": "Intellectual Property",
+      "F": "Declaration to the CNIL",
+      "G": "Disputes",
+      "H": "Personal data"
+    },
+    "text": {
+      "A1": "Company Manager : Julien ARMAND",
+      "A2": "Adress : 18, allée de la lisière du golf 33260 La Teste de Buch FRANCE",
+      "A3": "Contact Email : contact@jawa-design.com",
+      "A4": "Website : www.jawa-design.com",
+      "A5": "Company status :  Auto-entreprise",
+      "A6": "Siret Number : 911 395 028 00010",
+      "B1": "Company:  S.A.S. LWS (Ligne Web Services)",
+      "B2": "Adress :  10, Rue Penthievre 75008 Paris FRANCE",
+      "B3": "Website :  https://www.lws.fr",
+      "C1": "This website uses several web languages ​​(HTML, HTML5, JavaScript, CSS, etc.). We recommend using modern browsers for the best user experience and pleasant graphics, such as Google Chrome, Firefox , Safari, etc.",
+      "C2": "Jawa Design makes every effort to provide reliable information and to keep its websites up to date. However, errors or omissions may occur. Therefore, it is important that the user checks the accuracy of the information with jawa-design.com and report any necessary changes to the address contact@jawa-design.com The company declines all responsibility for the use of this information and cannot be held liable for any direct or indirect damage that would result.",
+      "C3": "Cookies: The jawa-design.com site may request your acceptance of cookies for statistical and display purposes. A cookie is information placed on your hard drive by the server of the site you are visiting. It contains different data stored on your computer in a simple text file, which a server can access to read and record information. Some parts of this site may not function properly without the acceptance of cookies.",
+      "C4": "Hypertext links: The jawa-design.com website may contain links to other sites or resources available on the Internet. The www.jawa-design.com website has no way of controlling these sites. linked.",
+      "C5": "Jawa Design does not guarantee the availability of these sites and external resources, nor is it responsible for them. It declines all responsibility for damages, of any nature whatsoever, resulting from the content of these sites or external sources , including the information, products or services they offer, or any use that may be made of them.The risks associated with this use are entirely the responsibility of the user, who must comply with the conditions of use of these sites. Users, subscribers and visitors to the websites are not authorized to establish a hypertext link to this site without the express and prior authorization of the developer.",
+      "C6": "If a user or visitor wishes to establish a hypertext link to one of the websites of www.jawa-design.com, it is up to him to send an e-mail accessible on the site to request the setting place of such a link. Jawa Design reserves the right to accept or refuse this request for a hypertext link, without having to justify its decision.",
+      "D1": "All of our company's activities and related information are presented on our website www.jawa-design.com. At Jawa Design, we strive to provide information that is as accurate as possible. However, please note that the information on the site is not exhaustive and that the photos are not contractual. They are subject to modifications since their publication. In addition, all the information provided is indicative and may change or evolve without notice.",
+      "D2": "Contractual limitation on data: We strive to make the information on this site as accurate as possible and to update it at different times of the year. However, it may contain inaccuracies or omissions. If you notice a gap, an error or a malfunction, we invite you to report it to us by email at contact@jawa-design.com, describing the problem in detail (page concerned, type of computer and browser used, etc.).",
+      "D3": "Any content downloaded is the responsibility of the user and is done at his own risk. Accordingly, we assume no liability for any damage to the user's computer or loss of data resulting from the In addition, the user of the site undertakes to access it using recent equipment, free of viruses and up to date with the latest versions of browsers.The hypertext links established to other resources present on the Internet from our site can not engage the responsibility of www.jawa-design.com.",
+      "E1": "The entire content of this site www.jawa-design.com, including but not limited to graphics, images, text, videos, animations, sounds, logos, gifs and icons, as well as their formatting, are the exclusive property of our company, with the exception of trademarks, logos or content belonging to other partner companies or authors.",
+      "E2": "Any reproduction, distribution, modification, adaptation, retransmission or publication, even partial, of these various elements is strictly prohibited without our express agreement in writing at Jawa Design. Such representation or reproduction, by any process whatsoever , constitutes an infringement, punishable by articles L.335-2 and following of the Intellectual Property Code Failure to comply with this prohibition constitutes a violation of copyright, which may result in civil and criminal liability for the offender. In addition, the owners of the copied content may take legal action against you.",
+      "F1": "In accordance with law 78-17 of January 6, 1978 (amended by law 2004-801 of August 6, 2004 on the protection of individuals with regard to the processing of personal data) concerning the information technology, files and freedoms, this site has been duly declared under number 1656629 to the National Commission for Information Technology and Freedoms (CNIL) (www.cnil.fr). We are therefore committed to respecting the standards and regulations in force regarding the protection of personal data.",
+      "G1": "The conditions of use of the site www.jawa-design.com are subject to French law. Any dispute or dispute arising from the interpretation or execution of these conditions will fall under the exclusive jurisdiction of the courts territorially authorities of the company's registered office. The language used to settle any disputes is French.",
+      "H1": "In general, during your visit to our website www.jawa-design.com, you are not obliged to communicate your personal data to us. However, certain exceptions apply. For example, for certain services that we offer on our site, such as the contact form, you may be required to provide us with information such as your surname, first name, e-mail address and telephone number.",
+      "H2": "Please be aware that you always have the option of refusing to provide your personal data. However, this may limit your use of certain services on the site, such as requesting information about our company or receiving our newsletters. information. However, you can contact us via social networks or by email at contact@jawa-design.com.",
+      "H3": "Furthermore, during your navigation on our site, certain information concerning you may be collected automatically, such as data on the use of the site, the pages visited, your IP address, the type of browser used and access times. This information is used exclusively for internal statistical purposes to improve the quality of the services we offer. The databases are protected in accordance with the law of July 1, 1998 transposing directive 96/9 of March 11, 1996 on the legal protection of databases.",
+      "H4": "We also use performance and statistics cookies, such as those provided by Google Analytics, to collect information on the use of the site (number of visits, pages viewed, visitor activity). These cookies help us to identify and solve problems with the functioning of the site, as well as to improve it. The data collected is kept for a period of 3 months, unless you wish to delete it. In this case, please send us an e-mail. email to contact@jawa-design.com."
+    }
   }
 }

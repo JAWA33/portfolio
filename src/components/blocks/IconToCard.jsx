@@ -41,7 +41,7 @@ const IconToCard = ({ children, title, text }) => {
 
         {toggleOpenCard && (
           <div className="iconToCard__text">
-            <h3 className="font__card--title ">{title}</h3>
+            <h3 className="font__card--smalltitle ">{title}</h3>
             <p className="font__card--text ">{text} </p>
           </div>
         )}

@@ -1,8 +1,8 @@
 .sectExp {
-  width: 100%;
-  padding: 1rem 6vw 3rem 1rem;
+  width: auto;
+  //padding: 1rem 6vw 3rem 1rem;
   //border: 1px solid blue;
-  //margin-right: 3vw;
+  //padding-right: 1vw;
 
   &__grid {
     width: 100%;
@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: flex-start;
     grid-gap: 3rem 3rem;
-    margin-top: 3rem;
+    // margin-top: 3rem;
 
     //border: 1px solid rgb(237, 41, 74);
 
@@ -137,8 +137,16 @@
     margin-bottom: 1rem;
   }
   &__text {
+    text-align: justify;
+    text-wrap: balance;
     margin-bottom: 2rem;
+    padding-right: 1rem;
   }
+}
+
+#elementLarge .experience__text {
+  text-align: initial;
+  text-wrap: balance;
 }
 
 #light .experience__time {
@@ -156,12 +164,6 @@
   }
   &--year {
     color: rgba($color_page_bg_2_light, 0.5);
-  }
-}
-
-@media (min-width: 600px) {
-  .sectExp {
-    padding: 1rem 4vw 1rem 1rem;
   }
 }
 

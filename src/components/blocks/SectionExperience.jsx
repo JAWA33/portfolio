@@ -1,13 +1,17 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { ThemeContext } from "../layouts/PageConfig";
 import ExpBlock from "./ExpBlock";
 import Experience from "../elements/Experience";
 import SectionSkills from "./SectionSkills";
 import InterSection from "../elements/InterSection";
 import RevealText from "../../animations/RevealText";
+import { motion, useInView } from "framer-motion";
 
 const SectionExperience = () => {
   const { language, theme, colorTheme, textToShow } = useContext(ThemeContext);
+  const mobileElement = useRef(null);
+  const isInView = useInView(mobileElement);
+
   return (
     <section className="sectExp">
       <div className="sectExp__grid font__color">
@@ -87,7 +91,11 @@ const SectionExperience = () => {
             </RevealText>
           </div>
         </div>
-        <div className="sectExp__grid__element sectExp__grid__element--larger">
+
+        <div
+          className="sectExp__grid__element sectExp__grid__element--larger"
+          id="elementLarge"
+        >
           <RevealText></RevealText>
           <ExpBlock
             intro={textToShow.about_experience.titles.before.intro}

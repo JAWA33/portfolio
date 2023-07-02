@@ -108,9 +108,13 @@
     width: 100vw;
     height: auto;
     bottom: 0;
+
     transform: translateX(0rem);
     background: rgba(0, 0, 0, 0.5);
     border-radius: 0.5rem;
+  }
+  .socialIcon {
+    left: 0px;
   }
   .socialButtons {
     width: 100%;
@@ -122,6 +126,9 @@
 
     &__element {
       margin: 0;
+      &:hover .socialIcon {
+        left: 30px;
+      }
       &__link {
         width: 30px;
 

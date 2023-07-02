@@ -1,6 +1,7 @@
 .home {
   width: auto;
   overflow: hidden;
+  padding-bottom: 2rem;
 
   &__section {
     // border: solid 2px red;
@@ -291,6 +292,7 @@
 @media (min-width: 1125px) {
   .home {
     &__section {
+      //padding: 5vh 10vw;
       flex-direction: row;
       align-items: flex-start;
       //margin-top: 1rem;
@@ -314,6 +316,17 @@
   }
   .article {
     padding: 0rem 0rem 0rem 0rem;
+  }
+}
+
+@media (min-width: 1580px) {
+  .home {
+    &__section {
+      padding: 5vh 12vw;
+    }
+    &__subSection {
+      padding: 5vh 25vw;
+    }
   }
 }
 

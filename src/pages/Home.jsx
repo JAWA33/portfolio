@@ -64,12 +64,12 @@ const Home = () => {
   );
   const buttonAnim_left_D = useTransform(
     scrollYProgress,
-    [0.8, 1],
+    [0.88, 0.95],
     ["-50vw", "0vw"]
   );
   const buttonAnim_right_D = useTransform(
     scrollYProgress,
-    [0.8, 1],
+    [0.88, 0.95],
     ["50vw", "0vw"]
   );
 

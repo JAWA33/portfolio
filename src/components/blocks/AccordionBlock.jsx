@@ -79,7 +79,6 @@ const AccordionBlock = ({
             <span className="callToAction__text">{buttonTitle}</span>
           </button>
         </Link>
-
         <img
           className="accordion__image"
           src={backCard}

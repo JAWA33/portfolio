@@ -6,6 +6,10 @@
   font-family: "Outfit", sans-serif;
 }
 
+#light .font__legal {
+  font-weight: 300;
+}
+
 .font {
   &__scroll {
     font-size: 0.8rem;
@@ -13,6 +17,11 @@
   &__newHeader {
     font-size: clamp(0.75rem, 12px + 0.3vw, 1.5rem);
     font-weight: 400;
+    letter-spacing: 0.5px;
+  }
+  &__legal {
+    font-size: clamp(0.9rem, 14px + 0.3vw, 1.4rem);
+    font-weight: 200;
     letter-spacing: 0.5px;
   }
   &__menu {
@@ -88,7 +97,7 @@
   }
   &__strongText {
     text-align: justify;
-    font-size: clamp(0.4rem, 10px + 0.3vw, 1.5rem);
+    font-size: clamp(0.9rem, 10px + 0.3vw, 1.5rem);
     font-weight: 300;
     letter-spacing: 0.5px;
     line-height: calc(14px + 1.2vw);
@@ -103,9 +112,15 @@
     &--text {
       font-size: clamp(1rem, 0.7rem + 2vw, 1.2rem);
       line-height: 1.5rem;
-      text-align: justify;
-      text-indent: 3rem;
-      font-weight: 300;
+      text-wrap: balance;
+      //text-indent: 2rem;
+      font-weight: 200;
+    }
+    &--smalltitle {
+      font-family: "Aguafina Script", cursive;
+      font-size: clamp(1.4rem, 1rem + 2vw, 2rem);
+      letter-spacing: 2px;
+      font-weight: 400;
     }
   }
   &__BigText {

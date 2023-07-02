@@ -44,9 +44,6 @@ const About = () => {
           intro={textToShow.about_page.intro}
           introBis={textToShow.about_page.introBis}
         />
-        <div className="replaceIntersection">
-          <InterSection />
-        </div>
 
         <SectionStack>
           <div className="bigBubbleGrid">
@@ -213,6 +210,8 @@ const About = () => {
             <div></div>
 
             {/* //* 3th Line */}
+            <div></div>
+            <div></div>
             <IconToCard
               title={textToShow.bubbleSkills.mysql.title}
               text={textToShow.bubbleSkills.mysql.text}
@@ -271,11 +270,9 @@ const About = () => {
                 </g>
               </svg>
             </IconToCard>
+
             <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+
             <IconToCard
               title={textToShow.bubbleSkills.redux.title}
               text={textToShow.bubbleSkills.redux.text}
@@ -291,6 +288,8 @@ const About = () => {
                 />
               </svg>
             </IconToCard>
+            <div></div>
+            <div></div>
 
             {/* //* 4th Line */}
             <div></div>

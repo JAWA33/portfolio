@@ -8,8 +8,9 @@ import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
 import ReactGA from "react-ga4";
+import LegalInfos from "../components/layouts/LegalInfos";
 
-const Contact = () => {
+const Legal = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
@@ -18,8 +19,8 @@ const Contact = () => {
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
-      page: "/contact",
-      title: "Page Contact",
+      page: "/legal",
+      title: "Page Mentions Légales",
     });
   }, []);
   //! Google Analytics :
@@ -31,14 +32,11 @@ const Contact = () => {
         animate={{ width: "100%" }}
         exit={goOutAnimation(0.5, 0)}
       >
-        <SectionTitle title="Contact" />
-
-        <SectionContact />
-
-        <SectionForm />
+        <SectionTitle title="Mentions légales" />
+        <LegalInfos />
       </motion.div>
     </div>
   );
 };
 
-export default Contact;
+export default Legal;
