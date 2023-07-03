@@ -6,20 +6,20 @@ import { ThemeContext } from "../components/layouts/PageConfig";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 //! Google Analytics :
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 
 const ErrorProjectPage = () => {
   const { textToShow } = useContext(ThemeContext);
   const { scrollYProgress } = useScroll();
 
   //! Google Analytics :
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/projects/error",
-      title: "Page No project",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.send({
+  //     hitType: "pageview",
+  //     page: "/projects/error",
+  //     title: "Page No project",
+  //   });
+  // }, []);
   //! Google Analytics :
 
   return (

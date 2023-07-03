@@ -293,7 +293,7 @@ const SectionForm = () => {
 
   //Open with focus on the firstname input :
   useEffect(() => {
-    if (isInView) {
+    if (isInView && window.innerWidth >= 600) {
       focusInput_firstname.current.focus();
     }
   }, [focusInput_firstname, isInView]);

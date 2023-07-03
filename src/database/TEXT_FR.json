@@ -41,8 +41,8 @@
       "D": "Prêt à passer à l'action ? C'est parti !"
     },
     "texts": {
-      "A": "Ne cherchez plus, je suis là pour vous aider. Avec mon expertise et mon engagement, je suis prêt à collaborer avec vous pour répondre à vos besoins spécifiques. Que ce soit pour un projet à court terme ou une collaboration à long terme, je suis en mesure de fournir des solutions adaptées. Découvrez mon parcours et comment ma passion pour le code s'est développée au fil du temps. Vous comprendrez ainsi pourquoi je suis aujourd'hui pleinement engagé dans la création de solutions numériques innovantes.",
-      "B": "Je vous propose des solutions sur mesure pour réaliser un site percutant et professionnel. Grâce à mon expertise en développement web, je peux concevoir une interface utilisateur attrayante, optimisée pour une expérience utilisateur exceptionnelle. De la conception au déploiement, je m'engage à vous fournir un site web à la hauteur de vos attentes. Découvrez mes services et laissez-moi vous accompagner dans la création d'un site web qui captivera votre audience.",
+      "A": "Je suis là pour vous aider avec mes compétences et ma détermination. Que vous ayez un projet à court terme ou que vous souhaitiez une collaboration à long terme, je suis prêt à répondre à vos besoins spécifiques. Explorez mon parcours passionné dans le développement web et découvrez comment ma passion pour le code m'a poussé à créer des solutions numériques innovantes. Ensemble, nous pouvons créer quelque chose de remarquable.",
+      "B": "Je suis là pour vous offrir des solutions personnalisées afin de créer un site web impactant et professionnel. Fort de mon expérience en développement web, je suis en mesure de concevoir une interface utilisateur attrayante, optimisée pour une expérience exceptionnelle. De la phase de conception jusqu'au déploiement, mon engagement est de vous fournir un site web qui répondra à toutes vos attentes. Explorez mes services et permettez-moi de vous accompagner dans la création d'un site web captivant qui saura séduire votre public.",
       "C": "Explorez une sélection de réalisations qui témoignent de ma créativité et de ma passion pour le développement web. Chaque projet est conçu avec soin, alliant esthétisme et fonctionnalités avancées pour offrir des expériences en ligne uniques. Que ce soit des sites vitrines, des applications interactives ou des projets expérimentaux, vous trouverez une diversité d'inspiration et d'idées novatrices. Plongez dans cet univers captivant et découvrez comment je peux concrétiser vos propres idées audacieuses.",
       "D": "Que vous ayez des questions, des idées ou que vous souhaitiez simplement discuter de votre projet, je suis là pour vous aider. Ensemble, nous pouvons transformer vos idées en réalité. Je suis impatient de travailler avec vous et de créer quelque chose d'exceptionnel. Ne tardez pas, contactez-moi dès maintenant et entamons cette aventure passionnante ensemble."
     }
@@ -51,8 +51,8 @@
     "title": "A propos de moi",
     "text": "Je suis Julien Armand et ",
     "textColor": "Développeur Web",
-    "intro": "Je suis un développeur web passionné qui a acquis une solide expérience en matière de conception et de développement de sites web. J'ai travaillé sur divers projets, allant de sites web d'entreprise à des projets personnels plus créatifs, me permettant de développer des compétences solides en matière de langages de programmation tels que HTML, CSS, JavaScript, me permettant de coder en ReactJs, NodeJs et beaucoup d'autres ...",
-    "introBis": "Je suis également à l'aise avec les outils de conception tel que Figma, ce qui me permet de créer des interfaces utilisateur modernes, élégantes et conviviales. Si vous cherchez un développeur web passionné et talentueux pour votre prochain projet, je suis la personne qu'il vous faut."
+    "intro": "Je suis un développeur web passionné et déterminé à créer des sites web de qualité et à offrir des expériences utilisateur exceptionnelles. J'ai travaillé sur divers projets, allant de sites web d'entreprise à des projets personnels plus créatifs, me permettant de développer des bonnes compétences en matière de langages de programmation tels que HTML, CSS, JavaScript, me permettant de coder en ReactJs, NodeJs et beaucoup d'autres ...",
+    "introBis": "J'utilise également des outils de conception tel que Figma, ce qui me permet de créer des interfaces utilisateur modernes, élégantes et conviviales. Si vous cherchez un développeur web passionné et talentueux pour votre prochain projet, je suis la personne qu'il vous faut."
   },
   "skills": {
     "info": {
@@ -358,7 +358,7 @@
       "detail": {
         "A": {
           "title": "Personnalisable",
-          "text": "Je suis spécialisé dans la création de blogs sur mesure qui permettent à mes clients d'avoir un site unique et personnalisé à leur image. Chaque blog est conçu en tenant compte des besoins et des préférences spécifiques de mes clients, garantissant ainsi une présence en ligne distinctive et mémorable."
+          "text": "Je crée de blogs sur mesure qui permettent à mes clients d'avoir un site unique et personnalisé à leur image. Chaque blog est conçu en tenant compte des besoins et des préférences spécifiques de mes clients, garantissant ainsi une présence en ligne distinctive et mémorable."
         },
         "B": {
           "title": "Editable",
@@ -366,7 +366,7 @@
         },
         "C": {
           "title": "Optimisé SEO",
-          "text": "L'optimisation pour les moteurs de recherche (SEO) est une priorité dans la création de mes blogs. J'utilise Next.js, une technologie performante, pour optimiser le référencement naturel de chaque site. Cela permet à mes clients de bénéficier d'une visibilité accrue dans les résultats de recherche et d'attirer un trafic qualifié. Grâce à une structure de site optimisée, des balises méta bien pensées et une attention particulière aux mots clés, mes blogs sont conçus pour obtenir un meilleur classement dans les moteurs de recherche et maximiser leur potentiel en ligne. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes services de création de blogs sur mesure, d'édition conviviale et d'optimisation SEO."
+          "text": "L'optimisation pour les moteurs de recherche (SEO) est une priorité dans la création de mes blogs. Cela permet à mes clients de disposer de tous les outils nécessaires au développement de leur SEO. Grâce à une structure de site optimisée, des balises méta bien pensées et une attention particulière aux mots clés, mes blogs sont conçus pour obtenir un meilleur classement dans les moteurs de recherche et maximiser leur potentiel en ligne. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes services de création de blogs sur mesure."
         }
       }
     },
@@ -380,11 +380,11 @@
         },
         "B": {
           "title": "Gestion de données",
-          "text": "Lors de la conception de mes applications, je prends en compte les besoins spécifiques de mes clients en matière de gestion des données. Je peux mettre en place des bases de données SQL (mySQL) ou NoSQL (MongoDB) en fonction des exigences du projet et de la flexibilité souhaitée par le client. Les bases de données SQL offrent une structure solide et une gestion rigoureuse des données, tandis que les bases de données NoSQL offrent une flexibilité accrue pour les projets nécessitant une évolutivité rapide et des schémas de données moins structurés. Je travaille en étroite collaboration avec mes clients pour définir les besoins en matière de stockage et de gestion des données, afin de garantir une application performante et évolutive."
+          "text": "Lors de la conception de mes applications, je prends en compte les besoins spécifiques de mes clients en matière de gestion des données. Je peux mettre en place des bases de données SQL (mySQL) ou NoSQL (MongoDB) en fonction des exigences du projet et de la flexibilité souhaitée par le client. Je travaille en étroite collaboration avec mes clients pour définir les besoins en matière de stockage et de gestion des données, afin de garantir une application performante et évolutive."
         },
         "C": {
           "title": "Serveur",
-          "text": "Pour compléter mes applications web, je crée également des serveurs API REST avec Node.js, permettant une communication fluide entre l'interface utilisateur et la base de données. Grâce à Node.js, je peux développer des serveurs rapides et évolutifs, capables de gérer efficacement les requêtes et les réponses. Les API REST offrent une architecture flexible et modulaire, permettant d'ajouter de nouvelles fonctionnalités et de connecter des services tiers si nécessaire. Je veille à ce que mes serveurs API soient sécurisés et bien documentés, facilitant ainsi l'intégration avec d'autres systèmes et services. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes services de développement d'applications web sur mesure avec React.js, la gestion des bases de données et la création de serveurs API REST avec Node.js. Je serais ravi de discuter de vos besoins spécifiques et de vous montrer comment mon expertise peut vous aider à réaliser des applications performantes et fonctionnelles."
+          "text": "Pour compléter mes applications web, je crée également des serveurs API REST avec Node.js, permettant une communication fluide entre l'interface utilisateur et la base de données. Grâce à Node.js, je peux développer des serveurs rapides et évolutifs, capables de gérer efficacement les requêtes et les réponses. Je veille à ce que mes serveurs API soient sécurisés et bien documentés, facilitant ainsi l'intégration avec d'autres systèmes et services. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur mes services de développement d'applications web sur mesure avec React.js, la gestion des bases de données et la création de serveurs API REST avec Node.js. Je serais ravi de discuter de vos besoins spécifiques pour une application performante et fonctionnelle."
         }
       }
     },
@@ -394,7 +394,7 @@
       "detail": {
         "A": {
           "title": "Design",
-          "text": "Mon objectif est de créer des sites vitrine qui reflètent parfaitement l'identité et les valeurs de mes clients. Je travaille en étroite collaboration avec eux pour comprendre leurs besoins et leurs attentes en matière de design. Je peux créer des sites personnalisés en suivant leurs propres designs ou concevoir des designs originaux qui mettent en valeur leur entreprise. Grâce à ma maîtrise de HTML, CSS et Javascript, je suis en mesure de créer des interfaces esthétiques et intuitives qui captent l'attention des visiteurs et les incitent à explorer davantage."
+          "text": "Mon objectif est de créer des sites vitrine qui reflètent parfaitement l'identité et les valeurs de mes clients. Je travaille en étroite collaboration avec eux pour comprendre leurs besoins et leurs attentes en matière de design. Je peux créer des sites personnalisés en suivant leurs propres designs ou concevoir des designs originaux qui mettent en valeur leur entreprise, avec des interfaces esthétiques et intuitives qui captent l'attention des visiteurs et les incitent à explorer davantage."
         },
         "B": {
           "title": "Dynamisme",
@@ -402,7 +402,7 @@
         },
         "C": {
           "title": "Optimisé SEO",
-          "text": "L'optimisation pour les moteurs de recherche est un aspect essentiel de mes sites vitrine. Je porte une attention particulière à la structure HTML de chaque page, en utilisant des balises sémantiques et des métadonnées appropriées pour faciliter l'indexation par les moteurs de recherche. De plus, j'optimise les performances du site en veillant à ce que les temps de chargement soient réduits et en optimisant les images et les ressources pour une meilleure expérience utilisateur. Enfin, je mets en place des bonnes pratiques en matière de référencement, telles que la création de balises de titre pertinentes, de descriptions méta attrayantes et l'optimisation des mots-clés pertinents. Cela contribue à améliorer la visibilité de votre site sur les moteurs de recherche et à générer un trafic organique plus important."
+          "text": "L'optimisation pour les moteurs de recherche est un aspect essentiel de mes sites vitrine. Je porte une attention particulière à la structure HTML de chaque page, en utilisant des balises sémantiques et des métadonnées appropriées pour faciliter l'indexation par les moteurs de recherche. De plus, j'optimise les performances du site en veillant à des temps de chargement réduits et optimisés, pour une meilleure expérience utilisateur. Cela contribue à améliorer la visibilité de votre site sur les moteurs de recherche et à générer un trafic organique plus important."
         }
       }
     },
@@ -420,7 +420,7 @@
         },
         "C": {
           "title": "Au Forfait",
-          "text": "Vous préférez une approche basée sur un forfait tout compris ? Je propose également des services au forfait, idéaux pour des tâches bien définies et ciblées. Avec cette option, vous bénéficiez d'une tarification claire et transparente, sans surprises ni coûts cachés. De plus, vous avez l'avantage de connaître à l'avance les délais de livraison et le budget nécessaire pour votre projet. Cette méthode simplifie la gestion et facilite la prise de décision, en vous permettant de vous concentrer sur d'autres aspects de votre activité. Quelle que soit votre préférence, je suis là pour vous accompagner et vous fournir un service de qualité, adapté à vos besoins spécifiques."
+          "text": "Vous préférez une approche basée sur un forfait tout compris ? Je propose également des services au forfait, idéaux pour des tâches bien définies et ciblées. Avec cette option, vous bénéficiez d'une tarification claire et transparente, sans surprises ni coûts cachés. De plus, vous avez l'avantage de connaître à l'avance les délais de livraison et le budget nécessaire pour votre projet. Cette méthode simplifie la gestion et facilite la prise de décision, en vous permettant de vous concentrer sur d'autres aspects de votre activité."
         }
       }
     },
@@ -456,7 +456,7 @@
         },
         "C": {
           "title": "Personnalisation",
-          "text": "En complément, je propose la personnalisation de différents documents d'entreprises pour aligner l'identité visuelle en ligne avec l'identité visuelle réelle. Cela inclut la création de cartes de visite professionnelles, d'en-têtes de documents, de goodies et d'autres supports de communication nécessaires. Chaque document est pensé de manière à renforcer la cohérence visuelle de l'entreprise et à transmettre son message de manière impactante. Je suis là pour vous accompagner dans la personnalisation de ces différents éléments pour une identité visuelle globale et cohérente."
+          "text": "En complément, je propose la personnalisation de différents documents d'entreprises pour aligner l'identité visuelle en ligne avec l'identité visuelle réelle. Cela inclut la création de cartes de visite professionnelles, d'en-têtes de documents, de goodies et d'autres supports de communication nécessaires. Chaque document est pensé de manière à renforcer la cohérence visuelle de l'entreprise et à transmettre son message de manière impactante."
         }
       }
     },
@@ -474,7 +474,7 @@
         },
         "C": {
           "title": "En toute confiance",
-          "text": "Lorsque vous travaillez avec moi, vous pouvez avoir confiance en mon approche centrée sur le client. Je prends le temps d'écouter attentivement vos besoins et vos aspirations, afin de créer un portfolio qui vous représente de manière authentique. Je m'engage à fournir un service personnalisé et de haute qualité, en mettant l'accent sur la satisfaction de mes clients. Vous pouvez compter sur ma créativité, mon professionnalisme et ma passion pour l'art pour vous aider à développer votre image et à vous démarquer dans l'industrie créative. Faites-moi confiance pour créer un portfolio qui vous aidera à atteindre vos objectifs et à captiver votre public."
+          "text": "Lorsque vous travaillez avec moi, vous pouvez avoir confiance en mon approche centrée sur le client. Je prends le temps d'écouter attentivement vos besoins et vos aspirations, afin de créer un portfolio qui vous représente de manière authentique. Je m'engage à fournir un service personnalisé et de haute qualité. Vous pouvez compter sur ma créativité, mon professionnalisme et ma passion pour l'art pour vous aider à développer votre image. Faites-moi confiance pour créer un portfolio qui vous aidera à captiver votre public."
         }
       }
     }
@@ -519,6 +519,7 @@
     "button_B": "Retour aux projets"
   },
   "legal": {
+    "link": "Mentions Légales",
     "titles": {
       "A": "Edition et Développement du site",
       "B": "Hébergement",

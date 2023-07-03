@@ -1,7 +1,6 @@
 .gridManager {
   position: relative;
   max-width: 100%;
-  height: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
   grid-template-rows: 1fr 1fr 1fr;
@@ -22,6 +21,7 @@
 .gridManager__box {
   width: 100%;
   height: 100%;
+
   display: grid;
   place-items: center;
   text-align: center;
@@ -745,8 +745,10 @@
     }
     &__card--cardA {
       max-width: 70vw;
+
       transform: none !important;
       border-radius: 1rem 1rem 0 0;
+      // background: black !important;
     }
   }
   .detailCard__grid {

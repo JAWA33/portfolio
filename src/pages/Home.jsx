@@ -18,10 +18,12 @@ import myCV_FR from "../download/CV_FR.pdf";
 import myCV_ENG from "../download/CV_ENG.pdf";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
+  const goDownText = useTransform(scrollYProgress, [0, 1], ["0vw", "10vw"]);
+  const goUpText = useTransform(scrollYProgress, [0, 1], ["5vw", "-5vw"]);
   const goRightText = useTransform(scrollYProgress, [0, 1], ["30vw", "50vw"]);
   const goLeftText = useTransform(scrollYProgress, [0, 1], ["10vw", "-100vw"]);
   const increaseText = useTransform(scrollYProgress, [0, 1], [1, 4]);
@@ -92,13 +94,13 @@ const Home = () => {
   }, []);
 
   //! Google Analytics :
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/",
-      title: "Page d'acceuil",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.send({
+  //     hitType: "pageview",
+  //     page: "/",
+  //     title: "Page d'acceuil",
+  //   });
+  // }, []);
   //! Google Analytics :
 
   return (
@@ -206,6 +208,7 @@ const Home = () => {
               className="subSection"
               style={{
                 translateX: goRightText,
+                translateY: goDownText,
                 scale: decreaseText,
                 opacity: opacityText,
               }}
@@ -229,6 +232,7 @@ const Home = () => {
               className="subSection"
               style={{
                 translateX: goLeftText,
+                translateY: goUpText,
                 scale: increaseText,
                 opacity: opacityText,
               }}
@@ -374,7 +378,7 @@ const Home = () => {
                 animate={{ opacity: 1 }}
                 transition={{ duration: 5, type: "spring" }}
               >
-                {textToShow.home_page.subtitles.C}{" "}
+                {textToShow.home_page.subtitles.C}
               </motion.h2>
             </div>
 

@@ -676,23 +676,25 @@
 
 @media (max-width: 600px) {
   .headerHover {
-    width: 80px;
-    height: 90px;
+    width: 65px;
+    height: 80px;
     background: linear-gradient(
       -145deg,
       rgba(37, 37, 37, 1) 20%,
       rgba(0, 0, 0, 0) 80%
     );
-
+    transition: all 0.3s 0.3s linear;
     &:hover {
-      width: 60vw;
+      width: 40vw;
       background: linear-gradient(
         -145deg,
         rgba(37, 37, 37, 1) 50%,
         rgba(0, 0, 0, 0) 100%
       );
+      transition: all 0.3s linear;
     }
   }
+
   #light {
     .headerHover {
       background: linear-gradient(
@@ -712,32 +714,12 @@
     }
   }
   .menuText {
-    align-self: center;
-    scale: 1.8;
+    align-self: flex-end;
+    scale: 1.5;
     margin-bottom: 5vh;
+    padding-right: 0.5rem;
   }
-  // .anime {
-  //   &--home {
-  //     opacity: 0;
-  //     transition: all 0s 0s ease-in-out;
-  //   }
-  //   &--about {
-  //     opacity: 0;
-  //     transition: all 0s 0s ease-in-out;
-  //   }
-  //   &--services {
-  //     opacity: 0;
-  //     transition: all 0s 0s ease-in-out;
-  //   }
-  //   &--projects {
-  //     opacity: 0;
-  //     transition: all 0s 0s ease-in-out;
-  //   }
-  //   &--contact {
-  //     opacity: 0;
-  //     transition: all 0s 0s ease-in-out;
-  //   }
-  // }
+
   .globalNav__list__lign {
     min-height: 80px;
     height: 12vh;

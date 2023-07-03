@@ -236,7 +236,7 @@
 //* for tablet :
 @media (max-width: 600px) {
   .boxSettings {
-    scale: 0.8;
+    scale: 0.7;
   }
   .boxPosition--open .boxSettings {
     transform: translateX(30px);
@@ -244,7 +244,7 @@
 }
 @media (max-width: 400px) {
   .boxSettings {
-    scale: 0.5;
+    scale: 0.6;
   }
   .boxPosition--open .boxSettings {
     transform: translateX(30px);

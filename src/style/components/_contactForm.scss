@@ -190,6 +190,15 @@
   margin: 2rem 0 5rem 0;
 }
 
+@media (max-width: 400px) {
+  //in media:
+  .inputBox__input--textarea {
+    margin-top: 3rem;
+  }
+  .inputBox:nth-child(1) {
+    padding: 0 0 0 0;
+  }
+}
 @media (min-width: 800px) {
   .contactForm {
     padding: 0 5vw;

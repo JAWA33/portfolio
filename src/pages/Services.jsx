@@ -14,7 +14,7 @@ import portfolioLottie from "../img/lottie/PortfolioLottie.json";
 import vitrineLottie from "../img/lottie/Vitrine_bis.json";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 
 const Services = () => {
   const { textToShow } = useContext(ThemeContext);
@@ -32,13 +32,13 @@ const Services = () => {
   }, []);
 
   //! Google Analytics :
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/services",
-      title: "Page Services",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.send({
+  //     hitType: "pageview",
+  //     page: "/services",
+  //     title: "Page Services",
+  //   });
+  // }, []);
   //! Google Analytics :
 
   return (

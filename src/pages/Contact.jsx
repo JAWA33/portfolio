@@ -7,7 +7,7 @@ import InterSection from "../components/elements/InterSection";
 import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 
 const Contact = () => {
   useEffect(() => {
@@ -15,13 +15,13 @@ const Contact = () => {
   }, []);
 
   //! Google Analytics :
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/contact",
-      title: "Page Contact",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.send({
+  //     hitType: "pageview",
+  //     page: "/contact",
+  //     title: "Page Contact",
+  //   });
+  // }, []);
   //! Google Analytics :
   return (
     <div className="wrapper">

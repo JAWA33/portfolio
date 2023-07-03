@@ -7,7 +7,7 @@ import InterSection from "../components/elements/InterSection";
 import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 import LegalInfos from "../components/layouts/LegalInfos";
 
 const Legal = () => {
@@ -16,13 +16,13 @@ const Legal = () => {
   }, []);
 
   //! Google Analytics :
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/legal",
-      title: "Page Mentions Légales",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.send({
+  //     hitType: "pageview",
+  //     page: "/legal",
+  //     title: "Page Mentions Légales",
+  //   });
+  // }, []);
   //! Google Analytics :
   return (
     <div className="wrapper">

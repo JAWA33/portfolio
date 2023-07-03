@@ -41,8 +41,8 @@
       "D": "Ready to take action? Let's go !"
     },
     "texts": {
-      "A": "Look no further, I'm here to help. With my expertise and my commitment, I am ready to collaborate with you to meet your specific needs. Whether for a short-term project or a long-term collaboration, I am able to provide suitable solutions. Find out about my background and how my passion for coding has grown over time. You will understand why I am now fully committed to the creation of innovative digital solutions.",
-      "B": "I offer solutions to create a powerful and professional site. Thanks to my expertise in web development, I can design an attractive user interface, optimized for an exceptional user experience. From design to deployment, I am committed to providing you with a website that meets your expectations. Discover my services and let me accompany you in the creation of a website that will captivate your audience.",
+      "A": "I am here to help you with my skills and my determination. Whether you have a short-term project or want a long-term collaboration, I am ready to meet your specific needs. Explore my passionate journey in web development and discover how my passion for code has driven me to create innovative digital solutions. Together, we can create something remarkable.",
+      "B": "I am here to offer you personalized solutions to create an impactful and professional website. With my experience in web development, I am able to design an attractive user interface, optimized for an exceptional experience. the design phase to deployment, my commitment is to provide you with a website that will meet all your expectations.Explore my services and allow me to accompany you in the creation of a captivating website that will seduce your audience. ",
       "C": "Explore a selection of achievements that reflect my creativity and my passion for web development. Each project is carefully designed, combining aesthetics and advanced features to provide unique online experiences. Whether it's showcase sites, interactive applications or experimental projects, you will find a diversity of inspiration and innovative ideas. Immerse yourself in this captivating universe and find out how I can bring your own bold ideas to life.",
       "D": "Whether you have questions, ideas, or just want to discuss your project, I'm here to help. Together we can turn your ideas into reality. I look forward to working with you and creating something exceptional. Don't delay, contact me now and let's start this exciting adventure together."
     }
@@ -51,8 +51,8 @@
     "title": "About Me",
     "text": "I'm Julien Armand and ",
     "textColor": "Developer Web",
-    "intro": "I am a passionate web developer who has acquired a solid experience in designing and developing websites. I have worked on various projects, ranging from corporate websites to more creative personal projects, allowing me to develop strong skills in programming languages ​​such as HTML, CSS, JavaScript, allowing me to code in ReactJs, NodeJs and many more...",
-    "introBis": "I am also comfortable with design tools such as Figma, which allows me to create modern, elegant and user-friendly user interfaces. If you are looking for a passionate and talented web developer for your next project, I am the person for you."
+    "intro": "I'm a passionate web developer committed to building great websites and delivering great user experiences. I've worked on a variety of projects, ranging from corporate websites to more creative personal projects, allowing me to develop good skills in programming languages ​​such as HTML, CSS, JavaScript, allowing me to code in ReactJs, NodeJs and many others...",
+    "introBis": "I also use design tools such as Figma, which allows me to create modern, elegant and user-friendly user interfaces. If you are looking for a passionate and talented web developer for your next project, I am the person for you."
   },
   "skills": {
     "info": {
@@ -361,7 +361,7 @@
       "detail": {
         "A": {
           "title": "Customizable",
-          "text": "I specialize in the creation of tailor-made blogs that allow my clients to have a unique and personalized site in their image. Each blog is designed with the specific needs and preferences of my clients in mind, ensuring a distinctive and memorable online presence."
+          "text": "I create blogs that allow my clients to have a unique and personalized site in their image. Each blog is designed with the specific needs and preferences of my clients in mind, ensuring a distinctive and memorable online presence."
         },
         "B": {
           "title": "Editable",
@@ -369,7 +369,7 @@
         },
         "C": {
           "title": "SEO optimized",
-          "text": "Search engine optimization (SEO) is a priority in the creation of my blogs. I use Next.js, a powerful technology, to optimize the natural referencing of each site. This allows my clients to benefit from increased visibility in search results and attract qualified traffic. With an optimized site structure, well-thought-out meta tags, and careful attention to keywords, my blogs are designed to achieve higher search engine rankings and maximize their online potential. Feel free to contact me if you want to learn more about my bespoke blogging, user-friendly editing, and SEO optimization services."
+          "text": "Search Engine Optimization (SEO) is a priority in the creation of my blogs. This allows my clients to have all the tools necessary to develop their SEO. Thanks to a site structure optimized, well thought out meta tags and careful attention to keywords, my blogs are designed to achieve higher search engine rankings and maximize their online potential. Please feel free to contact me if you would like to know more about my bespoke blogging services."
         }
       }
     },
@@ -383,11 +383,11 @@
         },
         "B": {
           "title": "Data management",
-          "text": "When designing my applications, I take into account the specific data management needs of my clients. I can set up SQL (mySQL) or NoSQL (MongoDB) databases depending on the project requirements and the flexibility desired by the client. SQL databases offer solid structure and tight data management, while NoSQL databases offer increased flexibility for projects requiring rapid scalability and less structured data schemas. I work closely with my clients to define storage and data management needs to ensure a high performance and scalable application."
+          "text": "When designing my applications, I take into account the specific data management needs of my clients. I can set up SQL (mySQL) or NoSQL (MongoDB) databases depending on the project requirements and the flexibility desired by the client. I work closely with my clients to define storage and data management needs to ensure a high performance and scalable application."
         },
         "C": {
           "title": "Server",
-          "text": "To complement my web applications, I also create REST API servers with Node.js, allowing smooth communication between the UI and the database. Thanks to Node.js, I can develop fast and scalable servers that can handle requests and responses efficiently. REST APIs offer a flexible and modular architecture, allowing to add new functionalities and to connect third-party services if necessary. I ensure that my API servers are secure and well documented, making it easy to integrate with other systems and services. Do not hesitate to contact me if you want to know more about my custom web application development services with React.js, database management and creation of REST API servers with Node.js. I would be happy to discuss your specific needs and show you how my expertise can help you achieve high-performance and functional applications."
+          "text": "To complement my web applications, I also create REST API servers with Node.js, allowing smooth communication between the UI and the database. Thanks to Node.js, I can develop fast servers and scalable, able to handle requests and responses efficiently.I ensure that my API servers are secure and well documented, making it easy to integrate with other systems and services.Please contact me if you would like learn more about my custom web application development services with React.js, database management and building REST API servers with Node.js I would love to discuss your specific needs for a successful application and functional."
         }
       }
     },
@@ -397,7 +397,7 @@
       "detail": {
         "A": {
           "title": "Design",
-          "text": "My goal is to create showcase sites that perfectly reflect the identity and values ​​of my clients. I work closely with them to understand their design needs and expectations. I can create custom sites following their own designs or design original designs that showcase their business. Thanks to my mastery of HTML, CSS and Javascript, I am able to create aesthetic and intuitive interfaces that capture the attention of visitors and encourage them to explore further."
+          "text": "My goal is to create showcase sites that perfectly reflect the identity and values ​​of my clients. I work closely with them to understand their design needs and expectations. I can create custom sites following their own designs or design original designs that showcase their business, with aesthetic and intuitive interfaces that capture the attention of visitors and encourage them to explore further."
         },
         "B": {
           "title": "Dynamism",
@@ -405,7 +405,7 @@
         },
         "C": {
           "title": "SEO optimized",
-          "text": "Search engine optimization is an essential aspect of my showcase sites. I pay particular attention to the HTML structure of each page, using semantic tags and appropriate metadata to facilitate indexing by search engines. Additionally, I optimize site performance by ensuring that load times are reduced and optimizing images and assets for a better user experience. Finally, I implement SEO best practices such as creating relevant title tags, engaging meta descriptions, and optimizing for relevant keywords. This helps improve your site's visibility on search engines and drive more organic traffic."
+          "text": "Search engine optimization is an essential aspect of my showcase sites. I pay particular attention to the HTML structure of each page, using semantic tags and appropriate metadata to facilitate indexing by search engines. In addition, I optimize the performance of the site by ensuring reduced and optimized loading times, for a better user experience. This helps to improve the visibility of your site on search engines and to generate a more organic traffic."
         }
       }
     },
@@ -423,7 +423,7 @@
         },
         "C": {
           "title": "Package",
-          "text": "Prefer an all-inclusive package approach? I also offer fixed-price services, ideal for well-defined and targeted tasks. With this option, you benefit from clear and transparent pricing, with no surprises or hidden costs. In addition, you have the advantage of knowing in advance the delivery times and the budget necessary for your project. This method simplifies management and facilitates decision-making, allowing you to focus on other aspects of your business. Whatever your preference, I am here to accompany you and provide you with a quality service, adapted to your specific needs."
+          "text": "Prefer an all-inclusive package approach? I also offer fixed-price services, ideal for well-defined and targeted tasks. With this option, you benefit from clear and transparent pricing, with no surprises or hidden costs. In addition, you have the advantage of knowing in advance the delivery times and the budget necessary for your project. This method simplifies management and facilitates decision-making, allowing you to focus on other aspects of your business."
         }
       }
     },
@@ -459,7 +459,7 @@
         },
         "C": {
           "title": "Personalization",
-          "text": "In addition, I offer the customization of different corporate documents to align the online visual identity with the real visual identity. This includes creating professional business cards, document letterheads, goodies, and other necessary communication materials. Each document is thought out in such a way as to reinforce the visual coherence of the company and to transmit its message in an impactful way. I am here to support you in the customization of these different elements for a global and coherent visual identity."
+          "text": "In addition, I offer the customization of different corporate documents to align the online visual identity with the real visual identity. This includes creating professional business cards, document letterheads, goodies, and other necessary communication materials. Each document is thought out in such a way as to reinforce the visual coherence of the company and to transmit its message in an impactful way."
         }
       }
     },
@@ -477,7 +477,7 @@
         },
         "C": {
           "title": "In complete confidence",
-          "text": "When you work with me, you can trust my client-centric approach. I take the time to listen carefully to your needs and aspirations, in order to create a portfolio that authentically represents you. I am committed to providing a personalized and high quality service, with an emphasis on the satisfaction of my customers. You can count on my creativity, my professionalism and my passion for art to help you develop your image and stand out in the creative industry. Trust me to create a portfolio that will help you achieve your goals and captivate your audience."
+          "text": "When you work with me, you can trust my client-centric approach. I take the time to listen carefully to your needs and aspirations, in order to create a portfolio that authentically represents you. I I am committed to providing a personalized and high quality service. You can count on my creativity, my professionalism and my passion for art to help you develop your image. Trust me to create a portfolio that will help you captivate your audience."
         }
       }
     }
@@ -522,6 +522,7 @@
     "button_B": "Back to projects"
   },
   "legal": {
+    "link": "Legal Notice",
     "titles": {
       "A": "Editing and Development of the site",
       "B": "Site Hosting",

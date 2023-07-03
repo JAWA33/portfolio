@@ -54,7 +54,7 @@ const ServicesElement = ({
       }}
     >
       <div className="gridManager__box__card gridManager__box__card--cardA">
-        <div className="box font__color">
+        <div className="box box--title font__color">
           <div className="box__content">
             <RevealText>{children}</RevealText>
 
@@ -67,7 +67,7 @@ const ServicesElement = ({
         className="gridManager__box__card gridManager__box__card--cardB"
         onClick={() => activateTheCard()}
       >
-        <div className="box font__color">
+        <div className="box box--text font__color">
           <div className="box__content">
             <p className="font__servicesCards font__color">{text}</p>
 

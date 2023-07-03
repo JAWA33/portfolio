@@ -44,11 +44,8 @@
   border-radius: 1rem;
   padding: 2rem 1rem;
 
-  & h3 {
-    //padding: 2rem 0 0 0;
-  }
-  & p {
-    //padding: 1rem;
+  & a svg {
+    scale: 0.9;
   }
 }
 
@@ -114,7 +111,7 @@
     justify-content: center;
     align-items: center;
     gap: 10vw;
-    margin-bottom: 2rem;
+    margin-bottom: 9vh;
   }
   .contactBlocks {
     width: 100vw;

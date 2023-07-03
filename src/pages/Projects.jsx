@@ -7,7 +7,7 @@ import DotsAnimation from "../components/blocks/dotsAnimation";
 import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
-import ReactGA from "react-ga4";
+//import ReactGA from "react-ga4";
 
 const Projects = () => {
   const numberOfPoints = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
@@ -28,13 +28,13 @@ const Projects = () => {
   }, []);
 
   //! Google Analytics :
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/projects",
-      title: "Page Projets",
-    });
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.send({
+  //     hitType: "pageview",
+  //     page: "/projects",
+  //     title: "Page Projets",
+  //   });
+  // }, []);
   //! Google Analytics :
 
   return (

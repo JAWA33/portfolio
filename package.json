@@ -1,7 +1,8 @@
 {
   "name": "jawadesign-project-client",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "homepage": "https://test.jawa-design.com",
   "type": "module",
   "scripts": {
     "dev": "vite",

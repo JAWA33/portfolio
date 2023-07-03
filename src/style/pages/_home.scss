@@ -39,7 +39,7 @@
     }
   }
   &__subSection {
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 0rem 0;
   }
 }
 
@@ -47,7 +47,7 @@
   padding: 1.5rem;
 
   &__sub {
-    padding: 4rem 10vw 2rem 10vw;
+    padding: 2rem 10vw 0rem 10vw;
   }
 }
 
@@ -269,8 +269,32 @@
 }
 
 @media (max-width: 400px) {
+  .home__subSection {
+    padding: 2rem 0 0rem 0;
+  }
   .home__section__aside {
-    scale: 0.7;
+    scale: 0.6;
+    padding: 0;
+  }
+  .home__section__article {
+    margin-top: 0;
+  }
+  .subSection {
+    &__title {
+      width: 100vw;
+      padding: 0vw;
+    }
+
+    &__top {
+      width: 100vw;
+      //transform: translate(-30%, 10px);
+      opacity: 0.2;
+    }
+    &__bottom {
+      width: 100vw;
+      //transform: translate(60%, -10px);
+      opacity: 0.1;
+    }
   }
 }
 
