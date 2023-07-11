@@ -26,6 +26,153 @@
   }
 }
 
+.fullLoaderPage {
+  --_duration: 1.5s;
+  --_container-size: 250px;
+  --_box-size: 33px;
+  --_box-border-radius: 15%;
+  width: var(--_container-size);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.fullLoaderPage__element {
+  width: var(--_box-size);
+  height: var(--_box-size);
+  position: relative;
+  display: block;
+  transform-origin: -50% center;
+  border-radius: var(--_box-border-radius);
+
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: lightblue;
+    border-radius: var(--_box-border-radius);
+    box-shadow: 0px 0px 10px 0px rgba(#1c9fff, 0.4);
+  }
+
+  &:nth-child(1) {
+    animation: slide var(--_duration) ease-in-out infinite alternate;
+    &:after {
+      animation: color-change var(--_duration) ease-in-out infinite alternate;
+    }
+  }
+
+  @for $i from 1 to 5 {
+    &:nth-child(#{$i + 1}) {
+      animation: flip-#{$i} var(--_duration) ease-in-out infinite alternate;
+      &:after {
+        //animation: squidge-#{$i} var(--duration) ease-in-out infinite alternate;
+      }
+    }
+  }
+
+  &:nth-child(2):after {
+    background-color: #1c9fff;
+  }
+  &:nth-child(3):after {
+    background-color: #1fb1fd;
+  }
+  &:nth-child(4):after {
+    background-color: #22c7fb;
+  }
+  &:nth-child(5):after {
+    background-color: #23d3fb;
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-color: #1795ff;
+    transform: translatex(0vw);
+  }
+  100% {
+    background-color: #23d3fb;
+    transform: translatex(
+      calc(var(--_container-size) - (var(--_box-size) * 1.25))
+    );
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #1795ff;
+  }
+  100% {
+    background-color: #23d3fb;
+  }
+}
+
+@keyframes flip-1 {
+  //0%  #{$i * 15}%
+  0%,
+  16% {
+    transform: rotate(0);
+  }
+
+  36%,
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes flip-2 {
+  //0%  #{$i * 15}%
+  0%,
+  31% {
+    transform: rotate(0);
+  }
+
+  51%,
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes flip-3 {
+  //0%  #{$i * 15}%
+  0%,
+  46% {
+    transform: rotate(0);
+  }
+
+  66%,
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes flip-4 {
+  //0%  #{$i * 15}%
+  0%,
+  61% {
+    transform: rotate(0);
+  }
+
+  81%,
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes flip-5 {
+  //0%  #{$i * 15}%
+  0%,
+  76% {
+    transform: rotate(0);
+  }
+
+  96%,
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+//! COLOR :
+
 #light {
   #blue .loaderColor {
     fill: $colorTheme_blue-light;

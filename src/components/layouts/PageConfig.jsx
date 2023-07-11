@@ -23,6 +23,8 @@ import HeaderHover from "./HeaderHover.jsx";
 import LegalInfos from "./LegalInfos.jsx";
 import Footer from "./Footer.jsx";
 import Legal from "../../pages/Legal.jsx";
+import SpydeProject from "../../pages/SpydeProject.jsx";
+import Error404 from "../../pages/Error404.jsx";
 
 export const ThemeContext = createContext(null);
 
@@ -128,6 +130,8 @@ function PageConfig() {
         title_link.innerHTML = "Jawa Design - Contactez-moi ! ";
       } else if (actualPage === "/projects") {
         title_link.innerHTML = "Jawa Design - Quelques projets ";
+      } else if (actualPage === "/projects/spyde") {
+        title_link.innerHTML = "Le Projet Spyde";
       } else if (actualPage === "/projects/error") {
         title_link.innerHTML = "Jawa Design - Projet introuvable ";
       } else if (actualPage === "/services") {
@@ -146,6 +150,8 @@ function PageConfig() {
         title_link.innerHTML = "Jawa Design - Contact me ! ";
       } else if (actualPage === "/projects") {
         title_link.innerHTML = "Jawa Design - Some projects ";
+      } else if (actualPage === "/projects/spyde") {
+        title_link.innerHTML = "The Spyde Project";
       } else if (actualPage === "/projects/error") {
         title_link.innerHTML = "Jawa Design - Project no found ";
       } else if (actualPage === "/services") {
@@ -172,8 +178,6 @@ function PageConfig() {
     >
       <div className="settings" id={theme}>
         <div className="colorTheme" id={colorTheme}>
-          {/* <Header /> */}
-          {/* isPhone ? <HeaderMorph /> : */}
           <HeaderHover />
           <Params
             language={language}
@@ -497,7 +501,9 @@ function PageConfig() {
                   path="projects/error"
                   element={<ErrorProjectPage />}
                 />
+                <Route exact path="projects/spyde" element={<SpydeProject />} />
                 <Route exact path="legal" element={<Legal />} />
+                <Route path="*" element={<Error404 />} />
               </Routes>
             </AnimatePresence>
           </main>

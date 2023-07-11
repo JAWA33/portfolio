@@ -18,7 +18,7 @@ import myCV_FR from "../download/CV_FR.pdf";
 import myCV_ENG from "../download/CV_ENG.pdf";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
-//import ReactGA from "react-ga4";
+import ReactGA from "react-ga4";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -94,13 +94,13 @@ const Home = () => {
   }, []);
 
   //! Google Analytics :
-  // useEffect(() => {
-  //   ReactGA.send({
-  //     hitType: "pageview",
-  //     page: "/",
-  //     title: "Page d'acceuil",
-  //   });
-  // }, []);
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/",
+      title: "Page d'acceuil",
+    });
+  }, []);
   //! Google Analytics :
 
   return (

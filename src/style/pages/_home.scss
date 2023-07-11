@@ -1,18 +1,14 @@
 .home {
   width: auto;
   overflow: hidden;
-  padding-bottom: 2rem;
 
   &__section {
-    // border: solid 2px red;
     width: 100%;
     padding: 0px 5vw;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
     align-items: center;
-    // margin-top: auto;
-    // margin-bottom: auto;
 
     &__article {
       min-height: 45vh;
@@ -53,12 +49,11 @@
 
 .subSection {
   width: 100%;
-  //height: 20px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //margin: 2rem 0;
 
   &__title {
     padding: 0 10vw;
@@ -66,12 +61,11 @@
 
   &__top {
     width: 100vw;
-    //transform: translate(-30%, 10px);
+
     opacity: 0.2;
   }
   &__bottom {
     width: 100vw;
-    //transform: translate(60%, -10px);
     opacity: 0.1;
   }
 }
@@ -287,12 +281,12 @@
 
     &__top {
       width: 100vw;
-      //transform: translate(-30%, 10px);
+
       opacity: 0.2;
     }
     &__bottom {
       width: 100vw;
-      //transform: translate(60%, -10px);
+
       opacity: 0.1;
     }
   }
@@ -316,10 +310,9 @@
 @media (min-width: 1125px) {
   .home {
     &__section {
-      //padding: 5vh 10vw;
       flex-direction: row;
       align-items: flex-start;
-      //margin-top: 1rem;
+
       &__article {
         align-items: flex-start;
         padding: 0rem 8rem 0rem 2rem;
@@ -332,7 +325,7 @@
       &__aside {
         min-width: 300px;
         scale: 1;
-        //padding: 0rem 2rem 2rem 2rem;
+
         margin-right: -4vw;
         margin-top: 4rem;
       }
@@ -346,7 +339,10 @@
 @media (min-width: 1580px) {
   .home {
     &__section {
-      padding: 5vh 12vw;
+      padding: 5vh 10vw;
+      &__article {
+        padding: 0rem 4rem 0rem 0;
+      }
     }
     &__subSection {
       padding: 5vh 25vw;
@@ -368,11 +364,7 @@
     min-width: 250px;
     height: 300px;
     overflow: hidden;
-    //border-radius: 0.4rem;
   }
-  // .article {
-  //   padding: 3rem 2rem 3rem 2rem;
-  // }
 }
 
 //? .stickyPage ------------------------------//
@@ -400,8 +392,6 @@
 }
 
 #light .home {
-  //background: #c6c4c4;
-
   background: linear-gradient(
     180deg,
     $color_page_bg_1_light 0%,
@@ -411,8 +401,6 @@
 }
 
 #dark .home {
-  //background: #000;
-  //filter: brightness(70%);
   background: linear-gradient(
     180deg,
     $color_page_bg_1_dark 0%,

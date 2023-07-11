@@ -484,31 +484,31 @@
       "title": "SPYDE",
       "text": "Spyde est une entreprise spécialisée dans la collecte et le recyclage des déchets des entreprises et des collectivités. J'ai réalisé l'intégralité du projet, de la création du logo à la mise en ligne de leur application web. Ensemble, nous avons développé un système efficace pour optimiser la gestion des déchets et promouvoir la durabilité.",
       "button": "Découvrir le projet",
-      "link": "/"
+      "link": "/projects/spyde"
     },
     "B": {
       "title": "JAWA DESIGN",
       "text": "Ce site internet représente ma marque personnelle, JAWA Design. J'ai conçu le site de manière à ce qu'il reflète ma personnalité. Il met en valeur mes compétences et présente l'approche unique que j'apporte à la conception web. J'espère que vous l'appréciez en le parcourant, autant que j'ai apprécié le concevoir et le façonner.",
       "button": "Découvrir le projet",
-      "link": "/"
+      "link": "/projects/error"
     },
     "C": {
       "title": "LIVRE D'OR",
       "text": "J'ai développé une application web spécifique pour un mariage. Cette application fonctionne comme un livre d'or numérique, offrant la possibilité aux invités de partager leurs vœux et leurs photos prises lors de la cérémonie. Ce qui rend cette application unique, c'est qu'elle permet aux invités de participer sans se couper de la soirée et aux mariés de garder un bon souvenir !",
       "button": "Découvrir le projet",
-      "link": "/"
+      "link": "/projects/error"
     },
     "D": {
       "title": "FORMATION 0C",
       "text": "Voici quelques projets que j'ai réalisés pendant ma formation chez OpenClassrooms. Bien qu'ils aient été réalisés pendant ma formation, ces projets témoignent de mon engagement à respecter strictement les consignes et les attentes en termes de design de chaque client. Chaque projet met en avant les compétences et les techniques que j'ai acquises au cours de ma formation.",
       "button": "Découvrir le projet",
-      "link": "/"
+      "link": "/projects/error"
     },
     "E": {
       "title": "GIRONDINS",
       "text": "J'ai été membre actif et responsable de la communication visuelle de Girondins Poker, une association de poker dans la région girondine. J'ai réalisé, entre autres, des logos, des jetons, des affiches pour les tournois, des flyers, etc. Mon travail a contribué à renforcer l'image de l'association et à attirer des participants à leurs événements.",
       "button": "Découvrir le projet",
-      "link": "/"
+      "link": "/projects/error"
     },
     "endMessage": "En plus de ces projets, je suis en train de préparer de nouveaux qui seront bientôt disponibles ici. Certains de ces projets seront axés sur l'intelligence artificielle, exploitant ses capacités pour créer des solutions innovantes. D'autres projets seront davantage orientés vers le design, notamment des sites intégrant de la 3D."
   },
@@ -557,6 +557,206 @@
       "H2": "Sachez que vous avez toujours la possibilité de refuser de fournir vos données personnelles. Cependant, cela pourrait limiter votre utilisation de certains services du site, tels que la demande de renseignements sur notre société ou la réception de nos lettres d'information. Vous pouvez néanmoins nous contacter via les réseaux sociaux ou par courrier électronique à l'adresse contact@jawa-design.com.",
       "H3": "Par ailleurs, lors de votre navigation sur notre site, certaines informations vous concernant peuvent être collectées automatiquement, telles que des données sur l'utilisation du site, les pages visitées, votre adresse IP, le type de navigateur utilisé et les temps d'accès. Ces informations sont utilisées exclusivement à des fins statistiques internes pour améliorer la qualité des services que nous proposons. Les bases de données sont protégées conformément à la loi du 1er juillet 1998 transposant la directive 96/9 du 11 mars 1996 relative à la protection juridique des bases de données.",
       "H4": "Nous utilisons également des cookies de performance et de statistiques, tels que ceux fournis par Google Analytics, afin de collecter des informations sur l'utilisation du site (nombre de visites, pages consultées, activité des visiteurs). Ces cookies nous aident à identifier et résoudre les problèmes de fonctionnement du site, ainsi qu'à l'améliorer. Les données collectées sont conservées pendant une durée de 3 mois, sauf si vous souhaitez les supprimer. Dans ce cas, veuillez nous envoyer un e-mail à l'adresse contact@jawa-design.com."
+    }
+  },
+  "error_404": {
+    "title": "Erreur 404 : Cette page n'existe pas",
+    "text": "Si vous cherchez quelque chose en particulier, merci de m'envoyer un message en cliquant sur le bouton ci-dessous. ",
+    "button_A": "Contactez moi",
+    "button_B": "Retour à l'accueil"
+  },
+  "spyde": {
+    "page": "Spyde.fr",
+    "pageName": "Projet",
+    "openMenu": "Accès rapide",
+    "linkName": "Découvrez Spyde.fr",
+    "link": "https://www.spyde.fr",
+    "menu": {
+      "A": { "text": "PRESENTATION", "link": "/" },
+      "B": { "text": "FONCTIONNALITES", "link": "/" },
+      "C": { "text": "BRANDING", "link": "/" },
+      "D": { "text": "WEB DESIGN", "link": "/" },
+      "E": { "text": "DEVELOPPEMENT WEB", "link": "/" },
+      "F": { "text": "MISE EN LIGNE", "link": "/" },
+      "G": { "text": "VISITEZ SPYDE.FR", "link": "/" }
+    },
+    "presentation": {
+      "title": "Présentation",
+      "textA": "Spyde est une entreprise spécialisée dans la gestion des déchets pour les entreprises en région Nouvelle-Aquitaine. Leur mission est d'offrir des solutions simples et efficaces pour la collecte, le tri et le recyclage des déchets, afin d'aider les entreprises à améliorer leur impact environnemental. Grâce à leur expertise et leur engagement en matière de développement durable, Spyde accompagne les entreprises dans leur transition écologique en leur fournissant des services de collecte, de tri, de recyclage, ainsi que des formations et un soutien personnalisé dans leur démarche RSE.",
+      "textB": "L'application web de Spyde, que j'ai eu le plaisir de concevoir et de développer, est au cœur de leur offre de services. Elle permet aux clients de gérer facilement leurs demandes de collecte, d'accéder à leur certificat de recyclage en temps réel et de bénéficier de fonctionnalités personnalisées pour simplifier leur processus de gestion des déchets. Avec une interface conviviale et intuitive, l'application permet aux entreprises de suivre leur impact environnemental et de prendre des décisions éclairées pour un avenir plus durable. Elle assure une traçabilité des déchets, offrant ainsi des mesures précises des volumes collectés."
+    },
+    "functions": {
+      "title": "Fonctionnalités",
+      "A": {
+        "title": "Site Vitrine",
+        "text": "Une présentation professionnelle et attrayante de l'entreprise, mettant en valeur ses services et son expertise. Les visiteurs peuvent facilement découvrir les informations clés et se familiariser avec l'activité de l'entreprise."
+      },
+      "B": {
+        "title": "Blog personnalisé",
+        "text": "Une fonctionnalité de blog personnalisé permettant à l'entreprise de partager des articles pertinents, des conseils et des actualités dans son domaine. Les utilisateurs peuvent ainsi rester informés et engagés tout en profitant d'un espace interactif"
+      },
+      "C": {
+        "title": "Traçabilité des collectes",
+        "text": "L'application web assure une traçabilité complète des collectes de déchets, permettant un suivi en temps réel de leur parcours, depuis la collecte jusqu'à leur destination finale. Cette fonctionnalité offre une visibilité précise et une gestion optimisée des processus de collecte"
+      },
+      "D": {
+        "title": "Gestion des comptes",
+        "text": "Un système de gestion avancée des comptes et des droits utilisateurs a été mis en place, offrant un contrôle sur l'accès aux fonctionnalités du site. Les administrateurs peuvent facilement attribuer des rôles et des permissions spécifiques aux utilisateurs, assurant ainsi une gestion sécurisée et efficace."
+      },
+      "E": {
+        "title": "Gestion des clients",
+        "text": "La fonctionnalité de gestion des clients et des contrats facilite les opérations commerciales au quotidien. L'entreprise peut enregistrer les informations clients et gérer les contrats, garantissant ainsi une gestion transparente et organisée."
+      },
+      "F": {
+        "title": "Feuilles de routes",
+        "text": "Une fonctionnalité de création des feuilles de route a été intégrée pour optimiser les tournées de collecte. L'entreprise peut planifier les itinéraires directement sur une carte, définir les points de collecte et les horaires, permettant une gestion efficace des ressources et une réduction des coûts"
+      },
+      "G": {
+        "title": "Accessiblilité",
+        "text": "Le site web est conçu entièrement responsive, offrant une expérience utilisateur fluide et optimale sur tous les appareils. Les utilisateurs peuvent ainsi accéder au site et profiter de ses fonctionnalités, de manière intuitive et adaptée à leur appareil, où qu'ils se trouvent."
+      },
+      "H": {
+        "title": "Enregistrement des volumes",
+        "text": "Une fonctionnalité d'enregistrement des volumes de déchets recyclés a été mise en place, permettant aux clients de Spyde de suivre et d'évaluer ses performances. Cette fonctionnalité fournit des données essentielles pour une prise de décision éclairée et une gestion durable des déchets"
+      }
+    },
+    "branding": {
+      "title": "Branding",
+      "section": {
+        "logo": {
+          "title": "Logo et Charte graphique",
+          "A": {
+            "title": "Demande client",
+            "text": "Le logo de l'entreprise sera simple et visible, tandis que la charte graphique transmettra un professionnalisme énergique. Elle reflétera les valeurs de dynamisme et de passion, illustrant l'engagement envers l'environnement et l'accompagnement des clients. L'objectif est de créer une identité visuelle distinctive, inspirante et faisant confiance, mettant en avant le secteur de l'entreprise et son dévouement envers l'environnement et la satisfaction client."
+          },
+          "B": {
+            "title": "Proposition de logo"
+          },
+          "C": {
+            "title": "Logo final"
+          },
+          "D": {
+            "title": "Charte graphique"
+          }
+        },
+        "document": {
+          "title": "Documents d'Entreprise",
+          "A": {
+            "title": "Demande client",
+            "text": "Mon client souhaitait des documents clés en accord avec le style de son site web. Une carte de visite professionnelle pour faciliter les échanges, une plaquette commerciale attractive mettant en valeur ses services, et un certificat de recyclage personnalisé reflétant l'engagement environnemental de ses clients. J'ai réalisé ces documents avec minutie, en intégrant l'identité visuelle de son entreprise pour répondre à ses besoins spécifiques."
+          },
+          "B": {
+            "title": "Cartes de visite"
+          },
+          "C": {
+            "title": "Plaquette Commerciale"
+          },
+          "D": {
+            "title": "Certificat de Recyclage"
+          }
+        }
+      }
+    },
+    "webdev": {
+      "title": "Ecosystème de données",
+      "section": {
+        "tools": {
+          "title": "Mes Différents Outils",
+          "A": {
+            "title": "Frontend",
+            "list": ["Html, Css, Sass", "React", "Redux Toolkit", "Javascript"]
+          },
+          "B": {
+            "title": "Backend",
+            "list": ["NodeJs", "Express", "Javascript", "MySql"]
+          },
+          "C": {
+            "title": "Web Design",
+            "list": ["Figma", "Adobe", "Sites web pour les assets"]
+          },
+          "D": {
+            "title": "Packages",
+            "list": ["Mapbox", "EmailJS", "Axios", "Sequelize", "JWT"]
+          },
+          "E": {
+            "title": "Autres ",
+            "list": ["Git", "Github", "Postman"]
+          }
+        }
+      }
+    },
+    "design": {
+      "title": "Web Design",
+      "section_A": "Choix pour le design",
+      "A": {
+        "title": "Demande du Client",
+        "text": "Lors de la réalisation du web design pour la société Spyde, l'entreprise était en phase de création, ce qui signifiait qu'il n'y avait pas encore de photos ou assets disponibles pour le site. Malgré cela, le client n'avait pas de demandes spécifiques en matière de design. Il souhaitait simplement un style simple et minimaliste, en minimisant les coûts afin de pouvoir allouer davantage de budget au développement et aux fonctionnalités du site."
+      },
+      "B": {
+        "title": "Propositions",
+        "text": "Pour répondre aux attentes du client, j'ai suggéré l'utilisation d'un modèle de design préexistant que je pourrais adapter, ce qui permettrait de réduire les coûts. Quant aux ressources visuelles, l'utilisation d'illustrations libres de droits serait une solution pour compenser le manque de photos disponibles. Le client a été satisfait de cette proposition, appréciant à la fois la simplicité du design et la possibilité d'optimiser son budget."
+      },
+      "C": {
+        "title": "Inspiration"
+      },
+      "D": {
+        "title": "Exemple d'illustrations"
+      }
+    },
+    "development": {
+      "title": "Développement Web",
+      "section_A": "Front End",
+      "section_B": "Back End",
+      "A": {
+        "title": "Responsive",
+        "text": "La responsivité du design revêtait une importance capitale dans le projet de l'application web de Spyde, en raison de son utilisation sur différents appareils, notamment par les chauffeurs qui consulteraient l'application depuis leur smartphone. Assurer une expérience utilisateur optimale sur tous les supports était donc un enjeu primordial pour répondre aux besoins de mobilité et de praticité des utilisateurs."
+      },
+      "B": {
+        "title": "",
+        "text": ""
+      },
+      "C": {
+        "title": "Partie Publique",
+        "text": "Le site web de Spyde comprend une section publique accessible à tous. Cette section offre à Spyde une vitrine en ligne pour présenter son activité, tandis que le blog permet d'interagir et de communiquer avec les clients et les visiteurs. Les formulaires de contact sont également disponibles, offrant aux visiteurs une manière facile et directe d'entrer en contact avec Spyde pour toute demande ou information."
+      },
+      "D": {
+        "title": "Partie Privée",
+        "text": "Le site comprend également une section privée sécurisée réservée aux clients et aux employés de Spyde, avec un système de gestion des privilèges. Cette section se présente sous la forme d'un tableau de bord offrant un accès rapide aux fonctionnalités du site, telles que le Tableau de Bord Client, la Gestion des Profils, la Gestion du Blog, les Comptes Clients, les Contrats, les Feuilles de Route, etc. Cela permet une gestion efficace et personnalisée des différentes fonctionnalités du site pour répondre aux besoins spécifiques de chaque utilisateur."
+      },
+      "E": {
+        "title": "API Rest",
+        "text": "Pour le backend du site, j'ai mis en place une API Rest qui offre de nombreux avantages en termes de gestion et de sécurité des données. J'ai opté pour l'utilisation de Node.js et Express pour développer le serveur, ce qui permet une grande flexibilité et des performances optimales. Grâce à cette approche technique, le site bénéficie d'une architecture robuste, d'une communication efficace entre le serveur et le client, ainsi que d'une gestion avancée des requêtes et des réponses."
+      },
+      "F": {
+        "title": "",
+        "text": ""
+      },
+      "G": {
+        "title": "Base de données",
+        "text": "Pour une gestion optimale des données, j’ai utilisé MySQL, une base de données relationnelle,. Avec l'aide de Sequelize, un ORM, j'ai simplifié la manipulation des données en utilisant des objets et des méthodes JavaScript. Cette combinaison offre fiabilité, performance et sécurité, tout en rendant le code plus lisible et maintenable. MySQL et Sequelize assurent une gestion efficace des données et une facilité de développement accrue."
+      },
+      "H": {
+        "title": "Sécurisation des données",
+        "text": "Pour garantir la sécurité du système, j'ai mis en place un système de tokens qui assure une connexion sécurisée et la gestion des sessions utilisateur. J'ai utilisé le package Json Web Token pour générer et vérifier les tokens, offrant ainsi une couche supplémentaire de protection. De plus, j'ai intégré un système de cryptage des mots de passe dans la base de données, ce qui renforce la confidentialité des informations sensibles. Grâce à ces mesures de sécurité, les utilisateurs peuvent avoir confiance en la protection de leurs données lorsqu'ils interagissent avec le site."
+      }
+    },
+    "online": {
+      "title": "Mise en ligne",
+      "A": {
+        "title": "Serveur Mutualisé C Panel",
+        "text": "J'ai pris en charge la mise en place du serveur et de l'application web pour mon client. Le site a été hébergé chez Lws sur un serveur mutualisé de type C Panel. En plus de cela, j'ai configuré les premiers e-mails professionnels pour mon client, en lui fournissant des instructions claires sur l'utilisation du tableau de bord et en l'accompagnant dans la prise en main des fonctionnalités du site."
+      },
+      "B": {
+        "title": "",
+        "text": ""
+      }
+    },
+    "buttons": {
+      "title": "Que souhaitez vous faire maintenant ?",
+      "action": "Contactez Moi !",
+      "other": "Voir tous les Projets",
+      "link_action": "/contact",
+      "link_other": "/projects"
     }
   }
 }

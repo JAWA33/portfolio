@@ -13,6 +13,7 @@ const AccordionBlock = ({
   selectedBlock,
   toggleSelectedBlock,
   buttonTitle,
+  link,
 }) => {
   const [expanded, setExpanded] = useState("false");
 
@@ -74,7 +75,7 @@ const AccordionBlock = ({
         role="region"
       >
         <p className="font__strongText">{text}</p>
-        <Link to="/projects/error">
+        <Link to={link}>
           <button className="callToAction">
             <span className="callToAction__text">{buttonTitle}</span>
           </button>

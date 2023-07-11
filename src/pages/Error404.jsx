@@ -5,22 +5,10 @@ import goOutAnimation from "../helpers/goOutAnimation";
 import { ThemeContext } from "../components/layouts/PageConfig";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-//! Google Analytics :
-import ReactGA from "react-ga4";
 
-const ErrorProjectPage = () => {
+const Error404 = () => {
   const { textToShow } = useContext(ThemeContext);
   const { scrollYProgress } = useScroll();
-
-  //! Google Analytics :
-  useEffect(() => {
-    ReactGA.send({
-      hitType: "pageview",
-      page: "/projects/error",
-      title: "Page No project",
-    });
-  }, []);
-  //! Google Analytics :
 
   return (
     <div className="wrapper">
@@ -36,12 +24,12 @@ const ErrorProjectPage = () => {
               animate={{ x: 0 }}
               //exit={goOutAnimation(2, 0)}
             >
-              {textToShow.error_project.title}
+              {textToShow.error_404.title}
             </motion.h1>
 
             <RevealText>
               <p className="article font__basicText font__color">
-                {textToShow.error_project.text}{" "}
+                {textToShow.error_404.text}{" "}
               </p>
             </RevealText>
           </article>
@@ -54,11 +42,11 @@ const ErrorProjectPage = () => {
                 transition={{ duration: 1, delay: 0.5, type: "spring" }}
               >
                 <span className="callToAction__text">
-                  {textToShow.error_project.button_A}
+                  {textToShow.error_404.button_A}
                 </span>
               </motion.button>
             </Link>
-            <Link to="/projects">
+            <Link to="/">
               <motion.button
                 className="otherAction"
                 initial={{ translateX: "50vw" }}
@@ -66,7 +54,7 @@ const ErrorProjectPage = () => {
                 transition={{ duration: 1, delay: 0.5, type: "spring" }}
               >
                 <span className="callToAction__text">
-                  {textToShow.error_project.button_B}
+                  {textToShow.error_404.button_B}
                 </span>
               </motion.button>
             </Link>
@@ -77,4 +65,4 @@ const ErrorProjectPage = () => {
   );
 };
 
-export default ErrorProjectPage;
+export default Error404;

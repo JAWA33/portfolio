@@ -11,6 +11,30 @@
 }
 
 .font {
+  &__project {
+    font-size: clamp(2rem, 16px + 1vw, 3rem);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    &--menu {
+      text-align: justify;
+      font-size: clamp(1rem, 10px + 0.3vw, 1.2rem);
+      font-weight: 300;
+      letter-spacing: 0.5px;
+    }
+    &--section {
+      font-size: clamp(1rem, 1.6rem + 2vw, 2rem);
+      font-family: "Aguafina Script", cursive;
+      font-weight: 100;
+      letter-spacing: 0.5px;
+    }
+    &--element {
+      font-size: clamp(0.9rem, 0.8rem + 2vw, 1.2rem);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+  }
+
   &__scroll {
     font-size: 0.8rem;
   }
@@ -48,8 +72,8 @@
   &__basicText {
     font-size: clamp(1rem, 11px + 0.3vw, 2rem);
     font-weight: 300;
-    letter-spacing: 0.5px;
-    line-height: calc(1.2rem + 0.6vw);
+    letter-spacing: 0.4px;
+    line-height: calc(1.2rem + 0.3vw);
     text-align: justify;
   }
   &__label {
@@ -78,7 +102,6 @@
     text-align: center;
 
     //? A vérifier : pas sur de la prise en compte.
-
     text-wrap: balance;
     //? A vérifier : pas sur de la prise en compte.
   }
@@ -182,16 +205,12 @@
     line-height: 1.5rem;
   }
   &__writing {
-    //font-size: clamp(1.8rem, 26px + 1vw, 2.6rem);
     font-family: "Aguafina Script", cursive;
     letter-spacing: 2px;
 
     &--A {
       font-size: 1.4rem;
       text-shadow: 0.5px 1px 0px black;
-    }
-    &--B {
-      //font-size: 2rem;
     }
   }
 }
@@ -242,6 +261,41 @@
   }
 }
 
+#light {
+  #blue .font__bgColor {
+    color: $colorTheme_blue-light;
+  }
+  #yellow .font__bgColor {
+    color: $colorTheme_yellow-light;
+  }
+  #green .font__bgColor {
+    color: $colorTheme_green-light;
+  }
+  #red .font__bgColor {
+    color: $colorTheme_red-light;
+  }
+  #purple .font__bgColor {
+    color: $colorTheme_purple-light;
+  }
+}
+#dark {
+  #blue .font__bgColor {
+    color: $colorTheme_blue;
+  }
+  #yellow .font__bgColor {
+    color: $colorTheme_yellow;
+  }
+  #green .font__bgColor {
+    color: $colorTheme_green;
+  }
+  #red .font__bgColor {
+    color: $colorTheme_red;
+  }
+  #purple .font__bgColor {
+    color: $colorTheme_purple;
+  }
+}
+
 #blue .font__BigText__writing {
   color: $colorTheme_blue;
 }
@@ -266,6 +320,12 @@
     font-size: clamp(0.5rem, 12px + 0.3vw, 1.5rem);
     letter-spacing: 1px;
     line-height: calc(14px + 1.2vw);
+  }
+  .font__project--menu {
+    text-align: justify;
+    font-size: clamp(0.7rem, 10px + 0.3vw, 1.2rem);
+    font-weight: 300;
+    letter-spacing: 0.5px;
   }
 }
 

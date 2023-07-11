@@ -487,31 +487,31 @@
       "title": "SPYDE",
       "text": "Spyde is a company specializing in the collection and recycling of waste from businesses and communities. I carried out the entire project, from creating the logo to putting their web application online. Together we have developed an effective system to optimize waste management and promote sustainability.",
       "button": "Discover the project",
-      "link": "/"
+      "link": "/projects/spyde"
     },
     "B": {
       "title": "JAWA DESIGN",
       "text": "This website represents my personal brand, JAWA Design. I designed the site to reflect my personality. It showcases my skills and showcases the unique approach I bring to web design. I hope you enjoy it browsing it, as much as I enjoyed designing and shaping it.",
       "button": "Discover the project",
-      "link": "/"
+      "link": "/projects/error"
     },
     "C": {
       "title": "GOLDEN BOOK",
       "text": "I developed a specific web application for a wedding. This application functions as a digital guestbook, offering the possibility to the guests to share their wishes and their photos taken during the ceremony. What makes this application unique is that it allows guests to participate without cutting themselves off from the evening and the bride and groom to keep a good memory!",
       "button": "Discover the project",
-      "link": "/"
+      "link": "/projects/error"
     },
     "D": {
       "title": "TRAINING OC",
       "text": "Here are some projects I did during my training at OpenClassrooms. Although they were made during my training, these projects testify to my commitment to strictly respect the instructions and expectations in terms of design of each client. Each project highlights the skills and techniques that I have acquired during my training.",
       "button": "Discover the project",
-      "link": "/"
+      "link": "/projects/error"
     },
     "E": {
       "title": "GIRONDINS",
       "text": "I was an active member and responsible for the visual communication of Girondins Poker, a poker association in the Gironde region. I realized, among other things, logos, tokens, posters for tournaments, flyers, etc. My work has contributed to strengthening the association's image and attracting participants to their events.",
       "button": "Discover the project",
-      "link": "/"
+      "link": "/projects/error"
     },
     "endMessage": "In addition to these projects, I am preparing new ones which will soon be available here. Some of these projects will focus on artificial intelligence, harnessing its capabilities to create innovative solutions. Other projects will be more oriented towards design, in particular sites integrating 3D."
   },
@@ -560,6 +560,213 @@
       "H2": "Please be aware that you always have the option of refusing to provide your personal data. However, this may limit your use of certain services on the site, such as requesting information about our company or receiving our newsletters. information. However, you can contact us via social networks or by email at contact@jawa-design.com.",
       "H3": "Furthermore, during your navigation on our site, certain information concerning you may be collected automatically, such as data on the use of the site, the pages visited, your IP address, the type of browser used and access times. This information is used exclusively for internal statistical purposes to improve the quality of the services we offer. The databases are protected in accordance with the law of July 1, 1998 transposing directive 96/9 of March 11, 1996 on the legal protection of databases.",
       "H4": "We also use performance and statistics cookies, such as those provided by Google Analytics, to collect information on the use of the site (number of visits, pages viewed, visitor activity). These cookies help us to identify and solve problems with the functioning of the site, as well as to improve it. The data collected is kept for a period of 3 months, unless you wish to delete it. In this case, please send us an e-mail. email to contact@jawa-design.com."
+    }
+  },
+  "error_404": {
+    "title": "Erreur 404 : This page doesn't exist",
+    "text": "If you're looking for something specific, send me a message by clicking on the button below. ",
+    "button_A": "Contact Me",
+    "button_B": "Back to homepage"
+  },
+  "spyde": {
+    "page": "Spyde.fr",
+    "pageName": "Project",
+    "openMenu": "Quick Access",
+    "linkName": "Discover Spyde.fr",
+    "link": "https://www.spyde.fr",
+    "menu": {
+      "A": { "text": "PRESENTATION", "link": "/" },
+      "B": { "text": "FUNCTIONALITIES", "link": "/" },
+      "C": { "text": "BRANDING", "link": "/" },
+      "D": { "text": "WEB DESIGN", "link": "/" },
+      "E": { "text": "WEB DEVELOPPEMENT", "link": "/" },
+      "F": { "text": "GO ONLINE", "link": "/" },
+      "G": { "text": "VISIT SPYDE.FR", "link": "/" }
+    },
+    "presentation": {
+      "title": "Presentation",
+      "textA": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum doloremquelaboriosam commodi omnis fuga mollitia, hic eum maxime.",
+      "textB": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aut unde molestias, debitis, illo blanditiis possimus adipisci sequi sit hic distinctio explicabo velit consequuntur deserunt quasi ipsa odio quas suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas fugiat ut porro numquam aut magnam aperiam voluptates incidunt delectus a laborum doloremque laboriosam commodi omnis fuga mollitia, hic eum maxime."
+    },
+    "functions": {
+      "title": "Functionalities",
+      "A": {
+        "title": "Show Case",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      },
+      "B": {
+        "title": "Personalized Blog",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      },
+      "C": {
+        "title": "TEST pour voir",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      },
+      "D": {
+        "title": "On verra",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      },
+      "E": {
+        "title": "On verra",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      },
+      "F": {
+        "title": "On verra",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      },
+      "G": {
+        "title": "On verra",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      },
+      "H": {
+        "title": "On verra",
+        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+      }
+    },
+    "branding": {
+      "title": "Branding",
+      "section": {
+        "logo": {
+          "title": "Logo et Charte graphique",
+          "A": {
+            "title": "Demande client",
+            "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+          },
+          "B": {
+            "title": "Proposition de logo"
+          },
+          "C": {
+            "title": "Logo final"
+          },
+          "D": {
+            "title": "Charte graphique"
+          }
+        },
+        "document": {
+          "title": "Documents d'Entreprise",
+          "A": {
+            "title": "Demande client",
+            "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+          },
+          "B": {
+            "title": "Cartes de visite"
+          },
+          "C": {
+            "title": "Plaquette Commerciale"
+          },
+          "D": {
+            "title": "Certificat de Recyclage"
+          }
+        }
+      }
+    },
+    "webdev": {
+      "title": "Développement Web",
+      "section": {
+        "tools": {
+          "title": "Mes Différents Outils",
+          "A": {
+            "title": "Web design",
+            "list": ["Figma", "Javascript", "Express"]
+          },
+          "B": {
+            "title": "Frontend",
+            "list": [
+              "React",
+              "Javascript",
+              "Express",
+              "NodeJs",
+              "Javascript",
+              "Express"
+            ]
+          },
+          "C": {
+            "title": "Backend",
+            "list": ["NodeJs", "Javascript", "Express"]
+          },
+          "D": {
+            "title": "Autres ",
+            "list": ["NodeJs", "Javascript", "Express"]
+          },
+          "E": {
+            "title": "Autres ",
+            "list": ["NodeJs", "Javascript", "Express"]
+          }
+        }
+      }
+    },
+    "design": {
+      "title": "Web Design",
+      "section_A": "Choix pour le design",
+      "A": {
+        "title": "Demande du Client",
+        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "B": {
+        "title": "Propositions",
+        "text": "TEXTE B :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "C": {
+        "title": "Inspiration"
+      },
+      "D": {
+        "title": "Exemple d'illustrations"
+      }
+    },
+    "development": {
+      "title": "Développement Web",
+      "section_A": "Front End",
+      "section_B": "Back End",
+      "A": {
+        "title": "Responsive",
+        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "B": {
+        "title": "",
+        "text": "TEXTE B :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "C": {
+        "title": "Partie Publique",
+        "text": "TEXTE C :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "D": {
+        "title": "Partie Privée",
+        "text": "TEXTE D :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "E": {
+        "title": "API Rest",
+        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "F": {
+        "title": "",
+        "text": "TEXTE B :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "G": {
+        "title": "Base de données",
+        "text": "TEXTE C :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "H": {
+        "title": "Sécurisation des données",
+        "text": "TEXTE D :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      }
+    },
+    "online": {
+      "title": "Mise en ligne",
+      "A": {
+        "title": "Serveur Mutualisé C Panel",
+        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+      },
+      "B": {
+        "title": "",
+        "text": ""
+      }
+    },
+    "buttons": {
+      "title": "Que souhaitez vous faire maintenant ?",
+      "action": "Contactez Moi !",
+      "other": "Voir tous les Projets",
+      "link_action": "/contact",
+      "link_other": "/projects"
     }
   }
 }

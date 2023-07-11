@@ -10,7 +10,7 @@ import FlexBubbleContainer from "../components/elements/FlexBubbleContainer";
 import IconToCard from "../components/blocks/IconToCard";
 import goOutAnimation from "../helpers/goOutAnimation";
 //! Google Analytics :
-//import ReactGA from "react-ga4";
+import ReactGA from "react-ga4";
 
 const About = () => {
   const [toggleOpenCard, setToggleOpenCard] = useState(false);
@@ -21,13 +21,13 @@ const About = () => {
   }, []);
 
   //! Google Analytics :
-  // useEffect(() => {
-  //   ReactGA.send({
-  //     hitType: "pageview",
-  //     page: "/about",
-  //     title: "Page A Propos",
-  //   });
-  // }, []);
+  useEffect(() => {
+    ReactGA.send({
+      hitType: "pageview",
+      page: "/about",
+      title: "Page A Propos",
+    });
+  }, []);
   //! Google Analytics :
 
   return (
