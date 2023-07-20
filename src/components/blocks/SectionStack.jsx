@@ -33,12 +33,6 @@ const SectionStack = ({ children }) => {
         <img src={playBubble} alt={textToShow.stackBg.Alt} />
       </div>
       <div className="sectionStack__textContainerA">
-        {/* <BlockBigText
-          model="A"
-          intro={textToShow.stackBg.intro_A}
-          text={textToShow.stackBg.text_A}
-          reverse={false}
-        /> */}
         <BlockBigText
           model="B"
           intro={textToShow.stackBg.intro_B}

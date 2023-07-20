@@ -30,7 +30,6 @@
       height: auto;
       padding: 0rem 2rem 2rem 2rem;
       position: relative;
-      //margin: 5rem 0 0 0;
       scale: 0.9;
     }
   }
@@ -292,13 +291,11 @@
   }
 }
 
-//* for tablet :
 @media (min-width: 600px) {
   .article__sub {
     padding: 4rem 20vw 2rem 20vw;
   }
   .home {
-    // margin-left: 15vw;
     &__section {
       padding: 5vh 5vw;
       &__article {
@@ -350,7 +347,6 @@
   }
 }
 
-//* for small_desktop :
 @media (max-width: 1320px) {
   .home {
     &__section {
@@ -367,8 +363,6 @@
   }
 }
 
-//? .stickyPage ------------------------------//
-//? TO PUT OUT SIDE : settings ?? ------------------------------//
 .stickyPage {
   width: 100%;
 

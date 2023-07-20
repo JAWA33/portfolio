@@ -9,11 +9,6 @@ const ModalLayout = (props{modal, toggle,label}) => {
     }
   }, [props.modal]);
 
-  //   <ModalLayout
-  //   toggle={toggleModal}   //!toggleStatus
-  //   modal={modal}          //!status
-  //   label="Ré-initialisation en cours ..."
-  // ></ModalLayout>
 
   return (
     <>

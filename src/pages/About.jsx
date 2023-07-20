@@ -9,7 +9,7 @@ import SectionStack from "../components/blocks/SectionStack";
 import FlexBubbleContainer from "../components/elements/FlexBubbleContainer";
 import IconToCard from "../components/blocks/IconToCard";
 import goOutAnimation from "../helpers/goOutAnimation";
-//! Google Analytics :
+
 import ReactGA from "react-ga4";
 
 const About = () => {
@@ -20,7 +20,6 @@ const About = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  //! Google Analytics :
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
@@ -28,7 +27,6 @@ const About = () => {
       title: "Page A Propos",
     });
   }, []);
-  //! Google Analytics :
 
   return (
     <div className="wrapper">
@@ -50,7 +48,7 @@ const About = () => {
             {/* //* First Line */}
             <div></div>
             <div></div>
-            {/** FIGMA */}
+
             <IconToCard
               title={textToShow.bubbleSkills.figma.title}
               text={textToShow.bubbleSkills.figma.text}
@@ -82,7 +80,7 @@ const About = () => {
                 />
               </svg>
             </IconToCard>
-            {/** HTML5 */}
+
             <IconToCard
               title={textToShow.bubbleSkills.html.title}
               text={textToShow.bubbleSkills.html.text}
@@ -351,8 +349,6 @@ const About = () => {
             <div></div>
             <div></div>
             <div></div>
-
-            {/* </BigBubbleGrid> */}
           </div>
         </SectionStack>
         <SectionExperience />

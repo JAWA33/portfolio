@@ -17,7 +17,6 @@ import { Link } from "react-router-dom";
 import myCV_FR from "../download/CV_FR.pdf";
 import myCV_ENG from "../download/CV_ENG.pdf";
 import goOutAnimation from "../helpers/goOutAnimation";
-//! Google Analytics :
 import ReactGA from "react-ga4";
 
 const Home = () => {
@@ -93,7 +92,6 @@ const Home = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  //! Google Analytics :
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
@@ -101,7 +99,6 @@ const Home = () => {
       title: "Page d'acceuil",
     });
   }, []);
-  //! Google Analytics :
 
   return (
     <div className="wrapper">
@@ -115,7 +112,6 @@ const Home = () => {
               className="font__introTitle font__color"
               initial={{ x: "50vw" }}
               animate={{ x: 0 }}
-              //exit={goOutAnimation(2, 0)}
             >
               {textToShow.home_page.title.split("").map((letter, index) => {
                 return (
@@ -138,7 +134,6 @@ const Home = () => {
                 initial={{ opacity: 0, x: 100, scale: 0.8 }}
                 animate={{ opacity: 1, x: 20, scale: 1.2 }}
                 transition={{ duration: 0.4, delay: 0.9 }}
-                //exit={}
               >
                 <strong className="font__name  textColor ">
                   {textToShow.home_page.name}{" "}
@@ -153,7 +148,6 @@ const Home = () => {
                 duration: 0.8,
                 delay: 0.5,
               }}
-              //exit={goOutAnimation(1, 1)}
             >
               <h2 className="font__introSubTitle font__color">
                 {textToShow.home_page.intro + " "}

@@ -575,10 +575,11 @@
       "A": { "text": "PRESENTATION", "link": "/" },
       "B": { "text": "FONCTIONNALITES", "link": "/" },
       "C": { "text": "BRANDING", "link": "/" },
-      "D": { "text": "WEB DESIGN", "link": "/" },
-      "E": { "text": "DEVELOPPEMENT WEB", "link": "/" },
-      "F": { "text": "MISE EN LIGNE", "link": "/" },
-      "G": { "text": "VISITEZ SPYDE.FR", "link": "/" }
+      "D": { "text": "ECO SYSTEME", "link": "/" },
+      "E": { "text": "WEB DESIGN", "link": "/" },
+      "F": { "text": "DEVELOPPEMENT WEB", "link": "/" },
+      "G": { "text": "MIS EN LIGNE", "link": "https://www.spyde.fr" },
+      "H": { "text": "VISITEZ SPYDE.FR", "link": "https://www.spyde.fr" }
     },
     "presentation": {
       "title": "Présentation",
@@ -630,10 +631,10 @@
             "text": "Le logo de l'entreprise sera simple et visible, tandis que la charte graphique transmettra un professionnalisme énergique. Elle reflétera les valeurs de dynamisme et de passion, illustrant l'engagement envers l'environnement et l'accompagnement des clients. L'objectif est de créer une identité visuelle distinctive, inspirante et faisant confiance, mettant en avant le secteur de l'entreprise et son dévouement envers l'environnement et la satisfaction client."
           },
           "B": {
-            "title": "Proposition de logo"
+            "title": "Propositions de logo"
           },
           "C": {
-            "title": "Logo final"
+            "title": "Logo retenu"
           },
           "D": {
             "title": "Charte graphique"
@@ -649,7 +650,7 @@
             "title": "Cartes de visite"
           },
           "C": {
-            "title": "Plaquette Commerciale"
+            "title": "Brochure Commerciale"
           },
           "D": {
             "title": "Certificat de Recyclage"

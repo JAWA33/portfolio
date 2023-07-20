@@ -2,8 +2,6 @@ import { createContext, useContext, useState } from "react";
 import { useEffect } from "react";
 import { ThemeContext } from "../layouts/PageConfig.jsx";
 
-//export const ThemeContext = createContext(null);
-
 const ButtonChangeColor = () => {
   const {
     language,

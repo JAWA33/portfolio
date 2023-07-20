@@ -10,7 +10,6 @@ import {
 
 import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
-import sendMail from "../../utils/sendMail";
 import { useNavigate } from "react-router";
 import emailJS from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -21,29 +20,24 @@ const SectionForm = () => {
   const navigate = useNavigate();
   const { textToShow, language } = useContext(ThemeContext);
 
-  //firstname ref :
   const focusInput_firstname = useRef(null);
   const infoText_firstname = useRef(null);
   const valid_firstname = useRef(null);
 
   const isInView = useInView(focusInput_firstname);
 
-  //lastname ref :
   const focusInput_lastname = useRef(null);
   const infoText_lastname = useRef(null);
   const valid_lastname = useRef(null);
 
-  //company ref :
   const focusInput_company = useRef(null);
   const infoText_company = useRef(null);
   const valid_company = useRef(null);
 
-  //email ref:
   const focusInput_email = useRef(null);
   const infoText_email = useRef(null);
   const valid_email = useRef(null);
 
-  //message ref :
   const focusInput_message = useRef(null);
   const infoText_message = useRef(null);
   const valid_message = useRef(null);
@@ -57,8 +51,6 @@ const SectionForm = () => {
   const [changeLanguage, setChangeLanguage] = useState(false);
 
   const [isLoading, setIsLoading] = useState(false);
-
-  //for SEND EMAIL :
 
   const handleEmail = (e) => {
     e.preventDefault();
@@ -124,7 +116,7 @@ const SectionForm = () => {
     setChangeLanguage(!changeLanguage);
   }, [language]);
 
-  //Control of the firstname :
+  //Verification :
   useEffect(() => {
     if (firstname.length < 2) {
       infoText_firstname.current.className = "inputBox__alert font__label";
@@ -157,7 +149,6 @@ const SectionForm = () => {
     }
   }, [firstname, changeLanguage]);
 
-  //Control of the lastname :
   useEffect(() => {
     if (lastname.length < 2) {
       infoText_lastname.current.className = "inputBox__alert font__label";
@@ -190,7 +181,6 @@ const SectionForm = () => {
     }
   }, [lastname, changeLanguage]);
 
-  //Control of the company :
   useEffect(() => {
     if (company.length < 2) {
       infoText_company.current.className = "inputBox__alert font__label";
@@ -223,7 +213,6 @@ const SectionForm = () => {
     }
   }, [company, changeLanguage]);
 
-  //Control of the email :
   useEffect(() => {
     if (email.length < 10) {
       infoText_email.current.className = "inputBox__alert font__label";
@@ -256,7 +245,6 @@ const SectionForm = () => {
     }
   }, [email, changeLanguage]);
 
-  //Control of the message :
   useEffect(() => {
     if (message.length < 10) {
       infoText_message.current.className =
@@ -291,7 +279,6 @@ const SectionForm = () => {
     }
   }, [message, changeLanguage]);
 
-  //Open with focus on the firstname input :
   useEffect(() => {
     if (isInView && window.innerWidth >= 600) {
       focusInput_firstname.current.focus();

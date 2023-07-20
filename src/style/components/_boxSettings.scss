@@ -1,7 +1,7 @@
 .boxPosition--open .boxSettings {
   width: 450px;
   padding-right: 90px;
-  //transform: translateX(150px);
+
   transition: width 0.5s linear;
 
   &__container {
@@ -17,7 +17,6 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      //animation: openButton 2.5s forwards alternate;
 
       &:nth-child(1) {
         animation: openButton 1s -0.2s forwards alternate;
@@ -43,26 +42,22 @@
 }
 
 .boxSettings {
-  //! reduce to include in design :
   scale: 0.8;
   width: 60px;
   height: 60px;
-  //margin-right: 1rem;
+
   position: relative;
   border-radius: 30px;
 
-  //transform: translateX(30px);
   transition: width 0.5s ease-in-out;
 
   &__container {
-    //border: 2px solid green;
     display: none;
   }
   &__rotatingText {
     position: absolute;
     top: -35px;
     right: -35px;
-    //border: 2px solid rgb(6, 0, 128);
   }
   &::before,
   &::after {
@@ -109,7 +104,6 @@
 }
 .boxPosition--open .boxSettings {
   animation: waterToFull 1s ease-out forwards;
-  //waterFullMove 20s 1s linear infinite alternate;
 }
 
 @keyframes waterMove {
@@ -163,15 +157,11 @@
 @keyframes waterToFull {
   0% {
     border-radius: 37% 63% 24% 76% / 69% 38% 62% 31%;
-    //border-radius: 30px;
   }
   30% {
     border-radius: 26% 74% 27% 73% / 50% 63% 37% 50%;
   }
-  // 60% {
-  //   border-radius: 58% 6% 0% 100% / 100% 57% 13% 0%;
-  //   border-radius: 12px 8px 30px 30px;
-  // }
+
   80% {
     border-radius: 22px 18px 30px 30px;
   }
@@ -221,11 +211,9 @@
   }
   30% {
     opacity: 0;
-    // transform: scaleX(0) scaleY(0);
   }
   40% {
     opacity: 1;
-    // transform: scaleX(0.5) scaleY(0.1);
   }
   100% {
     opacity: 1;
@@ -233,7 +221,6 @@
   }
 }
 
-//* for tablet :
 @media (max-width: 600px) {
   .boxSettings {
     scale: 0.7;

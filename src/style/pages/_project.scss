@@ -75,7 +75,9 @@
 
   &__section {
     width: 100%;
+    height: auto;
     padding: 1rem 0rem;
+
     &__title {
       position: relative;
       width: 100%;
@@ -99,9 +101,8 @@
     &__grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(45%, 1fr));
-      //grid-template-rows: repeat(auto-fill, auto);
       grid-gap: 3rem;
-      overflow-x: hidden;
+      overflow: hidden;
 
       &--small {
         grid-template-columns: repeat(2, 1fr);
@@ -117,7 +118,6 @@
   height: auto;
   grid-column: span 2;
   grid-row: span 1;
-  //background: rgb(10, 113, 142);
   padding: 0 2rem 0 1rem;
   max-width: 470px;
   margin: 0 auto;
@@ -229,6 +229,20 @@
   padding-top: 2rem;
 }
 
+.profilPicture {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    width: auto;
+    height: auto;
+    max-height: 280px;
+    object-fit: scale-down;
+  }
+}
+
 .linkToWebSite {
   height: 50px;
   display: flex;
@@ -315,7 +329,6 @@
 @media (min-width: 600px) {
   .pageNav {
     left: 7vw;
-    //right: 0;
     top: 140px;
   }
 }
@@ -326,7 +339,6 @@
     align-items: flex-start;
     justify-content: center;
     text-align: start;
-    // grid-auto-flow: dense;
   }
 }
 @media (max-width: 400px) {
@@ -369,6 +381,8 @@
     height: 30vh;
     margin: 0 auto;
     transform: translateY(-8px);
+    transform: translateX(0rem) translateY(1rem);
+
     &.animated {
       aspect-ratio: 16/9;
       height: 20vh;

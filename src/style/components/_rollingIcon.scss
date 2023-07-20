@@ -48,7 +48,6 @@
 #light {
   & .rollingIcon__text__letter {
     color: black;
-    // color: rgba($colorTheme_yellow-light, 0.8);
   }
   & #green .rollingIcon__icon {
     fill: $colorTheme_green-light;
@@ -100,7 +99,6 @@
 @for $k from 1 through 24 {
   .rollingIcon__text__letter:nth-child(#{$k}) {
     rotate: calc(#{$k} * (360deg / 24));
-    //margin: 0.5px;
   }
 }
 

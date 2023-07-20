@@ -1,25 +1,16 @@
 .sectExp {
   width: auto;
-  //padding: 1rem 6vw 3rem 1rem;
-  //border: 1px solid blue;
-  //padding-right: 1vw;
 
   &__grid {
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    //grid-template-rows: repeat(auto-fill, 150px);
     justify-content: center;
     align-items: flex-start;
     grid-gap: 3rem 3rem;
-    // margin-top: 3rem;
-
-    //border: 1px solid rgb(237, 41, 74);
 
     &__element {
-      //width: 100%;
-      //border: 1px solid green;
       grid-column: span 2;
 
       &--larger {

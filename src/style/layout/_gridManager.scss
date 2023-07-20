@@ -55,11 +55,10 @@
     & .gridManager__box__card--cardB {
       transform: perspective(1200px) rotateX(0deg);
     }
-    //! rotate position  : unlock :
+
     & .gridManager__box__card--cardC {
       transform: perspective(1200px) rotateX(0deg);
     }
-    //! rotate position  : unlock :
   }
 
   &__card {
@@ -77,15 +76,12 @@
     &--cardA {
       transform: rotateX(0deg);
       transition: var(--_animeDuration) ease-in-out;
-      //transition-delay: 0s;
-      //transition-delay: var(--_animeDuration);
     }
     &--cardB {
       position: absolute;
       transform: rotateX(-90deg);
       transition: var(--_animeDuration) ease-in-out;
-      //transition-delay: 0s;
-      //z-index: 2;
+
       cursor: pointer;
     }
     &--cardC {
@@ -93,13 +89,11 @@
       width: 100%;
       height: auto;
       min-height: 70vh;
-      //! start position to change
-      //transform: rotateX(0deg);
+
       transform: rotateX(90deg);
-      //! start position to change
+
       transition: var(--_animeDuration) ease-in-out;
 
-      //COLOR THEME : default Dark
       background: rgba(37, 1, 1, 0.5);
       border: 2px solid $colorTheme_red;
 
@@ -109,7 +103,7 @@
       overflow: scroll;
     }
   }
-  //transition time inversion 0.3rem
+
   &:hover > .gridManager__box__card--cardA {
     transition-delay: 0s;
   }
@@ -128,7 +122,7 @@
 .detailCard {
   position: relative;
   width: 100%;
-  //min-height: 50vh;
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -160,16 +154,14 @@
     width: 100%;
     height: auto;
     grid-template-columns: repeat(5, 1fr);
-    // grid-template-rows: repeat(4, minmax(1fr, auto));
     grid-template-rows: repeat(4, auto);
-    //grid-auto-flow: dense;
+
     grid-gap: 0.3rem;
 
     z-index: -1;
     padding: 50px 2rem 2rem 2rem;
 
     &__element {
-      // COLOR THEME default :  darkTheme
       height: auto;
       color: $textColor_dark;
       padding: 2rem;
@@ -191,9 +183,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        & svg {
-          //padding: 1rem;
-        }
       }
       &:nth-child(3) {
         grid-column: span 2;
@@ -479,8 +468,6 @@
       $colorTheme_yellow 0%,
       rgb(227, 187, 11) 100%
     );
-
-    //background: $colorTheme_yellow;
   }
   & #blue .gridManager__box__card--cardB {
     background: linear-gradient(
@@ -541,8 +528,6 @@
     $colorTheme_yellow 0%,
     rgb(227, 187, 11) 100%
   );
-
-  //background: $colorTheme_yellow;
 }
 #blue .gridManager__box__card--cardB {
   background: linear-gradient(
@@ -652,10 +637,6 @@
     grid-column: span 5;
     grid-row: span 3;
   }
-  // .detailCard__grid {
-  //   grid-template-columns: repeat(4, 150px);
-  //   grid-template-rows: repeat(4, auto);
-  // }
 }
 @media (max-width: 900px) {
   .detailCard__grid__element {
@@ -691,8 +672,6 @@
       height: auto;
       grid-column-start: 3;
       grid-column-end: 4;
-      // grid-row-start: 2;
-      // grid-row-end: 2;
     }
     &:nth-child(3) {
       grid-column: span 5;
@@ -707,17 +686,6 @@
     grid-column: span 3;
     grid-row: span 3;
   }
-  // .gridManager__box {
-  //   &__card--cardB {
-  //     max-width: 60vw;
-  //   }
-  //   &__card--cardC {
-  //     max-width: 0vw;
-  //   }
-  //   &__card--cardA {
-  //     max-width: 60vw;
-  //   }
-  // }
 }
 @media (max-width: 600px) {
   .gridManager {
@@ -740,7 +708,6 @@
       border-radius: 0 0 1rem 1rem;
     }
     &__card--cardC {
-      //max-width: 70vw;
       min-height: 80vh;
     }
     &__card--cardA {
@@ -748,7 +715,6 @@
 
       transform: none !important;
       border-radius: 1rem 1rem 0 0;
-      // background: black !important;
     }
   }
   .detailCard__grid {

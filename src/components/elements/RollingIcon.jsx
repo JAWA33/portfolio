@@ -1,5 +1,4 @@
 import { useContext, useEffect, useState } from "react";
-// import { motion } from "framer-motion";
 import { ThemeContext } from "../../components/layouts/PageConfig";
 
 const RollingIcon = ({ rollingText, children }) => {

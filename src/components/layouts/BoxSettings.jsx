@@ -5,8 +5,6 @@ import { useEffect } from "react";
 import { ThemeContext } from "./PageConfig.jsx";
 import RollingIcon from "../elements/RollingIcon.jsx";
 
-//export const ThemeContext = createContext(null);
-
 const BoxSettings = ({ rollingText, children, svgIcon }) => {
   const [isOpen, setIsopen] = useState(false);
   const {

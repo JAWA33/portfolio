@@ -576,185 +576,179 @@
     "link": "https://www.spyde.fr",
     "menu": {
       "A": { "text": "PRESENTATION", "link": "/" },
-      "B": { "text": "FUNCTIONALITIES", "link": "/" },
+      "B": { "text": "FEATURES", "link": "/" },
       "C": { "text": "BRANDING", "link": "/" },
-      "D": { "text": "WEB DESIGN", "link": "/" },
-      "E": { "text": "WEB DEVELOPPEMENT", "link": "/" },
-      "F": { "text": "GO ONLINE", "link": "/" },
-      "G": { "text": "VISIT SPYDE.FR", "link": "/" }
+      "D": { "text": "ECOSYSTEM", "link": "/" },
+      "E": { "text": "WEB DESIGN", "link": "/" },
+      "F": { "text": "WEB DEVELOPPEMENT", "link": "/" },
+      "G": { "text": "GO ONLINE", "link": "https://www.spyde.fr" },
+      "H": { "text": "VISIT SPYDE.FR", "link": "https://www.spyde.fr" }
     },
     "presentation": {
       "title": "Presentation",
-      "textA": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum doloremquelaboriosam commodi omnis fuga mollitia, hic eum maxime.",
-      "textB": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aut unde molestias, debitis, illo blanditiis possimus adipisci sequi sit hic distinctio explicabo velit consequuntur deserunt quasi ipsa odio quas suscipit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas fugiat ut porro numquam aut magnam aperiam voluptates incidunt delectus a laborum doloremque laboriosam commodi omnis fuga mollitia, hic eum maxime."
+      "textA": "Spyde is a company specializing in waste management for companies in the Nouvelle-Aquitaine region. Their mission is to offer simple and effective solutions for the collection, sorting and recycling of waste, in order to help companies improve their environmental impact Thanks to their expertise and commitment to sustainable development, Spyde supports companies in their ecological transition by providing them with collection, sorting and recycling services, as well as training and support. personalized support in their CSR approach.",
+      "textB": "Spyde's web application, which I had the pleasure of designing and developing, is at the heart of their service offering. It allows customers to easily manage their collection requests, access their recycling certificate in real time and benefit from personalized features to simplify their waste management process. With a user-friendly and intuitive interface, the application allows companies to monitor their environmental impact and make informed decisions for a brighter future. It ensures traceability of waste, thus offering precise measurements of the volumes collected."
     },
     "functions": {
-      "title": "Functionalities",
+      "title": "Features",
       "A": {
-        "title": "Show Case",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Showcase site",
+        "text": "A professional and attractive presentation of the company, highlighting its services and expertise. Visitors can easily discover key information and familiarize themselves with the company's activity."
       },
       "B": {
-        "title": "Personalized Blog",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Custom Blog",
+        "text": "A personalized blog feature allowing the company to share relevant articles, advice and news in its field. Users can thus stay informed and engaged while enjoying an interactive space"
       },
       "C": {
-        "title": "TEST pour voir",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Traceability of collections",
+        "text": "The web application provides complete traceability of waste collections, allowing real-time monitoring of their journey, from collection to their final destination. This feature offers precise visibility and optimized process management collection"
       },
       "D": {
-        "title": "On verra",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Account management",
+        "text": "An advanced user rights and account management system has been implemented, providing control over access to site features. Administrators can easily assign specific roles and permissions to users, ensuring secure and efficient management."
       },
       "E": {
-        "title": "On verra",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Customer management",
+        "text": "The customer and contract management functionality facilitates day-to-day business operations. The company can record customer information and manage contracts, ensuring transparent and organized management."
       },
       "F": {
-        "title": "On verra",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Roadmaps",
+        "text": "A functionality for creating roadmaps has been integrated to optimize collection routes. The company can plan routes directly on a map, define collection points and schedules, allowing efficient management of resources and cost reduction"
       },
       "G": {
-        "title": "On verra",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Accessibility",
+        "text": "The website is designed fully responsive, providing a smooth and optimal user experience on all devices. Users can therefore access the site and take advantage of its features, intuitively and adapted to their device, wherever they are. they find themselves."
       },
       "H": {
-        "title": "On verra",
-        "text": "Le site comprend une partie “Public” accessible à tous, permettant la présentation de l’entreprise Spyde et ses services."
+        "title": "Saving volumes",
+        "text": "A functionality for recording the volumes of recycled waste has been implemented, allowing Spyde customers to track and evaluate its performance. This functionality provides essential data for informed decision-making and management. sustainable waste"
       }
     },
     "branding": {
       "title": "Branding",
       "section": {
         "logo": {
-          "title": "Logo et Charte graphique",
+          "title": "Logo and Graphic Charter",
           "A": {
-            "title": "Demande client",
-            "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+            "title": "Client request",
+            "text": "The company logo will be simple and visible, while the graphic charter will convey an energetic professionalism. It will reflect the values ​​of dynamism and passion, illustrating the commitment to the environment and the support of customers The aim is to create a distinctive, inspiring and trusting visual identity, showcasing the company's sector and its dedication to the environment and customer satisfaction."
           },
           "B": {
-            "title": "Proposition de logo"
+            "title": "Logo proposals"
           },
           "C": {
-            "title": "Logo final"
+            "title": "Chosen logo"
           },
           "D": {
-            "title": "Charte graphique"
+            "title": "Graphic Charter"
           }
         },
         "document": {
-          "title": "Documents d'Entreprise",
+          "title": "Company Documents",
           "A": {
-            "title": "Demande client",
-            "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+            "title": "Client request",
+            "text": "My client wanted key documents in keeping with the style of his website. A professional business card to facilitate exchanges, an attractive commercial brochure highlighting his services, and a personalized recycling certificate reflecting the environmental commitment of its customers. I produced these documents with meticulousness, integrating the visual identity of its company to meet its specific needs."
           },
           "B": {
-            "title": "Cartes de visite"
+            "title": "Business cards"
           },
           "C": {
-            "title": "Plaquette Commerciale"
+            "title": "Commercial brochure"
           },
           "D": {
-            "title": "Certificat de Recyclage"
+            "title": "Recycling Certificate"
           }
         }
       }
     },
     "webdev": {
-      "title": "Développement Web",
+      "title": "Data Ecosystem",
       "section": {
         "tools": {
-          "title": "Mes Différents Outils",
+          "title": "My Different Tools",
           "A": {
-            "title": "Web design",
-            "list": ["Figma", "Javascript", "Express"]
+            "title": "Frontend",
+            "list": ["Html, Css, Sass", "React", "Redux Toolkit", "Javascript"]
           },
           "B": {
-            "title": "Frontend",
-            "list": [
-              "React",
-              "Javascript",
-              "Express",
-              "NodeJs",
-              "Javascript",
-              "Express"
-            ]
+            "title": "Backend",
+            "list": ["NodeJs", "Express", "Javascript", "MySql"]
           },
           "C": {
-            "title": "Backend",
-            "list": ["NodeJs", "Javascript", "Express"]
+            "title": "Web Design",
+            "list": ["Figma", "Adobe", "Sites web pour les assets"]
           },
           "D": {
-            "title": "Autres ",
-            "list": ["NodeJs", "Javascript", "Express"]
+            "title": "Packages",
+            "list": ["Mapbox", "EmailJS", "Axios", "Sequelize", "JWT"]
           },
           "E": {
-            "title": "Autres ",
-            "list": ["NodeJs", "Javascript", "Express"]
+            "title": "Others ",
+            "list": ["Git", "Github", "Postman"]
           }
         }
       }
     },
     "design": {
       "title": "Web Design",
-      "section_A": "Choix pour le design",
+      "section_A": "Choice for design",
       "A": {
-        "title": "Demande du Client",
-        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "title": "Client request",
+        "text": "When doing the web design for the company Spyde, the company was in the creation phase, which meant that there were no photos or assets available for the site yet. Despite this, the client didn't have any specific design requests, they just wanted a simple and minimalist style, minimizing costs so that they could allocate more budget to the development and functionality of the site."
       },
       "B": {
-        "title": "Propositions",
-        "text": "TEXTE B :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "title": "Proposals",
+        "text": "To meet the client's expectations, I suggested using a pre-existing design template that I could adapt, which would save costs. As for visual assets, the use of illustrations free of rights would be a solution to compensate for the lack of available photos. The client was satisfied with this proposal, appreciating both the simplicity of the design and the possibility of optimizing its budget."
       },
       "C": {
         "title": "Inspiration"
       },
       "D": {
-        "title": "Exemple d'illustrations"
+        "title": "Example of illustrations"
       }
     },
     "development": {
-      "title": "Développement Web",
+      "title": "Web Developement",
       "section_A": "Front End",
       "section_B": "Back End",
       "A": {
         "title": "Responsive",
-        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "text": "Responsive design was of paramount importance in Spyde's web application project, due to its use on different devices, especially by drivers who would consult the application from their smartphone. Ensuring a user experience optimal on all media was therefore a key issue to meet the mobility and practicality needs of users."
       },
       "B": {
         "title": "",
-        "text": "TEXTE B :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "text": ""
       },
       "C": {
-        "title": "Partie Publique",
-        "text": "TEXTE C :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "title": "Public part",
+        "text": "Spyde's website includes a public section accessible to everyone. This section provides Spyde with an online showcase to showcase its business, while the blog allows interaction and communication with customers and visitors. Contact forms are also available, giving visitors an easy and direct way to get in touch with Spyde for any request or information."
       },
       "D": {
-        "title": "Partie Privée",
-        "text": "TEXTE D :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "title": "Private part",
+        "text": "The site also includes a secure private section reserved for Spyde customers and employees, with a privilege management system. This section is in the form of a dashboard offering quick access to the functionalities of the site, such as the Customer Dashboard, Profile Management, Blog Management, Customer Accounts, Contracts, Roadmaps, etc. This allows efficient and personalized management of the various site functionalities to meet the needs specific to each user."
       },
       "E": {
         "title": "API Rest",
-        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "text": "For the backend of the site, I implemented a Rest API which offers many advantages in terms of management and data security. I opted to use Node.js and Express to develop the server, which allows great flexibility and optimal performance Thanks to this technical approach, the site benefits from a robust architecture, efficient communication between the server and the client, as well as advanced management of queries and responses."
       },
       "F": {
         "title": "",
-        "text": "TEXTE B :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "text": ""
       },
       "G": {
-        "title": "Base de données",
-        "text": "TEXTE C :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "title": "Database",
+        "text": "For optimal data management, I used MySQL, a relational database. With the help of Sequelize, an ORM, I simplified data manipulation using objects and methods JavaScript. This combination provides reliability, performance and security, while making the code more readable and maintainable. MySQL and Sequelize ensure efficient data management and increased ease of development."
       },
       "H": {
-        "title": "Sécurisation des données",
-        "text": "TEXTE D :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "title": "Data security",
+        "text": "To ensure system security, I implemented a token system that provides secure login and user session management. I used Json Web Token package to generate and verify tokens, thus providing an extra layer of protection. Additionally, I have integrated a password encryption system into the database, which enhances the confidentiality of sensitive information. With these security measures, users can trust in the protection of their data when they interact with the site."
       }
     },
     "online": {
-      "title": "Mise en ligne",
+      "title": "Online",
       "A": {
-        "title": "Serveur Mutualisé C Panel",
-        "text": "TEXTE A :  ipsum dolor sit amet consectetur, adipisicing elit.Eaque aut unde molestias, debitis, illo blanditiispossimus adipisci sequi sit hic distinctio explicabo velitconsequuntur deserunt quasi ipsa odio quas suscipit. Loremipsum dolor sit amet consectetur, adipisicing elit.Voluptas fugiat ut porro numquam aut magnam aperiamvoluptates incidunt delectus a laborum."
+        "title": "Cpanel Shared Server",
+        "text": "I took charge of setting up the server and the web application for my client. The site was hosted at Lws on a shared C Panel type server. In addition to that, I I set up the first professional emails for my client, providing clear instructions on how to use the dashboard and accompanying him in getting started with the site's functionalities."
       },
       "B": {
         "title": "",
@@ -762,9 +756,9 @@
       }
     },
     "buttons": {
-      "title": "Que souhaitez vous faire maintenant ?",
-      "action": "Contactez Moi !",
-      "other": "Voir tous les Projets",
+      "title": "What do you want to do now ?",
+      "action": "Contact Me !",
+      "other": "See All Projects",
       "link_action": "/contact",
       "link_other": "/projects"
     }

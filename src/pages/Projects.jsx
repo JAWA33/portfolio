@@ -6,7 +6,6 @@ import AccordionBlock from "../components/blocks/AccordionBlock";
 import DotsAnimation from "../components/blocks/dotsAnimation";
 import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
-//! Google Analytics :
 import ReactGA from "react-ga4";
 
 const Projects = () => {
@@ -16,8 +15,6 @@ const Projects = () => {
     let i;
     const dotsToShow = () => {
       for (i = 1; i <= numberOfPoints.length; i++) {
-        console.log("TEST AnimationLign", i);
-        console.log("TEST numberOfPoints", numberOfPoints.length);
         return <div className="dots"></div>;
       }
     };
@@ -27,7 +24,6 @@ const Projects = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  //! Google Analytics :
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
@@ -35,7 +31,6 @@ const Projects = () => {
       title: "Page Projets",
     });
   }, []);
-  //! Google Analytics :
 
   return (
     <div className="wrapper">

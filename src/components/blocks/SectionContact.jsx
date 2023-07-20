@@ -3,8 +3,6 @@ import TitleAndSubTitle from "../elements/TitleAndSubTitle";
 
 import ContactBlocks from "./ContactBlocks";
 
-//! To change by other icon :
-import icon__phone from "../../icons/contact.svg";
 import { ThemeContext } from "../layouts/PageConfig";
 
 const SectionContact = () => {
@@ -22,8 +20,6 @@ const SectionContact = () => {
           href="https://www.linkedin.com/in/julien-armand-342867120/"
           text={textToShow.contact_page.card.A.text}
         >
-          {/* //! PUT SVG ICON HERE */}
-
           <svg
             className="colorIcon"
             strokeWidth="0.5px"
@@ -38,40 +34,9 @@ const SectionContact = () => {
             <path d="M18.5,14A4.5,4.5,0,1,0,23,18.5,4.5,4.5,0,0,0,18.5,14Zm0,7A2.5,2.5,0,1,1,21,18.5,2.5,2.5,0,0,1,18.5,21Z" />
           </svg>
         </ContactBlocks>
-        <ContactBlocks title={textToShow.contact_page.card.B.title}>
-          {/* <svg
-            className="colorIcon"
-            width="60px"
-            height="60px"
-            version="1.1"
-            id="Capa_1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 490 490"
-            xmlSpace="preserve"
-          >
-            <g>
-              <path
-                d="M22.969,362.717h183.75v52.951h-69.863v30.625h216.289v-30.625h-69.863v-52.951h183.75
-		c12.633,0,22.969-10.336,22.969-22.969V66.676c0-12.633-10.336-22.969-22.969-22.969H22.969C10.336,43.707,0,54.043,0,66.676
-		v273.073C0,352.381,10.336,362.717,22.969,362.717z M30.625,74.332h428.75v257.76H30.625V74.332z"
-              />
-              <polygon
-                points="112.151,217.159 129.871,150.443 147.651,217.159 166.762,217.159 188.444,127.915 170.306,127.915 
-		156.608,190.257 140.952,127.915 119.523,127.915 103.209,189.218 89.751,127.915 71.298,127.915 92.607,217.159 	"
-              />
-              <polygon
-                points="229.836,217.159 247.556,150.443 265.336,217.159 284.447,217.159 306.129,127.915 287.991,127.915 
-		274.293,190.257 258.637,127.915 237.208,127.915 220.894,189.218 207.436,127.915 188.983,127.915 210.292,217.159 	"
-              />
-              <polygon
-                points="391.978,190.257 376.322,127.915 354.893,127.915 338.579,189.218 325.121,127.915 306.668,127.915 
-		327.977,217.159 347.521,217.159 365.241,150.443 383.021,217.159 402.132,217.159 423.814,127.915 405.676,127.915 	"
-              />
-              <rect x="82.544" y="251.251" width="324.912" height="30.625" />
-            </g>
-          </svg> */}
-        </ContactBlocks>
+        <ContactBlocks
+          title={textToShow.contact_page.card.B.title}
+        ></ContactBlocks>
         <ContactBlocks
           title={textToShow.contact_page.card.C.title}
           href="mailto:contact@jawa-design.com"
@@ -107,7 +72,7 @@ const SectionContact = () => {
               />
             </g>
           </svg>
-        </ContactBlocks>{" "}
+        </ContactBlocks>
       </div>
     </div>
   );

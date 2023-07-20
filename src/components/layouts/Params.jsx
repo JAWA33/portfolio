@@ -10,8 +10,6 @@ import ButtonToggleLanguage from "../elements/ButtonToggleLanguage.jsx";
 import ButtonToggleDarkmode from "../elements/ButtonToggleDarkmode.jsx";
 import { motion } from "framer-motion";
 
-//export const ThemeContext = createContext(null);
-
 const Params = () => {
   const {
     language,

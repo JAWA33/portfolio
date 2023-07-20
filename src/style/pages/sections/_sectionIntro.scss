@@ -3,7 +3,6 @@
   height: 100%;
   min-height: 50vh;
   padding: 1.5rem 1rem;
-  // margin-bottom: 2rem;
 
   & h2 {
     margin-bottom: 2rem;
@@ -22,7 +21,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    // padding: 3rem;
   }
 }
 
@@ -59,7 +57,6 @@
   top: 0;
   width: var(--_arrowSize);
   height: var(--_arrowSize);
-  //border: 1px solid rgb(19, 99, 236);
 
   &::before,
   &::after {
@@ -70,10 +67,6 @@
     width: var(--_arrowStroke);
     height: var(--_arrowSize);
     border-radius: 50%;
-    //border-radius: calc(var(--_arrowStroke) / 2);
-
-    // background: red;
-    // box-shadow: 0 0 0 $colorTheme_blue;
   }
   &::before {
     content: "";
@@ -105,7 +98,6 @@
   }
 }
 
-//? Color Animation  :::
 #light {
   & #blue {
     & .arrow {
@@ -445,7 +437,6 @@
   }
 }
 
-//for TEXT ::
 @keyframes shinyText {
   0% {
     opacity: 0;
@@ -460,7 +451,6 @@
     text-shadow: -4px 0 10px rgba($textColor_dark, 0.04);
   }
 }
-//For Color Mode : blue ://
 
 @keyframes shinyArrow_blue {
   0% {
@@ -519,7 +509,7 @@
   }
 }
 
-//For Color Mode : purple ://
+
 
 @keyframes shinyArrow_purple {
   0% {
@@ -578,7 +568,6 @@
   }
 }
 
-//For Color Mode : red ://
 
 @keyframes shinyArrow_red {
   0% {
@@ -637,7 +626,6 @@
   }
 }
 
-//For Color Mode : green ://
 @keyframes shinyArrow_green {
   0% {
     background: rgba($colorTheme_green, 0.1);
@@ -695,7 +683,6 @@
   }
 }
 
-//For Color Mode : yellow ://
 
 @keyframes shinyArrow_yellow {
   0% {
@@ -754,7 +741,6 @@
   }
 }
 
-//* for tablet :
 @media (min-width: 600px) {
   .sectionIntro p:last-child {
     padding: 1rem 0 1rem 0rem;
@@ -764,14 +750,13 @@
   }
 }
 
-//*for big screen
+
 @media (min-width: 1580px) {
   .sectionIntro {
     padding: 5vh 12vw;
   }
 }
 
-//* Dark/Light Mode
 
 #light .sectionIntro__container h1 {
   color: $textColor_light;
@@ -781,7 +766,6 @@
   color: $textColor_dark;
 }
 
-//* ColorSet
 
 #light {
   & #green .sectionIntro__container h1:before,

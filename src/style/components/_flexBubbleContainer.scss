@@ -1,8 +1,6 @@
 .flexBubbleContainer {
   --_bubbleWidth: 70%;
   --_bubbleHeight: 450px;
-  // --_bubbleWidth: 65vw;
-  // --_bubbleHeight: 40vh;
   width: var(--_bubbleWidth);
   height: var(--_bubbleHeight);
 
@@ -15,9 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // &--bigBubble {
-    //   animation: waterMoveWithScale 16s linear infinite alternate;
-    // }
+
     &--smallBubble {
       cursor: move;
       animation: waterMoveBis 7s 0.2s linear infinite alternate;
@@ -408,7 +404,6 @@
     scale: 1.05;
   }
   100% {
-    //border-radius: 100% 0% 100% 0% / 0% 100% 0% 100%;
     border-radius: 52% 48% 51% 49% / 47% 49% 51% 53%;
     scale: 1;
   }

@@ -47,14 +47,8 @@ const ServicesDetails = ({
     <div
       id={selectedBox == index ? "boxSelected" : ""}
       className={"gridManager__box " + activate}
-      //! to activate :
-      //onMouseLeave={reduceBox}
     >
-      <div
-        className="detailCard gridManager__box__card gridManager__box__card--cardC"
-        //onClick={() => activateTheCard()}
-      >
-        {/* <div className="detailCard font__color"> */}
+      <div className="detailCard gridManager__box__card gridManager__box__card--cardC">
         <div className="detailCard__header">
           <div className="detailCard__header__container">
             <div className="detail">
@@ -75,17 +69,10 @@ const ServicesDetails = ({
             <h3 className="font__card--title">{textData.detail.A.title}</h3>
             <p className="font__card--text">{textData.detail.A.text}</p>
           </div>
-          {/**LOTTIE */}
+
           <div className="detailCard__grid__element">
-            <Player
-              autoplay
-              speed={1}
-              loop
-              src={lottieSrc}
-              //style={{ height: "300px", width: "300px" }}
-            />
+            <Player autoplay speed={1} loop src={lottieSrc} />
           </div>
-          {/**Fin LOTTIE */}
 
           <div className="detailCard__grid__element">
             <h3 className="font__card--title">{textData.detail.B.title}</h3>
@@ -96,7 +83,6 @@ const ServicesDetails = ({
             <p className="font__card--text">{textData.detail.C.text}</p>
           </div>
         </div>
-        {/* </div> */}
       </div>
     </div>
   );

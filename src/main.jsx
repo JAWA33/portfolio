@@ -6,7 +6,7 @@ import "./index.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-//React.StrictMode retiré pour éviter le double appel au serveur
+
 root.render(
   <>
     <BrowserRouter>

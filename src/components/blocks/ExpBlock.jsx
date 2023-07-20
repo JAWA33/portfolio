@@ -9,7 +9,6 @@ const ExpBlock = ({ intro, text, children }) => {
   return (
     <div className="expBlock">
       <BlockBigText model="D" intro={intro} text={text} reverse={false} />
-      {/* <h2 className="expBlock__title font__introTitle font__color">{title}</h2> */}
       <div className="expBlock__grid">{children}</div>
     </div>
   );

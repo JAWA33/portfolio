@@ -6,7 +6,6 @@ import SectionForm from "../components/blocks/SectionForm";
 import InterSection from "../components/elements/InterSection";
 import { useEffect } from "react";
 import goOutAnimation from "../helpers/goOutAnimation";
-//! Google Analytics :
 import ReactGA from "react-ga4";
 import LegalInfos from "../components/layouts/LegalInfos";
 
@@ -15,7 +14,6 @@ const Legal = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  //! Google Analytics :
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
@@ -23,7 +21,7 @@ const Legal = () => {
       title: "Page Mentions Légales",
     });
   }, []);
-  //! Google Analytics :
+
   return (
     <div className="wrapper">
       <motion.div

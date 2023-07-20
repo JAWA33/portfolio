@@ -5,10 +5,6 @@ import { useEffect } from "react";
 const BlockBigText = ({ model, intro, text, reverse }) => {
   const { textToShow, language } = useContext(ThemeContext);
 
-  useEffect(() => {
-    console.log("textToShox", textToShow);
-  }, [textToShow]);
-
   return reverse ? (
     <div className={"blockBigText blockBigText--" + model}>
       <h2>

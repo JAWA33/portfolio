@@ -37,8 +37,6 @@
   }
 }
 
-//* Dark/Light Mode
-
 #light .sectionTitle__container h1 {
   color: $textColor_light;
 }
@@ -47,7 +45,6 @@
   color: $textColor_dark;
 }
 
-//* ColorSet
 #light {
   & #green .sectionTitle__container h1:before,
   & #green .sectionTitle__container h1:after {

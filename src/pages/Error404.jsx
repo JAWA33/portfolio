@@ -22,7 +22,6 @@ const Error404 = () => {
               className="font__introTitle font__color"
               initial={{ x: "50vw" }}
               animate={{ x: 0 }}
-              //exit={goOutAnimation(2, 0)}
             >
               {textToShow.error_404.title}
             </motion.h1>

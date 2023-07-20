@@ -37,7 +37,6 @@ const ServicesElement = ({
 
   const reduceBox = () => {
     setSelectedBox(null);
-    console.log("clear index", index);
   };
 
   return (
@@ -59,7 +58,6 @@ const ServicesElement = ({
             <RevealText>{children}</RevealText>
 
             <h2 className="font__infoTitle font__color">{title}</h2>
-            {/* <p className="font__basicText font__color">{text}</p> */}
           </div>
         </div>
       </div>

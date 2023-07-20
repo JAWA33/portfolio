@@ -258,8 +258,8 @@ function PageConfig() {
               <span></span>
               <span></span>
             </div>
-            {/* //! change to : actualPage === "/" */}
-            {false ? (
+            {/* //TODO : Use in personnal project */}
+            {/* {false ? (
               <div className="animatedBackground">
                 <div className="blockDots">
                   <div className="rotateDots">
@@ -474,21 +474,17 @@ function PageConfig() {
               </div>
             ) : (
               ""
-            )}
-            {/* //! change to : actualPage === "/contact" */}
-            {true ? (
-              <ul className="cubeBackground">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            ) : (
-              ""
-            )}
+            )} */}
+            {/* //TODO : Use in personnal project */}
 
-            {/** //!!!  Ajout d'options sur animate presence */}
+            <ul className="cubeBackground">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+
             <AnimatePresence>
               <Routes location={location} key={location.pathname}>
                 <Route exact path="" element={<Home />} />

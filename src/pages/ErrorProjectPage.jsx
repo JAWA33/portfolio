@@ -5,14 +5,12 @@ import goOutAnimation from "../helpers/goOutAnimation";
 import { ThemeContext } from "../components/layouts/PageConfig";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-//! Google Analytics :
 import ReactGA from "react-ga4";
 
 const ErrorProjectPage = () => {
   const { textToShow } = useContext(ThemeContext);
   const { scrollYProgress } = useScroll();
 
-  //! Google Analytics :
   useEffect(() => {
     ReactGA.send({
       hitType: "pageview",
@@ -20,7 +18,6 @@ const ErrorProjectPage = () => {
       title: "Page No project",
     });
   }, []);
-  //! Google Analytics :
 
   return (
     <div className="wrapper">
@@ -34,7 +31,6 @@ const ErrorProjectPage = () => {
               className="font__introTitle font__color"
               initial={{ x: "50vw" }}
               animate={{ x: 0 }}
-              //exit={goOutAnimation(2, 0)}
             >
               {textToShow.error_project.title}
             </motion.h1>

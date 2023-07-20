@@ -68,9 +68,6 @@
   @for $i from 1 to 5 {
     &:nth-child(#{$i + 1}) {
       animation: flip-#{$i} var(--_duration) ease-in-out infinite alternate;
-      &:after {
-        //animation: squidge-#{$i} var(--duration) ease-in-out infinite alternate;
-      }
     }
   }
 
@@ -111,7 +108,6 @@
 }
 
 @keyframes flip-1 {
-  //0%  #{$i * 15}%
   0%,
   16% {
     transform: rotate(0);
@@ -123,7 +119,6 @@
   }
 }
 @keyframes flip-2 {
-  //0%  #{$i * 15}%
   0%,
   31% {
     transform: rotate(0);
@@ -135,7 +130,6 @@
   }
 }
 @keyframes flip-3 {
-  //0%  #{$i * 15}%
   0%,
   46% {
     transform: rotate(0);
@@ -147,7 +141,6 @@
   }
 }
 @keyframes flip-4 {
-  //0%  #{$i * 15}%
   0%,
   61% {
     transform: rotate(0);
@@ -159,7 +152,6 @@
   }
 }
 @keyframes flip-5 {
-  //0%  #{$i * 15}%
   0%,
   76% {
     transform: rotate(0);
@@ -170,8 +162,6 @@
     transform: rotate(-180deg);
   }
 }
-
-//! COLOR :
 
 #light {
   #blue .loaderColor {
@@ -200,7 +190,7 @@
     stroke-width: 0.5px;
   }
 }
-//for dark :
+//for darkmode :
 #blue .loaderColor {
   fill: $colorTheme_blue;
   stroke: $colorTheme_blue;

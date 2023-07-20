@@ -1,12 +1,8 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
 const Diaporama = ({ sliders, size }) => {
-  //? dataType Sliders :
-  // const arrayOfSliders = [
-  //   { image: urlImage, title: "", text: "" },
-  // ];
   return (
     <div className={size === "small" ? "diaporama--small" : "diaporama"}>
       <Carousel
